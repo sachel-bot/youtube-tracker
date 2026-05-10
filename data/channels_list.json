@@ -1,0 +1,628 @@
+{
+  "version": "v2",
+  "channels": [
+    {
+      "display_name": "Logitech",
+      "search_query": "Logitech",
+      "group": "A_brand",
+      "channel_id": "UC_d7EY0NrcEM715w2n6yVZg",
+      "youtube_title": "Logitech",
+      "subscriber_count": 153000,
+      "uploads_playlist_id": "UU_d7EY0NrcEM715w2n6yVZg",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "ESR Gear",
+      "search_query": "ESR Gear",
+      "group": "A_brand",
+      "channel_id": "UC0l7gkcUzyq14lZmbVltXyQ",
+      "youtube_title": "ESR Gear",
+      "subscriber_count": 47,
+      "uploads_playlist_id": "UU0l7gkcUzyq14lZmbVltXyQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "ZAGG",
+      "search_query": "ZAGG Inc",
+      "group": "A_brand",
+      "channel_id": "UCQggDjOkSKeNOyiSECjrZJQ",
+      "youtube_title": "ZAGGTV",
+      "subscriber_count": 25000,
+      "uploads_playlist_id": "UUQggDjOkSKeNOyiSECjrZJQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Fintie",
+      "search_query": "Fintie",
+      "group": "A_brand",
+      "channel_id": "UC0nUDSJKyKzi_aUQlnXFbMg",
+      "youtube_title": "FintieTV",
+      "subscriber_count": 1680,
+      "uploads_playlist_id": "UU0nUDSJKyKzi_aUQlnXFbMg",
+      "_source": "search"
+    },
+    {
+      "display_name": "Inateck",
+      "search_query": "Inateck",
+      "group": "A_brand",
+      "channel_id": "UClQxapZMcmbZ0s4VctlqDIA",
+      "youtube_title": "Inateck",
+      "subscriber_count": 2200,
+      "uploads_playlist_id": "UUlQxapZMcmbZ0s4VctlqDIA",
+      "_source": "search"
+    },
+    {
+      "display_name": "Arteck",
+      "search_query": "Arteck",
+      "group": "A_brand",
+      "channel_id": "UCxgK8sVkBcAD7iVjiZDa7Zg",
+      "youtube_title": "Arteck",
+      "subscriber_count": 25600,
+      "uploads_playlist_id": "UUxgK8sVkBcAD7iVjiZDa7Zg",
+      "_source": "search"
+    },
+    {
+      "display_name": "Doqo",
+      "search_query": "Doqo iPad keyboard",
+      "group": "A_brand",
+      "channel_id": "UCZ0RmGp2lbarGXXp0FeIhuw",
+      "youtube_title": "doqo-technology",
+      "subscriber_count": 263,
+      "uploads_playlist_id": "UUZ0RmGp2lbarGXXp0FeIhuw",
+      "_source": "search"
+    },
+    {
+      "display_name": "Apple",
+      "search_query": "Apple",
+      "group": "A_brand",
+      "channel_id": "UCE_M8A5yxnLfW0KghEeajjw",
+      "youtube_title": "Apple",
+      "subscriber_count": 20600000,
+      "uploads_playlist_id": "UUE_M8A5yxnLfW0KghEeajjw",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Typecase",
+      "search_query": "@typecase_official",
+      "group": "A_brand",
+      "channel_id": "UCi95AmTqHN5nYlsjcvKlKtA",
+      "youtube_title": "Typecase",
+      "subscriber_count": 106000,
+      "uploads_playlist_id": "UUi95AmTqHN5nYlsjcvKlKtA",
+      "_source": "handle"
+    },
+    {
+      "display_name": "9to5Toys",
+      "search_query": "9to5Toys",
+      "group": "B_ipad_vertical",
+      "channel_id": "UCJ7ITQSZ2K1H2w3ncJF-pRA",
+      "youtube_title": "9to5Toys",
+      "subscriber_count": 94100,
+      "uploads_playlist_id": "UUJ7ITQSZ2K1H2w3ncJF-pRA",
+      "_source": "search"
+    },
+    {
+      "display_name": "AppleSauce",
+      "search_query": "AppleSauce",
+      "group": "B_ipad_vertical",
+      "channel_id": "UCPbgeGvqyjZ8rXlyx6qEVxA",
+      "youtube_title": "Dr. Applesauce",
+      "subscriber_count": 77700,
+      "uploads_playlist_id": "UUPbgeGvqyjZ8rXlyx6qEVxA",
+      "_source": "search"
+    },
+    {
+      "display_name": "Tom's Guide",
+      "search_query": "Tom's Guide",
+      "group": "B_ipad_vertical",
+      "channel_id": "UCik8xvfR6s8GQ74QNEGNzwg",
+      "youtube_title": "Tom’s Guide",
+      "subscriber_count": 138000,
+      "uploads_playlist_id": "UUik8xvfR6s8GQ74QNEGNzwg",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Gizmodo",
+      "search_query": "Gizmodo",
+      "group": "B_ipad_vertical",
+      "channel_id": "UCxFmw3IUMDUC1Hh7qDjtjZQ",
+      "youtube_title": "Gizmodo",
+      "subscriber_count": 143000,
+      "uploads_playlist_id": "UUxFmw3IUMDUC1Hh7qDjtjZQ",
+      "_source": "search"
+    },
+    {
+      "display_name": "Engadget",
+      "search_query": "Engadget",
+      "group": "B_ipad_vertical",
+      "channel_id": "UC-6OW5aJYBFM33zXQlBKPNA",
+      "youtube_title": "Engadget",
+      "subscriber_count": 1440000,
+      "uploads_playlist_id": "UU-6OW5aJYBFM33zXQlBKPNA",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "The Verge",
+      "search_query": "The Verge",
+      "group": "B_ipad_vertical",
+      "channel_id": "UCddiUEpeqJcYeBxX1IVBKvQ",
+      "youtube_title": "The Verge",
+      "subscriber_count": 3500000,
+      "uploads_playlist_id": "UUddiUEpeqJcYeBxX1IVBKvQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "9to5Mac",
+      "search_query": "9to5Mac",
+      "group": "B_ipad_vertical",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "youtube_title": "9to5Mac",
+      "subscriber_count": 949000,
+      "uploads_playlist_id": "UUhjRM_qQAaOAiLNbOGbYcRA",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Christopher Lawley",
+      "search_query": "Christopher Lawley",
+      "group": "B_ipad_vertical",
+      "channel_id": "UC8raOG7HXJoCUygx219fU4A",
+      "youtube_title": "Christopher Lawley",
+      "subscriber_count": 202000,
+      "uploads_playlist_id": "UU8raOG7HXJoCUygx219fU4A",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Tim Chaten",
+      "search_query": "Tim Chaten",
+      "group": "B_ipad_vertical",
+      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
+      "youtube_title": "Tim Chaten",
+      "subscriber_count": 1710,
+      "uploads_playlist_id": "UUPq0Xj9HbOXSpEpKiX0brnA",
+      "_source": "search"
+    },
+    {
+      "display_name": "MKBHD",
+      "search_query": "MKBHD",
+      "group": "C_top_tech",
+      "channel_id": "UCBJycsmduvYEL83R_U4JriQ",
+      "youtube_title": "Marques Brownlee",
+      "subscriber_count": 20900000,
+      "uploads_playlist_id": "UUBJycsmduvYEL83R_U4JriQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "iJustine",
+      "search_query": "iJustine",
+      "group": "C_top_tech",
+      "channel_id": "UCey_c7U86mJGz1VJWH5CYPA",
+      "youtube_title": "iJustine",
+      "subscriber_count": 7070000,
+      "uploads_playlist_id": "UUey_c7U86mJGz1VJWH5CYPA",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Linus Tech Tips",
+      "search_query": "Linus Tech Tips",
+      "group": "C_top_tech",
+      "channel_id": "UCXuqSBlHAE6Xw-yeJA0Tunw",
+      "youtube_title": "Linus Tech Tips",
+      "subscriber_count": 16800000,
+      "uploads_playlist_id": "UUXuqSBlHAE6Xw-yeJA0Tunw",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Dave Lee",
+      "search_query": "Dave Lee tech",
+      "group": "C_top_tech",
+      "channel_id": "UCVYamHliCI9rw1tHR1xbkfw",
+      "youtube_title": "Dave2D",
+      "subscriber_count": 3690000,
+      "uploads_playlist_id": "UUVYamHliCI9rw1tHR1xbkfw",
+      "_source": "search"
+    },
+    {
+      "display_name": "Snazzy Labs",
+      "search_query": "Snazzy Labs",
+      "group": "C_top_tech",
+      "channel_id": "UCO2x-p9gg9TLKneXlibGR7w",
+      "youtube_title": "Snazzy Labs",
+      "subscriber_count": 1240000,
+      "uploads_playlist_id": "UUO2x-p9gg9TLKneXlibGR7w",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Studyquill",
+      "search_query": "Studyquill",
+      "group": "D_real_use",
+      "channel_id": "UC-ZQaezPlUTe94-7buWtIfA",
+      "youtube_title": "studyquill",
+      "subscriber_count": 1100000,
+      "uploads_playlist_id": "UU-ZQaezPlUTe94-7buWtIfA",
+      "_source": "search"
+    },
+    {
+      "display_name": "UnJaded Jade",
+      "search_query": "UnJaded Jade",
+      "group": "D_real_use",
+      "channel_id": "UC4-uObu-mfafJyxxZFEwbvQ",
+      "youtube_title": "UnJaded Jade",
+      "subscriber_count": 979000,
+      "uploads_playlist_id": "UU4-uObu-mfafJyxxZFEwbvQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Ruby Granger",
+      "search_query": "Ruby Granger",
+      "group": "D_real_use",
+      "channel_id": "UC6a8lp6vaCMhUVXPyynhjUA",
+      "youtube_title": "Ruby Granger",
+      "subscriber_count": 974000,
+      "uploads_playlist_id": "UU6a8lp6vaCMhUVXPyynhjUA",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Ali Abdaal",
+      "search_query": "Ali Abdaal",
+      "group": "D_real_use",
+      "channel_id": "UCoOae5nYA7VqaXzerajD0lg",
+      "youtube_title": "Ali Abdaal",
+      "subscriber_count": 6590000,
+      "uploads_playlist_id": "UUoOae5nYA7VqaXzerajD0lg",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Thomas Frank",
+      "search_query": "Thomas Frank",
+      "group": "D_real_use",
+      "channel_id": "UCG-KntY7aVnIGXYEBQvmBAQ",
+      "youtube_title": "Thomas Frank",
+      "subscriber_count": 3010000,
+      "uploads_playlist_id": "UUG-KntY7aVnIGXYEBQvmBAQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Studytee",
+      "search_query": "Studytee",
+      "group": "D_real_use",
+      "channel_id": "UCc1QflC90Nkf_SDBZwJScDQ",
+      "youtube_title": "studytee",
+      "subscriber_count": 1170000,
+      "uploads_playlist_id": "UUc1QflC90Nkf_SDBZwJScDQ",
+      "_source": "search"
+    },
+    {
+      "display_name": "The Cottage Fairy",
+      "search_query": "The Cottage Fairy",
+      "group": "D_real_use",
+      "channel_id": "UCKx5lHJ6Fr5mbT4TYVLh6ng",
+      "youtube_title": "TheCottageFairy",
+      "subscriber_count": 1600000,
+      "uploads_playlist_id": "UUKx5lHJ6Fr5mbT4TYVLh6ng",
+      "_source": "search"
+    },
+    {
+      "display_name": "Tom Solid",
+      "search_query": "Tom Solid Paperless",
+      "group": "D_real_use",
+      "channel_id": "UC8qxhdxV0U2NQ9vinFffDJQ",
+      "youtube_title": "ICOR with Tom | AI Productivity",
+      "subscriber_count": 108000,
+      "uploads_playlist_id": "UU8qxhdxV0U2NQ9vinFffDJQ",
+      "_source": "search"
+    },
+    {
+      "display_name": "Brad Colbow",
+      "search_query": "Brad Colbow",
+      "group": "D_real_use",
+      "channel_id": "UClozNP-QPyVatzpGKC25s0A",
+      "youtube_title": "Brad Colbow",
+      "subscriber_count": 918000,
+      "uploads_playlist_id": "UUlozNP-QPyVatzpGKC25s0A",
+      "_source": "search"
+    },
+    {
+      "display_name": "Procreate",
+      "search_query": "Procreate",
+      "group": "D_real_use",
+      "channel_id": "UCU88WY0qX2bzDjjOLOj-Gng",
+      "youtube_title": "Procreate",
+      "subscriber_count": 641000,
+      "uploads_playlist_id": "UUU88WY0qX2bzDjjOLOj-Gng",
+      "_source": "search"
+    },
+    {
+      "display_name": "Sara Dietschy",
+      "search_query": "Sara Dietschy",
+      "group": "D_real_use",
+      "channel_id": "UC3fg6pL63upkXCc0T203wVg",
+      "youtube_title": "Sara Dietschy",
+      "subscriber_count": 933000,
+      "uploads_playlist_id": "UU3fg6pL63upkXCc0T203wVg",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Peter McKinnon",
+      "search_query": "Peter McKinnon",
+      "group": "D_real_use",
+      "channel_id": "UC3DkFux8Iv-aYnTRWzwaiBA",
+      "youtube_title": "Peter McKinnon",
+      "subscriber_count": 6010000,
+      "uploads_playlist_id": "UU3DkFux8Iv-aYnTRWzwaiBA",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Christine Le",
+      "search_query": "Christine Le artist",
+      "group": "D_real_use",
+      "channel_id": "UCvaslozYkHmrCU-vUaXZ9SQ",
+      "youtube_title": "Christine Le",
+      "subscriber_count": 343000,
+      "uploads_playlist_id": "UUvaslozYkHmrCU-vUaXZ9SQ",
+      "_source": "search"
+    },
+    {
+      "display_name": "Joan Kim",
+      "search_query": "Joan Kim",
+      "group": "D_real_use",
+      "channel_id": "UCmPgDOHAAM4lmNlU4CcuMYw",
+      "youtube_title": "Joan Kim",
+      "subscriber_count": 551000,
+      "uploads_playlist_id": "UUmPgDOHAAM4lmNlU4CcuMYw",
+      "_source": "search"
+    },
+    {
+      "display_name": "Casey Neistat",
+      "search_query": "Casey Neistat",
+      "group": "D_real_use",
+      "channel_id": "UCtinbF-Q-fVthA0qrFQTgXQ",
+      "youtube_title": "CaseyNeistat",
+      "subscriber_count": 12700000,
+      "uploads_playlist_id": "UUtinbF-Q-fVthA0qrFQTgXQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Mariana Vieira",
+      "search_query": "Mariana's Study Corner",
+      "group": "D_real_use",
+      "channel_id": "UCEHp_b02I0GvTYCBPX_0w1g",
+      "youtube_title": "Mariana Vieira",
+      "subscriber_count": 747000,
+      "uploads_playlist_id": "UUEHp_b02I0GvTYCBPX_0w1g",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Lisa Bardot (Bardot Brush)",
+      "search_query": "Bardot Brush",
+      "group": "D_real_use",
+      "channel_id": "UCSNvnDVDjyfr8zKZMGcjvlg",
+      "youtube_title": "Bardot Brush",
+      "subscriber_count": 384000,
+      "uploads_playlist_id": "UUSNvnDVDjyfr8zKZMGcjvlg",
+      "_source": "search"
+    },
+    {
+      "display_name": "Federico Viticci (MacStories)",
+      "search_query": "MacStories",
+      "group": "D_real_use",
+      "channel_id": "UCYwEmRci4vGt2w1UMcyUHhw",
+      "youtube_title": "MacStories",
+      "subscriber_count": 2210,
+      "uploads_playlist_id": "UUYwEmRci4vGt2w1UMcyUHhw",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Matt D'Avella",
+      "search_query": "Matt D'Avella",
+      "group": "D_real_use",
+      "channel_id": "UCJ24N4O0bP7LGLBDvye7oCA",
+      "youtube_title": "Matt D'Avella",
+      "subscriber_count": 4030000,
+      "uploads_playlist_id": "UUJ24N4O0bP7LGLBDvye7oCA",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Pat Flynn",
+      "search_query": "Pat Flynn Smart Passive Income",
+      "group": "D_real_use",
+      "channel_id": "UCGk1LitxAZVnqQn0_nt5qxw",
+      "youtube_title": "Pat Flynn",
+      "subscriber_count": 484000,
+      "uploads_playlist_id": "UUGk1LitxAZVnqQn0_nt5qxw",
+      "_source": "search"
+    },
+    {
+      "display_name": "Karl Conrad",
+      "search_query": "Karl Conrad iPad",
+      "group": "D_real_use",
+      "channel_id": "UC0MYNOsIrz6jmXfIMERyRHQ",
+      "youtube_title": "Karl Conrad",
+      "subscriber_count": 1000000,
+      "uploads_playlist_id": "UU0MYNOsIrz6jmXfIMERyRHQ",
+      "_source": "search"
+    },
+    {
+      "display_name": "Erik Conover",
+      "search_query": "Erik Conover",
+      "group": "D_real_use",
+      "channel_id": "UCu8ucb1LRJd1gwwXutYDgTg",
+      "youtube_title": "Erik Van Conover",
+      "subscriber_count": 2810000,
+      "uploads_playlist_id": "UUu8ucb1LRJd1gwwXutYDgTg",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Pick Up Limes",
+      "search_query": "Pick Up Limes",
+      "group": "E_lifestyle",
+      "channel_id": "UCq2E1mIwUKMWzCA4liA_XGQ",
+      "youtube_title": "Pick Up Limes",
+      "subscriber_count": 4370000,
+      "uploads_playlist_id": "UUq2E1mIwUKMWzCA4liA_XGQ",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Lavendaire",
+      "search_query": "Lavendaire",
+      "group": "E_lifestyle",
+      "channel_id": "UC-ga3onzHSJFAGsIebtVeBg",
+      "youtube_title": "Lavendaire",
+      "subscriber_count": 2650000,
+      "uploads_playlist_id": "UU-ga3onzHSJFAGsIebtVeBg",
+      "_source": "reused_from_v1"
+    },
+    {
+      "display_name": "Caroline Winkler",
+      "search_query": "Caroline Winkler",
+      "group": "E_lifestyle",
+      "channel_id": "UC8JOgFXp-I3YV6dsKqqQdUw",
+      "youtube_title": "Caroline Winkler",
+      "subscriber_count": 1150000,
+      "uploads_playlist_id": "UU8JOgFXp-I3YV6dsKqqQdUw",
+      "_source": "search"
+    },
+    {
+      "display_name": "WorkSpaceLab",
+      "search_query": "WorkSpaceLab",
+      "group": "E_lifestyle",
+      "channel_id": "UCn8PsVwhNvP9qK4R2JDWvWA",
+      "youtube_title": "Workspace Lab",
+      "subscriber_count": 18800,
+      "uploads_playlist_id": "UUn8PsVwhNvP9qK4R2JDWvWA",
+      "_source": "search"
+    },
+    {
+      "display_name": "Marie Forleo",
+      "search_query": "Marie Forleo",
+      "group": "E_lifestyle",
+      "channel_id": "UCuoxrRDDgk3UUnxR4tlkJYQ",
+      "youtube_title": "Marie Forleo",
+      "subscriber_count": 1010000,
+      "uploads_playlist_id": "UUuoxrRDDgk3UUnxR4tlkJYQ",
+      "_source": "search"
+    },
+    {
+      "display_name": "Madeleine Olivia",
+      "search_query": "Madeleine Olivia",
+      "group": "E_lifestyle",
+      "channel_id": "UC4CpQoAPJNGGUPG92Fbwxqw",
+      "youtube_title": "Madeleine Olivia",
+      "subscriber_count": 552000,
+      "uploads_playlist_id": "UU4CpQoAPJNGGUPG92Fbwxqw",
+      "_source": "search"
+    },
+    {
+      "display_name": "Anker",
+      "search_query": "Anker",
+      "group": "F_3c_brand",
+      "channel_id": "UCqdDnTIFcP402BcTo2A30Ow",
+      "youtube_title": "Anker",
+      "subscriber_count": 163000,
+      "uploads_playlist_id": "UUqdDnTIFcP402BcTo2A30Ow",
+      "_source": "search"
+    },
+    {
+      "display_name": "Belkin",
+      "search_query": "@belkin",
+      "group": "F_3c_brand",
+      "channel_id": "UCe1Q-ffTnLhZrFkfvKgxKCQ",
+      "youtube_title": "Belkin",
+      "subscriber_count": 19300,
+      "uploads_playlist_id": "UUe1Q-ffTnLhZrFkfvKgxKCQ",
+      "_source": "handle_repaired"
+    },
+    {
+      "display_name": "Satechi",
+      "search_query": "Satechi",
+      "group": "F_3c_brand",
+      "channel_id": "UCajGeviMMa-piNbYJehhFmA",
+      "youtube_title": "Satechi",
+      "subscriber_count": 20300,
+      "uploads_playlist_id": "UUajGeviMMa-piNbYJehhFmA",
+      "_source": "search"
+    },
+    {
+      "display_name": "Twelve South",
+      "search_query": "Twelve South",
+      "group": "F_3c_brand",
+      "channel_id": "UCiCI-gRlGPXLyjL1sPAPsBw",
+      "youtube_title": "twelvesouth",
+      "subscriber_count": 4670,
+      "uploads_playlist_id": "UUiCI-gRlGPXLyjL1sPAPsBw",
+      "_source": "search"
+    },
+    {
+      "display_name": "Native Union",
+      "search_query": "Native Union",
+      "group": "F_3c_brand",
+      "channel_id": "UCvE0FI2RDXQIy4Mc4chxnMA",
+      "youtube_title": "NATIVE UNION",
+      "subscriber_count": 1230,
+      "uploads_playlist_id": "UUvE0FI2RDXQIy4Mc4chxnMA",
+      "_source": "search"
+    }
+  ],
+  "issues": [
+    {
+      "display_name": "Brydge",
+      "query": "Brydge keyboard",
+      "title": "Brydge Keyboards",
+      "subs": 104,
+      "reason": "⚠️低订阅"
+    },
+    {
+      "display_name": "HOU",
+      "query": "HOU iPad keyboard",
+      "title": "Minimalist Reviews",
+      "subs": 2,
+      "reason": "⚠️低订阅"
+    },
+    {
+      "display_name": "Doqo",
+      "query": "Doqo iPad keyboard",
+      "title": "doqo-technology",
+      "subs": 263,
+      "reason": "⚠️低订阅"
+    },
+    {
+      "display_name": "iPaddict",
+      "query": "iPaddict",
+      "title": "Ipaddiction",
+      "subs": 45,
+      "reason": "⚠️低订阅"
+    },
+    {
+      "display_name": "Karl Heinz Kremer",
+      "query": "Karl Heinz Kremer",
+      "title": "Karl Heinz Kremer",
+      "subs": 24,
+      "reason": "⚠️低订阅"
+    }
+  ],
+  "duplicates": [
+    [
+      "Lavendaire",
+      "Aileen Xu",
+      "UC-ga3onzHSJFAGsIebtVeBg"
+    ]
+  ],
+  "v2_finalize": {
+    "repaired_via_handle": [
+      "iPad Pros",
+      "Belkin"
+    ],
+    "deleted": [
+      "Aileen Xu",
+      "Brydge",
+      "Coffee with Sam",
+      "HOU",
+      "Karl Heinz Kremer",
+      "The Sweet Setup",
+      "Tia Taylor",
+      "With Jamie",
+      "iPad Pros (撞 Tim Chaten ID)",
+      "iPaddict"
+    ],
+    "duplicates_after": []
+  }
+}

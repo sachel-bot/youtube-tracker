@@ -1,0 +1,28 @@
+# 凭证 - 绝对不能 push
+.env
+.env.*
+*.key
+*.pem
+
+# 备份文件
+*.bak.json
+*.bak
+
+# 日志
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code 内部文件
+.claude/

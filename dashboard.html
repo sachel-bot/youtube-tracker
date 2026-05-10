@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube 北美 iPad 配件内容情报</title>
+<style>
+  :root {
+    --bg: #0e1116;
+    --card: #161b22;
+    --card-hover: #1f2731;
+    --border: #2a313c;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --hot-red: #ff4d4f;
+    --hot-orange: #ffa940;
+    --hot-yellow: #fadb14;
+    --hot-purple: #b87cff;
+    --hot-green: #3fb950;
+    --ok: #3fb950;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  header { position: sticky; top: 0; z-index: 10;
+    background: rgba(14,17,22,0.96); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border); padding: 16px 24px 12px; }
+  h1 { margin: 0 0 2px; font-size: 20px; font-weight: 700; }
+  .subtitle { color: var(--muted); font-size: 12.5px; margin-bottom: 10px; }
+  .meta-row { color: var(--muted); font-size: 11.5px; margin-bottom: 10px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .meta-row b { color: var(--text); }
+  .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--ok); margin-right: 5px; vertical-align: middle; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  .stat-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 8px 0;
+    border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); margin-bottom: 10px; font-size: 11.5px; color: var(--muted); }
+  .stat-block { display: flex; gap: 6px; align-items: baseline; }
+  .stat-label { color: var(--muted); font-size: 10.5px; padding: 1px 6px; border-radius: 3px; background: var(--card); }
+  .stat-block b { color: var(--text); font-size: 13px; }
+  .stat-block .hot-purple { color: var(--hot-purple); font-weight: 700; }
+  .stat-block .hot-red { color: var(--hot-red); font-weight: 700; }
+  .stat-block .hot-yellow { color: var(--hot-yellow); font-weight: 700; }
+  .stat-block .hot-green { color: var(--hot-green); font-weight: 700; }
+
+  .filters { display: flex; flex-direction: column; gap: 7px; }
+  .filter-row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .filter-row .label { color: var(--muted); font-size: 11px; min-width: 64px; padding-top: 4px; }
+  .chip { padding: 4px 11px; border-radius: 12px;
+    border: 1px solid var(--border); background: var(--card); color: var(--text);
+    cursor: pointer; font-size: 11.5px; transition: all .12s; user-select: none; line-height: 1.4; }
+  .chip:hover { background: var(--card-hover); border-color: var(--accent); }
+  .chip.active { background: var(--accent); color: #0e1116; border-color: var(--accent); font-weight: 600; }
+  .chip.brand-chip.active { background: var(--hot-orange); color: #0e1116; border-color: var(--hot-orange); }
+  .sort-select { background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 6px; padding: 4px 8px; font-size: 11.5px; }
+  .clear-btn { padding: 4px 10px; border-radius: 12px; border: 1px solid var(--hot-red); background: transparent; color: var(--hot-red); cursor: pointer; font-size: 11px; }
+  .clear-btn:hover { background: rgba(255,77,79,0.1); }
+
+  main { padding: 18px 24px 60px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    overflow: hidden; transition: transform .15s, border-color .15s; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-2px); border-color: var(--accent); }
+  .card.hot-purple { border-color: var(--hot-purple); }
+  .card.hot-red { border-color: var(--hot-red); }
+  .thumb-wrap { position: relative; aspect-ratio: 16/9; background: #000; }
+  .thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .duration { position: absolute; right: 6px; bottom: 6px;
+    background: rgba(0,0,0,0.85); color: #fff;
+    padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+  .badges { position: absolute; left: 8px; top: 8px; display: flex; flex-direction: column; gap: 4px; }
+  .badge { padding: 3px 7px; border-radius: 4px; font-size: 10.5px; font-weight: 700; color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
+  .b-purple { background: var(--hot-purple); }
+  .b-red { background: var(--hot-red); }
+  .b-yellow { background: #fadb14; color: #0e1116; }
+  .b-green { background: var(--hot-green); }
+  .body { padding: 11px 13px 12px; flex: 1; display: flex; flex-direction: column; }
+  .title { color: var(--text); text-decoration: none; font-size: 13.5px;
+    line-height: 1.4; font-weight: 600;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden; margin-bottom: 7px; min-height: 38px; }
+  .title:hover { color: var(--accent); }
+  .channel { color: var(--muted); font-size: 11.5px; margin-bottom: 6px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+  .channel .grp { padding: 1px 6px; border-radius: 3px; background: var(--bg); font-size: 10px; color: var(--muted); }
+  .channel .vtype { padding: 1px 6px; border-radius: 3px; background: var(--bg); font-size: 10px; color: var(--accent); }
+  .tag-row { font-size: 10.5px; color: var(--muted); margin-bottom: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag-row .ctag { padding: 1px 6px; border-radius: 3px; background: rgba(88,166,255,0.12); color: #b6d4f7; }
+  .tag-row .btag { padding: 1px 6px; border-radius: 3px; background: rgba(255,169,64,0.15); color: var(--hot-orange); font-weight: 600; }
+  .stats-row { color: var(--muted); font-size: 11px; display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; border-top: 1px dashed var(--border); }
+  .stats-row .views { color: var(--text); font-weight: 600; }
+  .stats-row .er { color: var(--hot-orange); font-weight: 600; }
+  .stats-row .er.high { color: var(--hot-green); }
+  .views.hot-red-text { color: var(--hot-red); }
+  .views.hot-purple-text { color: var(--hot-purple); }
+  .empty { text-align: center; color: var(--muted); padding: 60px 0; font-size: 14px; grid-column: 1 / -1; }
+  .toast { position: fixed; right: 24px; bottom: 24px; z-index: 100;
+    background: var(--ok); color: #0e1116;
+    padding: 12px 18px; border-radius: 8px; font-size: 13px; font-weight: 600;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    transform: translateY(80px); opacity: 0; transition: all .3s; }
+  .toast.show { transform: translateY(0); opacity: 1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📺 YouTube 北美 iPad 配件内容情报</h1>
+  <div class="subtitle">Typecase + 竞品 + 类目监控 · 跨战役复用</div>
+
+  <div class="meta-row">
+    <span><span class="live-dot"></span>自动刷新已开</span>
+    <span>数据版本: <b id="gen-at">加载中...</b> <span id="gen-ago"></span></span>
+    <span>频道: <b id="ch-count">—</b></span>
+    <span>视频: <b id="vid-count">—</b></span>
+  </div>
+
+  <div class="stat-bar" id="stat-bar"></div>
+
+  <div class="filters">
+    <div class="filter-row">
+      <span class="label">时间窗口</span>
+      <button class="chip active" data-time="all">全部</button>
+      <button class="chip" data-time="1">近 24h</button>
+      <button class="chip" data-time="7">近 7 天</button>
+      <button class="chip" data-time="30">近 30 天</button>
+      <button class="chip" data-time="90">近 90 天</button>
+    </div>
+    <div class="filter-row" id="group-filters">
+      <span class="label">频道分组</span>
+    </div>
+    <div class="filter-row" id="content-filters">
+      <span class="label">内容类型</span>
+    </div>
+    <div class="filter-row" id="length-filters">
+      <span class="label">视频时长</span>
+    </div>
+    <div class="filter-row" id="hot-filters">
+      <span class="label">爆款等级</span>
+    </div>
+    <div class="filter-row" id="vtype-filters">
+      <span class="label">视频类型</span>
+    </div>
+    <div class="filter-row">
+      <span class="label">排序</span>
+      <select class="sort-select" id="sort-select">
+        <option value="er">ER↓ (默认)</option>
+        <option value="views">播放量↓</option>
+        <option value="comment_rate">评论率↓</option>
+        <option value="recent">发布时间↓</option>
+      </select>
+      <button class="clear-btn" id="clear-btn">清空筛选</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="grid" id="grid"><div class="empty">加载中...</div></div>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+const CFG = {"group_labels": {"A_brand": "A 竞品+自家", "B_ipad_vertical": "B iPad 垂直/媒体", "C_top_tech": "C 头部数码", "D_real_use": "D 真实使用", "E_lifestyle": "E Lifestyle", "F_3c_brand": "F 3C 品牌学习"}, "content_tags_order": ["iPad配件相关", "创作", "学生", "商务", "其他Apple", "其他"], "length_order": ["Shorts", "Short", "Medium", "Long"], "hot_level_order": ["🔥 上升爆款", "💥 强爆款", "🎯 百万爆款", "🚀 现象级"], "video_type_order": ["评测", "开箱", "对比", "装机", "教学", "vlog", "其他"]};
+const POLL_INTERVAL_MS = 60 * 1000;
+const LS_KEY = 'yt-tracker-state-v2';
+
+let DATA = null;
+let state = loadState();
+
+function defaultState() {
+  return {
+    time: 'all',
+    groups: [],            // 多选；空 = 全部
+    contents: [],          // 多选
+    lengths: [],           // 多选
+    hots: [],              // 多选
+    vtypes: [],            // 多选
+    sort: 'er',
+  };
+}
+function loadState() {
+  try {
+    return Object.assign(defaultState(), JSON.parse(localStorage.getItem(LS_KEY) || '{}'));
+  } catch (e) { return defaultState(); }
+}
+function saveState() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
+
+// ============== 多选 chip 渲染 ==============
+function renderMultiChips(rowId, options, stateKey) {
+  const row = document.getElementById(rowId);
+  const wrap = document.createElement('span');
+  wrap.style.display = 'contents';
+  // "全部" = 清空该字段
+  const allBtn = document.createElement('button');
+  allBtn.className = 'chip' + (state[stateKey].length === 0 ? ' active' : '');
+  allBtn.textContent = '全部';
+  allBtn.onclick = () => { state[stateKey] = []; saveState(); refreshChips(); render(); };
+  row.appendChild(allBtn);
+
+  options.forEach(opt => {
+    const value = opt.value || opt;
+    const label = opt.label || opt;
+    const btn = document.createElement('button');
+    btn.className = 'chip' + (state[stateKey].includes(value) ? ' active' : '');
+    btn.dataset.value = value;
+    btn.dataset.row = stateKey;
+    btn.textContent = label;
+    btn.onclick = () => {
+      const idx = state[stateKey].indexOf(value);
+      if (idx >= 0) state[stateKey].splice(idx, 1); else state[stateKey].push(value);
+      saveState(); refreshChips(); render();
+    };
+    row.appendChild(btn);
+  });
+}
+
+function refreshChips() {
+  // 时间窗口（单选）
+  document.querySelectorAll('[data-time]').forEach(b =>
+    b.classList.toggle('active', b.dataset.time === state.time));
+  // 各多选 row
+  ['groups','contents','lengths','hots','vtypes'].forEach(key => {
+    const sel = state[key];
+    document.querySelectorAll('[data-row="' + key + '"]').forEach(b =>
+      b.classList.toggle('active', sel.includes(b.dataset.value)));
+    // 该 row 下的"全部"按钮
+    const rowEl = document.getElementById(({groups:'group-filters', contents:'content-filters', lengths:'length-filters', hots:'hot-filters', vtypes:'vtype-filters'})[key]);
+    if (rowEl) {
+      const allBtn = Array.from(rowEl.querySelectorAll('.chip')).find(b => b.textContent === '全部');
+      if (allBtn) allBtn.classList.toggle('active', sel.length === 0);
+    }
+  });
+}
+
+// ============== 时间筛选 ==============
+function withinTime(iso, timeKey) {
+  if (timeKey === 'all') return true;
+  const days = parseInt(timeKey, 10);
+  if (!isFinite(days) || days <= 0) return true;
+  const ms = days * 86400000;
+  const pubMs = new Date(iso).getTime();
+  if (!isFinite(pubMs)) return true;
+  return (Date.now() - pubMs) <= ms;
+}
+
+// ============== 工具 ==============
+function fmt(n) {
+  if (n == null) return '—';
+  if (n >= 1e7) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+  return String(n);
+}
+function fmtDate(iso) {
+  const d = new Date(iso); const now = new Date();
+  const diffH = Math.floor((now - d) / 3600000);
+  if (diffH < 1) return Math.floor((now-d)/60000) + ' 分钟前';
+  if (diffH < 24) return diffH + ' 小时前';
+  const diffDays = Math.floor(diffH / 24);
+  if (diffDays === 1) return '昨天';
+  if (diffDays < 7) return diffDays + ' 天前';
+  if (diffDays < 30) return Math.floor(diffDays / 7) + ' 周前';
+  if (diffDays < 365) return Math.floor(diffDays / 30) + ' 个月前';
+  return d.toISOString().slice(0, 10);
+}
+function fmtAgo(iso) {
+  const d = new Date(iso.replace(' ', 'T'));
+  const sec = Math.floor((Date.now() - d.getTime()) / 1000);
+  if (sec < 60) return '(' + sec + ' 秒前生成)';
+  if (sec < 3600) return '(' + Math.floor(sec / 60) + ' 分钟前生成)';
+  if (sec < 86400) return '(' + Math.floor(sec / 3600) + ' 小时前生成)';
+  return '(' + Math.floor(sec / 86400) + ' 天前生成)';
+}
+function escHTML(s) {
+  return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ============== 渲染 ==============
+function renderStatBar(filtered) {
+  const total = filtered.reduce((s,v) => s + v.view_count, 0);
+  const avgER = filtered.length ? filtered.reduce((s,v) => s + (v.engagement_rate||0), 0) / filtered.length : 0;
+  const highER = filtered.filter(v => v.engagement_rate >= 5).length;
+  const week = filtered.filter(v => withinTime(v.published_at, '7'));
+  const week100k = week.filter(v => v.view_count >= 100000).length;
+
+  const hotCount = (label) => filtered.filter(v => v.hot_level === label).length;
+  const ctagCount = (t) => filtered.filter(v => v.content_tags && v.content_tags.includes(t)).length;
+
+  document.getElementById('stat-bar').innerHTML = `
+    <span class="stat-block"><span class="stat-label">显示</span><b>${filtered.length}</b> 条 · 总播放 <b>${fmt(total)}</b></span>
+    <span class="stat-block"><span class="stat-label">爆款</span>
+      上升 <b class="hot-green">${hotCount('🔥 上升爆款')}</b> ·
+      强 <b class="hot-yellow">${hotCount('💥 强爆款')}</b> ·
+      百万 <b class="hot-red">${hotCount('🎯 百万爆款')}</b> ·
+      现象级 <b class="hot-purple">${hotCount('🚀 现象级')}</b></span>
+    <span class="stat-block"><span class="stat-label">质量</span>平均 ER <b>${avgER.toFixed(2)}%</b> · 高ER (≥5%) <b>${highER}</b> 条</span>
+    <span class="stat-block"><span class="stat-label">相关性</span>
+      iPad配件 <b>${ctagCount('iPad配件相关')}</b> ·
+      创作 <b>${ctagCount('创作')}</b> ·
+      学生 <b>${ctagCount('学生')}</b> ·
+      商务 <b>${ctagCount('商务')}</b> ·
+      其他Apple <b>${ctagCount('其他Apple')}</b></span>
+    <span class="stat-block"><span class="stat-label">本周</span>新视频 <b>${week.length}</b> · &gt;10万 <b>${week100k}</b></span>
+  `;
+}
+
+function renderCard(v) {
+  const groupLabel = CFG.group_labels[v.channel_group] || v.channel_group;
+  let hotClass = '';
+  if (v.hot_level === '🚀 现象级') hotClass = 'hot-purple';
+  else if (v.hot_level === '🎯 百万爆款') hotClass = 'hot-red';
+
+  const badges = [];
+  if (v.hot_level) {
+    let cls = 'b-green';
+    if (v.hot_level === '🚀 现象级') cls = 'b-purple';
+    else if (v.hot_level === '🎯 百万爆款') cls = 'b-red';
+    else if (v.hot_level === '💥 强爆款') cls = 'b-yellow';
+    badges.push(`<div class="badge ${cls}">${v.hot_level}</div>`);
+  }
+  if (v.view_to_sub_tier === '频道爆款') badges.push(`<div class="badge b-yellow">⭐ 频道爆款 ${v.view_to_sub_ratio}%</div>`);
+
+  let viewClass = 'views';
+  if (v.view_count >= 5e6) viewClass += ' hot-purple-text';
+  else if (v.view_count >= 1e6) viewClass += ' hot-red-text';
+
+  const erClass = v.engagement_rate >= 5 ? 'er high' : 'er';
+  const ctags = (v.content_tags || []).filter(t => t !== '其他').map(t => `<span class="ctag">${t}</span>`).join('');
+  const btags = (v.brand_mentions || []).map(b => `<span class="btag">${b}</span>`).join('');
+
+  return `
+    <div class="card ${hotClass}">
+      <div class="thumb-wrap">
+        <a href="${v.video_url}" target="_blank" rel="noopener">
+          <img src="${v.thumbnail_url}" alt="" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/${v.video_id}/hqdefault.jpg'">
+        </a>
+        <div class="badges">${badges.join('')}</div>
+        <div class="duration">${v.duration || ''}</div>
+      </div>
+      <div class="body">
+        <a class="title" href="${v.video_url}" target="_blank" rel="noopener" title="${escHTML(v.title)}">${escHTML(v.title)}</a>
+        <div class="channel">
+          <span>${escHTML(v.channel_name)}</span>
+          <span class="grp">${groupLabel}</span>
+          ${v.video_type && v.video_type !== '其他' ? `<span class="vtype">${v.video_type}</span>` : ''}
+          <span class="grp">${v.video_length_type}</span>
+        </div>
+        ${ctags || btags ? `<div class="tag-row">${ctags}${btags}</div>` : ''}
+        <div class="stats-row">
+          <span class="${viewClass}">▶ ${fmt(v.view_count)}</span>
+          <span class="${erClass}">ER ${v.engagement_rate}%</span>
+          <span>👍 ${fmt(v.like_count)}</span>
+          <span>💬 ${fmt(v.comment_count)}</span>
+          <span>📅 ${fmtDate(v.published_at)}</span>
+        </div>
+      </div>
+    </div>`;
+}
+
+function applyFilters(videos) {
+  return videos.filter(v => {
+    if (!withinTime(v.published_at, state.time)) return false;
+    if (state.groups.length && !state.groups.includes(v.channel_group)) return false;
+    if (state.contents.length) {
+      const tags = v.content_tags || [];
+      if (!state.contents.some(c => tags.includes(c))) return false;
+    }
+    if (state.lengths.length && !state.lengths.includes(v.video_length_type)) return false;
+    if (state.hots.length && !state.hots.includes(v.hot_level)) return false;
+    if (state.vtypes.length && !state.vtypes.includes(v.video_type)) return false;
+    return true;
+  });
+}
+
+function applySort(videos) {
+  const sorted = videos.slice();
+  if (state.sort === 'er') sorted.sort((a,b) => (b.engagement_rate||0) - (a.engagement_rate||0));
+  else if (state.sort === 'views') sorted.sort((a,b) => (b.view_count||0) - (a.view_count||0));
+  else if (state.sort === 'comment_rate') sorted.sort((a,b) => (b.comment_rate||0) - (a.comment_rate||0));
+  else if (state.sort === 'recent') sorted.sort((a,b) => new Date(b.published_at) - new Date(a.published_at));
+  return sorted;
+}
+
+function render() {
+  if (!DATA) return;
+  const filtered = applyFilters(DATA.videos);
+  const sorted = applySort(filtered);
+  renderStatBar(filtered);
+  const grid = document.getElementById('grid');
+  if (sorted.length === 0) {
+    grid.innerHTML = '<div class="empty">没有符合筛选条件的视频</div>';
+    return;
+  }
+  grid.innerHTML = sorted.map(renderCard).join('');
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3500);
+}
+
+async function fetchData() {
+  const r = await fetch('data/channels_data.json?t=' + Date.now(), { cache: 'no-store' });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return await r.json();
+}
+
+function updateMeta() {
+  document.getElementById('gen-at').textContent = DATA.generated_at;
+  document.getElementById('gen-ago').textContent = fmtAgo(DATA.generated_at);
+  document.getElementById('ch-count').textContent = DATA.channel_count;
+  document.getElementById('vid-count').textContent = DATA.video_count;
+}
+
+async function init() {
+  // 1) 时间筛选 click
+  document.querySelectorAll('[data-time]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.time = btn.dataset.time;
+      saveState(); refreshChips(); render();
+    });
+  });
+  // 2) 各多选 row
+  renderMultiChips('group-filters',   Object.entries(CFG.group_labels).map(([v,l]) => ({value: v, label: l})), 'groups');
+  renderMultiChips('content-filters', CFG.content_tags_order, 'contents');
+  renderMultiChips('length-filters',  CFG.length_order,       'lengths');
+  renderMultiChips('hot-filters',     CFG.hot_level_order,    'hots');
+  renderMultiChips('vtype-filters',   CFG.video_type_order,   'vtypes');
+  // 3) 排序
+  const sel = document.getElementById('sort-select');
+  sel.value = state.sort;
+  sel.addEventListener('change', e => { state.sort = e.target.value; saveState(); render(); });
+  // 4) 清空
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    state = defaultState(); saveState(); refreshChips(); document.getElementById('sort-select').value = state.sort; render();
+  });
+  refreshChips();
+
+  try {
+    DATA = await fetchData();
+    updateMeta();
+    render();
+  } catch (e) {
+    document.getElementById('grid').innerHTML =
+      '<div class="empty">❌ 加载数据失败: ' + e.message +
+      '<br>请用 <code>http://localhost:8765/dashboard.html</code> 打开</div>';
+    return;
+  }
+  setInterval(checkUpdate, POLL_INTERVAL_MS);
+  setInterval(() => { if (DATA) document.getElementById('gen-ago').textContent = fmtAgo(DATA.generated_at); }, 30000);
+}
+
+async function checkUpdate() {
+  try {
+    const newData = await fetchData();
+    if (newData.generated_at !== DATA.generated_at) {
+      const oldVid = DATA.video_count;
+      DATA = newData;
+      updateMeta(); render();
+      const delta = DATA.video_count - oldVid;
+      showToast('🔄 数据已更新 (' + DATA.video_count + ' 条' + (delta ? ', 变化 ' + (delta > 0 ? '+' : '') + delta : '') + ')');
+    }
+  } catch (e) { console.warn('轮询失败:', e.message); }
+}
+
+init();
+</script>
+</body>
+</html>
