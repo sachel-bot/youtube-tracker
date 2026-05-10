@@ -155,7 +155,7 @@ def calc_hot_level(views, er, published_iso, now_ms):
     if views >= 5_000_000:
         return "🚀 现象级"
     if views >= 1_000_000 and age_h <= 30 * 24:
-        return "🎯 百万爆款"
+        return "⭐ 百万爆款"
     if views >= 500_000 and age_h <= 7 * 24 and er >= 5:
         return "💥 强爆款"
     if views >= 100_000 and age_h <= 24 and er >= 5:

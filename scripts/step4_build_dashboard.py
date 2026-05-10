@@ -1,31 +1,56 @@
 """
-Step 4 (V2): 生成 dashboard.html
-特性: fetch JSON / 7 筛选器（含多选）/ 默认 ER 排序 / 完整版统计
+Step 4 (V3): 生成 dashboard.html · Apple-Inspired
+- 浅色主题 #F5F5F7 / #FFFFFF / #1D1D1F
+- SF 字体 + SF Mono 数字
+- 8 个自定义下拉筛选器（多选 / 单选 / 频道两层树）
+- Tabs: 首页 / 收藏 / 品牌对比 / 历史趋势
+- 收藏 ⭐ + 隐藏 + CSV 导出
+- 移动端：底部 sticky bar + 抽屉筛选
 """
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+LIST_FILE = ROOT / "data" / "channels_list.json"
+DATA_FILE = ROOT / "data" / "channels_data.json"
 OUT_FILE = ROOT / "dashboard.html"
 
 GROUP_LABELS = {
-    "A_brand":          "A 竞品+自家",
+    "A_brand":          "A 竞品 + 自家",
     "B_ipad_vertical":  "B iPad 垂直/媒体",
     "C_top_tech":       "C 头部数码",
-    "D_real_use":       "D 真实使用",
+    "D_real_use":       "D iPad 真实使用",
     "E_lifestyle":      "E Lifestyle",
     "F_3c_brand":       "F 3C 品牌学习",
 }
-
+SELF_BRAND = "Typecase"
+BRAND_COMPARE_DEFAULT = ["Typecase", "Apple", "Logitech", "ESR Gear"]
 CONTENT_TAGS_ORDER = ["iPad配件相关", "创作", "学生", "商务", "其他Apple", "其他"]
 LENGTH_ORDER       = ["Shorts", "Short", "Medium", "Long"]
-HOT_LEVEL_ORDER    = ["🔥 上升爆款", "💥 强爆款", "🎯 百万爆款", "🚀 现象级"]
+HOT_LEVEL_ORDER    = ["🔥 上升爆款", "💥 强爆款", "⭐ 百万爆款", "🚀 现象级"]
 VIDEO_TYPE_ORDER   = ["评测", "开箱", "对比", "装机", "教学", "vlog", "其他"]
 
 
 def main():
+    list_data = json.loads(LIST_FILE.read_text())
+    channels_meta = list_data["channels"]
+    # 提供给前端的频道树 (group -> [channel meta])
+    tree = {}
+    for c in channels_meta:
+        tree.setdefault(c["group"], []).append({
+            "display_name": c["display_name"],
+            "subscriber_count": c["subscriber_count"],
+            "is_self": c["display_name"] == SELF_BRAND,
+        })
+    # 按订阅数倒序
+    for k in tree:
+        tree[k].sort(key=lambda x: -x["subscriber_count"])
+
     cfg = {
         "group_labels":       GROUP_LABELS,
+        "channel_tree":       tree,
+        "self_brand":         SELF_BRAND,
+        "brand_compare_default": BRAND_COMPARE_DEFAULT,
         "content_tags_order": CONTENT_TAGS_ORDER,
         "length_order":       LENGTH_ORDER,
         "hot_level_order":    HOT_LEVEL_ORDER,
@@ -38,246 +63,443 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Cache-Control" content="no-store">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="YT Tracker">
 <title>YouTube 北美 iPad 配件内容情报</title>
 <style>
   :root {
-    --bg: #0e1116;
-    --card: #161b22;
-    --card-hover: #1f2731;
-    --border: #2a313c;
-    --text: #e6edf3;
-    --muted: #8b949e;
-    --accent: #58a6ff;
-    --hot-red: #ff4d4f;
-    --hot-orange: #ffa940;
-    --hot-yellow: #fadb14;
-    --hot-purple: #b87cff;
-    --hot-green: #3fb950;
-    --ok: #3fb950;
+    --bg: #F5F5F7;
+    --card: #FFFFFF;
+    --hover: #FAFAFA;
+    --text: #1D1D1F;
+    --muted: #6E6E73;
+    --border: #D2D2D7;
+    --border-light: #E5E5EA;
+    --accent: #0066CC;
+    --accent-bg: #E8F2FF;
+    --red: #FF3B30;
+    --red-bg: #FFE5E2;
+    --green: #34C759;
+    --green-bg: #E8F8EC;
+    --orange: #FF9500;
+    --orange-bg: #FFF4E5;
+    --yellow: #FFCC00;
+    --purple: #5E5CE6;
+    --purple-bg: #F0EFFF;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 0 0 0.5px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 0 0 0.5px rgba(0,0,0,0.04);
+    --shadow-lg: 0 10px 30px rgba(0,0,0,0.10);
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --font-mono: "SF Mono", ui-monospace, SFMono-Regular, "Menlo", monospace;
   }
   * { box-sizing: border-box; }
-  html, body { background: var(--bg); color: var(--text); margin: 0; padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; }
-  header { position: sticky; top: 0; z-index: 10;
-    background: rgba(14,17,22,0.96); backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border); padding: 16px 24px 12px; }
-  h1 { margin: 0 0 2px; font-size: 20px; font-weight: 700; }
-  .subtitle { color: var(--muted); font-size: 12.5px; margin-bottom: 10px; }
-  .meta-row { color: var(--muted); font-size: 11.5px; margin-bottom: 10px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-  .meta-row b { color: var(--text); }
-  .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
-    background: var(--ok); margin-right: 5px; vertical-align: middle; animation: pulse 2s infinite; }
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--font-sans); font-size: 15px; line-height: 1.5;
+    -webkit-tap-highlight-color: transparent; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; font-size: inherit; }
+
+  /* ========== Header ========== */
+  header {
+    background: rgba(245,245,247,0.9);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 0.5px solid var(--border-light);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 16px 28px; }
+  .hero h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+  .hero .subtitle { color: var(--muted); font-size: 13px; margin-top: 3px; font-weight: 500; }
+  .meta-line { color: var(--muted); font-size: 11.5px; margin-top: 4px; }
+  .meta-line .live { display: inline-flex; align-items: center; gap: 4px; }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green);
+    display: inline-block; animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
-  .stat-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 8px 0;
-    border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); margin-bottom: 10px; font-size: 11.5px; color: var(--muted); }
-  .stat-block { display: flex; gap: 6px; align-items: baseline; }
-  .stat-label { color: var(--muted); font-size: 10.5px; padding: 1px 6px; border-radius: 3px; background: var(--card); }
-  .stat-block b { color: var(--text); font-size: 13px; }
-  .stat-block .hot-purple { color: var(--hot-purple); font-weight: 700; }
-  .stat-block .hot-red { color: var(--hot-red); font-weight: 700; }
-  .stat-block .hot-yellow { color: var(--hot-yellow); font-weight: 700; }
-  .stat-block .hot-green { color: var(--hot-green); font-weight: 700; }
+  /* ========== Tabs ========== */
+  .tabs { display: flex; gap: 4px; margin-top: 14px; flex-wrap: wrap; }
+  .tab { padding: 7px 14px; border-radius: 9px; cursor: pointer; font-size: 13px;
+    color: var(--muted); background: transparent; border: none; font-weight: 500;
+    transition: all 0.15s ease; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; }
+  .tab:hover { color: var(--text); background: rgba(0,0,0,0.04); }
+  .tab.active { background: var(--text); color: var(--card); font-weight: 600; }
+  .tab-badge { background: var(--accent); color: white; font-size: 10.5px; font-weight: 700;
+    padding: 1px 7px; border-radius: 9px; min-width: 18px; text-align: center; }
+  .tab.active .tab-badge { background: var(--card); color: var(--text); }
 
-  .filters { display: flex; flex-direction: column; gap: 7px; }
-  .filter-row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-  .filter-row .label { color: var(--muted); font-size: 11px; min-width: 64px; padding-top: 4px; }
-  .chip { padding: 4px 11px; border-radius: 12px;
-    border: 1px solid var(--border); background: var(--card); color: var(--text);
-    cursor: pointer; font-size: 11.5px; transition: all .12s; user-select: none; line-height: 1.4; }
-  .chip:hover { background: var(--card-hover); border-color: var(--accent); }
-  .chip.active { background: var(--accent); color: #0e1116; border-color: var(--accent); font-weight: 600; }
-  .chip.brand-chip.active { background: var(--hot-orange); color: #0e1116; border-color: var(--hot-orange); }
-  .sort-select { background: var(--card); color: var(--text); border: 1px solid var(--border);
-    border-radius: 6px; padding: 4px 8px; font-size: 11.5px; }
-  .clear-btn { padding: 4px 10px; border-radius: 12px; border: 1px solid var(--hot-red); background: transparent; color: var(--hot-red); cursor: pointer; font-size: 11px; }
-  .clear-btn:hover { background: rgba(255,77,79,0.1); }
+  /* ========== Stats ========== */
+  .stats-bar { display: flex; flex-wrap: wrap; gap: 16px 28px; padding: 14px 0;
+    border-top: 0.5px solid var(--border-light); margin-top: 12px; align-items: flex-end; }
+  .stat-cell { display: flex; flex-direction: column; gap: 2px; }
+  .stat-cell .label { font-size: 11px; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+  .stat-cell .big { font-size: 28px; font-weight: 600; color: var(--text); line-height: 1.1;
+    font-family: var(--font-mono); letter-spacing: -0.02em; }
+  .stat-cell .big.green { color: var(--green); }
+  .stat-cell .big.orange { color: var(--orange); }
+  .stat-cell .big.red { color: var(--red); }
+  .stat-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pill { padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 4px; }
+  .pill.rising { background: var(--red-bg); color: var(--red); }
+  .pill.strong { background: var(--orange-bg); color: var(--orange); }
+  .pill.million { background: var(--red-bg); color: var(--red); }
+  .pill.phenom { background: var(--purple-bg); color: var(--purple); }
+  .pill.tag-iPad { background: var(--red-bg); color: #C32921; }
+  .pill.tag-creation { background: var(--purple-bg); color: #4A4ACE; }
+  .pill.tag-student { background: var(--accent-bg); color: var(--accent); }
+  .pill.tag-business { background: var(--green-bg); color: #2A8E45; }
+  .pill.tag-apple { background: #F2F2F4; color: #4A4A52; }
+  .stats-toggle { background: transparent; border: 0.5px solid var(--border); padding: 4px 12px;
+    border-radius: 14px; font-size: 12px; color: var(--muted); cursor: pointer; }
+  .stats-toggle:hover { color: var(--text); }
+  .stats-row { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 12px; color: var(--muted); }
 
-  main { padding: 18px 24px 60px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 16px; }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-    overflow: hidden; transition: transform .15s, border-color .15s; display: flex; flex-direction: column; }
-  .card:hover { transform: translateY(-2px); border-color: var(--accent); }
-  .card.hot-purple { border-color: var(--hot-purple); }
-  .card.hot-red { border-color: var(--hot-red); }
+  /* ========== Filters ========== */
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 0 4px; }
+  .selected-bar { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0 8px; align-items: center; }
+  .selected-bar .label { font-size: 11px; color: var(--muted); margin-right: 4px; }
+  .chip { padding: 4px 10px; border-radius: 12px; font-size: 12px;
+    display: inline-flex; align-items: center; gap: 5px; background: var(--card);
+    border: 0.5px solid var(--border); color: var(--text); }
+  .chip-x { cursor: pointer; opacity: 0.5; padding: 0 2px; font-size: 11px; }
+  .chip-x:hover { opacity: 1; color: var(--red); }
+  .chip-clear { background: transparent; border: 0.5px solid var(--red); color: var(--red);
+    cursor: pointer; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+
+  /* ========== Custom Dropdown ========== */
+  .dd { position: relative; display: inline-block; }
+  .dd-btn { padding: 7px 12px; border: 0.5px solid var(--border); border-radius: 8px;
+    background: var(--card); cursor: pointer; font-size: 13px; color: var(--text);
+    display: inline-flex; align-items: center; gap: 6px; transition: all 0.15s; min-height: 34px; }
+  .dd-btn:hover { border-color: var(--text); }
+  .dd.open .dd-btn { border-color: var(--accent); }
+  .dd-btn .count { color: var(--accent); font-weight: 600; }
+  .dd-btn .arrow { color: var(--muted); font-size: 10px; }
+  .dd-panel { display: none; position: absolute; top: calc(100% + 4px); left: 0;
+    background: var(--card); border: 0.5px solid var(--border); border-radius: 12px;
+    box-shadow: var(--shadow-lg); z-index: 1000; min-width: 240px; max-height: 420px;
+    overflow: auto; padding: 6px; }
+  .dd.open .dd-panel { display: block; }
+  .dd.right .dd-panel { left: auto; right: 0; }
+  .dd-item { padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 13px;
+    display: flex; align-items: center; gap: 8px; user-select: none; min-height: 34px; }
+  .dd-item:hover { background: var(--hover); }
+  .dd-item .check { width: 16px; height: 16px; border-radius: 4px; border: 1.5px solid var(--border);
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.1s; }
+  .dd-item.checked .check { background: var(--accent); border-color: var(--accent); }
+  .dd-item.checked .check::after { content: "✓"; color: white; font-size: 11px; font-weight: 700; line-height: 1; }
+  .dd-item .arrow-r { margin-left: auto; color: var(--muted); font-size: 11px; transition: transform 0.15s; }
+  .dd-item.exp .arrow-r { transform: rotate(90deg); }
+  .dd-children { padding-left: 22px; padding-bottom: 4px; }
+  .dd-child { padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 12.5px;
+    display: flex; align-items: center; gap: 8px; min-height: 32px; }
+  .dd-child:hover { background: var(--hover); }
+  .dd-child .check { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid var(--border);
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+  .dd-child.checked .check { background: var(--accent); border-color: var(--accent); }
+  .dd-child.checked .check::after { content: "✓"; color: white; font-size: 9px; font-weight: 700; }
+  .dd-child .self { background: var(--accent); color: white; padding: 1px 6px;
+    border-radius: 4px; font-size: 10px; font-weight: 600; margin-left: 4px; }
+  .dd-child .subs { margin-left: auto; font-size: 11px; color: var(--muted); font-family: var(--font-mono); }
+  .dd-toolbar { display: flex; gap: 4px; padding: 4px; border-bottom: 0.5px solid var(--border-light);
+    margin-bottom: 4px; }
+  .dd-btn-toolbar { padding: 4px 10px; font-size: 11px; border: none; background: transparent;
+    color: var(--accent); cursor: pointer; border-radius: 6px; }
+  .dd-btn-toolbar:hover { background: var(--accent-bg); }
+
+  /* sort + actions */
+  .sort-select { padding: 7px 10px; border: 0.5px solid var(--border); border-radius: 8px;
+    background: var(--card); color: var(--text); font-size: 13px; min-height: 34px; cursor: pointer; }
+  .btn { padding: 7px 14px; border: 0.5px solid var(--border); border-radius: 8px;
+    background: var(--card); color: var(--text); font-size: 13px; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 6px; min-height: 34px; transition: all 0.15s; }
+  .btn:hover { background: var(--hover); }
+  .btn-primary { background: var(--accent); color: white; border-color: var(--accent); }
+  .btn-primary:hover { background: #0055AA; }
+
+  /* ========== Main / Grid ========== */
+  main { max-width: 1400px; margin: 0 auto; padding: 24px 28px 80px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 20px; }
+  .empty { text-align: center; color: var(--muted); padding: 80px 0; font-size: 14px; grid-column: 1/-1; }
+
+  /* ========== Video Card ========== */
+  .video-card { background: var(--card); border-radius: 16px; overflow: hidden;
+    box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
+    transition: all 0.2s ease; position: relative; }
+  .video-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .video-card.hot-million { box-shadow: 0 0 0 1px var(--red), var(--shadow-sm); }
+  .video-card.hot-phenom { box-shadow: 0 0 0 1px var(--purple), var(--shadow-sm); }
   .thumb-wrap { position: relative; aspect-ratio: 16/9; background: #000; }
   .thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .duration { position: absolute; right: 6px; bottom: 6px;
-    background: rgba(0,0,0,0.85); color: #fff;
-    padding: 2px 6px; border-radius: 3px; font-size: 11px; font-weight: 500; }
-  .badges { position: absolute; left: 8px; top: 8px; display: flex; flex-direction: column; gap: 4px; }
-  .badge { padding: 3px 7px; border-radius: 4px; font-size: 10.5px; font-weight: 700; color: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
-  .b-purple { background: var(--hot-purple); }
-  .b-red { background: var(--hot-red); }
-  .b-yellow { background: #fadb14; color: #0e1116; }
-  .b-green { background: var(--hot-green); }
-  .body { padding: 11px 13px 12px; flex: 1; display: flex; flex-direction: column; }
-  .title { color: var(--text); text-decoration: none; font-size: 13.5px;
-    line-height: 1.4; font-weight: 600;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-    overflow: hidden; margin-bottom: 7px; min-height: 38px; }
-  .title:hover { color: var(--accent); }
-  .channel { color: var(--muted); font-size: 11.5px; margin-bottom: 6px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
-  .channel .grp { padding: 1px 6px; border-radius: 3px; background: var(--bg); font-size: 10px; color: var(--muted); }
-  .channel .vtype { padding: 1px 6px; border-radius: 3px; background: var(--bg); font-size: 10px; color: var(--accent); }
-  .tag-row { font-size: 10.5px; color: var(--muted); margin-bottom: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
-  .tag-row .ctag { padding: 1px 6px; border-radius: 3px; background: rgba(88,166,255,0.12); color: #b6d4f7; }
-  .tag-row .btag { padding: 1px 6px; border-radius: 3px; background: rgba(255,169,64,0.15); color: var(--hot-orange); font-weight: 600; }
-  .stats-row { color: var(--muted); font-size: 11px; display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; border-top: 1px dashed var(--border); }
-  .stats-row .views { color: var(--text); font-weight: 600; }
-  .stats-row .er { color: var(--hot-orange); font-weight: 600; }
-  .stats-row .er.high { color: var(--hot-green); }
-  .views.hot-red-text { color: var(--hot-red); }
-  .views.hot-purple-text { color: var(--hot-purple); }
-  .empty { text-align: center; color: var(--muted); padding: 60px 0; font-size: 14px; grid-column: 1 / -1; }
-  .toast { position: fixed; right: 24px; bottom: 24px; z-index: 100;
-    background: var(--ok); color: #0e1116;
-    padding: 12px 18px; border-radius: 8px; font-size: 13px; font-weight: 600;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-    transform: translateY(80px); opacity: 0; transition: all .3s; }
+  .duration { position: absolute; right: 8px; bottom: 8px; background: rgba(0,0,0,0.85);
+    color: white; padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 600;
+    font-family: var(--font-mono); }
+  .badges { position: absolute; left: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; }
+  .hot-chip { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px;
+    border-radius: 10px; font-size: 11px; font-weight: 600;
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .hot-chip.rising { background: rgba(255,229,226,0.95); color: var(--red); }
+  .hot-chip.strong { background: rgba(255,244,229,0.95); color: var(--orange); }
+  .hot-chip.million { background: rgba(255,229,226,0.95); color: var(--red); }
+  .hot-chip.phenom { background: rgba(240,239,255,0.95); color: var(--purple); }
+
+  .fav-btn { position: absolute; top: 10px; right: 10px; z-index: 2;
+    width: 38px; height: 38px; min-width: 38px; min-height: 38px; border-radius: 19px;
+    background: rgba(255,255,255,0.95); border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm);
+    color: var(--muted); transition: all 0.15s; }
+  .fav-btn:hover { color: var(--yellow); transform: scale(1.06); }
+  .fav-btn.active { color: var(--yellow); background: rgba(255,204,0,0.15); }
+  .hide-btn { position: absolute; top: 10px; right: 56px; z-index: 2;
+    width: 32px; height: 32px; min-width: 32px; min-height: 32px; border-radius: 16px;
+    background: rgba(255,255,255,0.92); border: none; cursor: pointer; color: var(--muted);
+    box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: center;
+    font-size: 14px; opacity: 0; transition: opacity 0.15s; }
+  .video-card:hover .hide-btn { opacity: 1; }
+
+  .card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .card-row1 { display: flex; align-items: center; gap: 6px; font-size: 12px;
+    color: var(--muted); flex-wrap: wrap; }
+  .card-row1 .channel-name { color: var(--text); font-weight: 500; }
+  .card-row1 .grp { padding: 1px 7px; border-radius: 5px; background: var(--hover);
+    font-size: 10.5px; font-weight: 500; }
+  .card-row1 .self { padding: 1px 7px; border-radius: 5px; background: var(--accent);
+    color: white; font-size: 10.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 3px; }
+  .card-title { color: var(--text); font-size: 16px; font-weight: 600; line-height: 1.4;
+    -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden;
+    min-height: 44px; letter-spacing: -0.01em; }
+  .card-title:hover { color: var(--accent); }
+
+  .card-stats { display: flex; gap: 14px; align-items: center; font-size: 13px;
+    color: var(--muted); padding-top: 8px; border-top: 0.5px solid var(--border-light); }
+  .card-stats .item { display: inline-flex; align-items: center; gap: 5px; }
+  .card-stats .num { color: var(--text); font-family: var(--font-mono); font-weight: 500;
+    font-size: 13px; letter-spacing: -0.01em; }
+  .card-stats .num.big { color: var(--text); font-weight: 600; font-size: 14px; }
+  .card-stats .num.million-fg { color: var(--red); }
+  .card-stats .num.phenom-fg { color: var(--purple); }
+
+  .card-er { display: flex; align-items: baseline; gap: 8px; }
+  .card-er .num { font-size: 26px; font-weight: 600; font-family: var(--font-mono); line-height: 1;
+    letter-spacing: -0.02em; }
+  .card-er .num.high { color: var(--green); }
+  .card-er .num.mid { color: var(--orange); }
+  .card-er .num.low { color: var(--muted); }
+  .card-er .er-label { font-size: 11px; color: var(--muted); font-weight: 500; }
+  .card-er .extra { margin-left: auto; font-size: 12px; color: var(--muted);
+    display: flex; gap: 10px; font-family: var(--font-mono); }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag-c { padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 500; }
+  .tag-c.iPad { background: var(--red-bg); color: #C32921; }
+  .tag-c.create { background: var(--purple-bg); color: #4A4ACE; }
+  .tag-c.student { background: var(--accent-bg); color: var(--accent); }
+  .tag-c.business { background: var(--green-bg); color: #2A8E45; }
+  .tag-c.apple { background: #F2F2F4; color: #4A4A52; }
+  .tag-c.brand { background: var(--orange-bg); color: #B36A00; font-weight: 600; }
+  .tag-c.vtype { background: #F2F2F4; color: var(--muted); }
+
+  /* ========== Brand Compare ========== */
+  .brand-table { background: var(--card); border-radius: 16px; box-shadow: var(--shadow-sm);
+    padding: 24px; overflow-x: auto; margin-bottom: 24px; }
+  .brand-table h3 { margin: 0 0 16px; font-size: 17px; font-weight: 600; }
+  .brand-table table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .brand-table th { text-align: left; padding: 10px 14px; color: var(--muted);
+    font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
+    border-bottom: 0.5px solid var(--border); }
+  .brand-table td { padding: 14px; border-bottom: 0.5px solid var(--border-light);
+    font-family: var(--font-mono); font-size: 14px; vertical-align: middle; }
+  .brand-table td.name { font-family: var(--font-sans); font-weight: 600; font-size: 14px; }
+  .brand-table tr:last-child td { border-bottom: none; }
+  .bar { height: 8px; background: var(--border-light); border-radius: 4px; overflow: hidden;
+    min-width: 100px; max-width: 240px; display: inline-block; vertical-align: middle; margin-left: 8px; }
+  .bar > span { display: block; height: 100%; background: var(--accent); transition: width 0.3s; }
+  .bar > span.self { background: var(--accent); }
+  .compare-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin-bottom: 24px; }
+  .ccard { background: var(--card); border-radius: 12px; padding: 14px; box-shadow: var(--shadow-sm); }
+  .ccard h4 { margin: 0 0 8px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+  .ccard .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ccard .grid2 > div { font-size: 11px; color: var(--muted); }
+  .ccard .grid2 > div b { display: block; font-family: var(--font-mono); font-size: 16px; color: var(--text); font-weight: 600; }
+
+  /* ========== History ========== */
+  .history-card { background: var(--card); border-radius: 16px; padding: 24px;
+    box-shadow: var(--shadow-sm); }
+  .history-card h3 { margin: 0 0 12px; font-size: 17px; font-weight: 600; }
+  .history-empty { padding: 40px 0; text-align: center; color: var(--muted); }
+  .history-empty .big { font-size: 16px; color: var(--text); margin-bottom: 8px; font-weight: 500; }
+  .progress { height: 6px; background: var(--border-light); border-radius: 3px; overflow: hidden;
+    max-width: 300px; margin: 12px auto; }
+  .progress > span { display: block; height: 100%; background: var(--accent); }
+
+  /* ========== Favorites ========== */
+  .fav-actions { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+
+  /* ========== Mobile ========== */
+  .mobile-bar { display: none; }
+  .mobile-drawer { display: none; }
+  .mobile-overlay { display: none; }
+
+  @media (max-width: 768px) {
+    .container { padding: 14px 16px; }
+    main { padding: 16px 16px 100px; }
+    .hero h1 { font-size: 18px; }
+    .hero .subtitle { font-size: 12px; }
+    .filter-bar.desktop { display: none; }
+    .filter-bar.mobile-summary { display: flex; }
+    .stats-bar { gap: 12px 18px; padding: 10px 0; }
+    .stat-cell .big { font-size: 22px; }
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+    .video-card { border-radius: 14px; }
+    .card-title { font-size: 15px; min-height: 40px; }
+    .card-er .num { font-size: 22px; }
+    .card-stats { gap: 10px; }
+    .selected-bar { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px; }
+    .selected-bar::-webkit-scrollbar { display: none; }
+    .selected-bar .chip { flex-shrink: 0; }
+    .compare-cards { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+
+    .mobile-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.96); backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-top: 0.5px solid var(--border); padding: 8px 12px;
+      padding-bottom: calc(8px + env(safe-area-inset-bottom));
+      z-index: 99; gap: 8px; }
+    .mobile-bar .btn { flex: 1; min-height: 44px; justify-content: center; font-weight: 500; }
+    .mobile-bar .btn .count-badge { background: var(--accent); color: white; padding: 1px 6px;
+      border-radius: 9px; font-size: 10px; font-weight: 700; margin-left: 4px; }
+    .mobile-bar .btn.primary { background: var(--accent); color: white; border-color: var(--accent); }
+
+    .mobile-overlay { display: block; position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+      z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+    .mobile-overlay.show { opacity: 1; pointer-events: auto; }
+    .mobile-drawer { display: flex; flex-direction: column; position: fixed;
+      bottom: 0; left: 0; right: 0; max-height: 82vh;
+      background: var(--card); border-radius: 16px 16px 0 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
+      transform: translateY(100%); transition: transform 0.3s ease; z-index: 201;
+      padding-bottom: env(safe-area-inset-bottom); }
+    .mobile-drawer.show { transform: translateY(0); }
+    .mobile-drawer .handle { padding: 12px; text-align: center; flex-shrink: 0; }
+    .mobile-drawer .handle::before { content: ''; display: inline-block; width: 36px; height: 4px;
+      border-radius: 2px; background: var(--border); }
+    .mobile-drawer-title { padding: 0 20px; font-size: 17px; font-weight: 700; flex-shrink: 0; }
+    .mobile-drawer-content { flex: 1; overflow-y: auto; padding: 16px 20px; }
+    .mobile-drawer-content .label { font-size: 11px; color: var(--muted); margin: 12px 0 6px;
+      text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
+    .mobile-drawer-content .label:first-child { margin-top: 0; }
+    .mobile-drawer-content .dd { width: 100%; }
+    .mobile-drawer-content .dd-btn { width: 100%; justify-content: space-between; min-height: 44px; }
+    .mobile-drawer-content .dd.open .dd-panel { position: static; box-shadow: none;
+      border: 0.5px solid var(--border-light); margin-top: 6px; max-height: 280px; }
+    .mobile-drawer-actions { padding: 12px 16px; border-top: 0.5px solid var(--border-light);
+      display: flex; gap: 8px; flex-shrink: 0; background: var(--card); }
+    .mobile-drawer-actions .btn { flex: 1; min-height: 46px; font-weight: 600; justify-content: center; }
+  }
+
+  /* toast */
+  .toast { position: fixed; right: 20px; bottom: 80px; z-index: 300;
+    background: var(--text); color: var(--card); padding: 12px 18px; border-radius: 12px;
+    font-size: 13px; font-weight: 500; box-shadow: var(--shadow-lg);
+    transform: translateY(80px); opacity: 0; transition: all 0.25s; }
   .toast.show { transform: translateY(0); opacity: 1; }
+  @media (max-width: 768px) { .toast { right: 16px; left: 16px; bottom: 80px; text-align: center; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>📺 YouTube 北美 iPad 配件内容情报</h1>
-  <div class="subtitle">Typecase + 竞品 + 类目监控 · 跨战役复用</div>
+  <div class="container">
+    <div class="hero">
+      <h1>📺 YouTube 北美 iPad 配件内容情报</h1>
+      <div class="subtitle">Typecase + 竞品 + 类目监控 · 跨战役复用</div>
+      <div class="meta-line">
+        <span class="live"><span class="live-dot"></span>自动刷新已开</span> ·
+        数据版本 <b id="gen-at">—</b> <span id="gen-ago"></span> ·
+        频道 <b id="ch-count">—</b> · 视频 <b id="vid-count">—</b>
+      </div>
+    </div>
 
-  <div class="meta-row">
-    <span><span class="live-dot"></span>自动刷新已开</span>
-    <span>数据版本: <b id="gen-at">加载中...</b> <span id="gen-ago"></span></span>
-    <span>频道: <b id="ch-count">—</b></span>
-    <span>视频: <b id="vid-count">—</b></span>
-  </div>
+    <nav class="tabs" id="tabs"></nav>
 
-  <div class="stat-bar" id="stat-bar"></div>
+    <div id="stats" class="stats-bar"></div>
 
-  <div class="filters">
-    <div class="filter-row">
-      <span class="label">时间窗口</span>
-      <button class="chip active" data-time="all">全部</button>
-      <button class="chip" data-time="1">近 24h</button>
-      <button class="chip" data-time="7">近 7 天</button>
-      <button class="chip" data-time="30">近 30 天</button>
-      <button class="chip" data-time="90">近 90 天</button>
+    <div class="filter-bar desktop" id="desktop-filters"></div>
+    <div class="filter-bar mobile-summary" style="display:none">
+      <button class="btn" id="mobile-sort-btn"><span id="mobile-sort-label">ER↓</span></button>
     </div>
-    <div class="filter-row" id="group-filters">
-      <span class="label">频道分组</span>
-    </div>
-    <div class="filter-row" id="content-filters">
-      <span class="label">内容类型</span>
-    </div>
-    <div class="filter-row" id="length-filters">
-      <span class="label">视频时长</span>
-    </div>
-    <div class="filter-row" id="hot-filters">
-      <span class="label">爆款等级</span>
-    </div>
-    <div class="filter-row" id="vtype-filters">
-      <span class="label">视频类型</span>
-    </div>
-    <div class="filter-row">
-      <span class="label">排序</span>
-      <select class="sort-select" id="sort-select">
-        <option value="er">ER↓ (默认)</option>
-        <option value="views">播放量↓</option>
-        <option value="comment_rate">评论率↓</option>
-        <option value="recent">发布时间↓</option>
-      </select>
-      <button class="clear-btn" id="clear-btn">清空筛选</button>
-    </div>
+
+    <div class="selected-bar" id="selected-chips"></div>
   </div>
 </header>
+
 <main>
-  <div class="grid" id="grid"><div class="empty">加载中...</div></div>
+  <div id="view-home"></div>
+  <div id="view-favorites" style="display:none"></div>
+  <div id="view-brand" style="display:none"></div>
+  <div id="view-history" style="display:none"></div>
 </main>
+
+<!-- Mobile bottom bar -->
+<div class="mobile-bar">
+  <button class="btn" id="mb-filter">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+    筛选 <span class="count-badge" id="mb-filter-count" style="display:none">0</span>
+  </button>
+  <button class="btn" id="mb-sort">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h13M3 12h9M3 18h5M17 8l4-4-4-4M17 16l4 4 4-4" transform="translate(-4)"/></svg>
+    排序 · <span id="mb-sort-label">ER↓</span>
+  </button>
+  <button class="btn" id="mb-fav">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7h7.6l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.5L2 9h7.6z"/></svg>
+    收藏 <span class="count-badge" id="mb-fav-count" style="display:none">0</span>
+  </button>
+</div>
+
+<!-- Mobile drawer -->
+<div class="mobile-overlay" id="mb-overlay"></div>
+<div class="mobile-drawer" id="mb-drawer">
+  <div class="handle"></div>
+  <div class="mobile-drawer-title">筛选</div>
+  <div class="mobile-drawer-content" id="mb-drawer-content"></div>
+  <div class="mobile-drawer-actions">
+    <button class="btn" id="mb-drawer-cancel">取消</button>
+    <button class="btn btn-primary" id="mb-drawer-apply">应用</button>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
+
 <script>
 const CFG = __CFG__;
 const POLL_INTERVAL_MS = 60 * 1000;
-const LS_KEY = 'yt-tracker-state-v2';
+const STORAGE_KEY = 'yt-tracker-v3';
+const FAV_KEY = 'yt-tracker-favorites';
+const HIDE_KEY = 'yt-tracker-hidden';
 
 let DATA = null;
+let HISTORY = null;
 let state = loadState();
+let pendingMobileState = null;
 
+// ========== State ==========
+function defaultFilters() {
+  return { time: 'all', groups: [], channels: [], contents: [], lengths: [], hots: [], vtypes: [], brands: [] };
+}
 function defaultState() {
-  return {
-    time: 'all',
-    groups: [],            // 多选；空 = 全部
-    contents: [],          // 多选
-    lengths: [],           // 多选
-    hots: [],              // 多选
-    vtypes: [],            // 多选
-    sort: 'er',
-  };
+  return { tab: 'home', filters: defaultFilters(), sort: 'er', expanded_groups: [], stats_expanded: false };
 }
-function loadState() {
-  try {
-    return Object.assign(defaultState(), JSON.parse(localStorage.getItem(LS_KEY) || '{}'));
-  } catch (e) { return defaultState(); }
-}
-function saveState() { localStorage.setItem(LS_KEY, JSON.stringify(state)); }
+function loadState() { try { return Object.assign(defaultState(), JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}')); } catch (e) { return defaultState(); } }
+function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+function getFavs() { try { return JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); } catch { return []; } }
+function setFavs(arr) { localStorage.setItem(FAV_KEY, JSON.stringify(arr)); }
+function getHidden() { try { return JSON.parse(localStorage.getItem(HIDE_KEY) || '[]'); } catch { return []; } }
+function setHidden(arr) { localStorage.setItem(HIDE_KEY, JSON.stringify(arr)); }
 
-// ============== 多选 chip 渲染 ==============
-function renderMultiChips(rowId, options, stateKey) {
-  const row = document.getElementById(rowId);
-  const wrap = document.createElement('span');
-  wrap.style.display = 'contents';
-  // "全部" = 清空该字段
-  const allBtn = document.createElement('button');
-  allBtn.className = 'chip' + (state[stateKey].length === 0 ? ' active' : '');
-  allBtn.textContent = '全部';
-  allBtn.onclick = () => { state[stateKey] = []; saveState(); refreshChips(); render(); };
-  row.appendChild(allBtn);
-
-  options.forEach(opt => {
-    const value = opt.value || opt;
-    const label = opt.label || opt;
-    const btn = document.createElement('button');
-    btn.className = 'chip' + (state[stateKey].includes(value) ? ' active' : '');
-    btn.dataset.value = value;
-    btn.dataset.row = stateKey;
-    btn.textContent = label;
-    btn.onclick = () => {
-      const idx = state[stateKey].indexOf(value);
-      if (idx >= 0) state[stateKey].splice(idx, 1); else state[stateKey].push(value);
-      saveState(); refreshChips(); render();
-    };
-    row.appendChild(btn);
-  });
-}
-
-function refreshChips() {
-  // 时间窗口（单选）
-  document.querySelectorAll('[data-time]').forEach(b =>
-    b.classList.toggle('active', b.dataset.time === state.time));
-  // 各多选 row
-  ['groups','contents','lengths','hots','vtypes'].forEach(key => {
-    const sel = state[key];
-    document.querySelectorAll('[data-row="' + key + '"]').forEach(b =>
-      b.classList.toggle('active', sel.includes(b.dataset.value)));
-    // 该 row 下的"全部"按钮
-    const rowEl = document.getElementById(({groups:'group-filters', contents:'content-filters', lengths:'length-filters', hots:'hot-filters', vtypes:'vtype-filters'})[key]);
-    if (rowEl) {
-      const allBtn = Array.from(rowEl.querySelectorAll('.chip')).find(b => b.textContent === '全部');
-      if (allBtn) allBtn.classList.toggle('active', sel.length === 0);
-    }
-  });
-}
-
-// ============== 时间筛选 ==============
-function withinTime(iso, timeKey) {
-  if (timeKey === 'all') return true;
-  const days = parseInt(timeKey, 10);
-  if (!isFinite(days) || days <= 0) return true;
-  const ms = days * 86400000;
-  const pubMs = new Date(iso).getTime();
-  if (!isFinite(pubMs)) return true;
-  return (Date.now() - pubMs) <= ms;
-}
-
-// ============== 工具 ==============
+// ========== Utility ==========
 function fmt(n) {
   if (n == null) return '—';
   if (n >= 1e7) return (n / 1e6).toFixed(1) + 'M';
@@ -286,161 +508,784 @@ function fmt(n) {
   return String(n);
 }
 function fmtDate(iso) {
-  const d = new Date(iso); const now = new Date();
-  const diffH = Math.floor((now - d) / 3600000);
-  if (diffH < 1) return Math.floor((now-d)/60000) + ' 分钟前';
+  const d = new Date(iso); const diffH = Math.floor((Date.now() - d) / 3600000);
+  if (diffH < 1) return Math.max(0, Math.floor((Date.now()-d)/60000)) + ' 分钟前';
   if (diffH < 24) return diffH + ' 小时前';
-  const diffDays = Math.floor(diffH / 24);
-  if (diffDays === 1) return '昨天';
-  if (diffDays < 7) return diffDays + ' 天前';
-  if (diffDays < 30) return Math.floor(diffDays / 7) + ' 周前';
-  if (diffDays < 365) return Math.floor(diffDays / 30) + ' 个月前';
+  const dd = Math.floor(diffH / 24);
+  if (dd === 1) return '昨天';
+  if (dd < 7) return dd + ' 天前';
+  if (dd < 30) return Math.floor(dd/7) + ' 周前';
+  if (dd < 365) return Math.floor(dd/30) + ' 个月前';
   return d.toISOString().slice(0, 10);
 }
 function fmtAgo(iso) {
   const d = new Date(iso.replace(' ', 'T'));
   const sec = Math.floor((Date.now() - d.getTime()) / 1000);
-  if (sec < 60) return '(' + sec + ' 秒前生成)';
-  if (sec < 3600) return '(' + Math.floor(sec / 60) + ' 分钟前生成)';
-  if (sec < 86400) return '(' + Math.floor(sec / 3600) + ' 小时前生成)';
-  return '(' + Math.floor(sec / 86400) + ' 天前生成)';
+  if (sec < 60) return '(' + sec + ' 秒前)';
+  if (sec < 3600) return '(' + Math.floor(sec/60) + ' 分钟前)';
+  if (sec < 86400) return '(' + Math.floor(sec/3600) + ' 小时前)';
+  return '(' + Math.floor(sec/86400) + ' 天前)';
 }
-function escHTML(s) {
-  return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-// ============== 渲染 ==============
-function renderStatBar(filtered) {
-  const total = filtered.reduce((s,v) => s + v.view_count, 0);
-  const avgER = filtered.length ? filtered.reduce((s,v) => s + (v.engagement_rate||0), 0) / filtered.length : 0;
-  const highER = filtered.filter(v => v.engagement_rate >= 5).length;
-  const week = filtered.filter(v => withinTime(v.published_at, '7'));
-  const week100k = week.filter(v => v.view_count >= 100000).length;
-
-  const hotCount = (label) => filtered.filter(v => v.hot_level === label).length;
-  const ctagCount = (t) => filtered.filter(v => v.content_tags && v.content_tags.includes(t)).length;
-
-  document.getElementById('stat-bar').innerHTML = `
-    <span class="stat-block"><span class="stat-label">显示</span><b>${filtered.length}</b> 条 · 总播放 <b>${fmt(total)}</b></span>
-    <span class="stat-block"><span class="stat-label">爆款</span>
-      上升 <b class="hot-green">${hotCount('🔥 上升爆款')}</b> ·
-      强 <b class="hot-yellow">${hotCount('💥 强爆款')}</b> ·
-      百万 <b class="hot-red">${hotCount('🎯 百万爆款')}</b> ·
-      现象级 <b class="hot-purple">${hotCount('🚀 现象级')}</b></span>
-    <span class="stat-block"><span class="stat-label">质量</span>平均 ER <b>${avgER.toFixed(2)}%</b> · 高ER (≥5%) <b>${highER}</b> 条</span>
-    <span class="stat-block"><span class="stat-label">相关性</span>
-      iPad配件 <b>${ctagCount('iPad配件相关')}</b> ·
-      创作 <b>${ctagCount('创作')}</b> ·
-      学生 <b>${ctagCount('学生')}</b> ·
-      商务 <b>${ctagCount('商务')}</b> ·
-      其他Apple <b>${ctagCount('其他Apple')}</b></span>
-    <span class="stat-block"><span class="stat-label">本周</span>新视频 <b>${week.length}</b> · &gt;10万 <b>${week100k}</b></span>
-  `;
-}
-
-function renderCard(v) {
-  const groupLabel = CFG.group_labels[v.channel_group] || v.channel_group;
-  let hotClass = '';
-  if (v.hot_level === '🚀 现象级') hotClass = 'hot-purple';
-  else if (v.hot_level === '🎯 百万爆款') hotClass = 'hot-red';
-
-  const badges = [];
-  if (v.hot_level) {
-    let cls = 'b-green';
-    if (v.hot_level === '🚀 现象级') cls = 'b-purple';
-    else if (v.hot_level === '🎯 百万爆款') cls = 'b-red';
-    else if (v.hot_level === '💥 强爆款') cls = 'b-yellow';
-    badges.push(`<div class="badge ${cls}">${v.hot_level}</div>`);
-  }
-  if (v.view_to_sub_tier === '频道爆款') badges.push(`<div class="badge b-yellow">⭐ 频道爆款 ${v.view_to_sub_ratio}%</div>`);
-
-  let viewClass = 'views';
-  if (v.view_count >= 5e6) viewClass += ' hot-purple-text';
-  else if (v.view_count >= 1e6) viewClass += ' hot-red-text';
-
-  const erClass = v.engagement_rate >= 5 ? 'er high' : 'er';
-  const ctags = (v.content_tags || []).filter(t => t !== '其他').map(t => `<span class="ctag">${t}</span>`).join('');
-  const btags = (v.brand_mentions || []).map(b => `<span class="btag">${b}</span>`).join('');
-
-  return `
-    <div class="card ${hotClass}">
-      <div class="thumb-wrap">
-        <a href="${v.video_url}" target="_blank" rel="noopener">
-          <img src="${v.thumbnail_url}" alt="" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/${v.video_id}/hqdefault.jpg'">
-        </a>
-        <div class="badges">${badges.join('')}</div>
-        <div class="duration">${v.duration || ''}</div>
-      </div>
-      <div class="body">
-        <a class="title" href="${v.video_url}" target="_blank" rel="noopener" title="${escHTML(v.title)}">${escHTML(v.title)}</a>
-        <div class="channel">
-          <span>${escHTML(v.channel_name)}</span>
-          <span class="grp">${groupLabel}</span>
-          ${v.video_type && v.video_type !== '其他' ? `<span class="vtype">${v.video_type}</span>` : ''}
-          <span class="grp">${v.video_length_type}</span>
-        </div>
-        ${ctags || btags ? `<div class="tag-row">${ctags}${btags}</div>` : ''}
-        <div class="stats-row">
-          <span class="${viewClass}">▶ ${fmt(v.view_count)}</span>
-          <span class="${erClass}">ER ${v.engagement_rate}%</span>
-          <span>👍 ${fmt(v.like_count)}</span>
-          <span>💬 ${fmt(v.comment_count)}</span>
-          <span>📅 ${fmtDate(v.published_at)}</span>
-        </div>
-      </div>
-    </div>`;
-}
-
-function applyFilters(videos) {
-  return videos.filter(v => {
-    if (!withinTime(v.published_at, state.time)) return false;
-    if (state.groups.length && !state.groups.includes(v.channel_group)) return false;
-    if (state.contents.length) {
-      const tags = v.content_tags || [];
-      if (!state.contents.some(c => tags.includes(c))) return false;
-    }
-    if (state.lengths.length && !state.lengths.includes(v.video_length_type)) return false;
-    if (state.hots.length && !state.hots.includes(v.hot_level)) return false;
-    if (state.vtypes.length && !state.vtypes.includes(v.video_type)) return false;
-    return true;
-  });
-}
-
-function applySort(videos) {
-  const sorted = videos.slice();
-  if (state.sort === 'er') sorted.sort((a,b) => (b.engagement_rate||0) - (a.engagement_rate||0));
-  else if (state.sort === 'views') sorted.sort((a,b) => (b.view_count||0) - (a.view_count||0));
-  else if (state.sort === 'comment_rate') sorted.sort((a,b) => (b.comment_rate||0) - (a.comment_rate||0));
-  else if (state.sort === 'recent') sorted.sort((a,b) => new Date(b.published_at) - new Date(a.published_at));
-  return sorted;
-}
-
-function render() {
-  if (!DATA) return;
-  const filtered = applyFilters(DATA.videos);
-  const sorted = applySort(filtered);
-  renderStatBar(filtered);
-  const grid = document.getElementById('grid');
-  if (sorted.length === 0) {
-    grid.innerHTML = '<div class="empty">没有符合筛选条件的视频</div>';
-    return;
-  }
-  grid.innerHTML = sorted.map(renderCard).join('');
-}
-
+function escHTML(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 3500);
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+function withinTime(iso, key) {
+  if (key === 'all') return true;
+  const days = parseFloat(key);
+  if (!isFinite(days) || days <= 0) return true;
+  const t = new Date(iso).getTime();
+  if (!isFinite(t)) return true;
+  return (Date.now() - t) <= days * 86400000;
 }
 
+// ========== SVG icons ==========
+const ICONS = {
+  play: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
+  thumb: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 22V11M2 13h5v9H4a2 2 0 01-2-2v-7zM7 11l5-9 1 1c.6.5.9 1.3.9 2v3h6a2 2 0 012 2l-2 7a2 2 0 01-2 2h-7"/></svg>',
+  comment: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>',
+  star_o: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 7h7.6l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.5L2 9h7.6z"/></svg>',
+  star: '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7h7.6l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.5L2 9h7.6z"/></svg>',
+  download: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>',
+};
+
+// ========== Data ==========
 async function fetchData() {
   const r = await fetch('data/channels_data.json?t=' + Date.now(), { cache: 'no-store' });
   if (!r.ok) throw new Error('HTTP ' + r.status);
   return await r.json();
 }
+async function fetchHistoryIndex() {
+  try {
+    const r = await fetch('data/history/index.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
 
+// ========== Channel meta lookups ==========
+function allChannelNames() {
+  const out = [];
+  Object.values(CFG.channel_tree).forEach(arr => arr.forEach(c => out.push(c.display_name)));
+  return out;
+}
+function brandMentionOptions() {
+  const set = new Set();
+  if (DATA) DATA.videos.forEach(v => (v.brand_mentions||[]).forEach(b => set.add(b)));
+  return Array.from(set).sort();
+}
+
+// ========== Filters ==========
+function applyFilters(videos, opts={}) {
+  const f = opts.filters || state.filters;
+  const skipHidden = opts.skipHidden;
+  const hidden = new Set(getHidden());
+  return videos.filter(v => {
+    if (!skipHidden && hidden.has(v.video_id)) return false;
+    if (!withinTime(v.published_at, f.time)) return false;
+    // 频道过滤：channels (单频道) 和 groups (大类) 取并集
+    if (f.channels.length || f.groups.length) {
+      const chMatch = f.channels.includes(v.channel_name);
+      const grpMatch = f.groups.includes(v.channel_group);
+      if (!(chMatch || grpMatch)) return false;
+    }
+    if (f.contents.length) {
+      const tags = v.content_tags || [];
+      if (!f.contents.some(c => tags.includes(c))) return false;
+    }
+    if (f.lengths.length && !f.lengths.includes(v.video_length_type)) return false;
+    if (f.hots.length && !f.hots.includes(v.hot_level)) return false;
+    if (f.vtypes.length && !f.vtypes.includes(v.video_type)) return false;
+    if (f.brands.length) {
+      const bms = v.brand_mentions || [];
+      if (!f.brands.some(b => bms.includes(b))) return false;
+    }
+    return true;
+  });
+}
+function applySort(videos, sort=state.sort) {
+  const a = videos.slice();
+  if (sort === 'er') a.sort((x,y) => (y.engagement_rate||0)-(x.engagement_rate||0));
+  else if (sort === 'views') a.sort((x,y) => (y.view_count||0)-(x.view_count||0));
+  else if (sort === 'comment_rate') a.sort((x,y) => (y.comment_rate||0)-(x.comment_rate||0));
+  else if (sort === 'recent') a.sort((x,y) => new Date(y.published_at) - new Date(x.published_at));
+  else if (sort === 'view_to_sub') a.sort((x,y) => (y.view_to_sub_ratio||0)-(x.view_to_sub_ratio||0));
+  return a;
+}
+
+// ========== Custom Dropdown ==========
+function makeDropdown({ label, options, multi, getSelected, onChange, panelClass='', alignRight=false, rootEl=null }) {
+  const wrap = rootEl || document.createElement('span');
+  wrap.className = 'dd' + (alignRight ? ' right' : '');
+  function selCount() { return (getSelected() || []).length; }
+  function selValue() { const s = getSelected(); return Array.isArray(s) ? s : [s]; }
+  function renderBtn() {
+    const sel = selValue();
+    const cnt = multi ? sel.length : 0;
+    let txt = label;
+    if (multi) {
+      if (cnt > 0) txt = label + ' <span class="count">(' + cnt + ')</span>';
+    } else {
+      const o = options.find(o => (o.value || o) === sel[0]);
+      if (o) txt = label + ': <span class="count">' + (o.label || o) + '</span>';
+    }
+    wrap.querySelector('.dd-btn').innerHTML = txt + ' <span class="arrow">▾</span>';
+  }
+  function renderItems() {
+    const panel = wrap.querySelector('.dd-panel');
+    const sel = selValue();
+    panel.innerHTML = '';
+    if (multi) {
+      const tb = document.createElement('div');
+      tb.className = 'dd-toolbar';
+      tb.innerHTML = '<button class="dd-btn-toolbar" data-act="all">全选</button><button class="dd-btn-toolbar" data-act="clear">清空</button>';
+      tb.onclick = e => {
+        if (e.target.dataset.act === 'all') onChange(options.map(o => o.value||o));
+        if (e.target.dataset.act === 'clear') onChange([]);
+        renderItems(); renderBtn();
+      };
+      panel.appendChild(tb);
+    }
+    options.forEach(opt => {
+      const v = opt.value || opt;
+      const lbl = opt.label || opt;
+      const checked = sel.includes(v);
+      const item = document.createElement('div');
+      item.className = 'dd-item' + (checked ? ' checked' : '');
+      item.innerHTML = (multi ? '<span class="check"></span>' : '') + '<span>' + escHTML(lbl) + '</span>';
+      item.onclick = () => {
+        if (multi) {
+          const cur = selValue().slice();
+          const i = cur.indexOf(v);
+          if (i >= 0) cur.splice(i, 1); else cur.push(v);
+          onChange(cur);
+        } else {
+          onChange(v);
+          wrap.classList.remove('open');
+        }
+        renderItems(); renderBtn();
+      };
+      panel.appendChild(item);
+    });
+  }
+  if (!rootEl) {
+    wrap.innerHTML = '<button class="dd-btn"></button><div class="dd-panel ' + panelClass + '"></div>';
+  } else {
+    wrap.innerHTML = '<button class="dd-btn"></button><div class="dd-panel ' + panelClass + '"></div>';
+  }
+  wrap.querySelector('.dd-btn').onclick = e => {
+    e.stopPropagation();
+    document.querySelectorAll('.dd.open').forEach(d => { if (d !== wrap) d.classList.remove('open'); });
+    wrap.classList.toggle('open');
+    if (wrap.classList.contains('open')) renderItems();
+  };
+  renderBtn();
+  return { el: wrap, refresh: () => { renderBtn(); if (wrap.classList.contains('open')) renderItems(); } };
+}
+
+function makeChannelTreeDropdown({ getSelectedGroups, getSelectedChannels, onChangeGroups, onChangeChannels, expandedGroups, onToggleExpand, mobile=false }) {
+  const wrap = document.createElement('span');
+  wrap.className = 'dd';
+  wrap.innerHTML = '<button class="dd-btn"></button><div class="dd-panel"></div>';
+  function refresh() {
+    const sgArr = getSelectedGroups();
+    const scArr = getSelectedChannels();
+    const cnt = sgArr.length + scArr.length;
+    wrap.querySelector('.dd-btn').innerHTML = '频道分组' + (cnt ? ' <span class="count">(' + cnt + ')</span>' : '') + ' <span class="arrow">▾</span>';
+    if (wrap.classList.contains('open')) renderItems();
+  }
+  function renderItems() {
+    const panel = wrap.querySelector('.dd-panel');
+    const sgArr = getSelectedGroups();
+    const scArr = getSelectedChannels();
+    panel.innerHTML = '';
+    Object.entries(CFG.group_labels).forEach(([gKey, gLabel]) => {
+      const item = document.createElement('div');
+      const isChecked = sgArr.includes(gKey);
+      const isExp = expandedGroups.includes(gKey);
+      item.className = 'dd-item' + (isChecked ? ' checked' : '') + (isExp ? ' exp' : '');
+      item.innerHTML = '<span class="check"></span><span style="font-weight:500">' + escHTML(gLabel) + '</span><span class="arrow-r">▸</span>';
+      item.onclick = (e) => {
+        // 区分：点 check 区域 / 点展开
+        const isArrowClick = e.target.classList.contains('arrow-r');
+        if (isArrowClick) {
+          onToggleExpand(gKey);
+        } else {
+          // 切换 group
+          const cur = sgArr.slice();
+          const i = cur.indexOf(gKey);
+          if (i >= 0) cur.splice(i, 1); else cur.push(gKey);
+          onChangeGroups(cur);
+        }
+        renderItems(); refresh();
+      };
+      panel.appendChild(item);
+      // 子频道
+      if (isExp) {
+        const childWrap = document.createElement('div');
+        childWrap.className = 'dd-children';
+        (CFG.channel_tree[gKey] || []).forEach(ch => {
+          const c = document.createElement('div');
+          const cn = ch.display_name;
+          const checked = scArr.includes(cn);
+          c.className = 'dd-child' + (checked ? ' checked' : '');
+          c.innerHTML = '<span class="check"></span><span>' + escHTML(cn) + '</span>'
+            + (ch.is_self ? '<span class="self">⭐ 自家</span>' : '')
+            + '<span class="subs">' + fmt(ch.subscriber_count) + '</span>';
+          c.onclick = () => {
+            const cur = scArr.slice();
+            const i = cur.indexOf(cn);
+            if (i >= 0) cur.splice(i, 1); else cur.push(cn);
+            onChangeChannels(cur);
+            renderItems(); refresh();
+          };
+          childWrap.appendChild(c);
+        });
+        panel.appendChild(childWrap);
+      }
+    });
+  }
+  wrap.querySelector('.dd-btn').onclick = e => {
+    e.stopPropagation();
+    document.querySelectorAll('.dd.open').forEach(d => { if (d !== wrap) d.classList.remove('open'); });
+    wrap.classList.toggle('open');
+    if (wrap.classList.contains('open')) renderItems();
+  };
+  refresh();
+  return { el: wrap, refresh };
+}
+
+// 关闭打开的下拉（点外部）
+document.addEventListener('click', e => {
+  if (!e.target.closest('.dd')) {
+    document.querySelectorAll('.dd.open').forEach(d => d.classList.remove('open'));
+  }
+});
+
+// ========== Render: Tabs ==========
+function renderTabs() {
+  const favCount = getFavs().length;
+  const items = [
+    { key: 'home', label: '首页' },
+    { key: 'favorites', label: '我的拆解清单', badge: favCount > 0 ? favCount : null },
+    { key: 'brand', label: '品牌对比' },
+    { key: 'history', label: '历史趋势' },
+  ];
+  document.getElementById('tabs').innerHTML = items.map(t =>
+    `<button class="tab${t.key === state.tab ? ' active' : ''}" data-tab="${t.key}">
+      ${t.label}${t.badge != null ? '<span class="tab-badge">' + t.badge + '</span>' : ''}
+    </button>`
+  ).join('');
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
+    state.tab = b.dataset.tab; saveState(); render();
+  });
+}
+
+// ========== Render: Filters (desktop) ==========
+function renderFilters(rootId, mobile=false) {
+  const root = document.getElementById(rootId);
+  root.innerHTML = '';
+  const fs = mobile ? pendingMobileState.filters : state.filters;
+  const sortFn = (k) => mobile ? (v) => { pendingMobileState.sort = v; updateMobileSortLabel(); } : (v) => { state.sort = v; saveState(); render(); };
+  const setKey = (key, val) => { fs[key] = val; if (!mobile) { saveState(); render(); } };
+
+  // 时间窗口（单选）
+  const ddTime = makeDropdown({
+    label: '时间', multi: false,
+    options: [{value:'all',label:'全部'},{value:'1',label:'近 24h'},{value:'7',label:'近 7 天'},{value:'30',label:'近 30 天'},{value:'90',label:'近 90 天'}],
+    getSelected: () => fs.time,
+    onChange: v => setKey('time', v),
+  });
+  root.appendChild(ddTime.el);
+
+  // 频道分组（两层）
+  const ddCh = makeChannelTreeDropdown({
+    getSelectedGroups: () => fs.groups,
+    getSelectedChannels: () => fs.channels,
+    onChangeGroups: v => setKey('groups', v),
+    onChangeChannels: v => setKey('channels', v),
+    expandedGroups: state.expanded_groups,
+    onToggleExpand: g => {
+      const cur = state.expanded_groups.slice();
+      const i = cur.indexOf(g);
+      if (i >= 0) cur.splice(i, 1); else cur.push(g);
+      state.expanded_groups = cur; saveState();
+    },
+  });
+  root.appendChild(ddCh.el);
+
+  // 内容类型
+  root.appendChild(makeDropdown({
+    label: '内容类型', multi: true,
+    options: CFG.content_tags_order,
+    getSelected: () => fs.contents,
+    onChange: v => setKey('contents', v),
+  }).el);
+
+  // 视频时长
+  root.appendChild(makeDropdown({
+    label: '时长', multi: true,
+    options: CFG.length_order,
+    getSelected: () => fs.lengths,
+    onChange: v => setKey('lengths', v),
+  }).el);
+
+  // 爆款等级
+  root.appendChild(makeDropdown({
+    label: '爆款', multi: true,
+    options: CFG.hot_level_order,
+    getSelected: () => fs.hots,
+    onChange: v => setKey('hots', v),
+  }).el);
+
+  // 视频类型
+  root.appendChild(makeDropdown({
+    label: '视频类型', multi: true,
+    options: CFG.video_type_order,
+    getSelected: () => fs.vtypes,
+    onChange: v => setKey('vtypes', v),
+  }).el);
+
+  // 品牌提及
+  root.appendChild(makeDropdown({
+    label: '品牌提及', multi: true,
+    options: brandMentionOptions(),
+    getSelected: () => fs.brands,
+    onChange: v => setKey('brands', v),
+  }).el);
+
+  if (!mobile) {
+    // 排序
+    const sortDD = makeDropdown({
+      label: '排序', multi: false, alignRight: true,
+      options: [
+        {value:'er',label:'ER ↓'},
+        {value:'views',label:'播放量 ↓'},
+        {value:'comment_rate',label:'评论率 ↓'},
+        {value:'view_to_sub',label:'播放/订阅比 ↓'},
+        {value:'recent',label:'发布时间 ↓'},
+      ],
+      getSelected: () => state.sort,
+      onChange: v => { state.sort = v; saveState(); render(); },
+    });
+    root.appendChild(sortDD.el);
+
+    // 清空
+    const clearBtn = document.createElement('button');
+    clearBtn.className = 'btn';
+    clearBtn.style.color = 'var(--red)';
+    clearBtn.textContent = '清空筛选';
+    clearBtn.onclick = () => { state.filters = defaultFilters(); saveState(); render(); };
+    root.appendChild(clearBtn);
+
+    // CSV 导出
+    const csvBtn = document.createElement('button');
+    csvBtn.className = 'btn';
+    csvBtn.innerHTML = ICONS.download + ' 导出 CSV';
+    csvBtn.onclick = exportCSV;
+    root.appendChild(csvBtn);
+  }
+}
+
+function updateMobileSortLabel() {
+  const map = { er: 'ER↓', views: '播放↓', comment_rate: '评论率↓', view_to_sub: '播放/订阅↓', recent: '最新' };
+  document.getElementById('mb-sort-label').textContent = map[pendingMobileState ? pendingMobileState.sort : state.sort] || '';
+  document.getElementById('mobile-sort-label').textContent = map[state.sort];
+}
+
+// ========== Mobile Drawer ==========
+function openMobileDrawer() {
+  pendingMobileState = JSON.parse(JSON.stringify({ filters: state.filters, sort: state.sort }));
+  renderFilters('mb-drawer-content', true);
+  document.getElementById('mb-overlay').classList.add('show');
+  document.getElementById('mb-drawer').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileDrawer() {
+  document.getElementById('mb-overlay').classList.remove('show');
+  document.getElementById('mb-drawer').classList.remove('show');
+  document.body.style.overflow = '';
+  pendingMobileState = null;
+}
+function applyMobileDrawer() {
+  if (pendingMobileState) {
+    state.filters = pendingMobileState.filters;
+    state.sort = pendingMobileState.sort;
+    saveState();
+  }
+  closeMobileDrawer();
+  render();
+}
+
+// ========== Render: Selected Chips ==========
+function renderSelectedChips() {
+  const root = document.getElementById('selected-chips');
+  const f = state.filters;
+  const chips = [];
+  if (f.time !== 'all') {
+    const lbl = {1:'近24h',7:'近7天',30:'近30天',90:'近90天'}[f.time] || f.time;
+    chips.push({ key: 'time', label: '时间: ' + lbl, onRemove: () => { state.filters.time='all'; saveState(); render(); } });
+  }
+  f.groups.forEach(g => chips.push({
+    label: CFG.group_labels[g] || g,
+    onRemove: () => { state.filters.groups = state.filters.groups.filter(x => x !== g); saveState(); render(); }
+  }));
+  f.channels.forEach(c => chips.push({
+    label: '频道: ' + c, onRemove: () => { state.filters.channels = state.filters.channels.filter(x => x !== c); saveState(); render(); }
+  }));
+  f.contents.forEach(c => chips.push({ label: c, onRemove: () => { state.filters.contents = state.filters.contents.filter(x => x !== c); saveState(); render(); } }));
+  f.lengths.forEach(l => chips.push({ label: l, onRemove: () => { state.filters.lengths = state.filters.lengths.filter(x => x !== l); saveState(); render(); } }));
+  f.hots.forEach(h => chips.push({ label: h, onRemove: () => { state.filters.hots = state.filters.hots.filter(x => x !== h); saveState(); render(); } }));
+  f.vtypes.forEach(v => chips.push({ label: v, onRemove: () => { state.filters.vtypes = state.filters.vtypes.filter(x => x !== v); saveState(); render(); } }));
+  f.brands.forEach(b => chips.push({ label: b, onRemove: () => { state.filters.brands = state.filters.brands.filter(x => x !== b); saveState(); render(); } }));
+
+  if (chips.length === 0) { root.innerHTML = ''; return; }
+  root.innerHTML = '<span class="label">已选</span>' + chips.map((c,i) =>
+    `<span class="chip">${escHTML(c.label)}<span class="chip-x" data-i="${i}">✕</span></span>`).join('') +
+    `<button class="chip-clear">清空全部</button>`;
+  root.querySelectorAll('.chip-x').forEach((x, i) => x.onclick = () => chips[i].onRemove());
+  root.querySelector('.chip-clear').onclick = () => { state.filters = defaultFilters(); saveState(); render(); };
+}
+
+// ========== Render: Stats ==========
+function renderStats(filtered) {
+  const root = document.getElementById('stats');
+  const total = filtered.reduce((s,v) => s + (v.view_count||0), 0);
+  const avgER = filtered.length ? filtered.reduce((s,v) => s + (v.engagement_rate||0), 0) / filtered.length : 0;
+  const highER = filtered.filter(v => (v.engagement_rate||0) >= 5).length;
+  const erCls = avgER >= 5 ? 'green' : avgER >= 2 ? 'orange' : '';
+  const hotCount = (l) => filtered.filter(v => v.hot_level === l).length;
+  const ctagCount = (t) => filtered.filter(v => (v.content_tags||[]).includes(t)).length;
+  const week = filtered.filter(v => withinTime(v.published_at, '7'));
+  const week100k = week.filter(v => v.view_count >= 1e5).length;
+
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  const expanded = state.stats_expanded || !isMobile;
+
+  let html = '';
+  html += `<div class="stat-cell"><span class="label">视频</span><span class="big">${filtered.length}</span></div>`;
+  html += `<div class="stat-cell"><span class="label">总播放</span><span class="big">${fmt(total)}</span></div>`;
+  html += `<div class="stat-cell"><span class="label">平均 ER</span><span class="big ${erCls}">${avgER.toFixed(2)}<span style="font-size:14px;color:var(--muted);">%</span></span></div>`;
+  if (expanded) {
+    html += `<div class="stat-cell" style="min-width:0"><span class="label">爆款</span><div class="stat-pills">`
+      + (hotCount('🔥 上升爆款') ? `<span class="pill rising">🔥 上升 ${hotCount('🔥 上升爆款')}</span>` : '')
+      + (hotCount('💥 强爆款') ? `<span class="pill strong">💥 强 ${hotCount('💥 强爆款')}</span>` : '')
+      + (hotCount('⭐ 百万爆款') ? `<span class="pill million">⭐ 百万 ${hotCount('⭐ 百万爆款')}</span>` : '')
+      + (hotCount('🚀 现象级') ? `<span class="pill phenom">🚀 现象级 ${hotCount('🚀 现象级')}</span>` : '')
+      + (hotCount('🔥 上升爆款')+hotCount('💥 强爆款')+hotCount('⭐ 百万爆款')+hotCount('🚀 现象级') === 0 ? `<span style="color:var(--muted);font-size:12px">—</span>` : '')
+      + `</div></div>`;
+    html += `<div class="stat-cell" style="min-width:0"><span class="label">高 ER (≥5%)</span><span class="big">${highER}</span></div>`;
+    html += `<div class="stat-cell" style="min-width:0"><span class="label">本周新视频</span><span class="big">${week.length}<span style="font-size:12px;color:var(--muted);"> · ${week100k} 个 &gt;10万</span></span></div>`;
+    html += `<div class="stat-cell" style="min-width:0"><span class="label">相关性</span><div class="stat-pills">`
+      + (ctagCount('iPad配件相关') ? `<span class="pill tag-iPad">iPad配件 ${ctagCount('iPad配件相关')}</span>` : '')
+      + (ctagCount('创作') ? `<span class="pill tag-creation">创作 ${ctagCount('创作')}</span>` : '')
+      + (ctagCount('学生') ? `<span class="pill tag-student">学生 ${ctagCount('学生')}</span>` : '')
+      + (ctagCount('商务') ? `<span class="pill tag-business">商务 ${ctagCount('商务')}</span>` : '')
+      + (ctagCount('其他Apple') ? `<span class="pill tag-apple">其他Apple ${ctagCount('其他Apple')}</span>` : '')
+      + `</div></div>`;
+  }
+  if (isMobile) {
+    html += `<button class="stats-toggle" id="stats-toggle">${expanded ? '收起' : '更多统计 ▾'}</button>`;
+  }
+  root.innerHTML = html;
+  const tg = document.getElementById('stats-toggle');
+  if (tg) tg.onclick = () => { state.stats_expanded = !state.stats_expanded; saveState(); renderStats(filtered); };
+}
+
+// ========== Render: Video Card ==========
+function renderVideoCard(v) {
+  const grpLbl = CFG.group_labels[v.channel_group] || v.channel_group;
+  const isSelf = v.channel_name === CFG.self_brand;
+  let frameClass = '';
+  if (v.hot_level === '🚀 现象级') frameClass = 'hot-phenom';
+  else if (v.hot_level === '⭐ 百万爆款') frameClass = 'hot-million';
+  let viewsCls = 'big';
+  if (v.view_count >= 5e6) viewsCls += ' phenom-fg';
+  else if (v.view_count >= 1e6) viewsCls += ' million-fg';
+  const er = v.engagement_rate || 0;
+  const erCls = er >= 5 ? 'high' : er >= 2 ? 'mid' : 'low';
+
+  let badges = '';
+  if (v.hot_level) {
+    let bc = 'rising';
+    if (v.hot_level === '🚀 现象级') bc = 'phenom';
+    else if (v.hot_level === '⭐ 百万爆款') bc = 'million';
+    else if (v.hot_level === '💥 强爆款') bc = 'strong';
+    badges += `<span class="hot-chip ${bc}">${v.hot_level}</span>`;
+  }
+  if (v.view_to_sub_tier === '频道爆款') {
+    badges += `<span class="hot-chip strong">⭐ 频道爆款 ${v.view_to_sub_ratio}%</span>`;
+  }
+
+  const tagPriority = ['iPad配件相关','创作','学生','商务','其他Apple'];
+  const ctags = (v.content_tags||[]).filter(t => tagPriority.includes(t));
+  const tagClassMap = {'iPad配件相关':'iPad','创作':'create','学生':'student','商务':'business','其他Apple':'apple'};
+  const ctagsHtml = ctags.map(t => `<span class="tag-c ${tagClassMap[t]}">${t}</span>`).join('');
+  const brandsHtml = (v.brand_mentions||[]).map(b => `<span class="tag-c brand">${b}</span>`).join('');
+  const vtypeHtml = v.video_type && v.video_type !== '其他' ? `<span class="tag-c vtype">${v.video_type}</span>` : '';
+
+  const isFav = getFavs().includes(v.video_id);
+
+  return `
+    <div class="video-card ${frameClass}" data-vid="${v.video_id}">
+      <button class="hide-btn" data-act="hide" data-vid="${v.video_id}" title="隐藏">✕</button>
+      <button class="fav-btn ${isFav ? 'active' : ''}" data-act="fav" data-vid="${v.video_id}" title="收藏">${isFav ? ICONS.star : ICONS.star_o}</button>
+      <a href="${v.video_url}" target="_blank" rel="noopener" class="thumb-wrap">
+        <img src="${v.thumbnail_url}" alt="" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/${v.video_id}/hqdefault.jpg'">
+        <div class="badges">${badges}</div>
+        <div class="duration">${v.duration || ''}</div>
+      </a>
+      <div class="card-body">
+        <div class="card-row1">
+          <span class="channel-name">${escHTML(v.channel_name)}</span>
+          ${isSelf ? '<span class="self">⭐ 自家</span>' : ''}
+          <span class="grp">${grpLbl}</span>
+          <span class="grp">${v.video_length_type}</span>
+          ${vtypeHtml}
+        </div>
+        <a class="card-title" href="${v.video_url}" target="_blank" rel="noopener" title="${escHTML(v.title)}">${escHTML(v.title)}</a>
+        ${ctagsHtml || brandsHtml ? `<div class="tag-row">${ctagsHtml}${brandsHtml}</div>` : ''}
+        <div class="card-er">
+          <span class="num ${erCls}">${er.toFixed(2)}<span style="font-size:14px;color:var(--muted);font-weight:500;">%</span></span>
+          <span class="er-label">ER</span>
+          <span class="extra">评论率 ${(v.comment_rate||0).toFixed(2)}%</span>
+        </div>
+        <div class="card-stats">
+          <span class="item">${ICONS.play}<span class="${viewsCls}">${fmt(v.view_count)}</span></span>
+          <span class="item">${ICONS.thumb}<span class="num">${fmt(v.like_count)}</span></span>
+          <span class="item">${ICONS.comment}<span class="num">${fmt(v.comment_count)}</span></span>
+          <span class="item" style="margin-left:auto">${fmtDate(v.published_at)}</span>
+        </div>
+      </div>
+    </div>`;
+}
+
+// ========== Render: Home View ==========
+function renderHomeView() {
+  const root = document.getElementById('view-home');
+  const filtered = applyFilters(DATA.videos);
+  const sorted = applySort(filtered);
+  renderStats(filtered);
+  let html = '';
+  // 多频道对比卡片
+  if (state.filters.channels.length >= 2) {
+    html += '<div class="compare-cards">';
+    state.filters.channels.forEach(cn => {
+      const cv = filtered.filter(x => x.channel_name === cn);
+      const tot = cv.reduce((s,x) => s + x.view_count, 0);
+      const aer = cv.length ? (cv.reduce((s,x) => s + (x.engagement_rate||0), 0) / cv.length) : 0;
+      const hot = cv.filter(x => x.hot_level).length;
+      html += `<div class="ccard"><h4>${cn === CFG.self_brand ? '⭐ ' : ''}${escHTML(cn)}</h4>
+        <div class="grid2">
+          <div>视频<b>${cv.length}</b></div>
+          <div>总播放<b>${fmt(tot)}</b></div>
+          <div>平均 ER<b>${aer.toFixed(2)}%</b></div>
+          <div>爆款<b>${hot}</b></div>
+        </div></div>`;
+    });
+    html += '</div>';
+  }
+  if (sorted.length === 0) {
+    html += '<div class="empty">没有符合筛选条件的视频</div>';
+  } else {
+    html += '<div class="grid">' + sorted.map(renderVideoCard).join('') + '</div>';
+  }
+  root.innerHTML = html;
+  bindCardActions(root);
+}
+
+// ========== Render: Favorites View ==========
+function renderFavoritesView() {
+  const root = document.getElementById('view-favorites');
+  const favIds = new Set(getFavs());
+  const favs = DATA.videos.filter(v => favIds.has(v.video_id));
+  const sorted = applySort(favs);
+  let html = '<div class="fav-actions">'
+    + `<span class="chip">${favs.length} 条</span>`
+    + (favs.length > 0 ? `
+      <button class="btn" id="fav-export-md">${ICONS.download} 导出 Markdown 链接</button>
+      <button class="btn" id="fav-export-csv">${ICONS.download} 导出 CSV</button>
+      <button class="btn" id="fav-clear" style="color:var(--red)">清空收藏</button>` : '')
+    + '</div>';
+  if (favs.length === 0) {
+    html += '<div class="empty">还没有收藏视频。在首页卡片右上角点 ⭐ 收藏。</div>';
+  } else {
+    html += '<div class="grid">' + sorted.map(renderVideoCard).join('') + '</div>';
+  }
+  root.innerHTML = html;
+  bindCardActions(root);
+  const exMd = document.getElementById('fav-export-md');
+  const exCsv = document.getElementById('fav-export-csv');
+  const clr = document.getElementById('fav-clear');
+  if (exMd) exMd.onclick = () => exportMarkdown(sorted);
+  if (exCsv) exCsv.onclick = () => exportCSV(sorted, 'favorites');
+  if (clr) clr.onclick = () => {
+    if (confirm('确定清空所有收藏？')) { setFavs([]); render(); showToast('收藏已清空'); }
+  };
+}
+
+// ========== Render: Brand Compare ==========
+function renderBrandCompareView() {
+  const root = document.getElementById('view-brand');
+  const brands = CFG.brand_compare_default;
+  const stats = brands.map(name => {
+    const vs = DATA.videos.filter(v => v.channel_name === name);
+    const tot = vs.reduce((s,v) => s + (v.view_count||0), 0);
+    const avgER = vs.length ? vs.reduce((s,v) => s + (v.engagement_rate||0), 0) / vs.length : 0;
+    const hot = vs.filter(v => v.hot_level).length;
+    const max = vs.length ? Math.max(...vs.map(v => v.view_count||0)) : 0;
+    const week = vs.filter(v => withinTime(v.published_at, '7'));
+    const subs = vs[0]?.channel_subscriber_count || 0;
+    return { name, count: vs.length, tot, avgER, hot, max, weekCount: week.length, subs, isSelf: name === CFG.self_brand };
+  });
+  const maxTot = Math.max(...stats.map(s => s.tot), 1);
+
+  let html = '<div class="brand-table"><h3>核心竞品横向对比</h3>'
+    + '<table><thead><tr>'
+    + '<th>频道</th><th>订阅数</th><th>视频数</th><th>本周新视频</th>'
+    + '<th>平均 ER</th><th>最高单条</th><th>爆款数</th><th>总播放（柱状）</th>'
+    + '</tr></thead><tbody>';
+  stats.forEach(s => {
+    html += `<tr>
+      <td class="name">${s.isSelf ? '⭐ ' : ''}${escHTML(s.name)}</td>
+      <td>${fmt(s.subs)}</td>
+      <td>${s.count}</td>
+      <td>${s.weekCount}</td>
+      <td>${s.avgER.toFixed(2)}%</td>
+      <td>${fmt(s.max)}</td>
+      <td>${s.hot}</td>
+      <td>${fmt(s.tot)}<span class="bar"><span style="width:${(s.tot/maxTot*100).toFixed(0)}%"></span></span></td>
+    </tr>`;
+  });
+  html += '</tbody></table></div>';
+
+  // 自定义对比卡片
+  html += '<div class="brand-table"><h3>所有竞品（A 组）一览</h3>';
+  const aChannels = (CFG.channel_tree.A_brand || []).map(c => c.display_name);
+  const aStats = aChannels.map(name => {
+    const vs = DATA.videos.filter(v => v.channel_name === name);
+    return {
+      name,
+      vCount: vs.length,
+      avgER: vs.length ? vs.reduce((s,v) => s + (v.engagement_rate||0), 0) / vs.length : 0,
+      hot: vs.filter(v => v.hot_level).length,
+      tot: vs.reduce((s,v) => s + (v.view_count||0), 0),
+      subs: vs[0]?.channel_subscriber_count || 0,
+      isSelf: name === CFG.self_brand,
+    };
+  });
+  aStats.sort((a,b) => b.subs - a.subs);
+  html += '<table><thead><tr><th>频道</th><th>订阅</th><th>视频数</th><th>平均 ER</th><th>爆款数</th><th>总播放</th></tr></thead><tbody>';
+  aStats.forEach(s => {
+    html += `<tr><td class="name">${s.isSelf ? '⭐ ' : ''}${escHTML(s.name)}</td>
+      <td>${fmt(s.subs)}</td>
+      <td>${s.vCount}</td>
+      <td>${s.avgER.toFixed(2)}%</td>
+      <td>${s.hot}</td>
+      <td>${fmt(s.tot)}</td></tr>`;
+  });
+  html += '</tbody></table></div>';
+  root.innerHTML = html;
+}
+
+// ========== Render: History ==========
+function renderHistoryView() {
+  const root = document.getElementById('view-history');
+  const cnt = HISTORY?.count || 0;
+  const need = 7;
+  let html = '<div class="history-card"><h3>历史趋势</h3>';
+  if (cnt < need) {
+    html += `<div class="history-empty">
+      <div class="big">需要积累 ${need} 天数据，才能显示趋势</div>
+      <div>已积累 ${cnt} 天 / 还需 ${need - cnt} 天</div>
+      <div class="progress"><span style="width:${(cnt/need*100).toFixed(0)}%"></span></div>
+      <div style="margin-top:16px;font-size:12px">每天 9:00 自动跑刷新会保存当日快照到 <code>data/history/{YYYY-MM-DD}.json</code></div>
+    </div>`;
+  } else {
+    html += '<div>（历史趋势图表 - 数据已积累足够）</div>';
+  }
+  html += '</div>';
+  root.innerHTML = html;
+}
+
+// ========== Card actions ==========
+function bindCardActions(root) {
+  root.querySelectorAll('.fav-btn').forEach(b => b.onclick = (e) => {
+    e.stopPropagation(); e.preventDefault();
+    const vid = b.dataset.vid;
+    const cur = getFavs();
+    const i = cur.indexOf(vid);
+    if (i >= 0) { cur.splice(i, 1); setFavs(cur); showToast('已取消收藏'); }
+    else { cur.push(vid); setFavs(cur); showToast('已加入拆解清单'); }
+    render();
+  });
+  root.querySelectorAll('.hide-btn').forEach(b => b.onclick = (e) => {
+    e.stopPropagation(); e.preventDefault();
+    const vid = b.dataset.vid;
+    const cur = getHidden();
+    if (!cur.includes(vid)) { cur.push(vid); setHidden(cur); showToast('已隐藏（再点同视频卡片清空隐藏列表恢复）'); }
+    render();
+  });
+}
+
+// ========== Export ==========
+function exportCSV(videos=null, suffix='filtered') {
+  const data = videos || applyFilters(DATA.videos);
+  const cols = ['video_id','channel_name','channel_group','title','view_count','like_count','comment_count','engagement_rate','comment_rate','duration','published_at','hot_level','video_length_type','video_type','content_tags','brand_mentions','view_to_sub_ratio','video_url'];
+  const rows = data.map(v => cols.map(c => {
+    let val = v[c];
+    if (Array.isArray(val)) val = val.join('; ');
+    val = val == null ? '' : String(val);
+    if (/[",\n]/.test(val)) val = '"' + val.replace(/"/g, '""') + '"';
+    return val;
+  }).join(','));
+  const csv = '﻿' + cols.join(',') + '\n' + rows.join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = `youtube-tracker-${suffix}-${new Date().toISOString().slice(0,10)}.csv`;
+  a.click(); URL.revokeObjectURL(url);
+  showToast(`已导出 ${data.length} 条 CSV`);
+}
+function exportMarkdown(videos) {
+  const md = videos.map(v => `- [${v.title}](${v.video_url}) · ${v.channel_name} · ▶ ${fmt(v.view_count)} · ER ${v.engagement_rate}%`).join('\n');
+  navigator.clipboard?.writeText(md).then(() => showToast('Markdown 已复制到剪贴板'))
+    .catch(() => {
+      const blob = new Blob([md], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = 'favorites.md'; a.click();
+    });
+}
+
+// ========== Master Render ==========
+function render() {
+  document.getElementById('view-home').style.display = state.tab === 'home' ? 'block' : 'none';
+  document.getElementById('view-favorites').style.display = state.tab === 'favorites' ? 'block' : 'none';
+  document.getElementById('view-brand').style.display = state.tab === 'brand' ? 'block' : 'none';
+  document.getElementById('view-history').style.display = state.tab === 'history' ? 'block' : 'none';
+
+  renderTabs();
+  renderFilters('desktop-filters');
+  renderSelectedChips();
+  if (state.tab === 'home') renderHomeView();
+  else if (state.tab === 'favorites') renderFavoritesView();
+  else if (state.tab === 'brand') renderBrandCompareView();
+  else if (state.tab === 'history') renderHistoryView();
+
+  // 移动端徽章
+  const f = state.filters;
+  const fcnt = (f.time !== 'all' ? 1 : 0) + f.groups.length + f.channels.length + f.contents.length + f.lengths.length + f.hots.length + f.vtypes.length + f.brands.length;
+  const fcb = document.getElementById('mb-filter-count');
+  if (fcnt > 0) { fcb.textContent = fcnt; fcb.style.display = 'inline-block'; } else { fcb.style.display = 'none'; }
+  const favCnt = getFavs().length;
+  const favb = document.getElementById('mb-fav-count');
+  if (favCnt > 0) { favb.textContent = favCnt; favb.style.display = 'inline-block'; } else { favb.style.display = 'none'; }
+  updateMobileSortLabel();
+}
+
+// ========== Init ==========
 function updateMeta() {
   document.getElementById('gen-at').textContent = DATA.generated_at;
   document.getElementById('gen-ago').textContent = fmtAgo(DATA.generated_at);
@@ -449,37 +1294,29 @@ function updateMeta() {
 }
 
 async function init() {
-  // 1) 时间筛选 click
-  document.querySelectorAll('[data-time]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      state.time = btn.dataset.time;
-      saveState(); refreshChips(); render();
-    });
-  });
-  // 2) 各多选 row
-  renderMultiChips('group-filters',   Object.entries(CFG.group_labels).map(([v,l]) => ({value: v, label: l})), 'groups');
-  renderMultiChips('content-filters', CFG.content_tags_order, 'contents');
-  renderMultiChips('length-filters',  CFG.length_order,       'lengths');
-  renderMultiChips('hot-filters',     CFG.hot_level_order,    'hots');
-  renderMultiChips('vtype-filters',   CFG.video_type_order,   'vtypes');
-  // 3) 排序
-  const sel = document.getElementById('sort-select');
-  sel.value = state.sort;
-  sel.addEventListener('change', e => { state.sort = e.target.value; saveState(); render(); });
-  // 4) 清空
-  document.getElementById('clear-btn').addEventListener('click', () => {
-    state = defaultState(); saveState(); refreshChips(); document.getElementById('sort-select').value = state.sort; render();
-  });
-  refreshChips();
+  // Bind mobile bar
+  document.getElementById('mb-filter').onclick = openMobileDrawer;
+  document.getElementById('mb-fav').onclick = () => { state.tab = 'favorites'; saveState(); render(); };
+  document.getElementById('mb-sort').onclick = () => {
+    const opts = ['er','views','comment_rate','view_to_sub','recent'];
+    const cur = opts.indexOf(state.sort);
+    state.sort = opts[(cur + 1) % opts.length];
+    saveState(); render();
+  };
+  document.getElementById('mobile-sort-btn').onclick = document.getElementById('mb-sort').onclick;
+  document.getElementById('mb-overlay').onclick = closeMobileDrawer;
+  document.getElementById('mb-drawer-cancel').onclick = closeMobileDrawer;
+  document.getElementById('mb-drawer-apply').onclick = applyMobileDrawer;
 
   try {
     DATA = await fetchData();
+    HISTORY = await fetchHistoryIndex();
     updateMeta();
     render();
   } catch (e) {
-    document.getElementById('grid').innerHTML =
-      '<div class="empty">❌ 加载数据失败: ' + e.message +
-      '<br>请用 <code>http://localhost:8765/dashboard.html</code> 打开</div>';
+    document.getElementById('view-home').innerHTML =
+      '<div class="empty">❌ 加载数据失败: ' + escHTML(e.message) +
+      '<br>请用 <code>http://localhost:8765/dashboard.html</code> 或 <code>https://sachel-bot.github.io/youtube-tracker/dashboard.html</code> 打开</div>';
     return;
   }
   setInterval(checkUpdate, POLL_INTERVAL_MS);
@@ -492,6 +1329,7 @@ async function checkUpdate() {
     if (newData.generated_at !== DATA.generated_at) {
       const oldVid = DATA.video_count;
       DATA = newData;
+      HISTORY = await fetchHistoryIndex();
       updateMeta(); render();
       const delta = DATA.video_count - oldVid;
       showToast('🔄 数据已更新 (' + DATA.video_count + ' 条' + (delta ? ', 变化 ' + (delta > 0 ? '+' : '') + delta : '') + ')');
