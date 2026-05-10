@@ -273,7 +273,9 @@
         "商务"
       ],
       "video_type": "教学",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "Apple Pencil"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 2.89,
       "view_to_sub_tier": "频道一般",

@@ -121,7 +121,9 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "Apple Pencil"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 75.71,
       "view_to_sub_tier": "频道爆款",

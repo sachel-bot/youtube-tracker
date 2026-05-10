@@ -28,10 +28,13 @@
       "comment_rate": 0.176,
       "video_length_type": "Medium",
       "content_tags": [
+        "学生",
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "Apple Pencil"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 7.3,
       "view_to_sub_tier": "频道高分",
@@ -149,6 +152,7 @@
       "comment_rate": 0.107,
       "video_length_type": "Medium",
       "content_tags": [
+        "学生",
         "商务"
       ],
       "video_type": "推荐/Best",
@@ -242,7 +246,9 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "AirPods"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 7.9,
       "view_to_sub_tier": "频道高分",
@@ -300,6 +306,7 @@
       "comment_rate": 0.084,
       "video_length_type": "Short",
       "content_tags": [
+        "商务",
         "其他Apple"
       ],
       "video_type": "其他",

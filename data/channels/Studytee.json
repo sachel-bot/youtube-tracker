@@ -148,7 +148,8 @@
       "comment_rate": 0.252,
       "video_length_type": "Medium",
       "content_tags": [
-        "创作"
+        "创作",
+        "学生"
       ],
       "video_type": "其他",
       "brand_mentions": [],
@@ -238,11 +239,11 @@
       "comment_rate": 0.0,
       "video_length_type": "Medium",
       "content_tags": [
-        "学生"
+        "其他"
       ],
       "video_type": "教学",
       "brand_mentions": [],
-      "hot_level": "🚀 现象级",
+      "hot_level": "⭐ 千万爆款",
       "view_to_sub_ratio": 1565.44,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 20

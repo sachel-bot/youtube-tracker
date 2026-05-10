@@ -62,7 +62,8 @@
       ],
       "video_type": "其他",
       "brand_mentions": [
-        "Anker相关"
+        "Anker",
+        "AirPods"
       ],
       "hot_level": "",
       "view_to_sub_ratio": 12.17,
@@ -123,7 +124,9 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "Logitech"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 20.93,
       "view_to_sub_tier": "频道爆款",

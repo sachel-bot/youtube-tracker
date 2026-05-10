@@ -271,7 +271,9 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "AirPods"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 0.65,
       "view_to_sub_tier": "频道冷启",

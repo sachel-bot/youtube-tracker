@@ -8,42 +8,38 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>YouTube 北美 iPad 配件内容情报</title>
 <style>
-  :root {
-    --bg: #0A0E1A;
-    --card: #131826;
-    --card-hover: #1A2032;
-    --text: #F1F5F9;
-    --text-muted: #94A3B8;
-    --text-faint: #64748B;
-    --primary: #6366F1;
-    --primary-bg: rgba(99,102,241,0.15);
-    --primary-text: #C7D2FE;
-    --purple: #A855F7;
-    --purple-bg: rgba(168,85,247,0.15);
-    --purple-text: #DDD6FE;
-    --rose: #EC4899;
-    --rose-bg: rgba(236,72,153,0.15);
-    --rose-text: #F9A8D4;
-    --up: #10B981;
-    --down: #F43F5E;
-    --warn: #F59E0B;
-    --red-bg: rgba(239,68,68,0.15);
-    --red-text: #FCA5A5;
-    --orange-bg: rgba(245,158,11,0.15);
-    --orange-text: #FCD34D;
-    --green-bg: rgba(16,185,129,0.15);
-    --green-text: #6EE7B7;
-    --gray-bg: rgba(148,163,184,0.15);
-    --gray-text: #CBD5E1;
-    --border: #1E293B;
-    --border-hover: #334155;
+  :root, :root[data-theme="dark"] {
+    --bg: #0A0E1A; --card: #131826; --card-hover: #1A2032;
+    --text: #F1F5F9; --text-muted: #94A3B8; --text-faint: #64748B;
+    --primary: #6366F1; --primary-bg: rgba(99,102,241,0.15); --primary-text: #C7D2FE;
+    --purple: #A855F7; --purple-bg: rgba(168,85,247,0.15); --purple-text: #DDD6FE;
+    --rose: #EC4899; --rose-bg: rgba(236,72,153,0.15); --rose-text: #F9A8D4;
+    --up: #10B981; --down: #F43F5E; --warn: #F59E0B;
+    --red-bg: rgba(239,68,68,0.15); --red-text: #FCA5A5;
+    --orange-bg: rgba(245,158,11,0.15); --orange-text: #FCD34D;
+    --green-bg: rgba(16,185,129,0.15); --green-text: #6EE7B7;
+    --gray-bg: rgba(148,163,184,0.15); --gray-text: #CBD5E1;
+    --border: #1E293B; --border-hover: #334155;
     --er-1: #34D399; --er-2: #6EE7B7; --er-3: #FCD34D; --er-4: #FDBA74; --er-5: #FCA5A5; --er-0: #94A3B8;
-    --shadow: 0 4px 20px rgba(0,0,0,0.4);
-    --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+    --shadow: 0 4px 20px rgba(0,0,0,0.4); --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
     --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
-    --header-h: 130px;
-    --sidebar-w: 280px;
+    --header-h: 130px; --sidebar-w: 280px;
+  }
+  :root[data-theme="light"] {
+    --bg: #F8FAFC; --card: #FFFFFF; --card-hover: #F1F5F9;
+    --text: #0F172A; --text-muted: #475569; --text-faint: #64748B;
+    --primary: #6366F1; --primary-bg: rgba(99,102,241,0.10); --primary-text: #4338CA;
+    --purple: #A855F7; --purple-bg: rgba(168,85,247,0.10); --purple-text: #6D28D9;
+    --rose: #EC4899; --rose-bg: rgba(236,72,153,0.10); --rose-text: #BE185D;
+    --up: #059669; --down: #DC2626; --warn: #D97706;
+    --red-bg: rgba(239,68,68,0.10); --red-text: #B91C1C;
+    --orange-bg: rgba(245,158,11,0.10); --orange-text: #B45309;
+    --green-bg: rgba(16,185,129,0.10); --green-text: #047857;
+    --gray-bg: rgba(148,163,184,0.10); --gray-text: #475569;
+    --border: #E2E8F0; --border-hover: #CBD5E1;
+    --er-1: #059669; --er-2: #10B981; --er-3: #D97706; --er-4: #EA580C; --er-5: #DC2626; --er-0: #64748B;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06); --shadow-lg: 0 8px 24px rgba(0,0,0,0.10);
   }
   * { box-sizing: border-box; }
   html { -webkit-font-smoothing: antialiased; }
@@ -56,12 +52,13 @@
 
   /* ========== Header ========== */
   header { position: sticky; top: 0; z-index: 100;
-    background: rgba(10,14,26,0.95); backdrop-filter: saturate(180%) blur(20px);
+    background: var(--bg); backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid var(--border); }
   .container { max-width: 1440px; margin: 0 auto; padding: 14px 24px 8px; }
-  .hero h1 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
-  .hero .subtitle { color: var(--text-muted); font-size: 12.5px; margin-top: 3px; font-weight: 500; }
+  .hero h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.05em; font-family: var(--font-sans); }
+  .hero h1 .dot { color: var(--primary); margin: 0 4px; }
+  .hero .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 4px; font-weight: 400; }
   .meta-line { color: var(--text-faint); font-size: 11px; margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
   .meta-line b { color: var(--text); }
   .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--up); display: inline-block; margin-right: 5px; animation: pulse 2s infinite; }
@@ -243,6 +240,14 @@
     border-radius: 8px; text-align: left; font-size: 12px; margin-top: 6px; }
   .empty-banner button:hover { border-color: var(--primary); }
 
+  /* Theme switcher */
+  .theme-switch { display: flex; gap: 4px; padding: 4px; border-radius: 10px; background: var(--card-hover); border: 1px solid var(--border); }
+  .theme-switch button { flex: 1; padding: 6px 8px; border-radius: 7px; background: transparent;
+    border: none; color: var(--text-muted); font-size: 11.5px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 32px; }
+  .theme-switch button:hover { color: var(--text); }
+  .theme-switch button.active { background: var(--primary); color: white; font-weight: 600; }
+
   /* btn */
   .btn { padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px;
     background: var(--card-hover); color: var(--text); font-size: 13px;
@@ -415,10 +420,16 @@
     color: var(--text-faint); padding: 4px 8px; }
 
   .toast { position: fixed; right: 20px; bottom: 80px; z-index: 300;
-    background: var(--card-hover); color: var(--text); padding: 12px 18px; border-radius: 12px;
+    background: var(--card-hover); color: var(--text); padding: 12px 16px; border-radius: 12px;
     font-size: 13px; font-weight: 500; box-shadow: var(--shadow-lg); border: 1px solid var(--border-hover);
-    transform: translateY(80px); opacity: 0; transition: all 0.25s; max-width: 360px; }
+    transform: translateY(80px); opacity: 0; transition: all 0.25s; max-width: 420px;
+    display: flex; align-items: center; gap: 12px; }
   .toast.show { transform: translateY(0); opacity: 1; }
+  .toast .toast-msg { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .toast .toast-action { background: var(--primary); color: white; border: none;
+    padding: 6px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 600; cursor: pointer; flex-shrink: 0; }
+  .toast .toast-action:hover { background: #5557E0; }
+  .toast .toast-countdown { color: var(--text-faint); font-size: 11px; font-family: var(--font-mono); flex-shrink: 0; }
 
   /* Mobile */
   .mobile-bar { display: none; }
@@ -452,7 +463,7 @@
     .overview-bar .key { display: none; }
 
     .mobile-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0;
-      background: rgba(10,14,26,0.96); backdrop-filter: saturate(180%) blur(20px);
+      background: var(--bg); backdrop-filter: saturate(180%) blur(20px);
       border-top: 1px solid var(--border); padding: 8px 12px;
       padding-bottom: calc(8px + env(safe-area-inset-bottom));
       z-index: 99; gap: 6px; }
@@ -493,8 +504,8 @@
 <header>
   <div class="container">
     <div class="hero">
-      <h1>📺 YouTube 北美 iPad 配件内容情报</h1>
-      <div class="subtitle">56 频道 · 8 维度数据 · 每日更新</div>
+      <h1>YT<span class="dot">·</span>INTEL</h1>
+      <div class="subtitle">北美 iPad 配件类目 · 56 频道 · 8 维度数据</div>
       <div class="meta-line">
         <span><span class="live-dot"></span>自动刷新已开</span>
         <span>数据 <b id="gen-at">—</b> <span id="gen-ago"></span></span>
@@ -526,6 +537,7 @@
     <div id="view-brand" style="display:none"></div>
     <div id="view-history" style="display:none"></div>
     <div id="view-monitor" style="display:none"></div>
+    <div id="view-hidden" style="display:none"></div>
   </main>
 </div>
 
@@ -609,10 +621,37 @@ function fmtAgo(iso) {
   return '(' + Math.floor(sec/86400) + ' 天前)';
 }
 function escHTML(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function showToast(msg) {
+let _toastTimer = null;
+let _toastCountdown = null;
+function showToast(msg, opts={}) {
+  const { actionLabel, onAction, duration = 3000 } = opts;
   const t = document.getElementById('toast');
-  t.textContent = msg; t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 3000);
+  if (_toastTimer) { clearTimeout(_toastTimer); _toastTimer = null; }
+  if (_toastCountdown) { clearInterval(_toastCountdown); _toastCountdown = null; }
+  let html = `<span class="toast-msg">${escHTML(msg)}</span>`;
+  if (actionLabel) {
+    html += `<button class="toast-action">${escHTML(actionLabel)}</button>`;
+    html += `<span class="toast-countdown">${Math.ceil(duration/1000)}s</span>`;
+  }
+  t.innerHTML = html;
+  t.classList.add('show');
+  if (actionLabel) {
+    const btn = t.querySelector('.toast-action');
+    btn.onclick = () => {
+      if (onAction) onAction();
+      t.classList.remove('show');
+      if (_toastTimer) clearTimeout(_toastTimer);
+      if (_toastCountdown) clearInterval(_toastCountdown);
+    };
+    let remain = Math.ceil(duration/1000);
+    const cdEl = t.querySelector('.toast-countdown');
+    _toastCountdown = setInterval(() => {
+      remain -= 1;
+      if (cdEl) cdEl.textContent = remain + 's';
+      if (remain <= 0) clearInterval(_toastCountdown);
+    }, 1000);
+  }
+  _toastTimer = setTimeout(() => t.classList.remove('show'), duration);
 }
 function withinTime(iso, key) {
   if (key === 'all') return true;
@@ -738,13 +777,13 @@ function makeDropdown({ label, options, multi, getSelected, onApply, withCount=f
     const body = document.createElement('div');
     body.className = 'body';
     options.forEach(opt => {
-      const v = opt.value || opt;
-      const lbl = opt.label || opt;
-      const subLabel = opt.sub || '';
+      const isObj = (opt && typeof opt === 'object');
+      const v = isObj ? opt.value : opt;
+      const lbl = isObj ? opt.label : opt;
       const checked = multi ? temp.includes(v) : (temp === v);
       const item = document.createElement('div');
       item.className = 'dd-item' + (checked ? ' checked' : '');
-      item.innerHTML = (multi ? '<span class="check"></span>' : '') + `<span>${escHTML(lbl)}</span>` + (subLabel ? `<span class="subs">${subLabel}</span>` : '');
+      item.innerHTML = (multi ? '<span class="check"></span>' : '') + `<span>${escHTML(lbl)}</span>`;
       item.onclick = (e) => {
         e.stopPropagation();
         if (multi) {
@@ -902,12 +941,14 @@ document.addEventListener('keydown', e => {
 // ========== Tabs ==========
 function renderTabs() {
   const favCount = getFavs().length;
+  const hiddenCount = getHidden().length;
   const items = [
     { key: 'home', label: '首页' },
     { key: 'favorites', label: '拆解清单', badge: favCount > 0 ? favCount : null },
     { key: 'brand', label: '品牌对比' },
     { key: 'history', label: '历史趋势' },
     { key: 'monitor', label: '竞品监测' },
+    { key: 'hidden', label: '已隐藏', badge: hiddenCount > 0 ? hiddenCount : null },
   ];
   document.getElementById('tabs').innerHTML = items.map(t =>
     `<button class="tab${t.key === state.tab ? ' active' : ''}" data-tab="${t.key}">${t.label}${t.badge != null ? `<span class="tab-badge">${t.badge}</span>` : ''}</button>`
@@ -968,39 +1009,93 @@ function renderKPI(filtered) {
   `;
 }
 
+// V6 智能洞察：4 层结构（事实 / 对比 / 含义 / 建议）
 function generateInsights(filtered) {
-  const insights = [];
+  const out = [];
   const week = filtered.filter(v => withinTime(v.published_at, '7'));
+
+  // 1) 创作类（P2）vs 总体
   const allCreate = filtered.filter(v => (v.content_tags||[]).includes('创作'));
-  if (allCreate.length) {
+  if (allCreate.length >= 5) {
     const allER = allCreate.reduce((s,v) => s+(v.engagement_rate||0), 0) / allCreate.length;
-    const wkCreate = week.filter(v => (v.content_tags||[]).includes('创作'));
-    if (wkCreate.length >= 3) {
-      const wER = wkCreate.reduce((s,v) => s+(v.engagement_rate||0), 0) / wkCreate.length;
-      const diff = ((wER - allER) / Math.max(allER, 0.01) * 100);
-      if (Math.abs(diff) >= 15) insights.push(`创作类内容本周 ER ${diff > 0 ? '↑' : '↓'} ${Math.abs(diff).toFixed(0)}%（本周 ${wER.toFixed(2)}% vs 总体 ${allER.toFixed(2)}%）`);
-    }
+    const overallER = filtered.length ? filtered.reduce((s,v) => s+(v.engagement_rate||0),0) / filtered.length : 0;
+    const diff = overallER ? ((allER - overallER) / overallER * 100) : 0;
+    const topCh = [...new Set(allCreate.sort((a,b) => (b.engagement_rate||0)-(a.engagement_rate||0)).map(v => v.channel_name))].slice(0, 3);
+    out.push({
+      title: '创作类内容（P2 人群）',
+      data: `ER ${allER.toFixed(2)}% · ${allCreate.length} 条视频`,
+      compare: `比总体 ${diff >= 0 ? '+' : ''}${diff.toFixed(0)}%${HISTORY && HISTORY.count < 7 ? ' · 跨周对比待积累' : ''}`,
+      meaning: diff >= 15 ? 'P2 创作人群活跃度高 · 内容质量好' : diff <= -15 ? 'P2 创作类供给疲软' : 'P2 创作类表现稳定',
+      action: diff >= 15 ? `本周内容向创作场景倾斜 · 优先合作: ${topCh.join(' / ')}` : '保持基线投入',
+    });
   }
-  const aWeek = week.filter(v => v.channel_group === 'A_brand' && v.view_count >= 1e6);
-  aWeek.slice(0, 2).forEach(v => insights.push(`${v.channel_name} 本周新视频破百万：${v.title.slice(0, 40)}`));
+
+  // 2) iPad 配件相关供给
   const ipadAcc = filtered.filter(v => (v.content_tags||[]).includes('iPad配件相关'));
-  if (ipadAcc.length === 0) insights.push('当前筛选下无 iPad 配件相关视频，建议放宽时间或分组');
-  else if (ipadAcc.length <= 5) insights.push(`iPad 配件相关视频仅 ${ipadAcc.length} 条，类目供给量低（蓝海机会）`);
+  out.push({
+    title: 'iPad 配件相关视频供给',
+    data: `${ipadAcc.length} 条视频`,
+    compare: ipadAcc.length === 0 ? '类目空白' : ipadAcc.length <= 10 ? '供给量低（<10 条）' : `供给充足`,
+    meaning: ipadAcc.length <= 10 ? '类目蓝海 · 内容竞争小但需求存在' : '类目饱和度高',
+    action: ipadAcc.length <= 10 ? '加大 iPad 配件评测/装机/教程内容产出 · 抢占 SEO 长尾' : '差异化切入（场景/人群/价位）',
+  });
+
+  // 3) 头部 KOL 本周动态
   const kolWeek = week.filter(v => CFG.top_kol.includes(v.channel_name));
-  if (kolWeek.length) insights.push(`头部 KOL 本周共发布 ${kolWeek.length} 条视频`);
-  return insights;
+  if (kolWeek.length) {
+    const top = kolWeek.sort((a,b) => (b.view_count||0)-(a.view_count||0))[0];
+    out.push({
+      title: '头部 KOL 本周动态',
+      data: `${kolWeek.length} 条视频 · ${[...new Set(kolWeek.map(v=>v.channel_name))].length} 个 KOL`,
+      compare: `Top 1: ${top.channel_name} ${fmt(top.view_count)} 播放`,
+      meaning: '风向标观察 · 头部 KOL 选题往往领先 1-2 周',
+      action: top ? `跟进 ${top.channel_name} 最新内容选题 · 24h 内复用爆款 hook` : '持续监测',
+    });
+  }
+
+  // 4) 竞品 A 组本周破百万
+  const aHot = week.filter(v => v.channel_group === 'A_brand' && v.view_count >= 1e6);
+  if (aHot.length) {
+    out.push({
+      title: '直接竞品 A 组本周爆款',
+      data: `${aHot.length} 条破百万`,
+      compare: `${aHot.slice(0,2).map(v => v.channel_name + ' ' + fmt(v.view_count)).join(' · ')}`,
+      meaning: '竞品高曝光信号 · 可能在做新品/促销/品牌投放',
+      action: '即刻拆解 hook + 描述 + CTA · 反向推断竞品策略',
+    });
+  }
+
+  // 5) 品牌提及（自家被外部讨论的次数）
+  const typecaseMentions = filtered.filter(v => (v.brand_mentions||[]).includes('Typecase')).length;
+  if (typecaseMentions) {
+    out.push({
+      title: '自家品牌（Typecase）外部提及',
+      data: `${typecaseMentions} 条视频提到 Typecase`,
+      compare: `vs 头部竞品（Logitech 提及 ${filtered.filter(v=>(v.brand_mentions||[]).includes('Logitech')).length} 条）`,
+      meaning: typecaseMentions > 0 ? '品牌已进入 KOL 视野' : '品牌曝光待提升',
+      action: typecaseMentions > 0 ? '发联名/赠测推动更多 KOL 发声' : '加大 KOL 种草投放',
+    });
+  }
+  return out;
 }
 
 function renderInsight(filtered) {
   const root = document.getElementById('insight');
   const insights = generateInsights(filtered);
-  if (insights.length === 0 && (!HISTORY || HISTORY.count >= 7)) { root.style.display = 'none'; return; }
+  if (insights.length === 0) { root.style.display = 'none'; return; }
   root.style.display = 'block';
-  if (HISTORY && HISTORY.count < 7) {
-    root.innerHTML = `<div class="title">📊 智能洞察</div><ul><li style="color:var(--text-faint)">趋势对比将在 7 天数据积累后开启（当前 ${HISTORY.count}/7 天）。先看实时观察 ↓</li>${insights.map(i => '<li>' + escHTML(i) + '</li>').join('')}</ul>`;
-  } else {
-    root.innerHTML = `<div class="title">📊 本周观察</div><ul>${insights.map(i => '<li>' + escHTML(i) + '</li>').join('')}</ul>`;
-  }
+  const cards = insights.map(i => `
+    <div style="background:var(--card);border:1px solid var(--border);border-left:3px solid var(--primary);border-radius:8px;padding:10px 14px;margin-top:8px">
+      <div style="font-weight:600;font-size:13px;margin-bottom:4px;color:var(--text)">${escHTML(i.title)}</div>
+      <div style="font-size:12px;color:var(--text-muted);line-height:1.7">
+        <div><span style="color:var(--text-faint);min-width:48px;display:inline-block">数据:</span> ${escHTML(i.data)}</div>
+        <div><span style="color:var(--text-faint);min-width:48px;display:inline-block">对比:</span> ${escHTML(i.compare)}</div>
+        <div><span style="color:var(--text-faint);min-width:48px;display:inline-block">含义:</span> ${escHTML(i.meaning)}</div>
+        <div><span style="color:var(--primary);min-width:48px;display:inline-block">建议:</span> <span style="color:var(--text)">${escHTML(i.action)}</span></div>
+      </div>
+    </div>`).join('');
+  const note = HISTORY && HISTORY.count < 7 ? `<div style="font-size:11px;color:var(--text-faint);margin-top:6px">📊 跨周趋势对比将在 ${7 - HISTORY.count} 天后开启</div>` : '';
+  root.innerHTML = `<div class="title">📊 营销情报洞察 · ${insights.length} 条</div>${cards}${note}`;
 }
 
 function renderStatRow(filtered) {
@@ -1123,6 +1218,13 @@ function renderSidebar() {
   root.innerHTML = '';
   if (state.tab !== 'home' && state.tab !== 'monitor') {
     root.innerHTML = '<div style="color:var(--text-faint);font-size:12px;padding:20px;text-align:center">筛选仅在「首页」「竞品监测」 Tab 生效</div>';
+    const thLate = document.createElement('h4');
+    thLate.textContent = '主题';
+    root.appendChild(thLate);
+    const twLate = document.createElement('div');
+    twLate.innerHTML = renderThemeSwitch();
+    root.appendChild(twLate);
+    bindThemeSwitch(twLate);
     return;
   }
   const filtered = applyFilters(DATA.videos);
@@ -1275,6 +1377,15 @@ function renderSidebar() {
       root.appendChild(relax);
     }
   }
+
+  // 主题切换（永远在 sidebar 底部）
+  const th = document.createElement('h4');
+  th.textContent = '主题';
+  root.appendChild(th);
+  const tw = document.createElement('div');
+  tw.innerHTML = renderThemeSwitch();
+  root.appendChild(tw);
+  bindThemeSwitch(tw);
 }
 
 // ========== Mobile drawer ==========
@@ -1685,6 +1796,43 @@ function renderHistoryView() {
   root.innerHTML = html;
 }
 
+function renderHiddenView() {
+  const root = document.getElementById('view-hidden');
+  const ids = getHidden();
+  const vids = DATA.videos.filter(v => ids.includes(v.video_id));
+  let html = '<div class="panel"><h3>已隐藏视频 (' + vids.length + ' 条)</h3>';
+  if (vids.length === 0) {
+    html += '<div class="empty">没有已隐藏视频</div>';
+  } else {
+    html += `<div style="margin-bottom:14px;display:flex;gap:8px"><button class="btn" id="hd-clear" style="width:auto;color:var(--down);border-color:var(--down)">全部恢复</button></div>`;
+    html += '<div class="grid">' + vids.map(v => {
+      return `<div class="video-card" data-vid="${v.video_id}">
+        <a href="${v.video_url}" target="_blank" class="thumb-wrap">
+          <img src="${v.thumbnail_url}" alt="" loading="lazy">
+          <div class="duration">${v.duration||''}</div>
+        </a>
+        <div class="card-body">
+          <div class="card-row1"><span class="channel-name">${escHTML(v.channel_name)}</span></div>
+          <a class="card-title" href="${v.video_url}" target="_blank">${escHTML(v.title)}</a>
+          <button class="btn btn-primary" data-unhide="${v.video_id}" style="margin-top:8px">恢复显示</button>
+        </div>
+      </div>`;
+    }).join('') + '</div>';
+  }
+  html += '</div>';
+  root.innerHTML = html;
+  const clr = document.getElementById('hd-clear');
+  if (clr) clr.onclick = () => {
+    if (confirm('全部恢复（' + vids.length + ' 条）？')) { setHidden([]); render(); showToast('已全部恢复'); }
+  };
+  root.querySelectorAll('[data-unhide]').forEach(b => b.onclick = () => {
+    const vid = b.dataset.unhide;
+    setHidden(getHidden().filter(x => x !== vid));
+    render();
+    showToast('已恢复');
+  });
+}
+
 function renderMonitorView() {
   const root = document.getElementById('view-monitor');
   const aChannels = (CFG.channel_tree.A_brand||[]).map(c => c.display_name);
@@ -1718,9 +1866,20 @@ function bindCardActions(root) {
   root.querySelectorAll('.hide-btn').forEach(b => b.onclick = (e) => {
     e.stopPropagation(); e.preventDefault();
     const vid = b.dataset.vid;
+    const v = DATA.videos.find(x => x.video_id === vid);
+    const title = v ? v.title : vid;
     const cur = getHidden();
-    if (!cur.includes(vid)) { cur.push(vid); setHidden(cur); showToast('已隐藏'); }
+    if (!cur.includes(vid)) { cur.push(vid); setHidden(cur); }
     render();
+    showToast(`已隐藏《${title.slice(0, 24)}》`, {
+      actionLabel: '撤销',
+      duration: 5000,
+      onAction: () => {
+        setHidden(getHidden().filter(x => x !== vid));
+        render();
+        showToast('已恢复显示');
+      }
+    });
   });
   root.querySelectorAll('.bulk-cb').forEach(c => c.onclick = (e) => {
     e.stopPropagation(); e.preventDefault();
@@ -1805,6 +1964,7 @@ function render() {
   document.getElementById('view-brand').style.display = state.tab === 'brand' ? 'block' : 'none';
   document.getElementById('view-history').style.display = state.tab === 'history' ? 'block' : 'none';
   document.getElementById('view-monitor').style.display = state.tab === 'monitor' ? 'block' : 'none';
+  document.getElementById('view-hidden').style.display = state.tab === 'hidden' ? 'block' : 'none';
 
   const filtered = applyFilters(DATA.videos);
   renderTabs();
@@ -1820,6 +1980,7 @@ function render() {
   else if (state.tab === 'brand') renderBrandCompareView();
   else if (state.tab === 'history') renderHistoryView();
   else if (state.tab === 'monitor') renderMonitorView();
+  else if (state.tab === 'hidden') renderHiddenView();
 
   const fcnt = activeFilterCount();
   const fcb = document.getElementById('mb-filter-count');
@@ -1837,6 +1998,42 @@ function updateMeta() {
   document.getElementById('gen-ago').textContent = fmtAgo(DATA.generated_at);
   document.getElementById('ch-count').textContent = DATA.channel_count;
   document.getElementById('vid-count').textContent = DATA.video_count;
+}
+
+// ========== Theme Manager (深色 / 浅色 / 跟随系统) ==========
+const themeManager = {
+  init() {
+    this.apply(this.getStored());
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if (this.getStored() === 'auto') this.applyAuto();
+    });
+  },
+  getStored() { return localStorage.getItem('theme-pref') || 'dark'; },
+  apply(theme) {
+    if (theme === 'auto') this.applyAuto();
+    else document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme-pref', theme);
+  },
+  applyAuto() {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  },
+};
+themeManager.init();
+
+function renderThemeSwitch() {
+  const cur = themeManager.getStored();
+  const opts = [
+    { v: 'dark', label: '🌙 深色' },
+    { v: 'light', label: '☀️ 浅色' },
+    { v: 'auto', label: '🖥 系统' },
+  ];
+  return `<div class="theme-switch">${opts.map(o => `<button class="${cur === o.v ? 'active' : ''}" data-theme="${o.v}">${o.label}</button>`).join('')}</div>`;
+}
+function bindThemeSwitch(root) {
+  root.querySelectorAll('[data-theme]').forEach(b => b.onclick = () => {
+    themeManager.apply(b.dataset.theme); render();
+  });
 }
 
 async function init() {

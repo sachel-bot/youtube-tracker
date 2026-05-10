@@ -58,6 +58,7 @@
       "comment_rate": 0.234,
       "video_length_type": "Short",
       "content_tags": [
+        "创作",
         "商务"
       ],
       "video_type": "其他",
@@ -118,7 +119,7 @@
       "comment_rate": 0.862,
       "video_length_type": "Short",
       "content_tags": [
-        "其他"
+        "创作"
       ],
       "video_type": "教学",
       "brand_mentions": [],
@@ -212,7 +213,7 @@
       ],
       "video_type": "其他",
       "brand_mentions": [],
-      "hot_level": "",
+      "hot_level": "⭐ 百万爆款",
       "view_to_sub_ratio": 2017.85,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 80
@@ -268,6 +269,7 @@
       "comment_rate": 0.0,
       "video_length_type": "Shorts",
       "content_tags": [
+        "创作",
         "其他Apple"
       ],
       "video_type": "其他",
@@ -298,7 +300,7 @@
       "comment_rate": 0.067,
       "video_length_type": "Shorts",
       "content_tags": [
-        "其他"
+        "商务"
       ],
       "video_type": "其他",
       "brand_mentions": [],

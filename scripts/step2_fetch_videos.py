@@ -25,10 +25,23 @@ VIDEOS_PER_CHANNEL = 10
 # ============ 维度计算配置 ============
 
 CONTENT_TAG_RULES = [
-    ("iPad配件相关", [r"ipad keyboard", r"ipad case", r"magic keyboard", r"ipad cover", r"ipad accessor"]),
-    ("创作",        [r"\bprocreate\b", r"\bdraw(ing)?\b", r"\bart(ist)?\b", r"\bdesign(er)?\b", r"\bcreator\b", r"illustrat", r"painting"]),
-    ("学生",        [r"\bstudy\b", r"\bstudent\b", r"\bschool\b", r"\bhomework\b", r"\bcollege\b", r"\bexam\b", r"\bnote-?taking\b"]),
-    ("商务",        [r"\bwfh\b", r"\boffice\b", r"\bproductivity\b", r"\bwork\b", r"\bbusiness\b", r"\bremote\b", r"\bworkflow\b"]),
+    ("iPad配件相关", [
+        r"ipad keyboard", r"ipad case", r"ipad cover", r"ipad accessor",
+        r"magic keyboard", r"smart keyboard", r"keyboard folio", r"keyboard case",
+        r"keyboard for ipad", r"case for ipad", r"protective case",
+    ]),
+    ("创作", [
+        r"\bprocreate\b", r"\bdraw(ing)?\b", r"\bart(ist)?\b", r"\bdesign(er)?\b",
+        r"\bcreative\b", r"\bcreator\b", r"illustrat", r"\bsketch", r"painting",
+    ]),
+    ("学生", [
+        r"\bstudy(ing)?\b", r"\bstudent\b", r"\bschool\b", r"\bcollege\b", r"\buniversity\b",
+        r"\bhomework\b", r"\bnote-?taking\b", r"\bgoodnotes\b", r"\bnotability\b",
+    ]),
+    ("商务", [
+        r"\bwfh\b", r"\boffice\b", r"\bproductivity\b", r"\bwork(flow)?\b",
+        r"\bbusiness\b", r"\bprofessional\b", r"\btasks\b", r"\bremote\s+work\b",
+    ]),
 ]
 # "其他Apple" 特殊：含 iPhone/Mac/Watch/AirPods 但不含 iPad
 APPLE_OTHER_TERMS = [r"\biphone\b", r"\bmacbook\b", r"\bimac\b", r"\bapple watch\b", r"\bairpods\b", r"\bvision pro\b"]
@@ -47,44 +60,49 @@ VIDEO_TYPE_RULES = [
     ("推荐/Best",  [r"\bbest\b", r"\btop \d", r"\brecommend", r"\bmust[- ]have\b"]),
 ]
 
-# 频道 → 自家品牌（brand_mentions 排除）
-CHANNEL_SELF_BRAND = {
-    "Logitech":     "Logitech相关",
-    "ESR Gear":     "ESR相关",
-    "ZAGG":         "ZAGG相关",
-    "Fintie":       "Fintie相关",
-    "Inateck":      "Inateck相关",
-    "Arteck":       "Arteck相关",
-    "Doqo":         "Doqo相关",
-    "Apple":        "Apple键盘相关",
-    "Typecase":     "Typecase相关",
-    "Anker":        "Anker相关",
-    "Belkin":       "Belkin相关",
-    "Satechi":      "Satechi相关",
-    "Twelve South": "Twelve South相关",
-    "Native Union": "Native Union相关",
-    "Procreate":    "Procreate相关",
+# 频道 → 自家品牌列表（brand_mentions 排除）
+CHANNEL_SELF_BRANDS = {
+    "Logitech":     ["Logitech"],
+    "ESR Gear":     ["ESR"],
+    "ZAGG":         ["ZAGG"],
+    "Fintie":       ["Fintie"],
+    "Inateck":      ["Inateck"],
+    "Arteck":       ["Arteck"],
+    "Doqo":         ["Doqo"],
+    "Apple":        ["Apple Magic Keyboard", "Apple Smart Keyboard Folio", "Magic Trackpad", "AirPods", "Apple Pencil"],
+    "Typecase":     ["Typecase"],
+    "Anker":        ["Anker"],
+    "Belkin":       ["Belkin"],
+    "Satechi":      ["Satechi"],
+    "Twelve South": ["Twelve South"],
+    "Native Union": ["Native Union"],
 }
 
-# 品牌关键词监测（HOU 用严格规则避免误伤）
+# 品牌关键词监测 V6 - 20 个品牌完整清单（HOU 严格匹配避免误伤）
 BRAND_RULES = [
-    ("Brydge相关",     [r"\bbrydge\b"]),
-    ("HOU相关",        [r"\bhou keyboard\b", r"\bhou ipad\b", r"\bhou case\b"]),
-    ("Logitech相关",   [r"logitech combo", r"logitech folio", r"logitech crayon", r"logitech pen"]),
-    ("Apple键盘相关",  [r"magic keyboard"]),
-    ("ESR相关",        [r"\besr\b"]),
-    ("ZAGG相关",       [r"\bzagg\b"]),
-    ("Fintie相关",     [r"\bfintie\b"]),
-    ("Inateck相关",    [r"\binateck\b"]),
-    ("Arteck相关",     [r"\barteck\b"]),
-    ("Doqo相关",       [r"\bdoqo\b"]),
-    ("Typecase相关",   [r"\btypecase\b"]),
-    ("Anker相关",      [r"\banker\b"]),
-    ("Belkin相关",     [r"\bbelkin\b"]),
-    ("Satechi相关",    [r"\bsatechi\b"]),
-    ("Twelve South相关",[r"twelve south"]),
-    ("Native Union相关",[r"native union"]),
-    ("Procreate相关",  [r"\bprocreate\b"]),
+    # ==== 直接竞品 12 ====
+    ("Typecase",                [r"\btypecase\b"]),
+    ("Logitech",                [r"\blogitech\b", r"combo touch", r"folio touch", r"keys[- ]to[- ]go"]),
+    ("Brydge",                  [r"\bbrydge\b"]),
+    ("ESR",                     [r"\besr\b"]),
+    ("ZAGG",                    [r"\bzagg\b", r"pro keys", r"messenger universal"]),
+    ("Apple Magic Keyboard",    [r"magic keyboard"]),
+    ("Apple Smart Keyboard Folio", [r"smart keyboard folio"]),
+    ("Fintie",                  [r"\bfintie\b"]),
+    ("Inateck",                 [r"\binateck\b"]),
+    ("Arteck",                  [r"\barteck\b"]),
+    ("Doqo",                    [r"\bdoqo\b"]),
+    ("HOU",                     [r"\bhou keyboard\b", r"\bhou ipad\b", r"\bhou case\b"]),
+    # ==== 学习品牌 5 ====
+    ("Anker",                   [r"\banker\b"]),
+    ("Belkin",                  [r"\bbelkin\b"]),
+    ("Satechi",                 [r"\bsatechi\b"]),
+    ("Twelve South",            [r"twelve south"]),
+    ("Native Union",            [r"native union"]),
+    # ==== 相关产品 3 ====
+    ("Magic Trackpad",          [r"magic trackpad"]),
+    ("AirPods",                 [r"\bairpods\b"]),
+    ("Apple Pencil",            [r"apple pencil", r"ipad pencil"]),
 ]
 
 
@@ -163,13 +181,13 @@ def calc_video_type(text):
 
 
 def calc_brand_mentions(text, channel_display_name=None):
-    """品牌提及（排除自家频道发的）"""
+    """品牌提及（排除自家频道发的视频，避免自卖自夸）"""
     text_l = text.lower()
-    self_brand = CHANNEL_SELF_BRAND.get(channel_display_name)
+    self_brands = set(CHANNEL_SELF_BRANDS.get(channel_display_name, []))
     out = []
     for label, patterns in BRAND_RULES:
-        if label == self_brand:
-            continue  # 排除自家品牌
+        if label in self_brands:
+            continue
         if any(re.search(p, text_l) for p in patterns):
             out.append(label)
     return out
@@ -194,15 +212,40 @@ def calc_relevance_score(title, desc, content_tags, channel_group):
     return 20
 
 
-def calc_hot_level(views, er, published_iso, now_ms):
-    """爆款等级（互斥，按最高级取）"""
+def calc_hot_level(views, er, published_iso, now_ms, subs=0):
+    """爆款等级 V6 - 按订阅量级动态阈值（小/中/头部）"""
     pub_ms = _iso_to_ms(published_iso)
     age_h = (now_ms - pub_ms) / 3_600_000
-    if views >= 5_000_000:
-        return "🚀 现象级"
-    if views >= 1_000_000 and age_h <= 30 * 24:
+    age_d = age_h / 24
+
+    # 头部频道 (≥100 万订阅)
+    if subs >= 1_000_000:
+        if views >= 30_000_000:
+            return "🚀 现象级"
+        if views >= 10_000_000:
+            return "⭐ 千万爆款"
+        if views >= 5_000_000 and age_d <= 7 and er >= 5:
+            return "💥 强爆款"
+        if views >= 1_000_000 and age_h <= 24 and er >= 5:
+            return "🔥 上升爆款"
+        return ""
+
+    # 中频道 (10-100 万)
+    if subs >= 100_000:
+        if views >= 5_000_000:
+            return "🚀 现象级"
+        if views >= 2_000_000 and age_d <= 7 and er >= 5:
+            return "💥 强爆款"
+        if views >= 1_000_000:
+            return "⭐ 百万爆款"
+        if views >= 500_000 and age_h <= 24 and er >= 5:
+            return "🔥 上升爆款"
+        return ""
+
+    # 小频道 (<10 万)
+    if views >= 1_000_000:
         return "⭐ 百万爆款"
-    if views >= 500_000 and age_h <= 7 * 24 and er >= 5:
+    if views >= 500_000 and age_d <= 7 and er >= 5:
         return "💥 强爆款"
     if views >= 100_000 and age_h <= 24 and er >= 5:
         return "🔥 上升爆款"
@@ -279,7 +322,7 @@ def main():
         ctags = calc_content_tags(text_for_match)
         vtype = calc_video_type(title)
         brands = calc_brand_mentions(text_for_match, ch["display_name"])
-        hot = calc_hot_level(views, er, published, now_ms)
+        hot = calc_hot_level(views, er, published, now_ms, ch["subscriber_count"])
         ratio, ratio_tier = calc_view_to_sub_ratio(views, ch["subscriber_count"])
         relevance = calc_relevance_score(title, desc, ctags, ch["group"])
 

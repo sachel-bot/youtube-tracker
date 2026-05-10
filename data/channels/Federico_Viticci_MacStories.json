@@ -61,7 +61,9 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [],
+      "brand_mentions": [
+        "Logitech"
+      ],
       "hot_level": "",
       "view_to_sub_ratio": 14.48,
       "view_to_sub_tier": "频道爆款",
