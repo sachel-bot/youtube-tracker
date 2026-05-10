@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="YT Tracker">
 <title>YouTube 北美 iPad 配件内容情报</title>
 <style>
   :root {
@@ -17,7 +16,6 @@
     --text-muted: #94A3B8;
     --text-faint: #64748B;
     --primary: #6366F1;
-    --primary-2: #3B82F6;
     --primary-bg: rgba(99,102,241,0.15);
     --primary-text: #C7D2FE;
     --purple: #A855F7;
@@ -29,7 +27,6 @@
     --up: #10B981;
     --down: #F43F5E;
     --warn: #F59E0B;
-    --info: #06B6D4;
     --red-bg: rgba(239,68,68,0.15);
     --red-text: #FCA5A5;
     --orange-bg: rgba(245,158,11,0.15);
@@ -40,82 +37,85 @@
     --gray-text: #CBD5E1;
     --border: #1E293B;
     --border-hover: #334155;
-    --er-1: #34D399;
-    --er-2: #6EE7B7;
-    --er-3: #FCD34D;
-    --er-4: #FDBA74;
-    --er-5: #FCA5A5;
-    --er-0: #94A3B8;
+    --er-1: #34D399; --er-2: #6EE7B7; --er-3: #FCD34D; --er-4: #FDBA74; --er-5: #FCA5A5; --er-0: #94A3B8;
     --shadow: 0 4px 20px rgba(0,0,0,0.4);
     --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
-    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
-    --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, "Menlo", monospace;
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+    --header-h: 130px;
+    --sidebar-w: 280px;
   }
   * { box-sizing: border-box; }
-  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  html { -webkit-font-smoothing: antialiased; }
   body { margin: 0; background: var(--bg); color: var(--text);
     font-family: var(--font-sans); font-size: 14px; line-height: 1.5;
     -webkit-tap-highlight-color: transparent; }
   a { color: inherit; text-decoration: none; }
   button { font-family: inherit; font-size: inherit; cursor: pointer; }
-  input, select { font-family: inherit; }
+  input, select, textarea { font-family: inherit; }
 
-  /* Header */
-  header {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(10,14,26,0.95);
-    backdrop-filter: saturate(180%) blur(20px);
+  /* ========== Header ========== */
+  header { position: sticky; top: 0; z-index: 100;
+    background: rgba(10,14,26,0.95); backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-bottom: 1px solid var(--border);
-  }
-  .container { max-width: 1440px; margin: 0 auto; padding: 16px 28px; }
-  .hero h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
-  .hero .subtitle { color: var(--text-muted); font-size: 13px; margin-top: 4px; font-weight: 500; }
-  .meta-line { color: var(--text-faint); font-size: 11.5px; margin-top: 6px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+    border-bottom: 1px solid var(--border); }
+  .container { max-width: 1440px; margin: 0 auto; padding: 14px 24px 8px; }
+  .hero h1 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
+  .hero .subtitle { color: var(--text-muted); font-size: 12.5px; margin-top: 3px; font-weight: 500; }
+  .meta-line { color: var(--text-faint); font-size: 11px; margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
   .meta-line b { color: var(--text); }
   .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--up); display: inline-block; margin-right: 5px; animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
   /* Tabs */
-  .tabs { display: flex; gap: 2px; margin-top: 14px; flex-wrap: wrap; }
-  .tab { padding: 8px 16px; border-radius: 10px; font-size: 13px; color: var(--text-muted);
+  .tabs { display: flex; gap: 2px; margin-top: 10px; flex-wrap: wrap; }
+  .tab { padding: 7px 14px; border-radius: 8px; font-size: 12.5px; color: var(--text-muted);
     background: transparent; border: 1px solid transparent; font-weight: 500;
-    transition: all 0.15s ease; min-height: 36px; display: inline-flex; align-items: center; gap: 6px; }
+    transition: all 0.15s ease; min-height: 32px; display: inline-flex; align-items: center; gap: 6px; }
   .tab:hover { color: var(--text); background: var(--card); }
   .tab.active { background: var(--primary-bg); color: var(--primary-text); border-color: var(--primary); }
-  .tab-badge { background: var(--primary); color: #0A0E1A; font-size: 10.5px; font-weight: 700;
+  .tab-badge { background: var(--primary); color: #0A0E1A; font-size: 10px; font-weight: 700;
     padding: 1px 7px; border-radius: 9px; min-width: 18px; text-align: center; }
 
-  /* KPI bar */
-  .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-top: 14px; }
-  .kpi-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    padding: 16px; transition: border-color 0.15s; min-height: 110px; }
+  /* Compact overview bar (折叠) */
+  .overview-bar { display: flex; align-items: center; gap: 12px;
+    padding: 8px 12px; background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+  .overview-bar .key { color: var(--text-faint); font-size: 11px; margin-right: 4px; }
+  .overview-bar b { color: var(--text); font-family: var(--font-mono); font-weight: 600; }
+  .overview-bar .toggle { margin-left: auto; padding: 4px 12px; border-radius: 6px;
+    background: transparent; border: 1px solid var(--border); color: var(--text-muted);
+    font-size: 11.5px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s; }
+  .overview-bar .toggle:hover { color: var(--text); border-color: var(--primary); }
+  .overview-bar .toggle svg { transition: transform 0.2s; }
+  .overview-bar.expanded .toggle svg { transform: rotate(180deg); }
+
+  /* Expanded panel (KPI + insight + 二级 + charts) */
+  .expanded-panel { display: none; padding: 12px 0 0; }
+  .expanded-panel.show { display: block; }
+
+  .kpi-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 12px; }
+  .kpi-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 14px; transition: border-color 0.15s; min-height: 86px; }
   .kpi-card:hover { border-color: var(--primary); }
-  .kpi-card .icon { color: var(--text-muted); font-size: 14px; }
-  .kpi-card .label { color: var(--text-muted); font-size: 12px; font-weight: 500; margin-bottom: 6px;
-    text-transform: uppercase; letter-spacing: 0.04em; display: flex; align-items: center; justify-content: space-between; }
-  .kpi-card .big { font-family: var(--font-mono); font-weight: 600; font-size: 30px; line-height: 1.1;
-    letter-spacing: -0.02em; color: var(--text); }
+  .kpi-card .label { color: var(--text-muted); font-size: 11px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .kpi-card .big { font-family: var(--font-mono); font-weight: 600; font-size: 26px;
+    line-height: 1.1; letter-spacing: -0.02em; color: var(--text); }
   .kpi-card .big.green { color: var(--up); }
   .kpi-card .big.purple { color: var(--purple); }
-  .kpi-card .sub { font-size: 11px; color: var(--text-faint); margin-top: 4px; }
-  .kpi-card .sparkline { margin-top: 6px; }
+  .kpi-card .sub { font-size: 11px; color: var(--text-faint); margin-top: 2px; }
 
-  /* Insight banner */
-  .insight {
-    background: linear-gradient(135deg, rgba(99,102,241,0.10), rgba(168,85,247,0.06));
-    border: 1px solid rgba(99,102,241,0.3);
-    border-left: 3px solid var(--primary);
-    border-radius: 10px; padding: 12px 16px; margin-top: 14px;
-    font-size: 13px; color: var(--text); }
-  .insight .title { font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
-  .insight ul { margin: 4px 0; padding-left: 18px; color: var(--text-muted); font-size: 12.5px; }
+  .insight { background: linear-gradient(135deg, rgba(99,102,241,0.10), rgba(168,85,247,0.06));
+    border: 1px solid rgba(99,102,241,0.3); border-left: 3px solid var(--primary);
+    border-radius: 10px; padding: 11px 14px; margin-bottom: 12px; font-size: 12.5px; }
+  .insight .title { font-weight: 600; margin-bottom: 4px; }
+  .insight ul { margin: 4px 0; padding-left: 18px; color: var(--text-muted); font-size: 12px; }
   .insight ul li { margin: 2px 0; }
 
-  /* Stats row */
-  .stat-row { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 0;
-    border-top: 1px dashed var(--border); margin-top: 12px; align-items: center; font-size: 12.5px; color: var(--text-muted); }
-  .stat-row .label { color: var(--text-faint); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 4px; }
+  .stat-row { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0;
+    border-top: 1px dashed var(--border); margin-bottom: 12px; align-items: center; font-size: 12px; color: var(--text-muted); }
+  .stat-row .lbl { color: var(--text-faint); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 4px; }
   .pill { padding: 3px 10px; border-radius: 12px; font-size: 11.5px; font-weight: 600;
     display: inline-flex; align-items: center; gap: 4px; border: 1px solid; }
   .pill.rising { background: var(--red-bg); color: var(--red-text); border-color: rgba(239,68,68,0.4); }
@@ -130,63 +130,84 @@
   .pill.high-rel { background: var(--red-bg); color: var(--red-text); border-color: rgba(239,68,68,0.4); }
   .pill.mid-rel { background: var(--orange-bg); color: var(--orange-text); border-color: rgba(245,158,11,0.4); }
   .pill.low-rel { background: var(--gray-bg); color: var(--gray-text); border-color: rgba(148,163,184,0.4); }
-  .stat-row .num { color: var(--text); font-weight: 600; font-family: var(--font-mono); }
 
-  /* Charts */
-  .charts { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 16px; }
-  .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    padding: 14px; }
-  .chart-card .title { font-size: 12px; font-weight: 600; color: var(--text-muted);
-    text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
-  .chart-card .desc { font-size: 11px; color: var(--text-faint); margin-bottom: 10px; }
-  .chart-card svg { width: 100%; height: 200px; display: block; }
+  .charts { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+  .chart-card .ttl { font-size: 11.5px; font-weight: 600; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .chart-card .desc { font-size: 10.5px; color: var(--text-faint); margin-bottom: 8px; }
+  .chart-card svg { width: 100%; height: 180px; display: block; }
+
+  /* ========== Layout (sidebar + main) ========== */
+  .layout { max-width: 1440px; margin: 0 auto; display: flex; align-items: flex-start; }
+  .sidebar { width: var(--sidebar-w); flex-shrink: 0;
+    background: var(--card); border-right: 1px solid var(--border);
+    position: sticky; top: var(--header-h);
+    max-height: calc(100vh - var(--header-h)); overflow-y: auto;
+    padding: 16px; }
+  .sidebar h4 { font-size: 11px; color: var(--text-faint);
+    text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; margin: 14px 0 8px; }
+  .sidebar h4:first-child { margin-top: 0; }
+
+  .result-count { padding: 10px 14px; border-radius: 8px; background: var(--primary-bg);
+    color: var(--primary-text); font-size: 14px; font-weight: 600; border: 1px solid var(--primary);
+    text-align: center; margin-bottom: 12px; }
+  .result-count.warn { background: var(--orange-bg); color: var(--orange-text); border-color: var(--warn); }
+  .result-count.alert { background: var(--red-bg); color: var(--red-text); border-color: var(--down); }
 
   /* Presets */
-  .presets { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; overflow-x: auto; padding-bottom: 4px; }
-  .preset-btn { padding: 8px 14px; border-radius: 10px; border: 1px solid var(--border);
-    background: var(--card); color: var(--text-muted); font-size: 12.5px; font-weight: 500;
-    white-space: nowrap; transition: all 0.15s; min-height: 38px; display: inline-flex; align-items: center; gap: 6px; }
+  .presets { display: flex; flex-direction: column; gap: 6px; }
+  .preset-btn { padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--card-hover); color: var(--text-muted); font-size: 12.5px; font-weight: 500;
+    text-align: left; transition: all 0.15s; min-height: 38px; }
   .preset-btn:hover { border-color: var(--primary); color: var(--text); }
   .preset-btn.active { background: var(--primary-bg); color: var(--primary-text); border-color: var(--primary); font-weight: 600; }
 
-  /* Filter bar */
-  .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 0 6px; }
-  .filter-bar .actions { margin-left: auto; display: flex; gap: 6px; align-items: center; }
-  .result-count { padding: 6px 12px; border-radius: 8px; background: var(--card);
-    color: var(--text); font-size: 13px; font-weight: 600; border: 1px solid var(--border); }
-  .result-count.warn { color: var(--warn); }
-  .result-count.alert { color: var(--down); border-color: var(--down); }
+  .filters-stack { display: flex; flex-direction: column; gap: 8px; }
 
-  /* Custom Dropdown */
-  .dd { position: relative; display: inline-block; }
-  .dd-btn { padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px;
-    background: var(--card); cursor: pointer; font-size: 13px; color: var(--text);
-    display: inline-flex; align-items: center; gap: 8px; transition: all 0.15s; min-height: 38px; }
+  .actions-stack { display: flex; flex-direction: column; gap: 6px; }
+
+  /* Selected chips in sidebar */
+  .selected-stack { display: flex; flex-direction: column; gap: 4px; }
+  .selected-stack .chip { font-size: 11.5px; }
+
+  /* Main content */
+  .main { flex: 1; padding: 18px 24px 80px; min-width: 0; max-width: 100%; overflow: hidden; }
+
+  /* ========== Custom Dropdown V5（多选 + 确定按钮）========== */
+  .dd { position: relative; display: block; width: 100%; }
+  .dd-btn { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card-hover); cursor: pointer; font-size: 13px; color: var(--text);
+    display: flex; align-items: center; justify-content: space-between; gap: 6px;
+    transition: all 0.15s; min-height: 42px; }
   .dd-btn:hover { border-color: var(--border-hover); }
   .dd.open .dd-btn { border-color: var(--primary); }
+  .dd-btn .lbl { display: flex; align-items: center; gap: 6px; }
   .dd-btn .count { color: var(--primary); font-weight: 700; }
-  .dd-btn .arrow { color: var(--text-muted); transition: transform 0.2s; flex-shrink: 0; }
+  .dd-btn .arrow { color: var(--text-muted); transition: transform 0.2s ease; flex-shrink: 0; }
   .dd.open .dd-btn .arrow { transform: rotate(180deg); color: var(--primary); }
-  .dd-panel { display: none; position: absolute; top: calc(100% + 6px); left: 0;
-    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    box-shadow: var(--shadow-lg); z-index: 50; min-width: 260px; max-height: 440px;
-    overflow: auto; padding: 6px; }
-  .dd.open .dd-panel { display: block; }
-  .dd.right .dd-panel { left: auto; right: 0; }
-  .dd-toolbar { display: flex; gap: 4px; padding: 4px; border-bottom: 1px solid var(--border);
-    margin-bottom: 4px; }
-  .dd-btn-toolbar { padding: 5px 10px; font-size: 11px; border: none; background: transparent;
-    color: var(--primary); border-radius: 6px; cursor: pointer; font-weight: 500; }
-  .dd-btn-toolbar:hover { background: var(--primary-bg); }
-  .dd-btn-toolbar.done { margin-left: auto; color: var(--text); font-weight: 600; }
-  .dd-item { padding: 10px 12px; border-radius: 8px; cursor: pointer; font-size: 13px;
+  .dd-panel { display: none; position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+    background: var(--card); border: 1px solid var(--primary); border-radius: 10px;
+    box-shadow: var(--shadow-lg); z-index: 50; max-height: 480px; overflow: hidden;
+    display: none; flex-direction: column; }
+  .dd.open .dd-panel { display: flex; }
+  .dd-panel .head { padding: 10px 14px; border-bottom: 1px solid var(--border);
+    color: var(--text-muted); font-size: 11.5px; font-weight: 600; flex-shrink: 0; }
+  .dd-panel .body { overflow-y: auto; flex: 1; padding: 4px; }
+  .dd-panel .footer { padding: 8px; border-top: 1px solid var(--border); display: flex; gap: 6px; flex-shrink: 0; background: var(--card-hover); }
+  .dd-panel .footer button { flex: 1; min-height: 36px; padding: 8px 12px; border-radius: 7px; font-size: 12.5px; font-weight: 600; }
+  .dd-panel .footer .btn-cancel { background: transparent; border: 1px solid var(--border); color: var(--text-muted); }
+  .dd-panel .footer .btn-cancel:hover { color: var(--text); border-color: var(--border-hover); }
+  .dd-panel .footer .btn-apply { background: var(--primary); color: white; border: none; }
+  .dd-panel .footer .btn-apply:hover { background: #5557E0; }
+  .dd-item { padding: 9px 12px; border-radius: 7px; cursor: pointer; font-size: 13px;
     display: flex; align-items: center; gap: 8px; user-select: none; min-height: 38px; }
   .dd-item:hover { background: var(--card-hover); }
   .dd-item.checked { background: var(--primary-bg); color: var(--primary-text); }
   .dd-item .check { width: 16px; height: 16px; border-radius: 4px; border: 1.5px solid var(--border-hover);
-    flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.1s; }
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
   .dd-item.checked .check { background: var(--primary); border-color: var(--primary); }
-  .dd-item.checked .check::after { content: "✓"; color: white; font-size: 11px; font-weight: 700; line-height: 1; }
+  .dd-item.checked .check::after { content: "✓"; color: white; font-size: 11px; font-weight: 700; }
   .dd-item .arrow-r { margin-left: auto; color: var(--text-faint); font-size: 11px; transition: transform 0.15s; }
   .dd-item.exp .arrow-r { transform: rotate(90deg); }
   .dd-children { padding-left: 22px; padding-bottom: 4px; }
@@ -203,80 +224,73 @@
   .dd-child .subs { margin-left: auto; font-size: 11px; color: var(--text-faint); font-family: var(--font-mono); }
 
   /* Selected chips */
-  .selected-bar { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 0 8px; align-items: center; }
-  .selected-bar .label { font-size: 11px; color: var(--text-faint); margin-right: 4px;
-    text-transform: uppercase; letter-spacing: 0.04em; }
-  .chip { padding: 4px 10px; border-radius: 12px; font-size: 12px;
-    display: inline-flex; align-items: center; gap: 5px; background: var(--card);
+  .chip { padding: 4px 10px; border-radius: 12px; font-size: 11.5px;
+    display: inline-flex; align-items: center; gap: 5px; background: var(--card-hover);
     border: 1px solid var(--border); color: var(--text); }
   .chip-x { cursor: pointer; opacity: 0.5; padding: 0 2px; font-size: 11px; }
   .chip-x:hover { opacity: 1; color: var(--down); }
-  .chip-impact { color: var(--text-faint); font-size: 11px; font-family: var(--font-mono); }
+  .chip-impact { color: var(--text-faint); font-size: 10.5px; font-family: var(--font-mono); }
   .chip-clear { background: transparent; border: 1px solid var(--down); color: var(--down);
-    cursor: pointer; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+    cursor: pointer; padding: 5px 12px; border-radius: 12px; font-size: 12px; font-weight: 500; width: 100%; }
   .chip-relax { background: var(--primary-bg); color: var(--primary-text); border: 1px solid var(--primary);
-    cursor: pointer; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+    cursor: pointer; padding: 5px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; width: 100%; }
 
   .empty-banner { background: var(--card); border: 1px solid var(--warn); border-radius: 10px;
-    padding: 16px; margin: 16px 0; }
-  .empty-banner .title { color: var(--warn); font-weight: 600; margin-bottom: 8px; font-size: 13px; }
-  .empty-banner .suggest { display: flex; flex-direction: column; gap: 6px; }
-  .empty-banner .suggest button { background: var(--card-hover); border: 1px solid var(--border-hover);
-    color: var(--text); padding: 8px 12px; border-radius: 8px; text-align: left; font-size: 12px;
-    cursor: pointer; transition: border-color 0.15s; }
-  .empty-banner .suggest button:hover { border-color: var(--primary); }
+    padding: 16px; margin-bottom: 16px; }
+  .empty-banner .ttl { color: var(--warn); font-weight: 600; margin-bottom: 8px; font-size: 13px; }
+  .empty-banner button { display: block; width: 100%; background: var(--card-hover);
+    border: 1px solid var(--border-hover); color: var(--text); padding: 8px 12px;
+    border-radius: 8px; text-align: left; font-size: 12px; margin-top: 6px; }
+  .empty-banner button:hover { border-color: var(--primary); }
 
-  /* Sort + buttons */
+  /* btn */
   .btn { padding: 9px 14px; border: 1px solid var(--border); border-radius: 8px;
-    background: var(--card); color: var(--text); font-size: 13px;
-    display: inline-flex; align-items: center; gap: 6px; min-height: 38px; transition: all 0.15s; }
-  .btn:hover { background: var(--card-hover); border-color: var(--border-hover); }
+    background: var(--card-hover); color: var(--text); font-size: 13px;
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-height: 38px; transition: all 0.15s; width: 100%; }
+  .btn:hover { background: var(--card); border-color: var(--border-hover); }
   .btn-primary { background: var(--primary); color: white; border-color: var(--primary); }
   .btn-primary:hover { background: #5557E0; }
   .btn-danger { color: var(--down); border-color: var(--border); }
   .btn-danger:hover { border-color: var(--down); }
 
-  /* Main */
-  main { max-width: 1440px; margin: 0 auto; padding: 20px 28px 100px; }
-
-  /* Multi-channel compare */
+  /* Compare board */
   .compare-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px; margin-bottom: 20px; }
+    gap: 12px; margin-bottom: 16px; }
   .ccard { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    padding: 16px; position: relative; transition: border-color 0.15s; cursor: pointer; }
+    padding: 14px; position: relative; transition: border-color 0.15s; cursor: pointer; }
   .ccard:hover { border-color: var(--primary); }
   .ccard.is-self { border-color: var(--rose); }
   .ccard .head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
-  .ccard .head .name { font-weight: 600; font-size: 14px; }
+  .ccard .head .name { font-weight: 600; font-size: 13px; }
   .ccard .self-tag { background: var(--rose-bg); color: var(--rose-text); padding: 1px 7px;
     border-radius: 4px; font-size: 10px; font-weight: 700; border: 1px solid var(--rose); }
-  .ccard .subs { color: var(--text-faint); font-size: 11.5px; font-family: var(--font-mono); margin-bottom: 10px; }
-  .ccard .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
-  .ccard .cell { color: var(--text-faint); font-size: 11px; }
-  .ccard .cell b { display: block; font-family: var(--font-mono); font-size: 17px;
-    color: var(--text); font-weight: 600; line-height: 1.2; margin-top: 2px; }
-  .ccard .cell .rank { font-size: 12px; margin-left: 4px; }
-  .ccard .score-row { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--text-faint); }
-  .ccard .score-bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .ccard .subs { color: var(--text-faint); font-size: 11px; font-family: var(--font-mono); margin-bottom: 8px; }
+  .ccard .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+  .ccard .cell { color: var(--text-faint); font-size: 10.5px; }
+  .ccard .cell b { display: block; font-family: var(--font-mono); font-size: 15px; color: var(--text); font-weight: 600; line-height: 1.2; }
+  .ccard .cell .rank { font-size: 11px; margin-left: 3px; }
+  .ccard .score-row { display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: var(--text-faint); }
+  .ccard .score-bar { flex: 1; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
   .ccard .score-bar > span { display: block; height: 100%; background: var(--primary); }
   .ccard .score-num { font-family: var(--font-mono); font-weight: 600; color: var(--text); }
-  .ccard .close { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; border-radius: 12px;
+  .ccard .close { position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 11px;
     background: var(--card-hover); border: none; color: var(--text-faint); cursor: pointer;
-    display: flex; align-items: center; justify-content: center; font-size: 12px; }
-  .ccard .close:hover { color: var(--down); }
+    display: flex; align-items: center; justify-content: center; font-size: 11px; }
 
-  /* Bulk mode */
+  /* Bulk bar */
   .bulk-bar { background: var(--card); border: 1px solid var(--primary); border-radius: 10px;
-    padding: 10px 14px; margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
     flex-wrap: wrap; }
   .bulk-bar .selected-count { color: var(--primary-text); font-weight: 600; }
+  .bulk-bar .btn { width: auto; }
 
   /* Grid */
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 16px; }
   .grid.list-view { grid-template-columns: 1fr; gap: 8px; }
-  .grid.inspire-view { grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 24px; }
+  .grid.inspire-view { grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 20px; }
 
-  .empty { text-align: center; color: var(--text-muted); padding: 80px 0; font-size: 14px; grid-column: 1/-1; }
+  .empty { text-align: center; color: var(--text-muted); padding: 60px 0; font-size: 14px; grid-column: 1/-1; }
 
   /* Video Card */
   .video-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
@@ -287,7 +301,7 @@
   .video-card.hot-million { border-color: rgba(239,68,68,0.5); }
   .video-card.hot-phenom { border-color: var(--purple); box-shadow: 0 0 0 1px rgba(168,85,247,0.3), var(--shadow); }
   .video-card .bulk-cb { position: absolute; left: 12px; top: 12px; z-index: 3;
-    width: 24px; height: 24px; background: rgba(10,14,26,0.85); backdrop-filter: blur(6px);
+    width: 26px; height: 26px; background: rgba(10,14,26,0.85); backdrop-filter: blur(6px);
     border: 2px solid var(--primary); border-radius: 6px; display: none;
     align-items: center; justify-content: center; cursor: pointer; color: white; font-weight: 700; }
   .video-card.bulk-mode .bulk-cb { display: flex; }
@@ -299,12 +313,12 @@
     font-family: var(--font-mono); }
   .badges { position: absolute; left: 10px; top: 10px; display: flex; flex-direction: column; gap: 4px; }
   .hot-chip { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px;
-    border-radius: 10px; font-size: 11px; font-weight: 600; border: 1px solid;
+    border-radius: 10px; font-size: 11px; font-weight: 600;
     backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-  .hot-chip.rising { background: rgba(239,68,68,0.85); color: white; border-color: rgba(239,68,68,0.4); }
-  .hot-chip.strong { background: rgba(245,158,11,0.85); color: white; border-color: rgba(245,158,11,0.4); }
-  .hot-chip.million { background: rgba(239,68,68,0.85); color: white; border-color: rgba(239,68,68,0.4); }
-  .hot-chip.phenom { background: rgba(168,85,247,0.85); color: white; border-color: rgba(168,85,247,0.4); }
+  .hot-chip.rising { background: rgba(239,68,68,0.85); color: white; }
+  .hot-chip.strong { background: rgba(245,158,11,0.85); color: white; }
+  .hot-chip.million { background: rgba(239,68,68,0.85); color: white; }
+  .hot-chip.phenom { background: rgba(168,85,247,0.85); color: white; }
 
   .fav-btn { position: absolute; top: 10px; right: 10px; z-index: 2;
     width: 38px; height: 38px; min-width: 38px; min-height: 38px; border-radius: 19px;
@@ -314,44 +328,40 @@
   .fav-btn:hover { color: var(--warn); transform: scale(1.06); border-color: var(--warn); }
   .fav-btn.active { color: var(--warn); background: rgba(245,158,11,0.2); border-color: var(--warn); }
   .hide-btn { position: absolute; top: 10px; right: 56px; z-index: 2;
-    width: 32px; height: 32px; min-width: 32px; min-height: 32px; border-radius: 16px;
+    width: 32px; height: 32px; border-radius: 16px;
     background: rgba(10,14,26,0.85); backdrop-filter: blur(8px); border: 1px solid var(--border);
     color: var(--text-faint); font-size: 14px; opacity: 0; transition: opacity 0.15s; display: flex;
     align-items: center; justify-content: center; }
   .video-card:hover .hide-btn { opacity: 1; }
 
   .card-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
-  .card-row1 { display: flex; align-items: center; gap: 6px; font-size: 12px;
+  .card-row1 { display: flex; align-items: center; gap: 6px; font-size: 11.5px;
     color: var(--text-muted); flex-wrap: wrap; }
   .card-row1 .channel-name { color: var(--text); font-weight: 500; }
   .card-row1 .grp { padding: 1px 7px; border-radius: 5px; background: var(--gray-bg);
     color: var(--gray-text); font-size: 10.5px; font-weight: 500; }
   .card-row1 .self { padding: 1px 7px; border-radius: 5px; background: var(--rose-bg);
-    color: var(--rose-text); font-size: 10.5px; font-weight: 700; border: 1px solid var(--rose);
-    display: inline-flex; align-items: center; gap: 3px; }
+    color: var(--rose-text); font-size: 10.5px; font-weight: 700; border: 1px solid var(--rose); }
   .card-row1 .vtype { padding: 1px 7px; border-radius: 5px; background: var(--card-hover);
     color: var(--text-muted); font-size: 10.5px; }
 
-  .card-title { color: var(--text); font-size: 15px; font-weight: 600; line-height: 1.4;
+  .card-title { color: var(--text); font-size: 14.5px; font-weight: 600; line-height: 1.4;
     -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden;
-    min-height: 42px; letter-spacing: -0.01em; }
+    min-height: 40px; letter-spacing: -0.01em; }
   .card-title:hover { color: var(--primary-text); }
 
-  /* Business signal */
   .biz-signal { display: flex; align-items: baseline; gap: 8px; padding: 8px 0;
     border-top: 1px dashed var(--border); }
-  .biz-signal .er-num { font-size: 26px; font-weight: 700; font-family: var(--font-mono); line-height: 1; letter-spacing: -0.02em; }
+  .biz-signal .er-num { font-size: 24px; font-weight: 700; font-family: var(--font-mono); line-height: 1; letter-spacing: -0.02em; }
   .biz-signal .er-label { font-size: 11px; color: var(--text-faint); cursor: help;
     border-bottom: 1px dotted var(--text-faint); }
-  .biz-signal .deltas { margin-left: auto; display: flex; gap: 8px; font-size: 11px; color: var(--text-faint); font-family: var(--font-mono); }
-  .biz-signal .deltas .delta { display: inline-flex; align-items: center; gap: 2px; }
-  .biz-signal .deltas .delta.pos { color: var(--up); }
-  .biz-signal .deltas .delta.neg { color: var(--down); }
+  .biz-signal .deltas { margin-left: auto; display: flex; gap: 8px; font-size: 10.5px; color: var(--text-faint); font-family: var(--font-mono); }
+  .biz-signal .delta.pos { color: var(--up); }
+  .biz-signal .delta.neg { color: var(--down); }
 
-  .card-stats { display: flex; gap: 12px; align-items: center; font-size: 12px;
-    color: var(--text-muted); }
+  .card-stats { display: flex; gap: 12px; align-items: center; font-size: 11.5px; color: var(--text-muted); }
   .card-stats .item { display: inline-flex; align-items: center; gap: 5px; }
-  .card-stats .num { color: var(--text); font-family: var(--font-mono); font-weight: 500; font-size: 13px; }
+  .card-stats .num { color: var(--text); font-family: var(--font-mono); font-weight: 500; font-size: 12.5px; }
 
   .tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
   .tag-c { padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 500; border: 1px solid; }
@@ -370,20 +380,19 @@
 
   /* Brand compare table */
   .panel { background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    padding: 24px; margin-bottom: 18px; }
-  .panel h3 { margin: 0 0 14px; font-size: 16px; font-weight: 600; }
+    padding: 22px; margin-bottom: 16px; }
+  .panel h3 { margin: 0 0 12px; font-size: 15px; font-weight: 600; }
   .panel table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .panel th { text-align: left; padding: 10px 14px; color: var(--text-muted);
+  .panel th { text-align: left; padding: 10px 12px; color: var(--text-muted);
     font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
     border-bottom: 1px solid var(--border); }
-  .panel td { padding: 12px 14px; border-bottom: 1px solid var(--border); font-family: var(--font-mono); font-size: 13.5px; }
+  .panel td { padding: 11px 12px; border-bottom: 1px solid var(--border); font-family: var(--font-mono); font-size: 13px; }
   .panel td.name { font-family: var(--font-sans); font-weight: 600; font-size: 14px; }
   .panel tr:last-child td { border-bottom: none; }
   .bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
-    min-width: 100px; max-width: 240px; display: inline-block; vertical-align: middle; margin-left: 8px; }
+    min-width: 80px; max-width: 200px; display: inline-block; vertical-align: middle; margin-left: 8px; }
   .bar > span { display: block; height: 100%; background: var(--primary); }
 
-  /* History */
   .history-empty { padding: 40px 0; text-align: center; color: var(--text-muted); }
   .history-empty .big { font-size: 16px; color: var(--text); margin-bottom: 8px; font-weight: 500; }
   .progress { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden;
@@ -394,20 +403,17 @@
   [data-tip] { position: relative; }
   [data-tip]:hover::after { content: attr(data-tip); position: absolute; bottom: 100%; left: 50%;
     transform: translateX(-50%) translateY(-6px); background: var(--card-hover); color: var(--text);
-    padding: 6px 10px; border-radius: 6px; font-size: 11.5px; white-space: nowrap;
+    padding: 6px 10px; border-radius: 6px; font-size: 11px; white-space: nowrap;
     box-shadow: var(--shadow); z-index: 999; border: 1px solid var(--border); pointer-events: none; }
 
-  /* Workflow banner (favorites) */
   .workflow-banner { background: linear-gradient(135deg, rgba(99,102,241,0.10), rgba(168,85,247,0.05));
     border: 1px solid rgba(99,102,241,0.3); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px;
     position: relative; }
   .workflow-banner h4 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
   .workflow-banner ol { margin: 0; padding-left: 20px; color: var(--text-muted); font-size: 12px; }
-  .workflow-banner ol li { margin: 2px 0; }
   .workflow-banner .close-x { position: absolute; top: 8px; right: 8px; cursor: pointer;
     color: var(--text-faint); padding: 4px 8px; }
 
-  /* Toast */
   .toast { position: fixed; right: 20px; bottom: 80px; z-index: 300;
     background: var(--card-hover); color: var(--text); padding: 12px 18px; border-radius: 12px;
     font-size: 13px; font-weight: 500; box-shadow: var(--shadow-lg); border: 1px solid var(--border-hover);
@@ -418,47 +424,39 @@
   .mobile-bar { display: none; }
   .mobile-overlay { display: none; }
   .mobile-drawer { display: none; }
-  .mobile-summary { display: none; }
 
   @media (max-width: 1280px) {
     .kpi-grid { grid-template-columns: repeat(3, 1fr); }
     .charts { grid-template-columns: 1fr 1fr; }
   }
+  @media (max-width: 1024px) {
+    .sidebar { display: none; }
+    .main { padding: 16px 16px 100px; }
+  }
   @media (max-width: 768px) {
-    .container { padding: 14px 16px; }
-    main { padding: 16px 16px 100px; }
+    .container { padding: 12px 16px 6px; }
     .hero h1 { font-size: 17px; }
     .hero .subtitle { font-size: 12px; }
-    .meta-line { font-size: 11px; gap: 8px; }
-    .kpi-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-    .kpi-card { padding: 12px; min-height: 90px; }
-    .kpi-card .big { font-size: 24px; }
-    .kpi-card .label { font-size: 10.5px; }
+    .meta-line { font-size: 10.5px; gap: 8px; }
+    .kpi-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .kpi-card { padding: 10px; min-height: 78px; }
+    .kpi-card .big { font-size: 22px; }
     .charts { grid-template-columns: 1fr; }
-    .filter-bar.desktop { display: none; }
-    .filter-bar.mobile-summary { display: flex; }
-    .selected-bar { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
-    .selected-bar::-webkit-scrollbar { display: none; }
-    .selected-bar .chip { flex-shrink: 0; }
-    .grid { grid-template-columns: 1fr; gap: 14px; }
+    .grid { grid-template-columns: 1fr; gap: 12px; }
     .compare-board { grid-template-columns: 1fr 1fr; }
-    .stat-row { font-size: 11.5px; padding: 10px 0; }
-    .preset-btn { padding: 8px 12px; font-size: 12px; min-height: 40px; }
+    .stat-row { font-size: 11.5px; padding: 8px 0; }
     .tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
     .tab { flex-shrink: 0; }
-    .insight { padding: 12px; }
-    .insight ul { font-size: 12px; }
-
-    .card-title { font-size: 14.5px; min-height: 40px; }
-    .biz-signal .er-num { font-size: 22px; }
+    .insight { padding: 10px 12px; }
+    .overview-bar { font-size: 11.5px; gap: 8px; }
+    .overview-bar .key { display: none; }
 
     .mobile-bar { display: flex; position: fixed; bottom: 0; left: 0; right: 0;
       background: rgba(10,14,26,0.96); backdrop-filter: saturate(180%) blur(20px);
-      -webkit-backdrop-filter: saturate(180%) blur(20px);
       border-top: 1px solid var(--border); padding: 8px 12px;
       padding-bottom: calc(8px + env(safe-area-inset-bottom));
       z-index: 99; gap: 6px; }
-    .mobile-bar .btn { flex: 1; min-height: 44px; justify-content: center; font-size: 12.5px; padding: 6px 8px; }
+    .mobile-bar .btn { flex: 1; min-height: 44px; font-size: 12.5px; padding: 6px 8px; }
     .mobile-bar .count-badge { background: var(--primary); color: white; padding: 1px 6px;
       border-radius: 9px; font-size: 10px; font-weight: 700; margin-left: 4px; }
 
@@ -466,7 +464,7 @@
       z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
     .mobile-overlay.show { opacity: 1; pointer-events: auto; }
     .mobile-drawer { display: flex; flex-direction: column; position: fixed;
-      bottom: 0; left: 0; right: 0; max-height: 78vh;
+      bottom: 0; left: 0; right: 0; max-height: 80vh;
       background: var(--card); border-radius: 16px 16px 0 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.5);
       transform: translateY(100%); transition: transform 0.3s ease; z-index: 201;
       padding-bottom: env(safe-area-inset-bottom); border: 1px solid var(--border); border-bottom: none; }
@@ -481,13 +479,11 @@
     .mobile-drawer-content .label { font-size: 11px; color: var(--text-muted); margin: 14px 0 6px;
       text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; }
     .mobile-drawer-content .label:first-child { margin-top: 0; }
-    .mobile-drawer-content .dd { width: 100%; }
-    .mobile-drawer-content .dd-btn { width: 100%; justify-content: space-between; min-height: 44px; }
-    .mobile-drawer-content .dd.open .dd-panel { position: static; box-shadow: none;
-      border: 1px solid var(--border); margin-top: 6px; max-height: 280px; }
+    .mobile-drawer-content .dd-panel { position: static; box-shadow: none;
+      border: 1px solid var(--border); margin-top: 6px; max-height: 300px; }
     .mobile-drawer-actions { padding: 12px 16px; border-top: 1px solid var(--border);
       display: flex; gap: 8px; flex-shrink: 0; background: var(--card); }
-    .mobile-drawer-actions .btn { flex: 1; min-height: 46px; font-weight: 600; justify-content: center; }
+    .mobile-drawer-actions .btn { flex: 1; min-height: 46px; font-weight: 600; }
 
     .toast { right: 16px; left: 16px; bottom: 80px; text-align: center; }
   }
@@ -501,7 +497,7 @@
       <div class="subtitle">56 频道 · 8 维度数据 · 每日更新</div>
       <div class="meta-line">
         <span><span class="live-dot"></span>自动刷新已开</span>
-        <span>数据版本 <b id="gen-at">—</b> <span id="gen-ago"></span></span>
+        <span>数据 <b id="gen-at">—</b> <span id="gen-ago"></span></span>
         <span>频道 <b id="ch-count">—</b></span>
         <span>视频 <b id="vid-count">—</b></span>
       </div>
@@ -509,28 +505,29 @@
 
     <nav class="tabs" id="tabs"></nav>
 
-    <div id="kpi-grid" class="kpi-grid"></div>
+    <div class="overview-bar" id="overview-bar"></div>
 
-    <div id="insight" class="insight" style="display:none"></div>
-
-    <div id="stat-row" class="stat-row"></div>
-
-    <div id="presets" class="presets"></div>
-
-    <div class="filter-bar desktop" id="desktop-filters"></div>
-    <div class="filter-bar mobile-summary"></div>
-
-    <div class="selected-bar" id="selected-chips"></div>
+    <div class="expanded-panel" id="expanded-panel">
+      <div id="kpi-grid" class="kpi-grid"></div>
+      <div id="insight" class="insight" style="display:none"></div>
+      <div id="stat-row" class="stat-row"></div>
+      <div id="charts-root" class="charts"></div>
+    </div>
   </div>
 </header>
 
-<main>
-  <div id="view-home"></div>
-  <div id="view-favorites" style="display:none"></div>
-  <div id="view-brand" style="display:none"></div>
-  <div id="view-history" style="display:none"></div>
-  <div id="view-monitor" style="display:none"></div>
-</main>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div id="sidebar-content"></div>
+  </aside>
+  <main class="main" id="main">
+    <div id="view-home"></div>
+    <div id="view-favorites" style="display:none"></div>
+    <div id="view-brand" style="display:none"></div>
+    <div id="view-history" style="display:none"></div>
+    <div id="view-monitor" style="display:none"></div>
+  </main>
+</div>
 
 <!-- Mobile bottom bar -->
 <div class="mobile-bar">
@@ -556,10 +553,10 @@
 <script>
 const CFG = {"group_labels": {"A_brand": "A 竞品 + 自家", "B_ipad_vertical": "B iPad 垂直/媒体", "C_top_tech": "C 头部数码", "D_real_use": "D iPad 真实使用", "E_lifestyle": "E Lifestyle", "F_3c_brand": "F 3C 品牌学习"}, "channel_tree": {"A_brand": [{"display_name": "Apple", "subscriber_count": 20600000, "is_self": false}, {"display_name": "Logitech", "subscriber_count": 153000, "is_self": false}, {"display_name": "Typecase", "subscriber_count": 106000, "is_self": true}, {"display_name": "Arteck", "subscriber_count": 25600, "is_self": false}, {"display_name": "ZAGG", "subscriber_count": 25000, "is_self": false}, {"display_name": "Inateck", "subscriber_count": 2200, "is_self": false}, {"display_name": "Fintie", "subscriber_count": 1680, "is_self": false}, {"display_name": "Doqo", "subscriber_count": 263, "is_self": false}, {"display_name": "ESR Gear", "subscriber_count": 47, "is_self": false}], "B_ipad_vertical": [{"display_name": "The Verge", "subscriber_count": 3500000, "is_self": false}, {"display_name": "Engadget", "subscriber_count": 1440000, "is_self": false}, {"display_name": "9to5Mac", "subscriber_count": 949000, "is_self": false}, {"display_name": "Christopher Lawley", "subscriber_count": 202000, "is_self": false}, {"display_name": "Gizmodo", "subscriber_count": 143000, "is_self": false}, {"display_name": "Tom's Guide", "subscriber_count": 138000, "is_self": false}, {"display_name": "9to5Toys", "subscriber_count": 94100, "is_self": false}, {"display_name": "AppleSauce", "subscriber_count": 77700, "is_self": false}, {"display_name": "Tim Chaten", "subscriber_count": 1710, "is_self": false}], "C_top_tech": [{"display_name": "MKBHD", "subscriber_count": 20900000, "is_self": false}, {"display_name": "Linus Tech Tips", "subscriber_count": 16800000, "is_self": false}, {"display_name": "iJustine", "subscriber_count": 7070000, "is_self": false}, {"display_name": "Dave Lee", "subscriber_count": 3690000, "is_self": false}, {"display_name": "Snazzy Labs", "subscriber_count": 1240000, "is_self": false}], "D_real_use": [{"display_name": "Casey Neistat", "subscriber_count": 12700000, "is_self": false}, {"display_name": "Ali Abdaal", "subscriber_count": 6590000, "is_self": false}, {"display_name": "Peter McKinnon", "subscriber_count": 6010000, "is_self": false}, {"display_name": "Matt D'Avella", "subscriber_count": 4030000, "is_self": false}, {"display_name": "Thomas Frank", "subscriber_count": 3010000, "is_self": false}, {"display_name": "Erik Conover", "subscriber_count": 2810000, "is_self": false}, {"display_name": "The Cottage Fairy", "subscriber_count": 1600000, "is_self": false}, {"display_name": "Studytee", "subscriber_count": 1170000, "is_self": false}, {"display_name": "Studyquill", "subscriber_count": 1100000, "is_self": false}, {"display_name": "Karl Conrad", "subscriber_count": 1000000, "is_self": false}, {"display_name": "UnJaded Jade", "subscriber_count": 979000, "is_self": false}, {"display_name": "Ruby Granger", "subscriber_count": 974000, "is_self": false}, {"display_name": "Sara Dietschy", "subscriber_count": 933000, "is_self": false}, {"display_name": "Brad Colbow", "subscriber_count": 918000, "is_self": false}, {"display_name": "Mariana Vieira", "subscriber_count": 747000, "is_self": false}, {"display_name": "Procreate", "subscriber_count": 641000, "is_self": false}, {"display_name": "Joan Kim", "subscriber_count": 551000, "is_self": false}, {"display_name": "Pat Flynn", "subscriber_count": 484000, "is_self": false}, {"display_name": "Lisa Bardot (Bardot Brush)", "subscriber_count": 384000, "is_self": false}, {"display_name": "Christine Le", "subscriber_count": 343000, "is_self": false}, {"display_name": "Tom Solid", "subscriber_count": 108000, "is_self": false}, {"display_name": "Federico Viticci (MacStories)", "subscriber_count": 2210, "is_self": false}], "E_lifestyle": [{"display_name": "Pick Up Limes", "subscriber_count": 4370000, "is_self": false}, {"display_name": "Lavendaire", "subscriber_count": 2650000, "is_self": false}, {"display_name": "Caroline Winkler", "subscriber_count": 1150000, "is_self": false}, {"display_name": "Marie Forleo", "subscriber_count": 1010000, "is_self": false}, {"display_name": "Madeleine Olivia", "subscriber_count": 552000, "is_self": false}, {"display_name": "WorkSpaceLab", "subscriber_count": 18800, "is_self": false}], "F_3c_brand": [{"display_name": "Anker", "subscriber_count": 163000, "is_self": false}, {"display_name": "Satechi", "subscriber_count": 20300, "is_self": false}, {"display_name": "Belkin", "subscriber_count": 19300, "is_self": false}, {"display_name": "Twelve South", "subscriber_count": 4670, "is_self": false}, {"display_name": "Native Union", "subscriber_count": 1230, "is_self": false}]}, "self_brand": "Typecase", "brand_compare_default": ["Typecase", "Apple", "Logitech", "ESR Gear"], "top_kol": ["MKBHD", "iJustine", "Linus Tech Tips", "Casey Neistat", "Mrwhosetheboss", "Dave Lee"], "content_tags_order": ["iPad配件相关", "创作", "学生", "商务", "其他Apple", "其他"], "length_order": ["Shorts", "Short", "Medium", "Long"], "hot_level_order": ["🔥 上升爆款", "💥 强爆款", "⭐ 百万爆款", "🚀 现象级"], "video_type_order": ["评测", "开箱", "对比", "装机/Setup", "教程", "教学", "vlog", "宣传片/广告", "产品发布", "推荐/Best", "其他"]};
 const POLL_INTERVAL_MS = 60 * 1000;
-const STORAGE_KEY = 'yt-tracker-v4';
-const FAV_KEY = 'yt-tracker-favorites-v4';
-const HIDE_KEY = 'yt-tracker-hidden-v4';
-const TEARDOWN_KEY = 'yt-tracker-teardown-v4';
+const STORAGE_KEY = 'yt-tracker-v5';
+const FAV_KEY = 'yt-tracker-favorites-v5';
+const HIDE_KEY = 'yt-tracker-hidden-v5';
+const TEARDOWN_KEY = 'yt-tracker-teardown-v5';
 
 let DATA = null;
 let HISTORY = null;
@@ -568,12 +565,11 @@ let pendingMobileState = null;
 let bulkMode = false;
 let bulkSelected = new Set();
 
-// ========== State ==========
 function defaultFilters() {
   return { time: 'all', groups: [], channels: [], contents: [], lengths: [], hots: [], vtypes: [], brands: [] };
 }
 function defaultState() {
-  return { tab: 'home', filters: defaultFilters(), sort: 'er', expanded_groups: [], view_mode: 'grid', preset: '', workflow_banner_dismissed: false };
+  return { tab: 'home', filters: defaultFilters(), sort: 'er', expanded_groups: [], view_mode: 'grid', preset: '', overview_expanded: false, workflow_banner_dismissed: false };
 }
 function loadState() { try { return Object.assign(defaultState(), JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}')); } catch (e) { return defaultState(); } }
 function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
@@ -592,7 +588,6 @@ function fmt(n) {
   if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
   return String(n);
 }
-function fmtPct(n, d=2) { return (n||0).toFixed(d) + '%'; }
 function fmtDate(iso) {
   const d = new Date(iso);
   const diffH = Math.floor((Date.now() - d) / 3600000);
@@ -627,7 +622,6 @@ function withinTime(iso, key) {
   if (!isFinite(t)) return true;
   return (Date.now() - t) <= days * 86400000;
 }
-function isMobile() { return window.matchMedia('(max-width: 768px)').matches; }
 
 const ICONS = {
   play: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',
@@ -636,8 +630,7 @@ const ICONS = {
   star_o: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 7h7.6l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.5L2 9h7.6z"/></svg>',
   star: '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7h7.6l-6.2 4.5L18.2 21 12 16.5 5.8 21l2.4-7.5L2 9h7.6z"/></svg>',
   download: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v12m0 0l-5-5m5 5l5-5M4 20h16"/></svg>',
-  filter: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>',
-  chevron: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>',
+  chevron: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
 };
 
 // ========== Data ==========
@@ -650,7 +643,6 @@ async function fetchHistoryIndex() {
   try { const r = await fetch('data/history/index.json?t=' + Date.now(), { cache: 'no-store' }); return r.ok ? await r.json() : null; } catch { return null; }
 }
 
-// ========== Channel meta ==========
 function brandMentionOptions() {
   const set = new Set();
   if (DATA) DATA.videos.forEach(v => (v.brand_mentions||[]).forEach(b => set.add(b)));
@@ -669,7 +661,6 @@ function groupAvgER(group) {
   return vs.reduce((s,v) => s+(v.engagement_rate||0), 0) / vs.length;
 }
 
-// ========== Filters ==========
 function applyFilters(videos, opts={}) {
   const f = opts.filters || state.filters;
   const skipHidden = opts.skipHidden;
@@ -682,17 +673,11 @@ function applyFilters(videos, opts={}) {
       const grpMatch = f.groups.includes(v.channel_group);
       if (!(chMatch || grpMatch)) return false;
     }
-    if (f.contents.length) {
-      const tags = v.content_tags || [];
-      if (!f.contents.some(c => tags.includes(c))) return false;
-    }
+    if (f.contents.length) { const tags = v.content_tags || []; if (!f.contents.some(c => tags.includes(c))) return false; }
     if (f.lengths.length && !f.lengths.includes(v.video_length_type)) return false;
     if (f.hots.length && !f.hots.includes(v.hot_level)) return false;
     if (f.vtypes.length && !f.vtypes.includes(v.video_type)) return false;
-    if (f.brands.length) {
-      const bms = v.brand_mentions || [];
-      if (!f.brands.some(b => bms.includes(b))) return false;
-    }
+    if (f.brands.length) { const bms = v.brand_mentions || []; if (!f.brands.some(b => bms.includes(b))) return false; }
     return true;
   });
 }
@@ -705,8 +690,6 @@ function applySort(videos, sort=state.sort) {
   else if (sort === 'view_to_sub') a.sort((x,y) => (y.view_to_sub_ratio||0)-(x.view_to_sub_ratio||0));
   return a;
 }
-
-// 计算"移除某筛选后"会显示多少条
 function countWithout(filterKey, value) {
   const f = JSON.parse(JSON.stringify(state.filters));
   if (Array.isArray(f[filterKey])) f[filterKey] = f[filterKey].filter(x => x !== value);
@@ -718,169 +701,202 @@ function activeFilterCount() {
   return (f.time !== 'all' ? 1 : 0) + f.groups.length + f.channels.length + f.contents.length + f.lengths.length + f.hots.length + f.vtypes.length + f.brands.length;
 }
 
-// ========== Custom Dropdown (多选不自动关) ==========
-function makeDropdown({ label, options, multi, getSelected, onChange, alignRight=false }) {
+// ========== V5: Multi-Select Dropdown (tempSelected + 确定按钮) ==========
+function makeDropdown({ label, options, multi, getSelected, onApply, withCount=false }) {
   const wrap = document.createElement('span');
-  wrap.className = 'dd' + (alignRight ? ' right' : '');
-  wrap.innerHTML = '<button class="dd-btn"></button><div class="dd-panel"></div>';
+  wrap.className = 'dd';
+  wrap.innerHTML = `<button class="dd-btn"><span class="lbl"></span><span class="arrow">${ICONS.chevron}</span></button><div class="dd-panel"></div>`;
   const btn = wrap.querySelector('.dd-btn');
+  const lblEl = btn.querySelector('.lbl');
   const panel = wrap.querySelector('.dd-panel');
+  let temp = null; // 临时选择（多选用 array）
 
-  function selValue() { const s = getSelected(); return Array.isArray(s) ? s : [s]; }
   function refreshBtn() {
-    const sel = selValue();
+    const sel = getSelected();
     let txt = label;
     if (multi) {
-      if (sel.length > 0) txt += ' <span class="count">(' + sel.length + ')</span>';
+      const arr = sel || [];
+      if (arr.length > 0) txt += ` <span class="count">(${arr.length})</span>`;
     } else {
-      const o = options.find(o => (o.value||o) === sel[0]);
-      if (o && (o.value||o) !== options[0]?.value && (o.value||o) !== options[0]) {
-        txt += ': <span class="count">' + (o.label||o) + '</span>';
-      } else if (o) {
-        txt += ': ' + (o.label||o);
-      }
+      const o = options.find(o => (o.value||o) === sel);
+      if (o && (o.value||o) !== 'all') txt += `: <span class="count">${o.label||o}</span>`;
     }
-    btn.innerHTML = txt + ' <span class="arrow">' + ICONS.chevron + '</span>';
+    lblEl.innerHTML = txt;
   }
-  function refreshItems() {
-    const sel = selValue();
+  function renderPanel() {
     panel.innerHTML = '';
+    // head
+    const head = document.createElement('div');
+    head.className = 'head';
     if (multi) {
-      const tb = document.createElement('div');
-      tb.className = 'dd-toolbar';
-      tb.innerHTML = '<button class="dd-btn-toolbar" data-act="all">全选</button><button class="dd-btn-toolbar" data-act="clear">清空</button><button class="dd-btn-toolbar done" data-act="done">完成</button>';
-      tb.onclick = e => {
-        const act = e.target.dataset.act;
-        if (act === 'all') { onChange(options.map(o => o.value||o)); refreshItems(); refreshBtn(); }
-        else if (act === 'clear') { onChange([]); refreshItems(); refreshBtn(); }
-        else if (act === 'done') { wrap.classList.remove('open'); }
-      };
-      panel.appendChild(tb);
+      head.innerHTML = `<span>${escHTML(label)}${(temp||[]).length > 0 ? ` · ${temp.length} 个临时选` : ''}</span>`;
+    } else {
+      head.innerHTML = `<span>${escHTML(label)} · 选一个</span>`;
     }
+    panel.appendChild(head);
+    // body
+    const body = document.createElement('div');
+    body.className = 'body';
     options.forEach(opt => {
       const v = opt.value || opt;
       const lbl = opt.label || opt;
-      const checked = sel.includes(v);
+      const subLabel = opt.sub || '';
+      const checked = multi ? temp.includes(v) : (temp === v);
       const item = document.createElement('div');
       item.className = 'dd-item' + (checked ? ' checked' : '');
-      item.innerHTML = (multi ? '<span class="check"></span>' : '') + '<span>' + escHTML(lbl) + '</span>';
+      item.innerHTML = (multi ? '<span class="check"></span>' : '') + `<span>${escHTML(lbl)}</span>` + (subLabel ? `<span class="subs">${subLabel}</span>` : '');
       item.onclick = (e) => {
         e.stopPropagation();
         if (multi) {
-          const cur = selValue().slice();
-          const i = cur.indexOf(v);
-          if (i >= 0) cur.splice(i, 1); else cur.push(v);
-          onChange(cur);
-          refreshItems(); refreshBtn();
+          const i = temp.indexOf(v);
+          if (i >= 0) temp.splice(i, 1); else temp.push(v);
+          renderPanel();
         } else {
-          onChange(v);
+          temp = v;
+          // 单选直接 apply + close
+          onApply(temp);
           wrap.classList.remove('open');
           refreshBtn();
         }
       };
-      panel.appendChild(item);
+      body.appendChild(item);
     });
+    panel.appendChild(body);
+    // footer (multi only)
+    if (multi) {
+      const foot = document.createElement('div');
+      foot.className = 'footer';
+      foot.innerHTML = `<button class="btn-cancel">取消</button><button class="btn-apply">确定 (${temp.length})</button>`;
+      foot.querySelector('.btn-cancel').onclick = e => { e.stopPropagation(); close(false); };
+      foot.querySelector('.btn-apply').onclick = e => { e.stopPropagation(); close(true); };
+      panel.appendChild(foot);
+    }
   }
-  btn.onclick = e => {
+  function open() {
+    if (multi) temp = (getSelected() || []).slice();
+    else temp = getSelected();
+    wrap.classList.add('open');
+    renderPanel();
+  }
+  function close(apply) {
+    wrap.classList.remove('open');
+    if (apply && multi) onApply(temp.slice());
+    refreshBtn();
+  }
+  wrap._cancel = () => close(false);
+  btn.onclick = (e) => {
     e.stopPropagation();
-    document.querySelectorAll('.dd.open').forEach(d => { if (d !== wrap) d.classList.remove('open'); });
-    wrap.classList.toggle('open');
-    if (wrap.classList.contains('open')) refreshItems();
+    document.querySelectorAll('.dd.open').forEach(d => { if (d !== wrap && d._cancel) d._cancel(); });
+    if (wrap.classList.contains('open')) close(false);
+    else open();
   };
   refreshBtn();
-  return { el: wrap, refresh: () => { refreshBtn(); if (wrap.classList.contains('open')) refreshItems(); } };
+  return { el: wrap, refresh: () => { refreshBtn(); if (wrap.classList.contains('open')) renderPanel(); } };
 }
 
-function makeChannelTreeDropdown({ getGroups, getChannels, onChangeGroups, onChangeChannels }) {
+function makeChannelTreeDropdown({ getGroups, getChannels, onApply }) {
+  // 频道树也用 tempSelected + 确定
   const wrap = document.createElement('span');
   wrap.className = 'dd';
-  wrap.innerHTML = '<button class="dd-btn"></button><div class="dd-panel"></div>';
+  wrap.innerHTML = `<button class="dd-btn"><span class="lbl"></span><span class="arrow">${ICONS.chevron}</span></button><div class="dd-panel"></div>`;
   const btn = wrap.querySelector('.dd-btn');
+  const lblEl = btn.querySelector('.lbl');
   const panel = wrap.querySelector('.dd-panel');
+  let tempG = [];
+  let tempC = [];
 
-  function refresh() {
-    const sgArr = getGroups();
-    const scArr = getChannels();
-    const cnt = sgArr.length + scArr.length;
-    btn.innerHTML = '频道分组' + (cnt ? ' <span class="count">(' + cnt + ')</span>' : '') + ' <span class="arrow">' + ICONS.chevron + '</span>';
-    if (wrap.classList.contains('open')) renderItems();
+  function refreshBtn() {
+    const cnt = (getGroups()||[]).length + (getChannels()||[]).length;
+    lblEl.innerHTML = '频道分组' + (cnt ? ` <span class="count">(${cnt})</span>` : '');
   }
-  function renderItems() {
-    const sgArr = getGroups();
-    const scArr = getChannels();
+  function renderPanel() {
     panel.innerHTML = '';
-    const tb = document.createElement('div');
-    tb.className = 'dd-toolbar';
-    tb.innerHTML = '<span style="font-size:11px;color:var(--text-faint);padding:6px 10px">点大类=选整组 / 点 ▸ 展开看子频道</span><button class="dd-btn-toolbar done" data-act="done">完成</button>';
-    tb.querySelector('[data-act=done]').onclick = () => { wrap.classList.remove('open'); };
-    panel.appendChild(tb);
-
+    const head = document.createElement('div');
+    head.className = 'head';
+    head.innerHTML = `<span>频道分组 · ${tempG.length + tempC.length} 个临时选 · 点 ▸ 展开看子频道</span>`;
+    panel.appendChild(head);
+    const body = document.createElement('div');
+    body.className = 'body';
     Object.entries(CFG.group_labels).forEach(([gKey, gLabel]) => {
-      const isChecked = sgArr.includes(gKey);
+      const isChecked = tempG.includes(gKey);
       const isExp = state.expanded_groups.includes(gKey);
+      const cnt = (CFG.channel_tree[gKey]||[]).length;
       const item = document.createElement('div');
       item.className = 'dd-item' + (isChecked ? ' checked' : '') + (isExp ? ' exp' : '');
-      item.innerHTML = '<span class="check"></span><span style="font-weight:500">' + escHTML(gLabel) + '</span><span class="arrow-r">▸</span>';
+      item.innerHTML = `<span class="check"></span><span style="font-weight:500">${escHTML(gLabel)}</span><span class="subs">${cnt}</span><span class="arrow-r">▸</span>`;
       item.onclick = (e) => {
         e.stopPropagation();
-        const isArrow = e.target.classList.contains('arrow-r');
-        if (isArrow) {
+        if (e.target.classList.contains('arrow-r')) {
           const cur = state.expanded_groups.slice();
           const i = cur.indexOf(gKey);
           if (i >= 0) cur.splice(i, 1); else cur.push(gKey);
           state.expanded_groups = cur; saveState();
         } else {
-          const cur = sgArr.slice();
-          const i = cur.indexOf(gKey);
-          if (i >= 0) cur.splice(i, 1); else cur.push(gKey);
-          onChangeGroups(cur);
+          const i = tempG.indexOf(gKey);
+          if (i >= 0) tempG.splice(i, 1); else tempG.push(gKey);
         }
-        renderItems(); refresh();
+        renderPanel();
       };
-      panel.appendChild(item);
-
+      body.appendChild(item);
       if (isExp) {
         const cw = document.createElement('div');
         cw.className = 'dd-children';
         (CFG.channel_tree[gKey]||[]).forEach(ch => {
           const cn = ch.display_name;
-          const checked = scArr.includes(cn);
+          const checked = tempC.includes(cn);
           const c = document.createElement('div');
           c.className = 'dd-child' + (checked ? ' checked' : '');
-          c.innerHTML = '<span class="check"></span><span>' + escHTML(cn) + '</span>'
+          c.innerHTML = `<span class="check"></span><span>${escHTML(cn)}</span>`
             + (ch.is_self ? '<span class="self">⭐ 自家</span>' : '')
-            + '<span class="subs">' + fmt(ch.subscriber_count) + '</span>';
+            + `<span class="subs">${fmt(ch.subscriber_count)}</span>`;
           c.onclick = (e) => {
             e.stopPropagation();
-            const cur = scArr.slice();
-            const i = cur.indexOf(cn);
-            if (i >= 0) cur.splice(i, 1); else cur.push(cn);
-            onChangeChannels(cur);
-            renderItems(); refresh();
+            const i = tempC.indexOf(cn);
+            if (i >= 0) tempC.splice(i, 1); else tempC.push(cn);
+            renderPanel();
           };
           cw.appendChild(c);
         });
-        panel.appendChild(cw);
+        body.appendChild(cw);
       }
     });
+    panel.appendChild(body);
+    const foot = document.createElement('div');
+    foot.className = 'footer';
+    foot.innerHTML = `<button class="btn-cancel">取消</button><button class="btn-apply">确定 (${tempG.length + tempC.length})</button>`;
+    foot.querySelector('.btn-cancel').onclick = e => { e.stopPropagation(); close(false); };
+    foot.querySelector('.btn-apply').onclick = e => { e.stopPropagation(); close(true); };
+    panel.appendChild(foot);
   }
-  btn.onclick = e => {
+  function open() {
+    tempG = (getGroups()||[]).slice();
+    tempC = (getChannels()||[]).slice();
+    wrap.classList.add('open');
+    renderPanel();
+  }
+  function close(apply) {
+    wrap.classList.remove('open');
+    if (apply) onApply(tempG.slice(), tempC.slice());
+    refreshBtn();
+  }
+  wrap._cancel = () => close(false);
+  btn.onclick = (e) => {
     e.stopPropagation();
-    document.querySelectorAll('.dd.open').forEach(d => { if (d !== wrap) d.classList.remove('open'); });
-    wrap.classList.toggle('open');
-    if (wrap.classList.contains('open')) renderItems();
+    document.querySelectorAll('.dd.open').forEach(d => { if (d !== wrap && d._cancel) d._cancel(); });
+    if (wrap.classList.contains('open')) close(false);
+    else open();
   };
-  refresh();
-  return { el: wrap, refresh };
+  refreshBtn();
+  return { el: wrap, refresh: () => { refreshBtn(); if (wrap.classList.contains('open')) renderPanel(); } };
 }
 
 document.addEventListener('click', e => {
   if (!e.target.closest('.dd')) {
-    document.querySelectorAll('.dd.open').forEach(d => d.classList.remove('open'));
+    document.querySelectorAll('.dd.open').forEach(d => d._cancel && d._cancel());
   }
 });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') document.querySelectorAll('.dd.open').forEach(d => d.classList.remove('open'));
+  if (e.key === 'Escape') document.querySelectorAll('.dd.open').forEach(d => d._cancel && d._cancel());
 });
 
 // ========== Tabs ==========
@@ -894,25 +910,45 @@ function renderTabs() {
     { key: 'monitor', label: '竞品监测' },
   ];
   document.getElementById('tabs').innerHTML = items.map(t =>
-    `<button class="tab${t.key === state.tab ? ' active' : ''}" data-tab="${t.key}">${t.label}${t.badge != null ? '<span class="tab-badge">' + t.badge + '</span>' : ''}</button>`
+    `<button class="tab${t.key === state.tab ? ' active' : ''}" data-tab="${t.key}">${t.label}${t.badge != null ? `<span class="tab-badge">${t.badge}</span>` : ''}</button>`
   ).join('');
-  document.querySelectorAll('.tab').forEach(b => b.onclick = () => {
-    state.tab = b.dataset.tab; saveState(); render();
-  });
+  document.querySelectorAll('.tab').forEach(b => b.onclick = () => { state.tab = b.dataset.tab; saveState(); render(); });
+}
+
+// ========== Overview Bar (折叠 / 展开) ==========
+function renderOverviewBar(filtered) {
+  const root = document.getElementById('overview-bar');
+  const total = filtered.reduce((s,v) => s + (v.view_count||0), 0);
+  const avgER = filtered.length ? filtered.reduce((s,v) => s + (v.engagement_rate||0), 0) / filtered.length : 0;
+  const highER = filtered.filter(v => (v.engagement_rate||0) >= 5).length;
+  const phenom = filtered.filter(v => v.hot_level === '🚀 现象级').length;
+
+  root.classList.toggle('expanded', state.overview_expanded);
+  root.innerHTML = `
+    <span class="key">📊 概览</span>
+    <span>视频 <b>${filtered.length}</b></span>
+    <span>总播放 <b>${fmt(total)}</b></span>
+    <span>ER <b>${avgER.toFixed(2)}%</b></span>
+    <span>高 ER <b>${highER}</b></span>
+    <span style="color:var(--purple)">现象级 <b style="color:var(--purple)">${phenom}</b></span>
+    <button class="toggle">${state.overview_expanded ? '收起' : '展开详情'} ${ICONS.chevron}</button>
+  `;
+  root.querySelector('.toggle').onclick = () => {
+    state.overview_expanded = !state.overview_expanded;
+    saveState();
+    render();
+    setTimeout(updateHeaderHeight, 0);
+  };
+  document.getElementById('expanded-panel').classList.toggle('show', state.overview_expanded);
+}
+
+// ========== Header height for sticky sidebar ==========
+function updateHeaderHeight() {
+  const h = document.querySelector('header').offsetHeight;
+  document.documentElement.style.setProperty('--header-h', h + 'px');
 }
 
 // ========== KPI ==========
-function makeSparkline(values, color) {
-  if (!values || values.length < 2) return '';
-  const max = Math.max(...values, 1);
-  const min = Math.min(...values, 0);
-  const range = max - min || 1;
-  const w = 80, h = 20;
-  const step = w / (values.length - 1);
-  const points = values.map((v, i) => `${(i*step).toFixed(1)},${(h - ((v-min)/range)*h).toFixed(1)}`).join(' ');
-  return `<svg class="sparkline" width="${w}" height="${h}"><polyline points="${points}" fill="none" stroke="${color}" stroke-width="1.5"/></svg>`;
-}
-
 function renderKPI(filtered) {
   const root = document.getElementById('kpi-grid');
   const total = filtered.reduce((s,v) => s + (v.view_count||0), 0);
@@ -921,75 +957,52 @@ function renderKPI(filtered) {
   const week = filtered.filter(v => withinTime(v.published_at, '7'));
   const week100k = week.filter(v => v.view_count >= 1e5).length;
   const phenom = filtered.filter(v => v.hot_level === '🚀 现象级').length;
-
   const erColor = avgER >= 5 ? 'green' : '';
   root.innerHTML = `
     <div class="kpi-card"><div class="label">视频数</div><div class="big">${filtered.length}</div><div class="sub">已显示</div></div>
     <div class="kpi-card"><div class="label">总播放</div><div class="big">${fmt(total)}</div><div class="sub">累计</div></div>
-    <div class="kpi-card" data-tip="Engagement Rate · 互动率 · (赞+评论)/播放 · >5% 优秀 / 2-5% 一般 / <2% 较差">
-      <div class="label">平均 ER</div><div class="big ${erColor}">${avgER.toFixed(2)}<span style="font-size:14px;color:var(--text-muted);">%</span></div>
-      <div class="sub">悬停看说明</div>
-    </div>
+    <div class="kpi-card" data-tip="Engagement Rate · 互动率 · (赞+评论)/播放 · >5% 优秀 / 2-5% 一般 / <2% 较差"><div class="label">平均 ER</div><div class="big ${erColor}">${avgER.toFixed(2)}<span style="font-size:14px;color:var(--text-muted);">%</span></div><div class="sub">悬停看说明</div></div>
     <div class="kpi-card"><div class="label">高 ER 内容</div><div class="big">${highER}</div><div class="sub">≥5% 互动率</div></div>
     <div class="kpi-card"><div class="label">本周新视频</div><div class="big">${week.length}</div><div class="sub">${week100k} 个 &gt;10万</div></div>
     <div class="kpi-card"><div class="label">现象级爆款</div><div class="big purple">${phenom}</div><div class="sub">&gt;500万播放</div></div>
   `;
 }
 
-// ========== Insight ==========
 function generateInsights(filtered) {
   const insights = [];
-  // 本周创作类 ER vs 总体平均
   const week = filtered.filter(v => withinTime(v.published_at, '7'));
   const allCreate = filtered.filter(v => (v.content_tags||[]).includes('创作'));
   if (allCreate.length) {
     const allER = allCreate.reduce((s,v) => s+(v.engagement_rate||0), 0) / allCreate.length;
-    const weekCreate = week.filter(v => (v.content_tags||[]).includes('创作'));
-    if (weekCreate.length >= 3) {
-      const wER = weekCreate.reduce((s,v) => s+(v.engagement_rate||0), 0) / weekCreate.length;
+    const wkCreate = week.filter(v => (v.content_tags||[]).includes('创作'));
+    if (wkCreate.length >= 3) {
+      const wER = wkCreate.reduce((s,v) => s+(v.engagement_rate||0), 0) / wkCreate.length;
       const diff = ((wER - allER) / Math.max(allER, 0.01) * 100);
-      if (Math.abs(diff) >= 15) {
-        insights.push(`创作类内容本周 ER ${diff > 0 ? '↑' : '↓'} ${Math.abs(diff).toFixed(0)}%（本周 ${wER.toFixed(2)}% vs 总体 ${allER.toFixed(2)}%）`);
-      }
+      if (Math.abs(diff) >= 15) insights.push(`创作类内容本周 ER ${diff > 0 ? '↑' : '↓'} ${Math.abs(diff).toFixed(0)}%（本周 ${wER.toFixed(2)}% vs 总体 ${allER.toFixed(2)}%）`);
     }
   }
-  // 竞品 A 组本周破百万
   const aWeek = week.filter(v => v.channel_group === 'A_brand' && v.view_count >= 1e6);
-  if (aWeek.length) {
-    aWeek.slice(0, 2).forEach(v => insights.push(`${v.channel_name} 本周新视频破百万：${v.title.slice(0, 40)}`));
-  }
-  // iPad 配件相关数量
+  aWeek.slice(0, 2).forEach(v => insights.push(`${v.channel_name} 本周新视频破百万：${v.title.slice(0, 40)}`));
   const ipadAcc = filtered.filter(v => (v.content_tags||[]).includes('iPad配件相关'));
-  if (ipadAcc.length === 0) {
-    insights.push('当前筛选下无 iPad 配件相关视频，建议放宽时间窗口或查看全部分组');
-  } else if (ipadAcc.length <= 5) {
-    insights.push(`iPad 配件相关视频仅 ${ipadAcc.length} 条，类目供给量低（蓝海机会）`);
-  }
-  // 头部 KOL 本周动态
+  if (ipadAcc.length === 0) insights.push('当前筛选下无 iPad 配件相关视频，建议放宽时间或分组');
+  else if (ipadAcc.length <= 5) insights.push(`iPad 配件相关视频仅 ${ipadAcc.length} 条，类目供给量低（蓝海机会）`);
   const kolWeek = week.filter(v => CFG.top_kol.includes(v.channel_name));
-  if (kolWeek.length) {
-    insights.push(`头部 KOL 本周共发布 ${kolWeek.length} 条视频（MKBHD/iJustine/LTT 等）`);
-  }
+  if (kolWeek.length) insights.push(`头部 KOL 本周共发布 ${kolWeek.length} 条视频`);
   return insights;
 }
 
 function renderInsight(filtered) {
   const root = document.getElementById('insight');
   const insights = generateInsights(filtered);
-  if (insights.length === 0 || !HISTORY || HISTORY.count < 2) {
-    if (insights.length === 0 && HISTORY && HISTORY.count >= 2) { root.style.display = 'none'; return; }
-    if (HISTORY && HISTORY.count < 7) {
-      root.style.display = 'block';
-      root.innerHTML = `<div class="title">📊 智能洞察</div><ul><li style="color:var(--text-faint)">洞察将在数据积累 7 天后开启（当前 ${HISTORY.count}/7 天）。先看下面的实时观察 ↓</li>${insights.map(i => '<li>' + escHTML(i) + '</li>').join('')}</ul>`;
-      return;
-    }
-    if (insights.length === 0) { root.style.display = 'none'; return; }
-  }
+  if (insights.length === 0 && (!HISTORY || HISTORY.count >= 7)) { root.style.display = 'none'; return; }
   root.style.display = 'block';
-  root.innerHTML = `<div class="title">📊 本周观察</div><ul>${insights.map(i => '<li>' + escHTML(i) + '</li>').join('')}</ul>`;
+  if (HISTORY && HISTORY.count < 7) {
+    root.innerHTML = `<div class="title">📊 智能洞察</div><ul><li style="color:var(--text-faint)">趋势对比将在 7 天数据积累后开启（当前 ${HISTORY.count}/7 天）。先看实时观察 ↓</li>${insights.map(i => '<li>' + escHTML(i) + '</li>').join('')}</ul>`;
+  } else {
+    root.innerHTML = `<div class="title">📊 本周观察</div><ul>${insights.map(i => '<li>' + escHTML(i) + '</li>').join('')}</ul>`;
+  }
 }
 
-// ========== Stat row ==========
 function renderStatRow(filtered) {
   const root = document.getElementById('stat-row');
   const hot = (l) => filtered.filter(v => v.hot_level === l).length;
@@ -997,20 +1010,18 @@ function renderStatRow(filtered) {
   const high_rel = filtered.filter(v => (v.relevance_score||0) >= 80).length;
   const mid_rel = filtered.filter(v => (v.relevance_score||0) >= 60 && (v.relevance_score||0) < 80).length;
   const low_rel = filtered.filter(v => (v.relevance_score||0) < 60).length;
-
   let html = '';
   if (hot('🔥 上升爆款') + hot('💥 强爆款') + hot('⭐ 百万爆款') + hot('🚀 现象级') > 0) {
-    html += `<span class="label">爆款</span>`;
+    html += `<span class="lbl">爆款</span>`;
     if (hot('🔥 上升爆款')) html += `<span class="pill rising">🔥 上升 ${hot('🔥 上升爆款')}</span>`;
     if (hot('💥 强爆款'))   html += `<span class="pill strong">💥 强 ${hot('💥 强爆款')}</span>`;
     if (hot('⭐ 百万爆款')) html += `<span class="pill million">⭐ 百万 ${hot('⭐ 百万爆款')}</span>`;
     if (hot('🚀 现象级'))   html += `<span class="pill phenom">🚀 现象级 ${hot('🚀 现象级')}</span>`;
   }
-  html += `<span class="label" style="margin-left:8px">相关性</span>`;
-  html += `<span class="pill high-rel">🎯 高度相关 <b class="num">${high_rel}</b></span>`;
-  html += `<span class="pill mid-rel">中等 <b class="num">${mid_rel}</b></span>`;
-  html += `<span class="pill low-rel">低 <b class="num">${low_rel}</b></span>`;
-
+  html += `<span class="lbl" style="margin-left:8px">相关性</span>`;
+  html += `<span class="pill high-rel">🎯 高度 ${high_rel}</span>`;
+  html += `<span class="pill mid-rel">中等 ${mid_rel}</span>`;
+  html += `<span class="pill low-rel">低 ${low_rel}</span>`;
   if (tag('iPad配件相关')) html += `<span class="pill tag-iPad">iPad配件 ${tag('iPad配件相关')}</span>`;
   if (tag('创作'))        html += `<span class="pill tag-creation">创作 ${tag('创作')}</span>`;
   if (tag('学生'))        html += `<span class="pill tag-student">学生 ${tag('学生')}</span>`;
@@ -1018,21 +1029,11 @@ function renderStatRow(filtered) {
   root.innerHTML = html;
 }
 
-// ========== Charts ==========
 function renderCharts(filtered) {
-  let root = document.getElementById('charts-root');
-  if (!root) {
-    root = document.createElement('div');
-    root.id = 'charts-root';
-    root.className = 'charts';
-    const home = document.getElementById('view-home');
-    home.insertBefore(root, home.firstChild);
-  }
-  if (filtered.length === 0) { root.innerHTML = ''; return; }
-
-  // Chart 1: 长度 × ER 散点
+  const root = document.getElementById('charts-root');
+  if (!filtered || filtered.length === 0) { root.innerHTML = ''; return; }
   const lenOrder = CFG.length_order;
-  const w1 = 320, h1 = 200, pad = 30;
+  const w1 = 320, h1 = 180, pad = 30;
   const erMax = Math.max(...filtered.map(v => v.engagement_rate||0), 5);
   let pts1 = '';
   filtered.slice(0, 200).forEach(v => {
@@ -1046,19 +1047,18 @@ function renderCharts(filtered) {
   let xlbl1 = '';
   lenOrder.forEach((l, i) => {
     const x = pad + (i + 0.5) * ((w1 - pad*2) / lenOrder.length);
-    xlbl1 += `<text x="${x}" y="${h1 - 6}" text-anchor="middle" font-size="10" fill="#94A3B8" font-family="var(--font-mono)">${l}</text>`;
+    xlbl1 += `<text x="${x}" y="${h1 - 6}" text-anchor="middle" font-size="10" fill="#94A3B8">${l}</text>`;
   });
   const ylbl1 = `<text x="${pad - 6}" y="${pad}" text-anchor="end" font-size="10" fill="#94A3B8">${erMax.toFixed(0)}%</text><text x="${pad - 6}" y="${h1 - pad}" text-anchor="end" font-size="10" fill="#94A3B8">0%</text>`;
   const axis1 = `<line x1="${pad}" y1="${h1 - pad}" x2="${w1 - pad}" y2="${h1 - pad}" stroke="#1E293B"/><line x1="${pad}" y1="${pad}" x2="${pad}" y2="${h1 - pad}" stroke="#1E293B"/>`;
 
-  // Chart 2: KOL 影响力矩阵
   const channels = {};
   DATA.videos.forEach(v => {
-    if (!channels[v.channel_name]) channels[v.channel_name] = { name: v.channel_name, subs: v.channel_subscriber_count, ers: [], group: v.channel_group };
+    if (!channels[v.channel_name]) channels[v.channel_name] = { name: v.channel_name, subs: v.channel_subscriber_count, ers: [] };
     channels[v.channel_name].ers.push(v.engagement_rate || 0);
   });
   const chList = Object.values(channels).map(c => ({ ...c, avgER: c.ers.reduce((s,e) => s+e, 0)/c.ers.length }));
-  const w2 = 320, h2 = 200;
+  const w2 = 320, h2 = 180;
   const erMax2 = Math.max(...chList.map(c => c.avgER), 5);
   const subsMin = Math.log10(Math.min(...chList.map(c => Math.max(c.subs, 100))));
   const subsMax = Math.log10(Math.max(...chList.map(c => c.subs), 1));
@@ -1072,39 +1072,38 @@ function renderCharts(filtered) {
     pts2 += `<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${r}" fill="${fill}" opacity="0.7"><title>${escHTML(c.name)} · ${fmt(c.subs)} · ER ${c.avgER.toFixed(2)}%</title></circle>`;
   });
   const axis2 = `<line x1="${pad}" y1="${h2 - pad}" x2="${w2 - pad}" y2="${h2 - pad}" stroke="#1E293B"/><line x1="${pad}" y1="${pad}" x2="${pad}" y2="${h2 - pad}" stroke="#1E293B"/>`;
-  const lbl2 = `<text x="${pad - 6}" y="${pad}" text-anchor="end" font-size="10" fill="#94A3B8">${erMax2.toFixed(0)}%</text><text x="${pad}" y="${h2 - 6}" text-anchor="start" font-size="10" fill="#94A3B8">${fmt(Math.round(Math.pow(10, subsMin)))}</text><text x="${w2 - pad}" y="${h2 - 6}" text-anchor="end" font-size="10" fill="#94A3B8">${fmt(Math.round(Math.pow(10, subsMax)))}</text>`;
+  const lbl2 = `<text x="${pad - 6}" y="${pad}" text-anchor="end" font-size="10" fill="#94A3B8">${erMax2.toFixed(0)}%</text>`;
 
-  // Chart 3: 类目供给（横向条）
   const groupCounts = {};
   Object.keys(CFG.group_labels).forEach(g => groupCounts[g] = 0);
   filtered.forEach(v => groupCounts[v.channel_group] = (groupCounts[v.channel_group]||0) + 1);
   const gMax = Math.max(...Object.values(groupCounts), 1);
-  const w3 = 320, h3 = 200;
-  const barH = 22, gap = 6;
+  const w3 = 320, h3 = 180;
+  const barH = 22, gap = 4;
   let bars = '';
   Object.entries(CFG.group_labels).forEach(([g, lbl], i) => {
     const cnt = groupCounts[g];
     const bw = (cnt / gMax) * (w3 - 130);
-    const y = 14 + i * (barH + gap);
+    const y = 10 + i * (barH + gap);
     bars += `<text x="6" y="${y + 14}" font-size="11" fill="#CBD5E1">${escHTML(lbl)}</text>`;
     bars += `<rect x="124" y="${y}" width="${bw.toFixed(0)}" height="${barH}" fill="#6366F1" opacity="0.6" rx="3"/>`;
-    bars += `<text x="${(124 + bw + 6).toFixed(0)}" y="${y + 14}" font-size="11" fill="#94A3B8" font-family="var(--font-mono)">${cnt}</text>`;
+    bars += `<text x="${(124 + bw + 6).toFixed(0)}" y="${y + 14}" font-size="11" fill="#94A3B8" font-family="monospace">${cnt}</text>`;
   });
 
   root.innerHTML = `
-    <div class="chart-card"><div class="title">视频长度 × ER</div><div class="desc">看哪种长度容易出高 ER（绿=高 / 橙=中 / 灰=低）</div><svg viewBox="0 0 ${w1} ${h1}" preserveAspectRatio="xMidYMid meet">${axis1}${ylbl1}${xlbl1}${pts1}</svg></div>
-    <div class="chart-card"><div class="title">频道 KOL 影响力矩阵</div><div class="desc">X=订阅数(log) Y=平均 ER · 右上=顶级 KOL · 左上=性价比 · 玫瑰红=Typecase</div><svg viewBox="0 0 ${w2} ${h2}" preserveAspectRatio="xMidYMid meet">${axis2}${lbl2}${pts2}</svg></div>
-    <div class="chart-card"><div class="title">类目内容供给</div><div class="desc">各分组视频数（低=机会蓝海）</div><svg viewBox="0 0 ${w3} ${h3}" preserveAspectRatio="xMidYMid meet">${bars}</svg></div>
+    <div class="chart-card"><div class="ttl">视频长度 × ER</div><div class="desc">看哪种长度容易出高 ER</div><svg viewBox="0 0 ${w1} ${h1}" preserveAspectRatio="xMidYMid meet">${axis1}${ylbl1}${xlbl1}${pts1}</svg></div>
+    <div class="chart-card"><div class="ttl">频道 KOL 影响力矩阵</div><div class="desc">右上=顶级 · 玫瑰红=Typecase</div><svg viewBox="0 0 ${w2} ${h2}" preserveAspectRatio="xMidYMid meet">${axis2}${lbl2}${pts2}</svg></div>
+    <div class="chart-card"><div class="ttl">类目内容供给</div><div class="desc">低=蓝海机会</div><svg viewBox="0 0 ${w3} ${h3}" preserveAspectRatio="xMidYMid meet">${bars}</svg></div>
   `;
 }
 
 // ========== Presets ==========
 const PRESETS = [
-  { key: '24h_rising', label: '🔥 24h 上升爆款', apply: () => ({ time: '1', hots: ['🔥 上升爆款'] }) },
-  { key: '7d_strong',  label: '💥 7 天强爆款',   apply: () => ({ time: '7', hots: ['💥 强爆款', '⭐ 百万爆款', '🚀 现象级'] }) },
-  { key: 'high_er',    label: '🎯 高 ER 优质',   apply: () => ({}) },  // 通过 sort=er + 暗 filter
-  { key: 'channel_hot',label: '📈 频道爆款',     apply: () => ({}) },  // sort=view_to_sub
-  { key: 'phenom',     label: '🚀 现象级',       apply: () => ({ hots: ['🚀 现象级'] }) },
+  { key: '24h_rising', label: '🔥 24h 上升爆款' },
+  { key: '7d_strong',  label: '💥 7 天强爆款' },
+  { key: 'high_er',    label: '🎯 高 ER 优质' },
+  { key: 'channel_hot',label: '📈 频道爆款' },
+  { key: 'phenom',     label: '🚀 现象级' },
 ];
 function applyPreset(key) {
   const f = defaultFilters();
@@ -1117,157 +1116,200 @@ function applyPreset(key) {
   state.filters = f; state.sort = sort; state.preset = state.preset === key ? '' : key;
   saveState(); render();
 }
-function renderPresets() {
-  const root = document.getElementById('presets');
-  root.innerHTML = PRESETS.map(p =>
-    `<button class="preset-btn${state.preset === p.key ? ' active' : ''}" data-preset="${p.key}">${p.label}</button>`
-  ).join('');
-  root.querySelectorAll('[data-preset]').forEach(b => b.onclick = () => applyPreset(b.dataset.preset));
-}
 
-// ========== Filters ==========
-function renderFilters(rootId, mobile=false) {
-  const root = document.getElementById(rootId);
+// ========== Sidebar ==========
+function renderSidebar() {
+  const root = document.getElementById('sidebar-content');
   root.innerHTML = '';
-  const fs = mobile ? pendingMobileState.filters : state.filters;
-  const setKey = (key, val) => { fs[key] = val; if (!mobile) { saveState(); state.preset = ''; render(); } };
+  if (state.tab !== 'home' && state.tab !== 'monitor') {
+    root.innerHTML = '<div style="color:var(--text-faint);font-size:12px;padding:20px;text-align:center">筛选仅在「首页」「竞品监测」 Tab 生效</div>';
+    return;
+  }
+  const filtered = applyFilters(DATA.videos);
+  const cnt = filtered.length;
+  const cls = cnt === 0 ? 'alert' : cnt < 10 ? 'warn' : '';
 
-  root.appendChild(makeDropdown({
+  // result count
+  const rc = document.createElement('div');
+  rc.className = 'result-count ' + cls;
+  rc.textContent = '显示 ' + cnt + ' 条';
+  root.appendChild(rc);
+
+  // presets
+  const ph = document.createElement('h4');
+  ph.textContent = '快捷预设';
+  root.appendChild(ph);
+  const pp = document.createElement('div');
+  pp.className = 'presets';
+  pp.innerHTML = PRESETS.map(p => `<button class="preset-btn${state.preset === p.key ? ' active' : ''}" data-preset="${p.key}">${p.label}</button>`).join('');
+  pp.querySelectorAll('[data-preset]').forEach(b => b.onclick = () => applyPreset(b.dataset.preset));
+  root.appendChild(pp);
+
+  // filters
+  const fh = document.createElement('h4');
+  fh.textContent = '筛选器';
+  root.appendChild(fh);
+  const fs = document.createElement('div');
+  fs.className = 'filters-stack';
+  const setKey = (key, val) => { state.filters[key] = val; state.preset = ''; saveState(); render(); };
+
+  fs.appendChild(makeDropdown({
     label: '时间', multi: false,
     options: [{value:'all',label:'全部'},{value:'1',label:'近 24h'},{value:'7',label:'近 7 天'},{value:'30',label:'近 30 天'},{value:'90',label:'近 90 天'}],
-    getSelected: () => fs.time,
-    onChange: v => setKey('time', v),
+    getSelected: () => state.filters.time,
+    onApply: v => setKey('time', v),
   }).el);
 
-  root.appendChild(makeChannelTreeDropdown({
-    getGroups: () => fs.groups,
-    getChannels: () => fs.channels,
-    onChangeGroups: v => setKey('groups', v),
-    onChangeChannels: v => setKey('channels', v),
+  fs.appendChild(makeChannelTreeDropdown({
+    getGroups: () => state.filters.groups,
+    getChannels: () => state.filters.channels,
+    onApply: (g, c) => { state.filters.groups = g; state.filters.channels = c; state.preset = ''; saveState(); render(); },
   }).el);
 
-  root.appendChild(makeDropdown({ label: '内容类型', multi: true, options: CFG.content_tags_order, getSelected: () => fs.contents, onChange: v => setKey('contents', v) }).el);
-  root.appendChild(makeDropdown({ label: '时长', multi: true, options: CFG.length_order, getSelected: () => fs.lengths, onChange: v => setKey('lengths', v) }).el);
-  root.appendChild(makeDropdown({ label: '爆款', multi: true, options: CFG.hot_level_order, getSelected: () => fs.hots, onChange: v => setKey('hots', v) }).el);
-  root.appendChild(makeDropdown({ label: '视频类型', multi: true, options: CFG.video_type_order, getSelected: () => fs.vtypes, onChange: v => setKey('vtypes', v) }).el);
-  root.appendChild(makeDropdown({ label: '品牌提及', multi: true, options: brandMentionOptions(), getSelected: () => fs.brands, onChange: v => setKey('brands', v) }).el);
+  fs.appendChild(makeDropdown({ label: '内容类型', multi: true, options: CFG.content_tags_order, getSelected: () => state.filters.contents, onApply: v => setKey('contents', v) }).el);
+  fs.appendChild(makeDropdown({ label: '时长', multi: true, options: CFG.length_order, getSelected: () => state.filters.lengths, onApply: v => setKey('lengths', v) }).el);
+  fs.appendChild(makeDropdown({ label: '爆款', multi: true, options: CFG.hot_level_order, getSelected: () => state.filters.hots, onApply: v => setKey('hots', v) }).el);
+  fs.appendChild(makeDropdown({ label: '视频类型', multi: true, options: CFG.video_type_order, getSelected: () => state.filters.vtypes, onApply: v => setKey('vtypes', v) }).el);
+  fs.appendChild(makeDropdown({ label: '品牌提及', multi: true, options: brandMentionOptions(), getSelected: () => state.filters.brands, onApply: v => setKey('brands', v) }).el);
+  fs.appendChild(makeDropdown({
+    label: '排序', multi: false,
+    options: [
+      {value:'er',label:'ER ↓'}, {value:'views',label:'播放量 ↓'},
+      {value:'comment_rate',label:'评论率 ↓'}, {value:'view_to_sub',label:'播放/订阅比 ↓'},
+      {value:'recent',label:'发布时间 ↓'},
+    ],
+    getSelected: () => state.sort,
+    onApply: v => { state.sort = v; saveState(); render(); },
+  }).el);
+  root.appendChild(fs);
 
-  if (!mobile) {
-    root.appendChild(makeDropdown({
-      label: '排序', multi: false, alignRight: true,
-      options: [
-        {value:'er',label:'ER ↓'},
-        {value:'views',label:'播放量 ↓'},
-        {value:'comment_rate',label:'评论率 ↓'},
-        {value:'view_to_sub',label:'播放/订阅比 ↓'},
-        {value:'recent',label:'发布时间 ↓'},
-      ],
-      getSelected: () => state.sort,
-      onChange: v => { state.sort = v; saveState(); render(); },
-    }).el);
+  // actions
+  const ah = document.createElement('h4');
+  ah.textContent = '操作';
+  root.appendChild(ah);
+  const aa = document.createElement('div');
+  aa.className = 'actions-stack';
 
-    // 实时结果数
-    const filtered = applyFilters(DATA.videos);
-    const cnt = filtered.length;
-    const cls = cnt === 0 ? 'alert' : cnt < 10 ? 'warn' : '';
-    const rc = document.createElement('span');
-    rc.className = 'result-count ' + cls;
-    rc.textContent = '显示 ' + cnt + ' 条';
-    root.appendChild(rc);
-
-    const actions = document.createElement('span');
-    actions.className = 'actions';
-
-    const viewBtn = document.createElement('button');
-    viewBtn.className = 'btn';
-    const viewLabels = { grid: '网格', list: '列表', inspire: '灵感' };
-    viewBtn.innerHTML = '视图: ' + viewLabels[state.view_mode || 'grid'];
-    viewBtn.onclick = () => {
-      const order = ['grid', 'list', 'inspire'];
-      state.view_mode = order[(order.indexOf(state.view_mode || 'grid') + 1) % order.length];
-      saveState(); render();
-    };
-    actions.appendChild(viewBtn);
-
-    const bulkBtn = document.createElement('button');
-    bulkBtn.className = 'btn' + (bulkMode ? ' btn-primary' : '');
-    bulkBtn.textContent = bulkMode ? '退出批量' : '批量模式';
-    bulkBtn.onclick = () => {
-      bulkMode = !bulkMode;
-      if (!bulkMode) bulkSelected.clear();
-      render();
-    };
-    actions.appendChild(bulkBtn);
-
-    const clr = document.createElement('button');
-    clr.className = 'btn btn-danger';
-    clr.textContent = '清空筛选';
-    clr.onclick = () => { state.filters = defaultFilters(); state.preset = ''; saveState(); render(); };
-    actions.appendChild(clr);
-
-    const csv = document.createElement('button');
-    csv.className = 'btn';
-    csv.innerHTML = ICONS.download + ' 导出 CSV';
-    csv.onclick = () => exportCSV();
-    actions.appendChild(csv);
-
-    root.appendChild(actions);
-  }
-}
-
-// ========== Selected chips ==========
-function renderSelectedChips() {
-  const root = document.getElementById('selected-chips');
-  const f = state.filters;
-  const items = [];
-  if (f.time !== 'all') {
-    const lbl = {1:'近24h',7:'近7天',30:'近30天',90:'近90天'}[f.time] || f.time;
-    items.push({ label: '时间: ' + lbl, key: 'time', value: f.time, impact: countWithout('time', null) });
-  }
-  f.groups.forEach(g => items.push({ label: CFG.group_labels[g] || g, key: 'groups', value: g, impact: countWithout('groups', g) }));
-  f.channels.forEach(c => items.push({ label: '频道: ' + c, key: 'channels', value: c, impact: countWithout('channels', c) }));
-  f.contents.forEach(c => items.push({ label: c, key: 'contents', value: c, impact: countWithout('contents', c) }));
-  f.lengths.forEach(l => items.push({ label: l, key: 'lengths', value: l, impact: countWithout('lengths', l) }));
-  f.hots.forEach(h => items.push({ label: h, key: 'hots', value: h, impact: countWithout('hots', h) }));
-  f.vtypes.forEach(v => items.push({ label: v, key: 'vtypes', value: v, impact: countWithout('vtypes', v) }));
-  f.brands.forEach(b => items.push({ label: b, key: 'brands', value: b, impact: countWithout('brands', b) }));
-
-  if (items.length === 0) { root.innerHTML = ''; return; }
-  const cur = applyFilters(DATA.videos).length;
-  root.innerHTML = '<span class="label">已选</span>'
-    + items.map((it, i) => {
-      const delta = it.impact - cur;
-      const sign = delta > 0 ? '+' : '';
-      return `<span class="chip">${escHTML(it.label)} <span class="chip-impact">(${sign}${delta})</span><span class="chip-x" data-i="${i}">✕</span></span>`;
-    }).join('')
-    + `<button class="chip-clear">清空全部</button>`
-    + (cur < 10 && items.length >= 2 ? `<button class="chip-relax">智能放宽</button>` : '');
-
-  root.querySelectorAll('.chip-x').forEach((x, i) => x.onclick = () => {
-    const it = items[i];
-    if (it.key === 'time') state.filters.time = 'all';
-    else state.filters[it.key] = state.filters[it.key].filter(v => v !== it.value);
-    state.preset = ''; saveState(); render();
-  });
-  root.querySelector('.chip-clear').onclick = () => { state.filters = defaultFilters(); state.preset = ''; saveState(); render(); };
-  const relax = root.querySelector('.chip-relax');
-  if (relax) relax.onclick = () => {
-    // 移除影响最大的 1 个 filter（impact 最大的）
-    let best = null;
-    items.forEach(it => { if (!best || it.impact > best.impact) best = it; });
-    if (best) {
-      if (best.key === 'time') state.filters.time = 'all';
-      else state.filters[best.key] = state.filters[best.key].filter(v => v !== best.value);
-      state.preset = ''; saveState(); render();
-      showToast('放宽筛选: 已移除 ' + best.label);
-    }
+  const viewBtn = document.createElement('button');
+  viewBtn.className = 'btn';
+  const viewLabels = { grid: '视图: 网格', list: '视图: 列表', inspire: '视图: 灵感' };
+  viewBtn.textContent = viewLabels[state.view_mode || 'grid'];
+  viewBtn.onclick = () => {
+    const order = ['grid', 'list', 'inspire'];
+    state.view_mode = order[(order.indexOf(state.view_mode || 'grid') + 1) % order.length];
+    saveState(); render();
   };
+  aa.appendChild(viewBtn);
+
+  const bulkBtn = document.createElement('button');
+  bulkBtn.className = 'btn' + (bulkMode ? ' btn-primary' : '');
+  bulkBtn.textContent = bulkMode ? '退出批量模式' : '批量模式';
+  bulkBtn.onclick = () => { bulkMode = !bulkMode; if (!bulkMode) bulkSelected.clear(); render(); };
+  aa.appendChild(bulkBtn);
+
+  const csv = document.createElement('button');
+  csv.className = 'btn';
+  csv.innerHTML = ICONS.download + ' 导出 CSV';
+  csv.onclick = () => exportCSV();
+  aa.appendChild(csv);
+
+  const clr = document.createElement('button');
+  clr.className = 'btn btn-danger';
+  clr.textContent = '清空筛选';
+  clr.onclick = () => { state.filters = defaultFilters(); state.preset = ''; saveState(); render(); };
+  aa.appendChild(clr);
+
+  root.appendChild(aa);
+
+  // selected chips
+  if (activeFilterCount() > 0) {
+    const sh = document.createElement('h4');
+    sh.textContent = '已选筛选';
+    root.appendChild(sh);
+    const ss = document.createElement('div');
+    ss.className = 'selected-stack';
+
+    const items = [];
+    const f = state.filters;
+    if (f.time !== 'all') {
+      const lbl = {1:'近24h',7:'近7天',30:'近30天',90:'近90天'}[f.time] || f.time;
+      items.push({ label: '时间: ' + lbl, key: 'time', value: f.time, impact: countWithout('time', null) });
+    }
+    f.groups.forEach(g => items.push({ label: CFG.group_labels[g] || g, key: 'groups', value: g, impact: countWithout('groups', g) }));
+    f.channels.forEach(c => items.push({ label: '频道: ' + c, key: 'channels', value: c, impact: countWithout('channels', c) }));
+    f.contents.forEach(c => items.push({ label: c, key: 'contents', value: c, impact: countWithout('contents', c) }));
+    f.lengths.forEach(l => items.push({ label: l, key: 'lengths', value: l, impact: countWithout('lengths', l) }));
+    f.hots.forEach(h => items.push({ label: h, key: 'hots', value: h, impact: countWithout('hots', h) }));
+    f.vtypes.forEach(v => items.push({ label: v, key: 'vtypes', value: v, impact: countWithout('vtypes', v) }));
+    f.brands.forEach(b => items.push({ label: b, key: 'brands', value: b, impact: countWithout('brands', b) }));
+    items.forEach((it, i) => {
+      const delta = it.impact - cnt;
+      const sign = delta > 0 ? '+' : '';
+      const c = document.createElement('span');
+      c.className = 'chip';
+      c.innerHTML = `${escHTML(it.label)} <span class="chip-impact">(${sign}${delta})</span><span class="chip-x">✕</span>`;
+      c.querySelector('.chip-x').onclick = () => {
+        if (it.key === 'time') state.filters.time = 'all';
+        else state.filters[it.key] = state.filters[it.key].filter(v => v !== it.value);
+        state.preset = ''; saveState(); render();
+      };
+      ss.appendChild(c);
+    });
+    root.appendChild(ss);
+
+    if (cnt < 10 && items.length >= 2) {
+      const relax = document.createElement('button');
+      relax.className = 'chip-relax';
+      relax.style.marginTop = '6px';
+      relax.textContent = '🔓 智能放宽';
+      relax.onclick = () => {
+        let best = null;
+        items.forEach(it => { if (!best || it.impact > best.impact) best = it; });
+        if (best) {
+          if (best.key === 'time') state.filters.time = 'all';
+          else state.filters[best.key] = state.filters[best.key].filter(v => v !== best.value);
+          state.preset = ''; saveState(); render();
+          showToast('放宽筛选: 已移除 ' + best.label);
+        }
+      };
+      root.appendChild(relax);
+    }
+  }
 }
 
 // ========== Mobile drawer ==========
 function openMobileDrawer() {
   pendingMobileState = JSON.parse(JSON.stringify({ filters: state.filters, sort: state.sort }));
-  renderFilters('mb-drawer-content', true);
+  // 移动抽屉里的 dropdown
+  const root = document.getElementById('mb-drawer-content');
+  root.innerHTML = '';
+  const setKey = (key, val) => { pendingMobileState.filters[key] = val; };
+
+  const items = [
+    { label: '时间', el: makeDropdown({ label: '时间', multi: false,
+      options: [{value:'all',label:'全部'},{value:'1',label:'近 24h'},{value:'7',label:'近 7 天'},{value:'30',label:'近 30 天'},{value:'90',label:'近 90 天'}],
+      getSelected: () => pendingMobileState.filters.time, onApply: v => setKey('time', v) }).el },
+    { label: '频道分组', el: makeChannelTreeDropdown({
+      getGroups: () => pendingMobileState.filters.groups,
+      getChannels: () => pendingMobileState.filters.channels,
+      onApply: (g, c) => { pendingMobileState.filters.groups = g; pendingMobileState.filters.channels = c; } }).el },
+    { label: '内容类型', el: makeDropdown({ label: '内容类型', multi: true, options: CFG.content_tags_order, getSelected: () => pendingMobileState.filters.contents, onApply: v => setKey('contents', v) }).el },
+    { label: '时长', el: makeDropdown({ label: '时长', multi: true, options: CFG.length_order, getSelected: () => pendingMobileState.filters.lengths, onApply: v => setKey('lengths', v) }).el },
+    { label: '爆款', el: makeDropdown({ label: '爆款', multi: true, options: CFG.hot_level_order, getSelected: () => pendingMobileState.filters.hots, onApply: v => setKey('hots', v) }).el },
+    { label: '视频类型', el: makeDropdown({ label: '视频类型', multi: true, options: CFG.video_type_order, getSelected: () => pendingMobileState.filters.vtypes, onApply: v => setKey('vtypes', v) }).el },
+    { label: '品牌提及', el: makeDropdown({ label: '品牌提及', multi: true, options: brandMentionOptions(), getSelected: () => pendingMobileState.filters.brands, onApply: v => setKey('brands', v) }).el },
+    { label: '排序', el: makeDropdown({ label: '排序', multi: false,
+      options: [{value:'er',label:'ER ↓'},{value:'views',label:'播放量 ↓'},{value:'comment_rate',label:'评论率 ↓'},{value:'view_to_sub',label:'播放/订阅比 ↓'},{value:'recent',label:'发布时间 ↓'}],
+      getSelected: () => pendingMobileState.sort, onApply: v => { pendingMobileState.sort = v; } }).el },
+  ];
+  items.forEach(it => {
+    const lbl = document.createElement('div');
+    lbl.className = 'label';
+    lbl.textContent = it.label;
+    root.appendChild(lbl);
+    root.appendChild(it.el);
+  });
+
   document.getElementById('mb-overlay').classList.add('show');
   document.getElementById('mb-drawer').classList.add('show');
   document.body.style.overflow = 'hidden';
@@ -1309,7 +1351,6 @@ function renderVideoCard(v) {
   else if (er > 0) erColor = 'var(--er-5)';
   else erColor = 'var(--er-0)';
 
-  // ER deltas
   const chAvg = channelAvgER(v.channel_name);
   const grpAvg = groupAvgER(v.channel_group);
   let deltaCh = '', deltaGrp = '';
@@ -1330,7 +1371,6 @@ function renderVideoCard(v) {
     else if (v.hot_level === '💥 强爆款') bc = 'strong';
     badges += `<span class="hot-chip ${bc}">${v.hot_level}</span>`;
   }
-  // 频道爆款百分比（封顶）
   if (v.view_to_sub_tier === '频道爆款') {
     const r = v.view_to_sub_ratio || 0;
     let lbl = r > 1000 ? '>1000% 🚀' : '+' + r.toFixed(0) + '%';
@@ -1345,7 +1385,6 @@ function renderVideoCard(v) {
   const vtypeHtml = v.video_type && v.video_type !== '其他' ? `<span class="vtype">${v.video_type}</span>` : '';
   const kolHtml = isKol ? '<span class="tag-c kol">头部 KOL</span>' : '';
   const risingHtml = v.hot_level === '🔥 上升爆款' ? '<span class="tag-c rising">24h 上升</span>' : '';
-  // SEO 长尾：发布 > 30 天 + 频道爆款（暗示长尾依然有量）
   const ageDays = (Date.now() - new Date(v.published_at).getTime()) / 86400000;
   const seoHtml = (ageDays > 90 && v.view_to_sub_tier === '频道爆款') ? '<span class="tag-c seo">SEO 长尾</span>' : '';
 
@@ -1387,11 +1426,9 @@ function renderVideoCard(v) {
     </div>`;
 }
 
-// ========== Compare Board ==========
 function renderCompareBoard(filtered) {
   const channels = state.filters.channels;
   if (channels.length < 2) return '';
-  // 计算每频道指标
   const stats = channels.map(name => {
     const vs = filtered.filter(v => v.channel_name === name);
     const all = DATA.videos.filter(v => v.channel_name === name);
@@ -1402,27 +1439,22 @@ function renderCompareBoard(filtered) {
     const high_er = vs.filter(v => (v.engagement_rate||0) >= 5).length;
     return { name, subs, count: vs.length, tot, aer, hot, high_er, isSelf: name === CFG.self_brand };
   });
-  // 排名
   const rankBy = (key) => {
     const sorted = [...stats].sort((a,b) => b[key] - a[key]);
     return name => sorted.findIndex(s => s.name === name);
   };
   const rkSubs = rankBy('subs'), rkCount = rankBy('count'), rkTot = rankBy('tot'), rkER = rankBy('aer'), rkHot = rankBy('hot');
   const medal = ri => ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : '';
-  // 综合评分
   const N = stats.length;
-  const scored = stats.map(s => {
-    const score = ((N - rkSubs(s.name)) + (N - rkCount(s.name)) + (N - rkER(s.name)) + (N - rkHot(s.name))) / (4 * N) * 100;
-    return { ...s, score };
-  });
+  const scored = stats.map(s => ({
+    ...s,
+    score: ((N - rkSubs(s.name)) + (N - rkCount(s.name)) + (N - rkER(s.name)) + (N - rkHot(s.name))) / (4 * N) * 100,
+  }));
 
-  const html = scored.map(s => `
+  return '<div class="compare-board">' + scored.map(s => `
     <div class="ccard ${s.isSelf ? 'is-self' : ''}" data-channel="${escHTML(s.name)}">
       <button class="close" data-close="${escHTML(s.name)}">✕</button>
-      <div class="head">
-        <span class="name">${escHTML(s.name)}</span>
-        ${s.isSelf ? '<span class="self-tag">⭐ 自家</span>' : ''}
-      </div>
+      <div class="head"><span class="name">${escHTML(s.name)}</span>${s.isSelf ? '<span class="self-tag">⭐ 自家</span>' : ''}</div>
       <div class="subs">${fmt(s.subs)} 订阅</div>
       <div class="grid2">
         <div class="cell">视频<b>${s.count}<span class="rank">${medal(rkCount(s.name))}</span></b></div>
@@ -1430,65 +1462,47 @@ function renderCompareBoard(filtered) {
         <div class="cell">平均 ER<b>${s.aer.toFixed(2)}%<span class="rank">${medal(rkER(s.name))}</span></b></div>
         <div class="cell">爆款<b>${s.hot}<span class="rank">${medal(rkHot(s.name))}</span></b></div>
       </div>
-      <div class="cell" style="margin-bottom:8px">高 ER 视频 (≥5%)<b>${s.high_er}</b></div>
-      <div class="score-row">
-        <span>综合实力</span>
-        <span class="score-bar"><span style="width:${s.score.toFixed(0)}%"></span></span>
-        <span class="score-num">${s.score.toFixed(0)}/100</span>
-      </div>
+      <div class="cell" style="margin-bottom:8px">高 ER<b>${s.high_er}</b></div>
+      <div class="score-row"><span>综合实力</span><span class="score-bar"><span style="width:${s.score.toFixed(0)}%"></span></span><span class="score-num">${s.score.toFixed(0)}</span></div>
     </div>
-  `).join('');
-  return '<div class="compare-board">' + html + '</div>';
+  `).join('') + '</div>';
 }
 
-// ========== Bulk bar ==========
 function renderBulkBar(visibleVideos) {
   if (!bulkMode) return '';
-  return `
-    <div class="bulk-bar">
-      <span class="selected-count">已选 ${bulkSelected.size} 个</span>
-      <button class="btn" id="bulk-all">全选当前页</button>
-      <button class="btn" id="bulk-none">全部取消</button>
-      <button class="btn btn-primary" id="bulk-fav">⭐ 加入拆解清单</button>
-      <button class="btn" id="bulk-link">复制链接</button>
-      <button class="btn" id="bulk-csv">${ICONS.download} 导出 CSV</button>
-      <button class="btn" id="bulk-exit" style="margin-left:auto">退出批量</button>
-    </div>`;
+  return `<div class="bulk-bar">
+    <span class="selected-count">已选 ${bulkSelected.size} 个</span>
+    <button class="btn" id="bulk-all">全选当前页</button>
+    <button class="btn" id="bulk-none">全部取消</button>
+    <button class="btn btn-primary" id="bulk-fav">⭐ 加入拆解清单</button>
+    <button class="btn" id="bulk-link">复制链接</button>
+    <button class="btn" id="bulk-csv">${ICONS.download} 导出 CSV</button>
+    <button class="btn" id="bulk-exit" style="margin-left:auto">退出</button>
+  </div>`;
 }
 function bindBulkBar(visible) {
-  const all = document.getElementById('bulk-all');
-  const none = document.getElementById('bulk-none');
-  const fav = document.getElementById('bulk-fav');
-  const link = document.getElementById('bulk-link');
-  const csv = document.getElementById('bulk-csv');
-  const exit = document.getElementById('bulk-exit');
-  if (all) all.onclick = () => { visible.forEach(v => bulkSelected.add(v.video_id)); render(); };
-  if (none) none.onclick = () => { bulkSelected.clear(); render(); };
-  if (fav) fav.onclick = () => {
-    const cur = new Set(getFavs());
-    bulkSelected.forEach(id => cur.add(id));
+  const all = document.getElementById('bulk-all'); if (all) all.onclick = () => { visible.forEach(v => bulkSelected.add(v.video_id)); render(); };
+  const none = document.getElementById('bulk-none'); if (none) none.onclick = () => { bulkSelected.clear(); render(); };
+  const fav = document.getElementById('bulk-fav'); if (fav) fav.onclick = () => {
+    const cur = new Set(getFavs()); bulkSelected.forEach(id => cur.add(id));
     setFavs(Array.from(cur)); showToast('已加入拆解清单 ' + bulkSelected.size + ' 个'); bulkSelected.clear(); bulkMode = false; render();
   };
-  if (link) link.onclick = () => {
-    const urls = Array.from(bulkSelected).map(id => DATA.videos.find(v => v.video_id === id)?.video_url).filter(Boolean).join('\\n');
+  const link = document.getElementById('bulk-link'); if (link) link.onclick = () => {
+    const sep = String.fromCharCode(10);
+    const urls = Array.from(bulkSelected).map(id => DATA.videos.find(v => v.video_id === id)?.video_url).filter(Boolean).join(sep);
     navigator.clipboard?.writeText(urls).then(() => showToast('已复制 ' + bulkSelected.size + ' 个链接'));
   };
-  if (csv) csv.onclick = () => {
-    const data = visible.filter(v => bulkSelected.has(v.video_id));
-    exportCSV(data, 'bulk');
-  };
-  if (exit) exit.onclick = () => { bulkMode = false; bulkSelected.clear(); render(); };
+  const csv = document.getElementById('bulk-csv'); if (csv) csv.onclick = () => exportCSV(visible.filter(v => bulkSelected.has(v.video_id)), 'bulk');
+  const exit = document.getElementById('bulk-exit'); if (exit) exit.onclick = () => { bulkMode = false; bulkSelected.clear(); render(); };
 }
 
 // ========== Home View ==========
 function renderHomeView() {
   const root = document.getElementById('view-home');
-  // charts
   const filtered = applyFilters(DATA.videos);
   const sorted = applySort(filtered);
 
   let html = '';
-  html += '<div id="charts-root" class="charts"></div>';
   html += renderBulkBar(sorted);
   html += renderCompareBoard(filtered);
 
@@ -1496,22 +1510,15 @@ function renderHomeView() {
     const f = state.filters;
     let banner = '';
     if (activeFilterCount() > 0) {
-      // 计算每个 filter 移除后 result 数
       const sugs = [];
       ['groups','channels','contents','lengths','hots','vtypes','brands'].forEach(k => {
-        f[k].forEach(val => {
-          const cnt = countWithout(k, val);
-          if (cnt > 0) sugs.push({ k, val, cnt });
-        });
+        f[k].forEach(val => { const cnt = countWithout(k, val); if (cnt > 0) sugs.push({ k, val, cnt }); });
       });
-      if (f.time !== 'all') {
-        const cnt = countWithout('time', null);
-        if (cnt > 0) sugs.push({ k: 'time', val: f.time, cnt });
-      }
+      if (f.time !== 'all') { const cnt = countWithout('time', null); if (cnt > 0) sugs.push({ k: 'time', val: f.time, cnt }); }
       sugs.sort((a,b) => b.cnt - a.cnt);
-      banner = `<div class="empty-banner"><div class="title">⚠️ 无符合条件视频</div><div class="suggest">`
+      banner = `<div class="empty-banner"><div class="ttl">⚠️ 无符合条件视频，建议:</div>`
         + sugs.slice(0, 3).map((s, i) => `<button data-sug="${i}">移除「${escHTML(s.k === 'time' ? '时间' : s.val)}」→ 显示 ${s.cnt} 条</button>`).join('')
-        + `</div></div>`;
+        + `</div>`;
     }
     html += banner;
     html += '<div class="empty">没有符合筛选条件的视频</div>';
@@ -1520,12 +1527,10 @@ function renderHomeView() {
     html += `<div class="${cls}">` + sorted.map(renderVideoCard).join('') + '</div>';
   }
   root.innerHTML = html;
-  renderCharts(filtered);
   bindCardActions(root);
   bindBulkBar(sorted);
 
-  // 空状态建议按钮
-  root.querySelectorAll('[data-sug]').forEach(b => b.onclick = (e) => {
+  root.querySelectorAll('[data-sug]').forEach(b => b.onclick = () => {
     const i = parseInt(b.dataset.sug);
     const sugs = []; const f = state.filters;
     ['groups','channels','contents','lengths','hots','vtypes','brands'].forEach(k => f[k].forEach(val => sugs.push({k, val})));
@@ -1536,94 +1541,27 @@ function renderHomeView() {
     else state.filters[s.k] = state.filters[s.k].filter(x => x !== s.val);
     state.preset = ''; saveState(); render();
   });
-
-  // 多频道对比卡的关闭
-  root.querySelectorAll('[data-close]').forEach(b => b.onclick = () => {
+  root.querySelectorAll('[data-close]').forEach(b => b.onclick = (e) => {
+    e.stopPropagation();
     const name = b.dataset.close;
     state.filters.channels = state.filters.channels.filter(c => c !== name);
     saveState(); render();
   });
   root.querySelectorAll('.ccard[data-channel]').forEach(c => c.onclick = (e) => {
     if (e.target.dataset.close) return;
-    const name = c.dataset.channel;
-    state.filters.channels = [name];
+    state.filters.channels = [c.dataset.channel];
     state.filters.groups = [];
     saveState(); render();
   });
 }
 
-// ========== Favorites View ==========
-function renderFavoritesView() {
-  const root = document.getElementById('view-favorites');
-  const favIds = getFavs();
-  const favSet = new Set(favIds);
-  const favs = DATA.videos.filter(v => favSet.has(v.video_id));
-  const sorted = applySort(favs);
-
-  let html = '';
-  if (!state.workflow_banner_dismissed) {
-    html += `<div class="workflow-banner">
-      <span class="close-x" onclick="state.workflow_banner_dismissed=true; saveState(); render();">✕</span>
-      <h4>💡 拆解工作流</h4>
-      <ol>
-        <li>浏览首页或点筛选预设 → 找候选爆款</li>
-        <li>启动批量模式 → 选 5-10 条 → 加入此清单</li>
-        <li>在此 Tab 给每条填 10 维（前 5 维代码自动填，后 5 维你手填）</li>
-        <li>[批量复制链接] → 粘贴到 Claude.ai 网页</li>
-        <li>让 Claude 拆 Hook + Body + CTA + 公式</li>
-        <li>公式入 Obsidian <code>30_内容弹药库/</code></li>
-      </ol>
-    </div>`;
-  }
-
-  html += `<div class="filter-bar"><span class="result-count">${favs.length} 条</span>
-    <div class="actions">
-      <button class="btn" id="fav-tbl">表格视图</button>
-      <button class="btn" id="fav-card">卡片视图</button>
-      ${favs.length > 0 ? `<button class="btn" id="fav-md">${ICONS.download} 复制 Markdown</button>
-      <button class="btn" id="fav-csv">${ICONS.download} 导出 CSV (10 维)</button>
-      <button class="btn btn-danger" id="fav-clear">清空收藏</button>` : ''}
-      <span style="font-size:11px;color:var(--text-faint);margin-left:auto">跨平台联动: <button class="btn" disabled>Reddit</button> <button class="btn" disabled>Trends</button> <button class="btn" disabled>TikTok</button></span>
-    </div></div>`;
-
-  if (favs.length === 0) {
-    html += '<div class="empty">还没有收藏视频。在首页或批量模式中点 ⭐ 加入。</div>';
-  } else {
-    // 默认卡片视图
-    const td = getTeardownData();
-    html += '<div class="grid">' + sorted.map(v => {
-      const t = td[v.video_id] || {};
-      return renderTeardownCard(v, t);
-    }).join('') + '</div>';
-  }
-  root.innerHTML = html;
-
-  const tbl = document.getElementById('fav-tbl');
-  if (tbl) tbl.onclick = () => showTeardownTable(sorted);
-  const md = document.getElementById('fav-md');
-  if (md) md.onclick = () => exportMarkdown(sorted);
-  const csv = document.getElementById('fav-csv');
-  if (csv) csv.onclick = () => exportTeardownCSV(sorted);
-  const clr = document.getElementById('fav-clear');
-  if (clr) clr.onclick = () => { if (confirm('清空全部收藏？')) { setFavs([]); render(); showToast('已清空'); } };
-  bindCardActions(root);
-}
-
+// ========== Favorites / Brand / History / Monitor （保留 V4 实现）==========
 const TEARDOWN_DIMS = [
-  { key: 'hook', label: 'Hook', auto: false },
-  { key: 'pain', label: 'Pain Point', auto: false },
-  { key: 'arc', label: 'Story Arc', auto: false },
-  { key: 'visual', label: 'Visual Style', auto: false },
-  { key: 'audio', label: 'Audio', auto: false },
-  { key: 'cta', label: 'CTA', auto: false },
-  { key: 'engage_hook', label: 'Engagement Hook', auto: true },
-  { key: 'key_frame', label: 'Key Frame', auto: true },
-  { key: 'format_type', label: 'Format Type', auto: true },
-  { key: 'perf_signal', label: 'Performance Signal', auto: true },
+  { key: 'hook', label: 'Hook' }, { key: 'pain', label: 'Pain Point' },
+  { key: 'arc', label: 'Story Arc' }, { key: 'visual', label: 'Visual Style' },
+  { key: 'audio', label: 'Audio' }, { key: 'cta', label: 'CTA' },
 ];
-
 function autoFillTeardown(v) {
-  // 后 5 维自动填
   const pf = v.engagement_rate >= 5 ? '高互动' : v.engagement_rate >= 2 ? '中等' : '低';
   return {
     engage_hook: '评论率 ' + (v.comment_rate||0).toFixed(2) + '%',
@@ -1632,11 +1570,9 @@ function autoFillTeardown(v) {
     perf_signal: 'ER ' + (v.engagement_rate||0).toFixed(2) + '% · ' + fmt(v.view_count) + ' views · ' + (v.hot_level || '普通') + ' · ' + pf,
   };
 }
-
 function renderTeardownCard(v, td) {
   const auto = autoFillTeardown(v);
   const progress = td.progress || '待拆';
-  const progressClass = progress === '已沉淀公式' ? 'green' : progress === '拆解中' ? 'orange' : '';
   return `
     <div class="video-card" data-vid="${v.video_id}" style="border-color:${progress === '已沉淀公式' ? 'var(--up)' : 'var(--border)'}">
       <a href="${v.video_url}" target="_blank" class="thumb-wrap">
@@ -1647,11 +1583,11 @@ function renderTeardownCard(v, td) {
         <div class="card-row1"><span class="channel-name">${escHTML(v.channel_name)}</span></div>
         <a class="card-title" href="${v.video_url}" target="_blank">${escHTML(v.title)}</a>
         <div style="font-size:11px;color:var(--text-faint);font-family:var(--font-mono)">ER ${(v.engagement_rate||0).toFixed(2)}% · ▶ ${fmt(v.view_count)}</div>
-        <div style="border-top:1px dashed var(--border);padding-top:8px;margin-top:4px;display:flex;flex-direction:column;gap:6px">
-          ${TEARDOWN_DIMS.slice(0, 6).map(d => `
+        <div style="border-top:1px dashed var(--border);padding-top:8px;display:flex;flex-direction:column;gap:6px">
+          ${TEARDOWN_DIMS.map(d => `
             <div style="font-size:11px"><span style="color:var(--text-faint);min-width:90px;display:inline-block">${d.label}:</span>
-              <input type="text" data-vid="${v.video_id}" data-key="${d.key}" value="${escHTML(td[d.key]||'')}" placeholder="${d.auto ? '(自动)' : '手填...'}"
-                style="background:var(--card-hover);border:1px solid var(--border);color:var(--text);padding:3px 6px;border-radius:4px;width:calc(100% - 96px);font-size:11px;font-family:var(--font-sans)"></div>
+              <input type="text" data-vid="${v.video_id}" data-key="${d.key}" value="${escHTML(td[d.key]||'')}" placeholder="手填..."
+                style="background:var(--card-hover);border:1px solid var(--border);color:var(--text);padding:3px 6px;border-radius:4px;width:calc(100% - 96px);font-size:11px"></div>
           `).join('')}
           <div style="font-size:10.5px;color:var(--text-faint);padding-top:4px;border-top:1px dashed var(--border)">
             <div>Engagement Hook: <b style="color:var(--text-muted)">${auto.engage_hook}</b></div>
@@ -1666,124 +1602,109 @@ function renderTeardownCard(v, td) {
               <option ${progress === '拆解中' ? 'selected' : ''}>拆解中</option>
               <option ${progress === '已沉淀公式' ? 'selected' : ''}>已沉淀公式</option>
             </select>
-            <button class="btn btn-danger" style="margin-left:auto;padding:4px 10px;font-size:11px;min-height:28px" data-rm-fav="${v.video_id}">移除</button>
+            <button class="btn btn-danger" style="margin-left:auto;padding:4px 10px;font-size:11px;min-height:28px;width:auto" data-rm-fav="${v.video_id}">移除</button>
           </div>
-          <textarea data-vid="${v.video_id}" data-key="notes" placeholder="备注..." style="background:var(--card-hover);border:1px solid var(--border);color:var(--text);padding:6px;border-radius:4px;font-size:11px;font-family:var(--font-sans);resize:vertical;min-height:40px">${escHTML(td.notes||'')}</textarea>
+          <textarea data-vid="${v.video_id}" data-key="notes" placeholder="备注..." style="background:var(--card-hover);border:1px solid var(--border);color:var(--text);padding:6px;border-radius:4px;font-size:11px;resize:vertical;min-height:40px">${escHTML(td.notes||'')}</textarea>
         </div>
       </div>
     </div>`;
 }
-
-function showTeardownTable(videos) {
+function renderFavoritesView() {
   const root = document.getElementById('view-favorites');
-  const td = getTeardownData();
-  const cols = ['Title', 'Channel', 'ER', 'Views', 'Hook', 'Pain', 'Arc', 'Visual', 'Audio', 'CTA', '进度'];
-  let rows = '';
-  videos.forEach(v => {
-    const t = td[v.video_id] || {};
-    rows += `<tr>
-      <td class="name" style="max-width:200px;overflow:hidden;text-overflow:ellipsis"><a href="${v.video_url}" target="_blank">${escHTML(v.title.slice(0, 40))}</a></td>
-      <td>${escHTML(v.channel_name)}</td>
-      <td>${(v.engagement_rate||0).toFixed(2)}%</td>
-      <td>${fmt(v.view_count)}</td>
-      <td>${escHTML(t.hook || '')}</td>
-      <td>${escHTML(t.pain || '')}</td>
-      <td>${escHTML(t.arc || '')}</td>
-      <td>${escHTML(t.visual || '')}</td>
-      <td>${escHTML(t.audio || '')}</td>
-      <td>${escHTML(t.cta || '')}</td>
-      <td>${escHTML(t.progress || '待拆')}</td>
-    </tr>`;
-  });
-  root.innerHTML = `<button class="btn" id="back-card" style="margin-bottom:14px">← 卡片视图</button>
-    <div class="panel" style="overflow-x:auto"><table><thead><tr>${cols.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>`;
-  document.getElementById('back-card').onclick = () => render();
+  const favIds = getFavs();
+  const favSet = new Set(favIds);
+  const favs = DATA.videos.filter(v => favSet.has(v.video_id));
+  const sorted = applySort(favs);
+  let html = '';
+  if (!state.workflow_banner_dismissed) {
+    html += `<div class="workflow-banner"><span class="close-x" id="wf-close">✕</span><h4>💡 拆解工作流</h4>
+      <ol><li>首页用筛选预设找候选爆款</li><li>批量模式选 5-10 条 → 加入此清单</li><li>填 10 维（前 6 手填 + 后 4 自动）</li><li>[复制链接] → 粘贴 Claude.ai 拆 Hook+Body+CTA+公式</li><li>公式入 Obsidian 30_内容弹药库</li></ol></div>`;
+  }
+  html += `<div style="display:flex;gap:8px;margin-bottom:16px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:14px;font-weight:600">${favs.length} 条收藏</span>
+    ${favs.length > 0 ? `
+      <button class="btn" id="fav-md" style="width:auto">${ICONS.download} 复制 Markdown</button>
+      <button class="btn" id="fav-csv" style="width:auto">${ICONS.download} 导出 CSV</button>
+      <button class="btn btn-danger" id="fav-clear" style="width:auto">清空</button>` : ''}
+  </div>`;
+  if (favs.length === 0) html += '<div class="empty">还没有收藏视频</div>';
+  else {
+    const td = getTeardownData();
+    html += '<div class="grid">' + sorted.map(v => renderTeardownCard(v, td[v.video_id] || {})).join('') + '</div>';
+  }
+  root.innerHTML = html;
+  const wfClose = document.getElementById('wf-close');
+  if (wfClose) wfClose.onclick = () => { state.workflow_banner_dismissed = true; saveState(); render(); };
+  const md = document.getElementById('fav-md'); if (md) md.onclick = () => exportMarkdown(sorted);
+  const csv = document.getElementById('fav-csv'); if (csv) csv.onclick = () => exportTeardownCSV(sorted);
+  const clr = document.getElementById('fav-clear'); if (clr) clr.onclick = () => { if (confirm('清空？')) { setFavs([]); render(); } };
+  bindCardActions(root);
 }
 
-// ========== Brand Compare View ==========
 function renderBrandCompareView() {
   const root = document.getElementById('view-brand');
   const brands = CFG.brand_compare_default;
   const stats = brands.map(name => {
     const vs = DATA.videos.filter(v => v.channel_name === name);
-    const tot = vs.reduce((s,v) => s+(v.view_count||0), 0);
-    const aer = vs.length ? vs.reduce((s,v) => s+(v.engagement_rate||0), 0) / vs.length : 0;
-    const hot = vs.filter(v => v.hot_level).length;
-    const max = vs.length ? Math.max(...vs.map(v => v.view_count||0)) : 0;
-    const week = vs.filter(v => withinTime(v.published_at, '7'));
-    return { name, count: vs.length, tot, aer, hot, max, weekCount: week.length, subs: vs[0]?.channel_subscriber_count || 0, isSelf: name === CFG.self_brand };
+    return { name, count: vs.length, tot: vs.reduce((s,v) => s+(v.view_count||0), 0),
+      aer: vs.length ? vs.reduce((s,v) => s+(v.engagement_rate||0), 0) / vs.length : 0,
+      hot: vs.filter(v => v.hot_level).length, max: vs.length ? Math.max(...vs.map(v => v.view_count||0)) : 0,
+      weekCount: vs.filter(v => withinTime(v.published_at, '7')).length,
+      subs: vs[0]?.channel_subscriber_count || 0, isSelf: name === CFG.self_brand };
   });
   const maxTot = Math.max(...stats.map(s => s.tot), 1);
-  let html = '<div class="panel"><h3>核心竞品横向对比</h3>'
-    + '<table><thead><tr><th>频道</th><th>订阅</th><th>视频</th><th>本周新</th><th>平均 ER</th><th>最高单条</th><th>爆款</th><th>总播放</th></tr></thead><tbody>';
+  let html = '<div class="panel"><h3>核心竞品横向对比</h3><table><thead><tr><th>频道</th><th>订阅</th><th>视频</th><th>本周新</th><th>平均 ER</th><th>最高单条</th><th>爆款</th><th>总播放</th></tr></thead><tbody>';
   stats.forEach(s => {
     html += `<tr><td class="name">${s.isSelf ? '⭐ ' : ''}${escHTML(s.name)}</td><td>${fmt(s.subs)}</td><td>${s.count}</td><td>${s.weekCount}</td><td>${s.aer.toFixed(2)}%</td><td>${fmt(s.max)}</td><td>${s.hot}</td><td>${fmt(s.tot)}<span class="bar"><span style="width:${(s.tot/maxTot*100).toFixed(0)}%"></span></span></td></tr>`;
   });
   html += '</tbody></table></div>';
-
-  // A 组全量
   const aChannels = (CFG.channel_tree.A_brand||[]).map(c => c.display_name);
   const aStats = aChannels.map(name => {
     const vs = DATA.videos.filter(v => v.channel_name === name);
-    return {
-      name, count: vs.length, subs: vs[0]?.channel_subscriber_count || 0,
+    return { name, count: vs.length, subs: vs[0]?.channel_subscriber_count || 0,
       aer: vs.length ? vs.reduce((s,v) => s+(v.engagement_rate||0), 0) / vs.length : 0,
       hot: vs.filter(v => v.hot_level).length,
-      tot: vs.reduce((s,v) => s+(v.view_count||0), 0),
-      isSelf: name === CFG.self_brand,
-    };
+      tot: vs.reduce((s,v) => s+(v.view_count||0), 0), isSelf: name === CFG.self_brand };
   });
   aStats.sort((a,b) => b.subs - a.subs);
   html += '<div class="panel"><h3>A 组竞品全量</h3><table><thead><tr><th>频道</th><th>订阅</th><th>视频</th><th>平均 ER</th><th>爆款</th><th>总播放</th></tr></thead><tbody>';
-  aStats.forEach(s => {
-    html += `<tr><td class="name">${s.isSelf ? '⭐ ' : ''}${escHTML(s.name)}</td><td>${fmt(s.subs)}</td><td>${s.count}</td><td>${s.aer.toFixed(2)}%</td><td>${s.hot}</td><td>${fmt(s.tot)}</td></tr>`;
-  });
+  aStats.forEach(s => html += `<tr><td class="name">${s.isSelf ? '⭐ ' : ''}${escHTML(s.name)}</td><td>${fmt(s.subs)}</td><td>${s.count}</td><td>${s.aer.toFixed(2)}%</td><td>${s.hot}</td><td>${fmt(s.tot)}</td></tr>`);
   html += '</tbody></table></div>';
   root.innerHTML = html;
 }
 
-// ========== History View ==========
 function renderHistoryView() {
   const root = document.getElementById('view-history');
   const cnt = HISTORY?.count || 0;
   const need = 7;
   let html = '<div class="panel"><h3>历史趋势</h3>';
   if (cnt < need) {
-    html += `<div class="history-empty"><div class="big">需要积累 ${need} 天数据，才能显示趋势</div><div>已积累 ${cnt} 天 / 还需 ${need - cnt} 天</div><div class="progress"><span style="width:${(cnt/need*100).toFixed(0)}%"></span></div><div style="margin-top:14px;font-size:12px;color:var(--text-faint)">每天 9:00 自动跑完会保存当日快照到 <code>data/history/{YYYY-MM-DD}.json</code></div></div>`;
-  } else {
-    html += '<div>（数据已积累足够，趋势图开发中）</div>';
-  }
+    html += `<div class="history-empty"><div class="big">需要积累 ${need} 天数据</div><div>已积累 ${cnt} 天 / 还需 ${need - cnt} 天</div><div class="progress"><span style="width:${(cnt/need*100).toFixed(0)}%"></span></div><div style="margin-top:14px;font-size:12px;color:var(--text-faint)">每天 9:00 自动跑完会保存当日快照</div></div>`;
+  } else html += '<div>趋势图开发中</div>';
   html += '</div>';
   root.innerHTML = html;
 }
 
-// ========== Monitor View（竞品监测）==========
 function renderMonitorView() {
   const root = document.getElementById('view-monitor');
   const aChannels = (CFG.channel_tree.A_brand||[]).map(c => c.display_name);
   const aWeek = DATA.videos.filter(v => v.channel_group === 'A_brand' && withinTime(v.published_at, '7'));
   aWeek.sort((a,b) => new Date(b.published_at) - new Date(a.published_at));
   const stats = aChannels.map(name => ({
-    name,
-    weekVids: aWeek.filter(v => v.channel_name === name),
+    name, weekVids: aWeek.filter(v => v.channel_name === name),
     weekHot: aWeek.filter(v => v.channel_name === name && (v.view_count >= 1e5 || v.hot_level)).length,
   }));
   let html = '<div class="panel"><h3>本周 A 组竞品动态</h3>';
   html += `<div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:10px;margin-bottom:18px">`
-    + stats.map(s => `<div class="ccard ${s.name === CFG.self_brand ? 'is-self' : ''}"><div class="head"><span class="name">${escHTML(s.name)}</span></div><div style="font-size:13px;font-family:var(--font-mono);color:var(--text)">本周 <b>${s.weekVids.length}</b> 条 · 爆款 <b>${s.weekHot}</b></div></div>`).join('')
-    + '</div>';
+    + stats.map(s => `<div class="ccard ${s.name === CFG.self_brand ? 'is-self' : ''}"><div class="head"><span class="name">${escHTML(s.name)}</span></div><div style="font-size:13px;font-family:var(--font-mono);color:var(--text)">本周 <b>${s.weekVids.length}</b> 条 · 爆款 <b>${s.weekHot}</b></div></div>`).join('') + '</div>';
   html += `<h3 style="margin-top:24px">本周新视频 (${aWeek.length} 条)</h3>`;
-  if (aWeek.length === 0) {
-    html += '<div class="empty">本周 A 组无新视频</div>';
-  } else {
-    html += '<div class="grid">' + aWeek.map(renderVideoCard).join('') + '</div>';
-  }
+  if (aWeek.length === 0) html += '<div class="empty">本周 A 组无新视频</div>';
+  else html += '<div class="grid">' + aWeek.map(renderVideoCard).join('') + '</div>';
   html += '</div>';
   root.innerHTML = html;
   bindCardActions(root);
 }
 
-// ========== Card actions ==========
 function bindCardActions(root) {
   root.querySelectorAll('.fav-btn').forEach(b => b.onclick = (e) => {
     e.stopPropagation(); e.preventDefault();
@@ -1803,13 +1724,10 @@ function bindCardActions(root) {
   });
   root.querySelectorAll('.bulk-cb').forEach(c => c.onclick = (e) => {
     e.stopPropagation(); e.preventDefault();
-    const card = c.closest('.video-card');
-    const vid = card.dataset.vid;
-    if (bulkSelected.has(vid)) bulkSelected.delete(vid);
-    else bulkSelected.add(vid);
+    const vid = c.closest('.video-card').dataset.vid;
+    if (bulkSelected.has(vid)) bulkSelected.delete(vid); else bulkSelected.add(vid);
     render();
   });
-  // 拆解清单输入
   root.querySelectorAll('input[data-key], textarea[data-key], select[data-key]').forEach(inp => {
     inp.onchange = () => {
       const td = getTeardownData();
@@ -1826,18 +1744,18 @@ function bindCardActions(root) {
   });
 }
 
-// ========== Export ==========
 function exportCSV(videos=null, suffix='filtered') {
   const data = videos || applyFilters(DATA.videos);
   const cols = ['video_id','channel_name','channel_group','title','view_count','like_count','comment_count','engagement_rate','comment_rate','duration','published_at','hot_level','video_length_type','video_type','content_tags','brand_mentions','view_to_sub_ratio','relevance_score','video_url'];
+  const NL = String.fromCharCode(10);
   const rows = data.map(v => cols.map(c => {
     let val = v[c];
     if (Array.isArray(val)) val = val.join('; ');
     val = val == null ? '' : String(val);
-    if (/[",\n]/.test(val)) val = '"' + val.replace(/"/g, '""') + '"';
+    if (/[",]/.test(val) || val.indexOf(NL) >= 0) val = '"' + val.replace(/"/g, '""') + '"';
     return val;
   }).join(','));
-  const csv = '﻿' + cols.join(',') + '\n' + rows.join('\n');
+  const csv = String.fromCharCode(0xFEFF) + cols.join(',') + NL + rows.join(NL);
   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -1849,9 +1767,9 @@ function exportTeardownCSV(videos) {
   const td = getTeardownData();
   const dims = TEARDOWN_DIMS.map(d => d.key);
   const cols = ['video_id','title','channel_name','er','views','progress', ...dims, 'notes','url'];
+  const NL = String.fromCharCode(10);
   const rows = videos.map(v => {
     const t = td[v.video_id] || {};
-    const auto = autoFillTeardown(v);
     return cols.map(c => {
       let val;
       if (c === 'er') val = (v.engagement_rate||0).toFixed(2);
@@ -1859,25 +1777,25 @@ function exportTeardownCSV(videos) {
       else if (c === 'url') val = v.video_url;
       else if (c === 'progress') val = t.progress || '待拆';
       else if (c === 'notes') val = t.notes || '';
-      else if (dims.includes(c)) val = t[c] || auto[c] || '';
+      else if (dims.includes(c)) val = t[c] || '';
       else val = v[c];
-      if (val == null) val = '';
-      val = String(val);
-      if (/[",\n]/.test(val)) val = '"' + val.replace(/"/g, '""') + '"';
+      val = val == null ? '' : String(val);
+      if (/[",]/.test(val) || val.indexOf(NL) >= 0) val = '"' + val.replace(/"/g, '""') + '"';
       return val;
     }).join(',');
   });
-  const csv = '﻿' + cols.join(',') + '\n' + rows.join('\n');
+  const csv = String.fromCharCode(0xFEFF) + cols.join(',') + NL + rows.join(NL);
   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url; a.download = `youtube-tracker-teardown-${new Date().toISOString().slice(0,10)}.csv`;
   a.click(); URL.revokeObjectURL(url);
-  showToast('已导出拆解清单 ' + videos.length + ' 条');
+  showToast('已导出 ' + videos.length + ' 条');
 }
 function exportMarkdown(videos) {
-  const md = videos.map(v => `- [${v.title}](${v.video_url}) · ${v.channel_name} · ▶ ${fmt(v.view_count)} · ER ${(v.engagement_rate||0).toFixed(2)}%`).join('\n');
-  navigator.clipboard?.writeText(md).then(() => showToast('Markdown 已复制到剪贴板'));
+  const NL = String.fromCharCode(10);
+  const md = videos.map(v => `- [${v.title}](${v.video_url}) · ${v.channel_name} · ▶ ${fmt(v.view_count)} · ER ${(v.engagement_rate||0).toFixed(2)}%`).join(NL);
+  navigator.clipboard?.writeText(md).then(() => showToast('Markdown 已复制'));
 }
 
 // ========== Master Render ==========
@@ -1889,14 +1807,13 @@ function render() {
   document.getElementById('view-monitor').style.display = state.tab === 'monitor' ? 'block' : 'none';
 
   const filtered = applyFilters(DATA.videos);
-
   renderTabs();
+  renderOverviewBar(filtered);
   renderKPI(filtered);
   renderInsight(filtered);
   renderStatRow(filtered);
-  renderPresets();
-  renderFilters('desktop-filters');
-  renderSelectedChips();
+  renderCharts(filtered);
+  renderSidebar();
 
   if (state.tab === 'home') renderHomeView();
   else if (state.tab === 'favorites') renderFavoritesView();
@@ -1904,7 +1821,6 @@ function render() {
   else if (state.tab === 'history') renderHistoryView();
   else if (state.tab === 'monitor') renderMonitorView();
 
-  // mobile badges
   const fcnt = activeFilterCount();
   const fcb = document.getElementById('mb-filter-count');
   if (fcnt > 0) { fcb.textContent = fcnt; fcb.style.display = 'inline-block'; } else { fcb.style.display = 'none'; }
@@ -1913,6 +1829,7 @@ function render() {
   if (favCnt > 0) { favb.textContent = favCnt; favb.style.display = 'inline-block'; } else { favb.style.display = 'none'; }
   const sortMap = { er: 'ER↓', views: '播放↓', comment_rate: '评论率↓', view_to_sub: '播放/订阅↓', recent: '最新' };
   document.getElementById('mb-sort-label').textContent = sortMap[state.sort] || '';
+  setTimeout(updateHeaderHeight, 0);
 }
 
 function updateMeta() {
@@ -1930,12 +1847,16 @@ async function init() {
     const cur = opts.indexOf(state.sort);
     state.sort = opts[(cur + 1) % opts.length];
     saveState(); render();
-    showToast('排序: ' + ({er:'ER↓',views:'播放↓',comment_rate:'评论率↓',view_to_sub:'播放/订阅↓',recent:'最新'}[state.sort]));
   };
   document.getElementById('mb-overlay').onclick = closeMobileDrawer;
   document.getElementById('mb-drawer-close').onclick = closeMobileDrawer;
-  document.getElementById('mb-drawer-reset').onclick = () => { pendingMobileState.filters = defaultFilters(); renderFilters('mb-drawer-content', true); };
+  document.getElementById('mb-drawer-reset').onclick = () => {
+    pendingMobileState.filters = defaultFilters(); pendingMobileState.sort = 'er';
+    openMobileDrawer();  // 重新渲染
+  };
   document.getElementById('mb-drawer-apply').onclick = applyMobileDrawer;
+
+  window.addEventListener('resize', updateHeaderHeight);
 
   try {
     DATA = await fetchData();
@@ -1945,7 +1866,7 @@ async function init() {
   } catch (e) {
     document.getElementById('view-home').innerHTML =
       '<div class="empty">❌ 加载数据失败: ' + escHTML(e.message) +
-      '<br>请用 <code>http://localhost:8765/dashboard.html</code> 或云端 GitHub Pages 网址打开</div>';
+      '<br>请用 <code>http://localhost:8765/dashboard.html</code> 或云端打开</div>';
     return;
   }
   setInterval(checkUpdate, POLL_INTERVAL_MS);
