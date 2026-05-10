@@ -1238,10 +1238,10 @@ function exportCSV(videos=null, suffix='filtered') {
     let val = v[c];
     if (Array.isArray(val)) val = val.join('; ');
     val = val == null ? '' : String(val);
-    if (/[",\n]/.test(val)) val = '"' + val.replace(/"/g, '""') + '"';
+    if (/[",\\n]/.test(val)) val = '"' + val.replace(/"/g, '""') + '"';
     return val;
   }).join(','));
-  const csv = '﻿' + cols.join(',') + '\n' + rows.join('\n');
+  const csv = '\\ufeff' + cols.join(',') + '\\n' + rows.join('\\n');
   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -1250,7 +1250,7 @@ function exportCSV(videos=null, suffix='filtered') {
   showToast(`已导出 ${data.length} 条 CSV`);
 }
 function exportMarkdown(videos) {
-  const md = videos.map(v => `- [${v.title}](${v.video_url}) · ${v.channel_name} · ▶ ${fmt(v.view_count)} · ER ${v.engagement_rate}%`).join('\n');
+  const md = videos.map(v => `- [${v.title}](${v.video_url}) · ${v.channel_name} · ▶ ${fmt(v.view_count)} · ER ${v.engagement_rate}%`).join('\\n');
   navigator.clipboard?.writeText(md).then(() => showToast('Markdown 已复制到剪贴板'))
     .catch(() => {
       const blob = new Blob([md], { type: 'text/plain' });
