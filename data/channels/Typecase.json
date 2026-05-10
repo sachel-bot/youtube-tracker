@@ -31,12 +31,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7.15,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 80
     },
     {
       "video_id": "mxpOinJgIjI",
@@ -62,12 +61,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.83,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 80
     },
     {
       "video_id": "big3itYCPEY",
@@ -97,7 +95,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 14.88,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "XF4K_EARQno",
@@ -125,12 +124,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7.1,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 80
     },
     {
       "video_id": "D1xUDFnrrqY",
@@ -156,12 +154,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.51,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 60
     },
     {
       "video_id": "pt8s7ydF84I",
@@ -189,12 +186,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 12.12,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "BjhPlSmoUXE",
@@ -222,12 +218,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 26.02,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "--Tly6xm1F8",
@@ -254,12 +249,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 17.88,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "q3vGZPt2UcI",
@@ -286,12 +280,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.0,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 80
     },
     {
       "video_id": "UPRIySvvJf8",
@@ -319,12 +312,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Typecase相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 59.86,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     }
   ]
 }

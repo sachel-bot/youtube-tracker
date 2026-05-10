@@ -35,13 +35,36 @@ APPLE_OTHER_TERMS = [r"\biphone\b", r"\bmacbook\b", r"\bimac\b", r"\bapple watch
 HAS_IPAD = re.compile(r"\bipad\b", re.IGNORECASE)
 
 VIDEO_TYPE_RULES = [
-    ("评测", [r"\breview\b", r"\bhands.?on\b"]),
-    ("开箱", [r"\bunbox", r"\bunboxing\b"]),
-    ("对比", [r"\bvs\.?\b", r"\bversus\b", r"\bcompar"]),
-    ("装机", [r"\bsetup\b", r"\bdesk setup\b", r"\bworkstation\b"]),
-    ("教学", [r"\btutorial\b", r"how to\b", r"\bguide\b", r"\btips\b", r"\btricks\b"]),
-    ("vlog", [r"\bvlog\b", r"\ba day in\b", r"\bweek in my life\b"]),
+    ("评测",       [r"\breview\b", r"\bhands.?on\b", r"\bin-?depth look\b"]),
+    ("开箱",       [r"\bunbox", r"\bunboxing\b", r"\bfirst look\b"]),
+    ("对比",       [r"\bvs\.?\b", r"\bversus\b", r"\bcompar"]),
+    ("装机/Setup", [r"\bsetup\b", r"\bdesk setup\b", r"\bworkstation\b", r"\bbattlestation\b"]),
+    ("教程",       [r"\btutorial\b", r"\bstep[- ]by[- ]step\b", r"\bwalkthrough\b"]),
+    ("教学",       [r"how to\b", r"\bguide\b", r"\btips\b", r"\btricks\b", r"\bhacks\b", r"\blearn\b"]),
+    ("vlog",       [r"\bvlog\b", r"\ba day in\b", r"\bweek in my life\b", r"\bmy day\b"]),
+    ("宣传片/广告",[r"\bcommercial\b", r"\bad\b\s*[—-]", r"\bspot\b", r"\bpromo\b", r"\btrailer\b"]),
+    ("产品发布",   [r"\bannounce", r"\bintroducing\b", r"\blaunch\b", r"\bnew product\b", r"\breveal\b", r"\brelease\b"]),
+    ("推荐/Best",  [r"\bbest\b", r"\btop \d", r"\brecommend", r"\bmust[- ]have\b"]),
 ]
+
+# 频道 → 自家品牌（brand_mentions 排除）
+CHANNEL_SELF_BRAND = {
+    "Logitech":     "Logitech相关",
+    "ESR Gear":     "ESR相关",
+    "ZAGG":         "ZAGG相关",
+    "Fintie":       "Fintie相关",
+    "Inateck":      "Inateck相关",
+    "Arteck":       "Arteck相关",
+    "Doqo":         "Doqo相关",
+    "Apple":        "Apple键盘相关",
+    "Typecase":     "Typecase相关",
+    "Anker":        "Anker相关",
+    "Belkin":       "Belkin相关",
+    "Satechi":      "Satechi相关",
+    "Twelve South": "Twelve South相关",
+    "Native Union": "Native Union相关",
+    "Procreate":    "Procreate相关",
+}
 
 # 品牌关键词监测（HOU 用严格规则避免误伤）
 BRAND_RULES = [
@@ -139,13 +162,36 @@ def calc_video_type(text):
     return "其他"
 
 
-def calc_brand_mentions(text):
+def calc_brand_mentions(text, channel_display_name=None):
+    """品牌提及（排除自家频道发的）"""
     text_l = text.lower()
+    self_brand = CHANNEL_SELF_BRAND.get(channel_display_name)
     out = []
     for label, patterns in BRAND_RULES:
+        if label == self_brand:
+            continue  # 排除自家品牌
         if any(re.search(p, text_l) for p in patterns):
             out.append(label)
     return out
+
+
+# 强相关关键词（用于 relevance_score）
+IPAD_ACCESSORY_PAT = re.compile(r"ipad keyboard|ipad case|magic keyboard|ipad cover|ipad accessor|smart folio|apple pencil", re.IGNORECASE)
+IPAD_PAT = re.compile(r"\bipad\b", re.IGNORECASE)
+OTHER_APPLE_PAT = re.compile(r"\b(iphone|macbook|imac|apple watch|airpods|vision pro)\b", re.IGNORECASE)
+
+
+def calc_relevance_score(title, desc, content_tags, channel_group):
+    text = (title or "") + " " + (desc or "")
+    if IPAD_ACCESSORY_PAT.search(text):
+        return 100
+    if IPAD_PAT.search(text):
+        if any(t in content_tags for t in ("创作", "学生", "商务")):
+            return 80
+        return 60
+    if OTHER_APPLE_PAT.search(text) or channel_group == "A_brand":
+        return 30
+    return 20
 
 
 def calc_hot_level(views, er, published_iso, now_ms):
@@ -232,9 +278,10 @@ def main():
         vlt = calc_video_length_type(duration_secs)
         ctags = calc_content_tags(text_for_match)
         vtype = calc_video_type(title)
-        brands = calc_brand_mentions(text_for_match)
+        brands = calc_brand_mentions(text_for_match, ch["display_name"])
         hot = calc_hot_level(views, er, published, now_ms)
         ratio, ratio_tier = calc_view_to_sub_ratio(views, ch["subscriber_count"])
+        relevance = calc_relevance_score(title, desc, ctags, ch["group"])
 
         record = {
             "video_id": vid,
@@ -263,6 +310,7 @@ def main():
             "hot_level": hot,
             "view_to_sub_ratio": ratio,
             "view_to_sub_tier": ratio_tier,
+            "relevance_score": relevance,
         }
         by_channel[ch["channel_id"]].append(record)
         all_videos.append(record)

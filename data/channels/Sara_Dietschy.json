@@ -34,7 +34,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.09,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "lwOBmb-MNfM",
@@ -63,7 +64,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 1.6,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "oZ4Tt1adTZ4",
@@ -92,7 +94,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6.96,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "Eq7qwDlyF7I",
@@ -122,7 +125,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 16.87,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "hEy1_ZIEQKM",
@@ -151,7 +155,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6.88,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "08I2Li2CC7Q",
@@ -180,7 +185,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 1.86,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "54ARtAmf3Ps",
@@ -209,7 +215,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 2.26,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "cx1dPonwAl8",
@@ -238,7 +245,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.06,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "D-tuQNPp0WY",
@@ -267,7 +275,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.04,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "ZmoNEZvC2xA",
@@ -296,7 +305,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 3.63,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     }
   ]
 }

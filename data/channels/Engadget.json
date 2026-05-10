@@ -34,7 +34,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.07,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "L3-JS-Rtpts",
@@ -63,7 +64,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.12,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "k1K_pg90OvY",
@@ -92,7 +94,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.16,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "KaEocepKtW0",
@@ -121,7 +124,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.15,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "llfkH3houGQ",
@@ -150,7 +154,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.11,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "b3AvVH5m7_8",
@@ -179,7 +184,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.15,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "DwfH4qOZzgc",
@@ -208,7 +214,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.1,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "yv2d82ywzGM",
@@ -237,7 +244,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.41,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "WNSp9cbRe5M",
@@ -266,7 +274,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.12,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "rPjUrZf7bR8",
@@ -295,7 +304,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.18,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 30
     }
   ]
 }

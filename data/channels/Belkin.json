@@ -31,12 +31,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 9.28,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "fJKJHN30eu0",
@@ -62,12 +61,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 13.03,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "irviCOxf1bs",
@@ -93,12 +91,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 8.83,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "T91iIF8BQlY",
@@ -124,12 +121,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 10.34,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "s_qHG-pZSs0",
@@ -155,12 +151,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 8.35,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "_JvBHgIbMgU",
@@ -186,12 +181,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 14.82,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "qyfl4Td07YQ",
@@ -217,12 +211,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 3.67,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "LMCCB3kfCw4",
@@ -248,12 +241,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 12.11,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "CtrnIP1SAwI",
@@ -278,13 +270,12 @@
       "content_tags": [
         "其他"
       ],
-      "video_type": "装机",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "video_type": "装机/Setup",
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 12.44,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "UAKY5--uCSU",
@@ -310,12 +301,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Belkin相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6.75,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     }
   ]
 }

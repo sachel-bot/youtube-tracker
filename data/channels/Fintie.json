@@ -31,12 +31,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 36.61,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "LcfolLxb420",
@@ -62,12 +61,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 55.12,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "BnSzrRl6uVc",
@@ -93,12 +91,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 123.04,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "PcgLDliMlyU",
@@ -124,12 +121,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 75.71,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 100
     },
     {
       "video_id": "NEk2tYNy8oQ",
@@ -155,12 +151,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 52.26,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "PbQeqdOgl6U",
@@ -186,12 +181,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 40.54,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "f0FV2uQ5Ds8",
@@ -217,12 +211,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 151.19,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "fP4pTB7fcvI",
@@ -248,12 +241,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 32.08,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "QUJ-GsXTIEg",
@@ -279,12 +271,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 73.75,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "Wm-ISz-eem4",
@@ -310,12 +301,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Fintie相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 141.31,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     }
   ]
 }

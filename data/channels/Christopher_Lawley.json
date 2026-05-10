@@ -34,7 +34,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7.3,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 100
     },
     {
       "video_id": "IUkMC0NkUOI",
@@ -60,11 +61,12 @@
         "商务",
         "其他Apple"
       ],
-      "video_type": "装机",
+      "video_type": "装机/Setup",
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6.58,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 30
     },
     {
       "video_id": "ITdqrrw-Fis",
@@ -89,11 +91,12 @@
       "content_tags": [
         "其他"
       ],
-      "video_type": "装机",
+      "video_type": "装机/Setup",
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 19.04,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "K0f17hkZwOc",
@@ -122,7 +125,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 2.45,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "LfZlS711eVA",
@@ -147,11 +151,12 @@
       "content_tags": [
         "商务"
       ],
-      "video_type": "其他",
+      "video_type": "推荐/Best",
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 17.19,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "noYHKjOMntI",
@@ -180,7 +185,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 58.78,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "eb68aGtsVdw",
@@ -209,7 +215,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 2.45,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "Aw4nyMEpf98",
@@ -238,7 +245,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7.9,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 30
     },
     {
       "video_id": "9ZQBcxmdjfU",
@@ -268,7 +276,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 11.08,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 100
     },
     {
       "video_id": "hLhGKnZ7l38",
@@ -297,7 +306,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 125.04,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     }
   ]
 }

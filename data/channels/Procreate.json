@@ -31,12 +31,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.5,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     },
     {
       "video_id": "KVr3tW9MjqQ",
@@ -62,12 +61,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.43,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "AkihgmvTRdo",
@@ -93,12 +91,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.36,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "1oSP6SDJSgg",
@@ -124,12 +121,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 15.85,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "-OAoGuC-jb8",
@@ -155,12 +151,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.69,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "giIcSjBQcCU",
@@ -187,12 +182,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 19.73,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "5lj0Uq5D6LU",
@@ -218,12 +212,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.64,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "CB-FID4jFz0",
@@ -249,12 +242,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.76,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "8DIkyEjXp4s",
@@ -280,13 +272,12 @@
         "创作",
         "商务"
       ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "video_type": "教学",
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 2.89,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 100
     },
     {
       "video_id": "7AW2NVCpBus",
@@ -313,12 +304,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Procreate相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 0.71,
-      "view_to_sub_tier": "频道冷启"
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
     }
   ]
 }

@@ -34,7 +34,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 13.83,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "DZ3dF1zBIP4",
@@ -63,7 +64,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 52.53,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "KJtj8iC8oGY",
@@ -92,7 +94,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 32.18,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "78mMi2xWZ5g",
@@ -118,12 +121,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Twelve South相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 26.53,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "kv9PcpbEGSU",
@@ -148,13 +150,12 @@
       "content_tags": [
         "创作"
       ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "Twelve South相关"
-      ],
+      "video_type": "产品发布",
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 32.08,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "fqhul6Su-J8",
@@ -180,12 +181,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Twelve South相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7.24,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "cySPlANdKe8",
@@ -211,12 +211,11 @@
         "商务"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Twelve South相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 9.7,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 80
     },
     {
       "video_id": "NmE3WicSsLE",
@@ -242,12 +241,11 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Twelve South相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 16.66,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "a9zOT6uMg6A",
@@ -273,12 +271,11 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Twelve South相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 10.69,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "q-Fdg6KyojU",
@@ -307,7 +304,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 42.16,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     }
   ]
 }

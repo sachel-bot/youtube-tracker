@@ -31,12 +31,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 2.04,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 20
     },
     {
       "video_id": "5YEsNqMGmBo",
@@ -61,13 +60,12 @@
       "content_tags": [
         "其他"
       ],
-      "video_type": "装机",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "video_type": "装机/Setup",
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6.74,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "UPC0nWMr9t8",
@@ -96,7 +94,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 10.46,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "Myb0Enyce20",
@@ -121,11 +120,12 @@
       "content_tags": [
         "商务"
       ],
-      "video_type": "装机",
+      "video_type": "装机/Setup",
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7.02,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "2DhddAS9voY",
@@ -151,12 +151,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 23.54,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "rZOHnFLhAUE",
@@ -182,12 +181,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 13.65,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "Eq_LwITcxYU",
@@ -213,12 +211,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 20.31,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "BwBV-B2IyVw",
@@ -243,11 +240,12 @@
       "content_tags": [
         "其他"
       ],
-      "video_type": "装机",
+      "video_type": "装机/Setup",
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 9.15,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 20
     },
     {
       "video_id": "ZOVKZIOw4k0",
@@ -273,12 +271,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 16.87,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 20
     },
     {
       "video_id": "qPBgkQ1tBKM",
@@ -303,13 +300,12 @@
       "content_tags": [
         "其他Apple"
       ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "Anker相关"
-      ],
+      "video_type": "推荐/Best",
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.78,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 30
     }
   ]
 }

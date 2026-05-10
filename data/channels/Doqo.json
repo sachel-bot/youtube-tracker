@@ -31,12 +31,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Doqo相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6.84,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 30
     },
     {
       "video_id": "aYu8o3WaTjk",
@@ -62,12 +61,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Doqo相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 806.08,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "UZP4e46ZB3s",
@@ -94,12 +92,12 @@
       ],
       "video_type": "其他",
       "brand_mentions": [
-        "Apple键盘相关",
-        "Doqo相关"
+        "Apple键盘相关"
       ],
       "hot_level": "",
       "view_to_sub_ratio": 2630.42,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 100
     },
     {
       "video_id": "skVwlRAwLpw",
@@ -126,12 +124,12 @@
       ],
       "video_type": "其他",
       "brand_mentions": [
-        "Apple键盘相关",
-        "Doqo相关"
+        "Apple键盘相关"
       ],
       "hot_level": "",
       "view_to_sub_ratio": 19802.66,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 100
     },
     {
       "video_id": "LDFkTjo1WPQ",
@@ -158,12 +156,12 @@
       ],
       "video_type": "其他",
       "brand_mentions": [
-        "Apple键盘相关",
-        "Doqo相关"
+        "Apple键盘相关"
       ],
       "hot_level": "",
       "view_to_sub_ratio": 2409.13,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 100
     },
     {
       "video_id": "b8XUfYsXWn4",
@@ -189,12 +187,11 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Doqo相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 972.24,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "2coGNWKlu9o",
@@ -220,12 +217,11 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Doqo相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 220.91,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "ktARQ0YcIpQ",
@@ -251,12 +247,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Doqo相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 160.46,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "06tQX95_KMo",
@@ -283,12 +278,12 @@
       ],
       "video_type": "其他",
       "brand_mentions": [
-        "Apple键盘相关",
-        "Doqo相关"
+        "Apple键盘相关"
       ],
       "hot_level": "",
       "view_to_sub_ratio": 2772.24,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 100
     },
     {
       "video_id": "44IHa22-X5k",
@@ -314,12 +309,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Doqo相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 70.34,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     }
   ]
 }

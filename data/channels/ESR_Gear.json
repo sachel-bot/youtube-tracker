@@ -31,12 +31,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "ESR相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 31002.13,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "koFUvCz7hk0",
@@ -62,12 +61,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "ESR相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 7480.85,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "x5f9yjTetEc",
@@ -96,7 +94,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 90489.36,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "UPihGaPQADw",
@@ -125,7 +124,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 6348.94,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "ngCF4LSKhnY",
@@ -154,7 +154,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 1176.6,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "ems76QQ12Z8",
@@ -183,7 +184,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 55.32,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "qJ9Gh4tss40",
@@ -212,7 +214,8 @@
       "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 391.49,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "-5v6Unm9eeU",
@@ -238,12 +241,11 @@
         "其他Apple"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "ESR相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 1078.72,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "7p3KD18yakQ",
@@ -269,12 +271,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "ESR相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 2608.51,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     },
     {
       "video_id": "MWUSWf7Aay0",
@@ -300,12 +301,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "ESR相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 651.06,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 30
     }
   ]
 }

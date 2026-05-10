@@ -31,12 +31,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 51.64,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "hlfyd1SnydE",
@@ -62,12 +61,11 @@
         "其他"
       ],
       "video_type": "开箱",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 70.82,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "oUlb_Wt80rM",
@@ -93,12 +91,11 @@
         "其他"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 91.23,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "WVGi0vTd7UM",
@@ -124,12 +121,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 5.23,
-      "view_to_sub_tier": "频道高分"
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 30
     },
     {
       "video_id": "GEGFGBEN-ik",
@@ -155,12 +151,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 4.05,
-      "view_to_sub_tier": "频道一般"
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 80
     },
     {
       "video_id": "cC0OzNxPQUA",
@@ -186,12 +181,11 @@
         "其他"
       ],
       "video_type": "开箱",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 68.14,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "Myz0eVhRbhI",
@@ -217,12 +211,11 @@
         "创作"
       ],
       "video_type": "其他",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 26.55,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
     },
     {
       "video_id": "xk9WFbkHCX0",
@@ -248,12 +241,11 @@
         "其他"
       ],
       "video_type": "开箱",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 36.64,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "cUy36D-HUFc",
@@ -279,12 +271,11 @@
         "其他"
       ],
       "video_type": "开箱",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 70.32,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     },
     {
       "video_id": "7p-OQJ5Vuxk",
@@ -310,12 +301,11 @@
         "其他"
       ],
       "video_type": "开箱",
-      "brand_mentions": [
-        "Inateck相关"
-      ],
+      "brand_mentions": [],
       "hot_level": "",
       "view_to_sub_ratio": 72.73,
-      "view_to_sub_tier": "频道爆款"
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 60
     }
   ]
 }
