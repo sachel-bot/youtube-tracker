@@ -8,13 +8,43 @@
   },
   "videos": [
     {
+      "video_id": "6CQKsRe48c0",
+      "title": "The Best iPhone Accessories Nobody Is Talking About",
+      "description": "Products Featured\n🔄 Aulumu G09 Ghost Infinite 360° Magnetic Stand - https://aulumu.com/products/g09-ghost-infinite-360-magnetic-stand?ref=9muhvvo4 ($39)\n🔋 KUXIU S4 Qi2.2 25W 10,000mAh Wireless Power Bank - https://kuxiu.co/products/kuxiu-s4-power-bank-orange?ref=bjyfkxdn ($77.98)\n💾 Lexar ES5 Magnetic Portable SSD 1TB - https://amzn.to/4fPaX51 ($199)\n🔌 Nomad ChargeKey - https://howl.link/49pmkbxz0ent1 ($29)\n🎮 Abxylute M4 MagSafe Mobile Controller - https://tidd.ly/4fQn6qh ($49)\n\nI recently shared",
+      "thumbnail_url": "https://i.ytimg.com/vi/6CQKsRe48c0/maxresdefault.jpg",
+      "view_count": 4378,
+      "like_count": 243,
+      "comment_count": 13,
+      "duration": "12:06",
+      "duration_secs": 726,
+      "published_at": "2026-05-30T16:00:04Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=6CQKsRe48c0",
+      "engagement_rate": 5.85,
+      "comment_rate": 0.297,
+      "video_length_type": "Medium",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "推荐/Best",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.46,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 30
+    },
+    {
       "video_id": "53EylROQZVw",
       "title": "The Truth About the iPhone 17 Pro and Why I Switched",
       "description": "Best Apple Deals:\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nI've been using the iPhone 17 Pro every single day since launch, and after months of real-world use, I think Apple may have perfected the traditional smartphone formula. In t",
       "thumbnail_url": "https://i.ytimg.com/vi/53EylROQZVw/maxresdefault.jpg",
-      "view_count": 3866,
-      "like_count": 250,
-      "comment_count": 36,
+      "view_count": 9998,
+      "like_count": 458,
+      "comment_count": 50,
       "duration": "14:44",
       "duration_secs": 884,
       "published_at": "2026-05-29T16:00:13Z",
@@ -24,8 +54,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=53EylROQZVw",
-      "engagement_rate": 7.4,
-      "comment_rate": 0.931,
+      "engagement_rate": 5.08,
+      "comment_rate": 0.5,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -35,8 +65,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 0.41,
-      "view_to_sub_tier": "频道冷启",
+      "view_to_sub_ratio": 1.05,
+      "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
     {
@@ -44,9 +74,9 @@
       "title": "iOS 27 Leak Reveals Apple’s Biggest Siri Redesign Ever",
       "description": "Best Apple Deals:\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nMark Gurman Bloomberg Article: https://www.bloomberg.com/news/features/2026-05-28/apple-ios-27-photos-screenshots-revamped-siri-pro-camera-app-new-ai-features\n\nApple’s bigges",
       "thumbnail_url": "https://i.ytimg.com/vi/zKHtFGAIb64/maxresdefault.jpg",
-      "view_count": 28193,
-      "like_count": 1143,
-      "comment_count": 103,
+      "view_count": 30785,
+      "like_count": 1206,
+      "comment_count": 105,
       "duration": "8:13",
       "duration_secs": 493,
       "published_at": "2026-05-28T14:47:28Z",
@@ -56,8 +86,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=zKHtFGAIb64",
-      "engagement_rate": 4.42,
-      "comment_rate": 0.365,
+      "engagement_rate": 4.26,
+      "comment_rate": 0.341,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -67,7 +97,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.97,
+      "view_to_sub_ratio": 3.24,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -76,9 +106,9 @@
       "title": "Apple Wallet Driver’s License Support Just Added This New State",
       "description": "Try CardPointers - https://cardpointers.com/fern93\n\nBest Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple Wallet just got even better 👀 Arkansas is now officially supported for Digital IDs and driver’s licenses inside Apple",
       "thumbnail_url": "https://i.ytimg.com/vi/r9yZ5YwLyik/maxresdefault.jpg",
-      "view_count": 18304,
-      "like_count": 547,
-      "comment_count": 133,
+      "view_count": 19015,
+      "like_count": 553,
+      "comment_count": 135,
       "duration": "3:15",
       "duration_secs": 195,
       "published_at": "2026-05-27T17:14:28Z",
@@ -88,8 +118,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=r9yZ5YwLyik",
-      "engagement_rate": 3.72,
-      "comment_rate": 0.727,
+      "engagement_rate": 3.62,
+      "comment_rate": 0.71,
       "video_length_type": "Short",
       "content_tags": [
         "其他Apple"
@@ -99,7 +129,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.93,
+      "view_to_sub_ratio": 2.0,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -108,8 +138,8 @@
       "title": "Apple Surprises us with iOS 26.6 Beta 1 Even Though iOS 27 is Looming",
       "description": "Best Apple Deals:\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\niOS 26.6 Beta 1 is here for iPhone, and in this video we go hands on with everything new so far. Apple just released the latest developer beta alongside iPadOS 26.6, macOS Ta",
       "thumbnail_url": "https://i.ytimg.com/vi/hApjsqgjC9c/maxresdefault.jpg",
-      "view_count": 26867,
-      "like_count": 799,
+      "view_count": 27320,
+      "like_count": 807,
       "comment_count": 86,
       "duration": "8:33",
       "duration_secs": 513,
@@ -120,8 +150,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=hApjsqgjC9c",
-      "engagement_rate": 3.29,
-      "comment_rate": 0.32,
+      "engagement_rate": 3.27,
+      "comment_rate": 0.315,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -131,7 +161,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.83,
+      "view_to_sub_ratio": 2.88,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -140,9 +170,9 @@
       "title": "Ferrari’s First EV Might Be the Closest Thing to an Apple Car We'll Ever Get",
       "description": "Best Apple Deals:\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nWatch Elektrek's Review here: https://www.youtube.com/watch?v=96-9lX2B-Y8 \n\nApple never made the Apple Car… but I genuinely think this brand new Ferrari Luce might be the clo",
       "thumbnail_url": "https://i.ytimg.com/vi/59BSh-EIDN8/maxresdefault.jpg",
-      "view_count": 11952,
-      "like_count": 358,
-      "comment_count": 112,
+      "view_count": 12358,
+      "like_count": 371,
+      "comment_count": 114,
       "duration": "10:06",
       "duration_secs": 606,
       "published_at": "2026-05-26T16:15:30Z",
@@ -152,8 +182,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=59BSh-EIDN8",
-      "engagement_rate": 3.93,
-      "comment_rate": 0.937,
+      "engagement_rate": 3.92,
+      "comment_rate": 0.922,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -163,7 +193,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.26,
+      "view_to_sub_ratio": 1.3,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -172,9 +202,9 @@
       "title": "MacBook Ultra | Apple Finally Learned From Its Biggest MacBook Mistake",
       "description": "Best Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nTry CardPointers - https://cardpointers.com/fern93\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple may finally be fixing one of the biggest mistakes in MacBook history.\n\nRumors suggest Apple’s next major MacBook redes",
       "thumbnail_url": "https://i.ytimg.com/vi/Tctol9TUGsM/maxresdefault.jpg",
-      "view_count": 58716,
-      "like_count": 1556,
-      "comment_count": 191,
+      "view_count": 60197,
+      "like_count": 1575,
+      "comment_count": 194,
       "duration": "9:25",
       "duration_secs": 565,
       "published_at": "2026-05-23T15:00:23Z",
@@ -184,8 +214,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Tctol9TUGsM",
-      "engagement_rate": 2.98,
-      "comment_rate": 0.325,
+      "engagement_rate": 2.94,
+      "comment_rate": 0.322,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -195,7 +225,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 6.19,
+      "view_to_sub_ratio": 6.34,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 30
     },
@@ -204,8 +234,8 @@
       "title": "Buy These 5 Desk Accessories Once, You Won't Regret It",
       "description": "Products Featured 👇\n🧊 Satechi Thunderbolt 5 CubeDock - https://amzn.to/4dmGLwA ($399)\n⚡ CUKTECH 30 Ultra Desktop Charging Station - https://amzn.to/4tUDp90 ($145)\n🪑 LiberNovo Omni Dynamic Ergonomic Chair - https://amzn.to/4v385G0 ($929)\n🖥️ Orbitkey Desk Mat - https://amzn.to/4tUZYdV ($99)\n🖱️ Logitech MX Master 4 - https://amzn.to/4dXAZBD ($119)\n\nThese are 5 desk accessories that completely upgraded my setup in 2026 — from productivity and cable management to comfort and workflow improvements. Wh",
       "thumbnail_url": "https://i.ytimg.com/vi/e0XbA7lroLc/maxresdefault.jpg",
-      "view_count": 26925,
-      "like_count": 726,
+      "view_count": 27755,
+      "like_count": 739,
       "comment_count": 31,
       "duration": "10:36",
       "duration_secs": 636,
@@ -216,8 +246,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=e0XbA7lroLc",
-      "engagement_rate": 2.81,
-      "comment_rate": 0.115,
+      "engagement_rate": 2.77,
+      "comment_rate": 0.112,
       "video_length_type": "Medium",
       "content_tags": [
         "商务"
@@ -228,7 +258,7 @@
         "Satechi"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.84,
+      "view_to_sub_ratio": 2.92,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 20
     },
@@ -237,8 +267,8 @@
       "title": "Overtime Episode 068: You were right to push back on that",
       "description": "Jeff and Fernando chat about iOS 27 impressive new accessibility features, alongside a discussion on what Apple should do to regain user trust with regard to Siri. Should Siri be completely rebranded? The duo discusses five key features they hope Siri will have when it's revealed at WWDC 2026.\n\nGot questions, comments, or tips? Reach out! overtime@9to5mac.com\n\nThumbnail by: Michael Bower \n\n## Chapters:\n0:00 Introduction\n0:35 New accessibility Features in iOS 27\n11:15 The Future of Siri and Rebra",
       "thumbnail_url": "https://i.ytimg.com/vi/UXS-no7M2A4/maxresdefault.jpg",
-      "view_count": 1532,
-      "like_count": 68,
+      "view_count": 1566,
+      "like_count": 69,
       "comment_count": 12,
       "duration": "39:58",
       "duration_secs": 2398,
@@ -249,8 +279,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=UXS-no7M2A4",
-      "engagement_rate": 5.22,
-      "comment_rate": 0.783,
+      "engagement_rate": 5.17,
+      "comment_rate": 0.766,
       "video_length_type": "Long",
       "content_tags": [
         "其他"
@@ -258,7 +288,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.16,
+      "view_to_sub_ratio": 0.17,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 20
     },
@@ -267,9 +297,9 @@
       "title": "Apple Wallet’s Digital ID Just Got Way Better (And How to Set It Up)",
       "description": "Try CardPointers - https://cardpointers.com/fern93\n\nBest Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple Wallet’s Digital ID feature just got a HUGE expansion 👀\n\nApple is officially allowing Digital ID inside Apple Wallet ",
       "thumbnail_url": "https://i.ytimg.com/vi/eR6AnPWZ1Sw/maxresdefault.jpg",
-      "view_count": 134871,
-      "like_count": 4495,
-      "comment_count": 392,
+      "view_count": 136250,
+      "like_count": 4522,
+      "comment_count": 393,
       "duration": "9:41",
       "duration_secs": 581,
       "published_at": "2026-05-21T19:24:49Z",
@@ -279,8 +309,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=eR6AnPWZ1Sw",
-      "engagement_rate": 3.62,
-      "comment_rate": 0.291,
+      "engagement_rate": 3.61,
+      "comment_rate": 0.288,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -290,40 +320,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 14.21,
+      "view_to_sub_ratio": 14.36,
       "view_to_sub_tier": "频道爆款",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "TvhMFh3bjqQ",
-      "title": "macOS 27 Is WAY Bigger Than We Expected",
-      "description": "Best Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nmacOS 27 is shaping up to be one of the biggest Mac updates in years. In this video, we break down 5 huge rumored features coming to the Mac at WWDC 2026, including the brand-",
-      "thumbnail_url": "https://i.ytimg.com/vi/TvhMFh3bjqQ/maxresdefault.jpg",
-      "view_count": 94052,
-      "like_count": 2606,
-      "comment_count": 248,
-      "duration": "9:24",
-      "duration_secs": 564,
-      "published_at": "2026-05-20T18:00:01Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=TvhMFh3bjqQ",
-      "engagement_rate": 3.03,
-      "comment_rate": 0.264,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 9.91,
-      "view_to_sub_tier": "频道高分",
       "relevance_score": 30
     }
   ]
