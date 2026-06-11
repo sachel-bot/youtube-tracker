@@ -8,13 +8,76 @@
   },
   "videos": [
     {
+      "video_id": "aSjgiDqeMe4",
+      "title": "The perfect 27-in monitor for work and more... MSI PRO MAX [Sponsored]",
+      "description": "The MSI PRO MAX 271UPXW12G is what you get when you combine 4K resolution, high refresh rates, and Mac-focused hardware and design.\n\nGet yours here:\nhttps://bit.ly/4fy8Ous",
+      "thumbnail_url": "https://i.ytimg.com/vi/aSjgiDqeMe4/maxresdefault.jpg",
+      "view_count": 521,
+      "like_count": 46,
+      "comment_count": 5,
+      "duration": "3:45",
+      "duration_secs": 225,
+      "published_at": "2026-06-10T22:30:10Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=aSjgiDqeMe4",
+      "engagement_rate": 9.79,
+      "comment_rate": 0.96,
+      "video_length_type": "Short",
+      "content_tags": [
+        "创作",
+        "商务"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.05,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
+    },
+    {
+      "video_id": "I4CnhdJBfOc",
+      "title": "VisionOS 27: This is a game changer for Siri",
+      "description": "Best Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\n🚀 VisionOS 27 is here, and Siri AI on Apple Vision Pro is absolutely mind-blowing.\n\nIn this hands-on, I take a deep dive into the biggest VisionOS 27 features, including the r",
+      "thumbnail_url": "https://i.ytimg.com/vi/I4CnhdJBfOc/maxresdefault.jpg",
+      "view_count": 2323,
+      "like_count": 163,
+      "comment_count": 21,
+      "duration": "9:09",
+      "duration_secs": 549,
+      "published_at": "2026-06-10T18:32:18Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=I4CnhdJBfOc",
+      "engagement_rate": 7.92,
+      "comment_rate": 0.904,
+      "video_length_type": "Medium",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [
+        "AirPods"
+      ],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.24,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 30
+    },
+    {
       "video_id": "Lvci5LfFE4w",
       "title": "CarPlay Just Got WAY Better in iOS 27",
       "description": "Best Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nCarPlay gets some great upgrades in iOS 27, and in this video we take a look at everything that's new. From the arrival of Siri AI and smarter voice interactions to native vid",
       "thumbnail_url": "https://i.ytimg.com/vi/Lvci5LfFE4w/maxresdefault.jpg",
-      "view_count": 18730,
-      "like_count": 815,
-      "comment_count": 52,
+      "view_count": 51003,
+      "like_count": 1689,
+      "comment_count": 98,
       "duration": "5:58",
       "duration_secs": 358,
       "published_at": "2026-06-09T20:45:35Z",
@@ -24,8 +87,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Lvci5LfFE4w",
-      "engagement_rate": 4.63,
-      "comment_rate": 0.278,
+      "engagement_rate": 3.5,
+      "comment_rate": 0.192,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -35,8 +98,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.97,
-      "view_to_sub_tier": "频道一般",
+      "view_to_sub_ratio": 5.37,
+      "view_to_sub_tier": "频道高分",
       "relevance_score": 30
     },
     {
@@ -44,9 +107,9 @@
       "title": "Apple Wallet in iOS 27 Just Got WAY Better | Hands-On",
       "description": "Try CardPointers - https://cardpointers.com/fern93\n\nBest Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple Wallet gets some surprisingly useful upgrades in iOS 27, and after going hands-on with Developer Beta 1, there are a ",
       "thumbnail_url": "https://i.ytimg.com/vi/koiU6_EO4Q4/maxresdefault.jpg",
-      "view_count": 50173,
-      "like_count": 1572,
-      "comment_count": 105,
+      "view_count": 125570,
+      "like_count": 3002,
+      "comment_count": 180,
       "duration": "11:37",
       "duration_secs": 697,
       "published_at": "2026-06-09T15:24:45Z",
@@ -56,8 +119,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=koiU6_EO4Q4",
-      "engagement_rate": 3.34,
-      "comment_rate": 0.209,
+      "engagement_rate": 2.53,
+      "comment_rate": 0.143,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -67,8 +130,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 5.29,
-      "view_to_sub_tier": "频道高分",
+      "view_to_sub_ratio": 13.23,
+      "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
     {
@@ -76,9 +139,9 @@
       "title": "iPadOS 27 Hands-On: New Safari, AI Shortcuts & More Mac-Like Than Ever",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4obpA4F (Under $200!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nIn this hands-on video, I take a first look at Apple's latest iPad software update, exploring the biggest new features, UI changes, multitasking improvements, Apple Intellige",
       "thumbnail_url": "https://i.ytimg.com/vi/avHyVD7WJ2g/maxresdefault.jpg",
-      "view_count": 27554,
-      "like_count": 817,
-      "comment_count": 118,
+      "view_count": 36377,
+      "like_count": 1019,
+      "comment_count": 136,
       "duration": "8:18",
       "duration_secs": 498,
       "published_at": "2026-06-08T22:30:48Z",
@@ -88,8 +151,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=avHyVD7WJ2g",
-      "engagement_rate": 3.39,
-      "comment_rate": 0.428,
+      "engagement_rate": 3.18,
+      "comment_rate": 0.374,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -99,7 +162,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.9,
+      "view_to_sub_ratio": 3.83,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 60
     },
@@ -108,9 +171,9 @@
       "title": "iOS 27 Hands-On: New Features and Changes!",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4obpA4F (Under $200!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nI installed iOS 27 Developer Beta 1 on my main iPhone 17 Pro so you don't have to! In this video, I go hands-on with Apple's latest update, testing out the new Photos AI tool",
       "thumbnail_url": "https://i.ytimg.com/vi/VT8_VGR8rGQ/maxresdefault.jpg",
-      "view_count": 81898,
-      "like_count": 2190,
-      "comment_count": 261,
+      "view_count": 93007,
+      "like_count": 2326,
+      "comment_count": 273,
       "duration": "11:55",
       "duration_secs": 715,
       "published_at": "2026-06-08T21:54:09Z",
@@ -120,8 +183,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=VT8_VGR8rGQ",
-      "engagement_rate": 2.99,
-      "comment_rate": 0.319,
+      "engagement_rate": 2.79,
+      "comment_rate": 0.294,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -131,7 +194,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 8.63,
+      "view_to_sub_ratio": 9.8,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 30
     },
@@ -140,9 +203,9 @@
       "title": "WWDC 2026: The Features That Actually Matter",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4obpA4F (Under $200!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple just unveiled iOS 27, iPadOS 27, macOS Golden Gate, watchOS 27, and the biggest Siri upgrade in the history of Apple. In this video, we break down all of the biggest an",
       "thumbnail_url": "https://i.ytimg.com/vi/omtrU-IyH6g/maxresdefault.jpg",
-      "view_count": 106072,
-      "like_count": 3403,
-      "comment_count": 563,
+      "view_count": 109339,
+      "like_count": 3462,
+      "comment_count": 569,
       "duration": "12:50",
       "duration_secs": 770,
       "published_at": "2026-06-08T19:49:44Z",
@@ -152,8 +215,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=omtrU-IyH6g",
-      "engagement_rate": 3.74,
-      "comment_rate": 0.531,
+      "engagement_rate": 3.69,
+      "comment_rate": 0.52,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -163,7 +226,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 11.18,
+      "view_to_sub_ratio": 11.52,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
@@ -172,9 +235,9 @@
       "title": "iPadOS 27: The iPad Gets Its Biggest AI Upgrade Yet",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4obpA4F (Under $200!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nWWDC26 is almost here, and Apple is expected to unveil iPadOS 27 with a number of new productivity and Apple Intelligence features. In this video, we break down four of the b",
       "thumbnail_url": "https://i.ytimg.com/vi/gzyNSOXFYOU/maxresdefault.jpg",
-      "view_count": 48415,
-      "like_count": 1097,
-      "comment_count": 125,
+      "view_count": 49156,
+      "like_count": 1108,
+      "comment_count": 126,
       "duration": "6:08",
       "duration_secs": 368,
       "published_at": "2026-06-07T13:00:27Z",
@@ -184,8 +247,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=gzyNSOXFYOU",
-      "engagement_rate": 2.52,
-      "comment_rate": 0.258,
+      "engagement_rate": 2.51,
+      "comment_rate": 0.256,
       "video_length_type": "Medium",
       "content_tags": [
         "商务"
@@ -195,7 +258,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 5.1,
+      "view_to_sub_ratio": 5.18,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 80
     },
@@ -204,9 +267,9 @@
       "title": "iOS 27 Will Reportedly Add 2 Major New Features to Apple Wallet",
       "description": "Try CardPointers - https://cardpointers.com/fern93\n\nBest Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple is expected to announce iOS 27 at WWDC 2026 next week, and a new report reveals two major upgrades coming to Apple Wa",
       "thumbnail_url": "https://i.ytimg.com/vi/0Ugyhc2DIFo/maxresdefault.jpg",
-      "view_count": 34332,
-      "like_count": 1083,
-      "comment_count": 52,
+      "view_count": 35174,
+      "like_count": 1103,
+      "comment_count": 54,
       "duration": "5:05",
       "duration_secs": 305,
       "published_at": "2026-06-06T14:00:12Z",
@@ -216,8 +279,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=0Ugyhc2DIFo",
-      "engagement_rate": 3.31,
-      "comment_rate": 0.151,
+      "engagement_rate": 3.29,
+      "comment_rate": 0.154,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -227,7 +290,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 3.62,
+      "view_to_sub_ratio": 3.71,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -236,7 +299,7 @@
       "title": "The WWDC 2026 LEAKS Have Me More Excited Than Ever",
       "description": "Best Apple Deals:\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nAirPods Pro 3 - https://amzn.to/4obpA4F (Under $200!!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple's biggest software event of the year is almost here. WWDC 2026 kicks off on June 8, and in this video we're breaking down everything we expect Apple to announce.\n\nThe b",
       "thumbnail_url": "https://i.ytimg.com/vi/QYi8akTDVZY/maxresdefault.jpg",
-      "view_count": 29757,
+      "view_count": 29838,
       "like_count": 995,
       "comment_count": 80,
       "duration": "9:25",
@@ -248,8 +311,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=QYi8akTDVZY",
-      "engagement_rate": 3.61,
-      "comment_rate": 0.269,
+      "engagement_rate": 3.6,
+      "comment_rate": 0.268,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -261,68 +324,6 @@
       "hot_level": "",
       "view_to_sub_ratio": 3.14,
       "view_to_sub_tier": "频道一般",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "Lp8mkB4sQYk",
-      "title": "Apple’s Smart Glasses Strategy Is Brilliant",
-      "description": "Best Apple Deals:\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $899!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nTry CardPointers - https://cardpointers.com/fern93\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nApple Glasses may still be a couple of years away, but a new leak has completely changed how I view the product. Instead of focusing on AI, cameras, and futuristic features, ",
-      "thumbnail_url": "https://i.ytimg.com/vi/Lp8mkB4sQYk/maxresdefault.jpg",
-      "view_count": 26393,
-      "like_count": 687,
-      "comment_count": 68,
-      "duration": "5:59",
-      "duration_secs": 359,
-      "published_at": "2026-06-03T17:47:28Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=Lp8mkB4sQYk",
-      "engagement_rate": 2.86,
-      "comment_rate": 0.258,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 2.78,
-      "view_to_sub_tier": "频道一般",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "bPNx37Q3u7o",
-      "title": "Overtime Episode 069: Disco ball capital of the world",
-      "description": "Jeff and Fernando chit-chat about the reactions to the Ferrari Luce, Steve Jobs in Exile, Spotify app icon changes, iOS 26.6 beta, and thoughts on Apple's implementation of a new iPhone anti-snatching feature into iOS. \n\nGot questions, comments, or tips? Reach out! overtime@9to5mac.com\n\nThumbnail by: Michael Bower \n\n## Chapters:\n0:00 Introduction\n0:55 Ferrari Luce\n8:55 Highs and Lows\n18:39 Spotify developments\n26:46 iOS 26.6 Beta\n28:08 iPhone anti-snatching feature\n\n## Show Links\nhttps://9to5mac",
-      "thumbnail_url": "https://i.ytimg.com/vi/bPNx37Q3u7o/maxresdefault.jpg",
-      "view_count": 1556,
-      "like_count": 52,
-      "comment_count": 2,
-      "duration": "33:15",
-      "duration_secs": 1995,
-      "published_at": "2026-06-02T18:49:42Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=bPNx37Q3u7o",
-      "engagement_rate": 3.47,
-      "comment_rate": 0.129,
-      "video_length_type": "Long",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [],
-      "hot_level": "",
-      "view_to_sub_ratio": 0.16,
-      "view_to_sub_tier": "频道冷启",
       "relevance_score": 30
     }
   ]
