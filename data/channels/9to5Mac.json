@@ -8,13 +8,46 @@
   },
   "videos": [
     {
+      "video_id": "Q5bZzZUTzgk",
+      "title": "Apple Quietly Made the iPad So Much Better with iPadOS 27",
+      "description": "Big thanks to Paperlike for sponsoring this video! Check them out here:\n👉 https://paperlike.com/9to5/2606\n\nBest Apple Deals:\nAirPods Pro 3 - https://amzn.to/4obpA4F (Under $200!!)\nM4 iPad Air - https://amzn.to/4fPxmiF\nMagnetic USB-C Charging cable - https://amzn.to/4uy5jI9\nBest budget Magic Keyboard - https://amzn.to/3Qoj0eG \nFavorite 100W USB-C Charging brick - https://amzn.to/4ecYmrh\nBest portable iPad charger - https://amzn.to/43zSnGV\n\niPadOS 27 is here, and after using the developer beta on ",
+      "thumbnail_url": "https://i.ytimg.com/vi/Q5bZzZUTzgk/maxresdefault.jpg",
+      "view_count": 20531,
+      "like_count": 685,
+      "comment_count": 78,
+      "duration": "16:44",
+      "duration_secs": 1004,
+      "published_at": "2026-06-16T16:07:19Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=Q5bZzZUTzgk",
+      "engagement_rate": 3.72,
+      "comment_rate": 0.38,
+      "video_length_type": "Long",
+      "content_tags": [
+        "iPad配件相关"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [
+        "Apple Magic Keyboard",
+        "AirPods"
+      ],
+      "hot_level": "",
+      "view_to_sub_ratio": 2.16,
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 100
+    },
+    {
       "video_id": "HBNGoT7h--0",
       "title": "iOS 27 Just Made HomeKit WAY Better | Hands-On!",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $180!!)\nBest Budget HomeKit Camera - https://amzn.to/4uzZtpK\nBest HomeKit Smart Lock - https://amzn.to/4efwYYc\nPet Friendly Homekit Cmera - https://amzn.to/3SGAHa8 \nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\n\nApple quietly delivered some major upgrades to the Home app in iOS 27. From 4K HomeKit Secure Video an",
       "thumbnail_url": "https://i.ytimg.com/vi/HBNGoT7h--0/maxresdefault.jpg",
-      "view_count": 18592,
-      "like_count": 555,
-      "comment_count": 35,
+      "view_count": 36695,
+      "like_count": 1009,
+      "comment_count": 47,
       "duration": "9:52",
       "duration_secs": 592,
       "published_at": "2026-06-15T15:40:11Z",
@@ -24,8 +57,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=HBNGoT7h--0",
-      "engagement_rate": 3.17,
-      "comment_rate": 0.188,
+      "engagement_rate": 2.88,
+      "comment_rate": 0.128,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -35,7 +68,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.96,
+      "view_to_sub_ratio": 3.87,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -44,9 +77,9 @@
       "title": "20 Hidden iOS 27 Features That Make It SO Much Better",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $180!!)\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\niOS 27 is packed with hidden features, and after spending the last few days with the beta, I found 20 of the best ones that Apple barely talked about. From smarter search and ",
       "thumbnail_url": "https://i.ytimg.com/vi/D_TWgpJXn2I/maxresdefault.jpg",
-      "view_count": 20714,
-      "like_count": 809,
-      "comment_count": 87,
+      "view_count": 23099,
+      "like_count": 877,
+      "comment_count": 92,
       "duration": "17:54",
       "duration_secs": 1074,
       "published_at": "2026-06-14T13:00:05Z",
@@ -56,8 +89,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=D_TWgpJXn2I",
-      "engagement_rate": 4.33,
-      "comment_rate": 0.42,
+      "engagement_rate": 4.19,
+      "comment_rate": 0.398,
       "video_length_type": "Long",
       "content_tags": [
         "其他Apple"
@@ -67,7 +100,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.18,
+      "view_to_sub_ratio": 2.43,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -76,8 +109,8 @@
       "title": "FAST and COOL wireless charging | ESR Magsafe is a must-have [Sponsored]",
       "description": "With fast, cool wireless charging, the ESR CryoBoost chargers are a must-have this summer. Get one for you or the perfect gift for someone else from the links below: \n\nESR CryoBoost Foldable 3-in-1 Magnetic Charging Station (25W，Qi2.2): https://amzn.to/442fMAM\n\nESR OmniLock Magnetic Car Charger (25W, CryoBoost, Air Vent): https://amzn.to/4xqh6es\n\nCheck out ESR Q2.2 magsafe family: https://amzn.to/3RVtrah",
       "thumbnail_url": "https://i.ytimg.com/vi/EiPCmBu1kyM/maxresdefault.jpg",
-      "view_count": 3620,
-      "like_count": 154,
+      "view_count": 3787,
+      "like_count": 159,
       "comment_count": 1,
       "duration": "3:54",
       "duration_secs": 234,
@@ -88,8 +121,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=EiPCmBu1kyM",
-      "engagement_rate": 4.28,
-      "comment_rate": 0.028,
+      "engagement_rate": 4.22,
+      "comment_rate": 0.026,
       "video_length_type": "Short",
       "content_tags": [
         "其他"
@@ -99,7 +132,7 @@
         "ESR"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 0.38,
+      "view_to_sub_ratio": 0.4,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 20
     },
@@ -108,9 +141,9 @@
       "title": "These Two New Nomad Accessories Are Seriously Impressive",
       "description": "📱 Products Featured:\n🟠 Nomad Stand One - https://howl.link/x7gd9xj8qcgyv\n🟠 Nomad Tracking Card Pro - https://howl.link/as31l4oxvquj2\n\nBest Apple Deals:\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $180!!)\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\n🔥 Nomad just launched its new limited-edi",
       "thumbnail_url": "https://i.ytimg.com/vi/qPdNuHb3Gq4/maxresdefault.jpg",
-      "view_count": 4144,
-      "like_count": 132,
-      "comment_count": 13,
+      "view_count": 4520,
+      "like_count": 136,
+      "comment_count": 14,
       "duration": "7:06",
       "duration_secs": 426,
       "published_at": "2026-06-13T13:00:14Z",
@@ -120,8 +153,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=qPdNuHb3Gq4",
-      "engagement_rate": 3.5,
-      "comment_rate": 0.314,
+      "engagement_rate": 3.32,
+      "comment_rate": 0.31,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -131,7 +164,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 0.44,
+      "view_to_sub_ratio": 0.48,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 30
     },
@@ -140,8 +173,8 @@
       "title": "Hands-On with Viaim OpenNote: The Smartest Earbuds I've Used [Sponsored]",
       "description": "🛒 Check out viaim OpenNote: https://bit.ly/4olL7aV\nAmazon: https://bit.ly/4olL7aV\n🏷️ Use code 9TO5MACFOR10 to save 10% off on both the viaim website and Amazon through July 31, 2026.\n\n🎧 Meet the viaim OpenNote — open-ear headphones that do a lot more than play music. In this hands-on review, I take a closer look at these AI-powered earbuds that can instantly record conversations, transcribe calls and meetings, generate summaries, create mind maps, and even translate across 78 languages.\n\nFrom Fl",
       "thumbnail_url": "https://i.ytimg.com/vi/yH-aoN4kkuo/maxresdefault.jpg",
-      "view_count": 1802,
-      "like_count": 78,
+      "view_count": 1857,
+      "like_count": 79,
       "comment_count": 5,
       "duration": "4:00",
       "duration_secs": 240,
@@ -152,8 +185,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=yH-aoN4kkuo",
-      "engagement_rate": 4.61,
-      "comment_rate": 0.277,
+      "engagement_rate": 4.52,
+      "comment_rate": 0.269,
       "video_length_type": "Short",
       "content_tags": [
         "其他"
@@ -161,7 +194,7 @@
       "video_type": "评测",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.19,
+      "view_to_sub_ratio": 0.2,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 20
     },
@@ -170,9 +203,9 @@
       "title": "Which Devices Actually Support Siri AI? (It's Complicated)",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $180!!)\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nThe new Siri AI is finally here with iOS 27, iPadOS 27, macOS Golden Gate, watchOS 27, and visionOS 27, but not every Apple device gets the same experience. In this video, I b",
       "thumbnail_url": "https://i.ytimg.com/vi/WKsAMaruW-Q/maxresdefault.jpg",
-      "view_count": 38587,
-      "like_count": 1329,
-      "comment_count": 183,
+      "view_count": 42970,
+      "like_count": 1483,
+      "comment_count": 194,
       "duration": "10:45",
       "duration_secs": 645,
       "published_at": "2026-06-12T16:21:16Z",
@@ -182,8 +215,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=WKsAMaruW-Q",
-      "engagement_rate": 3.92,
-      "comment_rate": 0.474,
+      "engagement_rate": 3.9,
+      "comment_rate": 0.451,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -193,7 +226,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 4.07,
+      "view_to_sub_ratio": 4.53,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -202,9 +235,9 @@
       "title": "iOS 27 Gives AirPods 3 Amazing New Features | Hands-on!",
       "description": "Best Apple Deals:\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $180!!)\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nBuying Apple Products on Amazon: https://youtu.be/tH-Mm4egpeY?si=ID3zlOLqcr9OQ4d8\n\nAirPods are getting some surprisingly useful upgrades in iOS 27! In this hands-on video, I c",
       "thumbnail_url": "https://i.ytimg.com/vi/cts1czU8wKE/maxresdefault.jpg",
-      "view_count": 28996,
-      "like_count": 864,
-      "comment_count": 90,
+      "view_count": 30386,
+      "like_count": 896,
+      "comment_count": 95,
       "duration": "9:18",
       "duration_secs": 558,
       "published_at": "2026-06-11T15:13:18Z",
@@ -214,8 +247,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=cts1czU8wKE",
-      "engagement_rate": 3.29,
-      "comment_rate": 0.31,
+      "engagement_rate": 3.26,
+      "comment_rate": 0.313,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -225,7 +258,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 3.06,
+      "view_to_sub_ratio": 3.2,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -234,7 +267,7 @@
       "title": "The perfect 27-in monitor for work and more... MSI PRO MAX [Sponsored]",
       "description": "The MSI PRO MAX 271UPXW12G is what you get when you combine 4K resolution, high refresh rates, and Mac-focused hardware and design.\n\nGet yours here:\nhttps://bit.ly/4fy8Ous",
       "thumbnail_url": "https://i.ytimg.com/vi/aSjgiDqeMe4/maxresdefault.jpg",
-      "view_count": 3976,
+      "view_count": 4043,
       "like_count": 130,
       "comment_count": 10,
       "duration": "3:45",
@@ -246,8 +279,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=aSjgiDqeMe4",
-      "engagement_rate": 3.52,
-      "comment_rate": 0.252,
+      "engagement_rate": 3.46,
+      "comment_rate": 0.247,
       "video_length_type": "Short",
       "content_tags": [
         "创作",
@@ -256,7 +289,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.42,
+      "view_to_sub_ratio": 0.43,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 20
     },
@@ -265,9 +298,9 @@
       "title": "VisionOS 27: This is a game changer for Siri",
       "description": "Best Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\n🚀 VisionOS 27 is here, and Siri AI on Apple Vision Pro is absolutely mind-blowing.\n\nIn this hands-on, I take a deep dive into the biggest VisionOS 27 features, including the r",
       "thumbnail_url": "https://i.ytimg.com/vi/I4CnhdJBfOc/maxresdefault.jpg",
-      "view_count": 13265,
-      "like_count": 495,
-      "comment_count": 60,
+      "view_count": 14135,
+      "like_count": 512,
+      "comment_count": 61,
       "duration": "9:09",
       "duration_secs": 549,
       "published_at": "2026-06-10T18:32:18Z",
@@ -277,8 +310,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=I4CnhdJBfOc",
-      "engagement_rate": 4.18,
-      "comment_rate": 0.452,
+      "engagement_rate": 4.05,
+      "comment_rate": 0.432,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -288,40 +321,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.4,
+      "view_to_sub_ratio": 1.49,
       "view_to_sub_tier": "频道一般",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "Lvci5LfFE4w",
-      "title": "CarPlay Just Got WAY Better in iOS 27",
-      "description": "Best Apple Deals:\nMacBook Pro - https://amzn.to/3Rc2TRP ($200 off!)\nAirPods Pro 3 - https://amzn.to/4w7FHE9 (Under $230!!)\nM5 MacBook Air - https://amzn.to/4tT7CpU (Under $950!)\nApple Watch Series 11 - https://amzn.to/4ng29qL (Under $300!)\nBest Mac Dock - https://amzn.to/4w8htJL\nBaseus Nomos 140W - https://amzn.to/3QOXuzN\n\nCarPlay gets some great upgrades in iOS 27, and in this video we take a look at everything that's new. From the arrival of Siri AI and smarter voice interactions to native vid",
-      "thumbnail_url": "https://i.ytimg.com/vi/Lvci5LfFE4w/maxresdefault.jpg",
-      "view_count": 121541,
-      "like_count": 2862,
-      "comment_count": 145,
-      "duration": "5:58",
-      "duration_secs": 358,
-      "published_at": "2026-06-09T20:45:35Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=Lvci5LfFE4w",
-      "engagement_rate": 2.47,
-      "comment_rate": 0.119,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 12.81,
-      "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     }
   ]
