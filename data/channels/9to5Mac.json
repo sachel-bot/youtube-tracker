@@ -8,13 +8,43 @@
   },
   "videos": [
     {
+      "video_id": "4gAIKwz8LRc",
+      "title": "How to create a macOS 27 Golden Gate USB Installer Drive",
+      "description": "A USB installer makes fresh installs of macOS 27 Golden Gate easy-peezy!\nLink to USB drive: https://geni.us/nSLj70\n\nTerminal commands referenced in video: \nsoftwareupdate --list-full-installers\nsoftwareupdate --fetch-full-installer --full-installer-version 27.0\nFull written tutorial: https://9to5mac.com/2026/06/28/how-to-create-a-macos-golden-gate-usb-install-drive-video/\n\n## Don't miss these:\nhttps://youtu.be/XgbPaqq7ptQ\nhttps://youtu.be/1rcXaOhOAQI\nhttps://youtu.be/3KfFrp2MFoM\nhttps://youtu.be",
+      "thumbnail_url": "https://i.ytimg.com/vi/4gAIKwz8LRc/maxresdefault.jpg",
+      "view_count": 2102,
+      "like_count": 135,
+      "comment_count": 3,
+      "duration": "6:59",
+      "duration_secs": 419,
+      "published_at": "2026-06-28T13:00:22Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=4gAIKwz8LRc",
+      "engagement_rate": 6.57,
+      "comment_rate": 0.143,
+      "video_length_type": "Medium",
+      "content_tags": [
+        "其他"
+      ],
+      "video_type": "教学",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.22,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
+    },
+    {
       "video_id": "zot3-nV_XdA",
       "title": "Apple Watch Ultra 3 vs Series 11: Why The Ultra Might Not Be Worth It!",
       "description": "👇 Current Apple Watch Deals:\n⌚ Apple Watch Ultra 3: https://amzn.to/4eEkOZ9 ($649, reg $799)\n⌚ Apple Watch Series 11: https://amzn.to/4uT4TMH ($279, reg $399)\n⌚ Apple Watch SE 3: https://amzn.to/4oNCGWh ($199, reg $249)\n\nApple Watch Ultra 3 vs Series 11 vs SE 3 — Which Apple Watch Should You Buy in 2026?\n\nThinking about buying an Apple Watch but not sure which one is right for you? In this complete Apple Watch buying guide, I compare the Apple Watch Ultra 3, Apple Watch Series 11, and Apple Watc",
       "thumbnail_url": "https://i.ytimg.com/vi/zot3-nV_XdA/maxresdefault.jpg",
-      "view_count": 10220,
-      "like_count": 327,
-      "comment_count": 43,
+      "view_count": 13182,
+      "like_count": 378,
+      "comment_count": 45,
       "duration": "11:13",
       "duration_secs": 673,
       "published_at": "2026-06-26T16:54:33Z",
@@ -24,8 +54,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=zot3-nV_XdA",
-      "engagement_rate": 3.62,
-      "comment_rate": 0.421,
+      "engagement_rate": 3.21,
+      "comment_rate": 0.341,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -33,7 +63,7 @@
       "video_type": "对比",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 1.08,
+      "view_to_sub_ratio": 1.39,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -42,9 +72,9 @@
       "title": "Overtime Episode 070: The Siri Redemption Tour",
       "description": "Is Siri really good this time? Fernando and Jeff talk about some of their favorite iOS 27 beta features, along with a deep dive into the key new Siri AI features, changes, updates, and optimizations.\n\nGot questions, comments, or tips? Reach out! overtime@9to5mac.com\n\nThumbnail by: Michael Bower \n\n## Chapters:\n0:00 iOS 27 first impressions\n8:35 10 standout iOS 27 features\n24:12 Siri's redemption\n\n## Show Links\n200 iOS 27 Changes and Features https://www.youtube.com/watch?v=3KfFrp2MFoM\n\n## Previou",
       "thumbnail_url": "https://i.ytimg.com/vi/xOgGpFWGFVs/maxresdefault.jpg",
-      "view_count": 1651,
-      "like_count": 81,
-      "comment_count": 14,
+      "view_count": 1884,
+      "like_count": 88,
+      "comment_count": 15,
       "duration": "49:57",
       "duration_secs": 2997,
       "published_at": "2026-06-26T13:13:59Z",
@@ -54,8 +84,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=xOgGpFWGFVs",
-      "engagement_rate": 5.75,
-      "comment_rate": 0.848,
+      "engagement_rate": 5.47,
+      "comment_rate": 0.796,
       "video_length_type": "Long",
       "content_tags": [
         "其他"
@@ -63,7 +93,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.17,
+      "view_to_sub_ratio": 0.2,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 20
     },
@@ -72,9 +102,9 @@
       "title": "Apple Just Raised Prices on EVERYTHING & it's WORSE Than We Thought!",
       "description": "⬇️ Best Apple Deals ⬇️\n📱 11-inch M4 iPad Air 128GB - https://amzn.to/4uWAflE ($519, Reg. $749)\n📱 13-inch M4 iPad Air 128GB - https://amzn.to/4eYWgLN ($699, Reg. $949)\n📱 11-inch M5 iPad Pro 256GB - https://amzn.to/4eDK4ib ($899, Reg. $1199)\n💻 2026 M5 MacBook Pro 14-inch - https://amzn.to/3SoipKY ($1549, Reg. $1,999) \n💻 2026 M5 MacBook Air 13-inch - https://amzn.to/3R0vjhE ($949, Reg. $1,299)\n💻MacBook Neo - https://amzn.to/44q7q6h ($589, Reg. $699)\n🎧 AirPods Max 2 - https://amzn.to/4gz7NTh ($399, ",
       "thumbnail_url": "https://i.ytimg.com/vi/_NP3_oYCeYw/maxresdefault.jpg",
-      "view_count": 98072,
-      "like_count": 3169,
-      "comment_count": 1087,
+      "view_count": 100094,
+      "like_count": 3220,
+      "comment_count": 1107,
       "duration": "7:28",
       "duration_secs": 448,
       "published_at": "2026-06-25T14:18:36Z",
@@ -84,8 +114,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=_NP3_oYCeYw",
-      "engagement_rate": 4.34,
-      "comment_rate": 1.108,
+      "engagement_rate": 4.32,
+      "comment_rate": 1.106,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -95,7 +125,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 10.33,
+      "view_to_sub_ratio": 10.55,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 60
     },
@@ -104,9 +134,9 @@
       "title": "This $59 Charger Does More Than Most $150 Chargers | Kuxiu D5",
       "description": "⚡ KUXIU D5: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n\n⬇️ Best Apple Deals ⬇️\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $399!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $299)\n🧭 Apple Watch Ultra 3 - https://amzn.to/3SztGbb (Was $799, Now $699)\n M5 MacBook Air - https://amzn.to/4oDhYZ6 (Was $1,099, Now $949)\n🚀 M5 MacBook Pro - https://amzn.to/4whGJgf (Was $1,699, Now $1,549)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Wa",
       "thumbnail_url": "https://i.ytimg.com/vi/c2bIqCbgWOU/maxresdefault.jpg",
-      "view_count": 11916,
-      "like_count": 330,
-      "comment_count": 29,
+      "view_count": 13183,
+      "like_count": 354,
+      "comment_count": 30,
       "duration": "7:50",
       "duration_secs": 470,
       "published_at": "2026-06-24T19:52:51Z",
@@ -116,8 +146,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=c2bIqCbgWOU",
-      "engagement_rate": 3.01,
-      "comment_rate": 0.243,
+      "engagement_rate": 2.91,
+      "comment_rate": 0.228,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -127,7 +157,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.26,
+      "view_to_sub_ratio": 1.39,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 60
     },
@@ -136,9 +166,9 @@
       "title": "iOS 27 Added 11 New Widgets — Here's What They Actually Do",
       "description": "⬇️ Best Apple Deals ⬇️\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $399!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $299)\n🧭 Apple Watch Ultra 3 - https://amzn.to/3SztGbb (Was $799, Now $699)\n M5 MacBook Air - https://amzn.to/4oDhYZ6 (Was $1,099, Now $949)\n🚀 M5 MacBook Pro - https://amzn.to/4whGJgf (Was $1,699, Now $1,549)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $599, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\n📱 iOS 27 Just Added",
       "thumbnail_url": "https://i.ytimg.com/vi/d3r6kq6ia3I/maxresdefault.jpg",
-      "view_count": 46427,
-      "like_count": 1247,
-      "comment_count": 113,
+      "view_count": 52608,
+      "like_count": 1359,
+      "comment_count": 118,
       "duration": "11:37",
       "duration_secs": 697,
       "published_at": "2026-06-24T14:51:51Z",
@@ -148,8 +178,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=d3r6kq6ia3I",
-      "engagement_rate": 2.93,
-      "comment_rate": 0.243,
+      "engagement_rate": 2.81,
+      "comment_rate": 0.224,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -159,8 +189,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 4.89,
-      "view_to_sub_tier": "频道一般",
+      "view_to_sub_ratio": 5.54,
+      "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     },
     {
@@ -168,8 +198,8 @@
       "title": "Buy Apple NOW? Apple Prime Day 2026 Deals Are Insane",
       "description": "⬇️ Products Featured ⬇️\n🎧 AirPods Max 2 - https://amzn.to/4gz7NTh ($399, Reg. $549)\n🎧 AirPods Pro 3 - https://amzn.to/4eqRsij ($179, Reg. $249)\n🎧 AirPods 4 - https://amzn.to/4oGMEZk ($99, Reg. $129)\n\n⌚ Apple Watch Series 11 (42mm) - https://amzn.to/4gBCxmG ($279, Reg. $399)\n⌚ Apple Watch Series 11 (46mm) - https://amzn.to/4ah5Ua4 ($309, Reg. $429)\n⌚ Black Apple Watch Ultra 3 - https://amzn.to/3SXvnzf ($649, Reg. $799)\n⌚ Black Apple Watch Ultra 3 w/ Black Milanese Loop - https://amzn.to/4uLAekl (",
       "thumbnail_url": "https://i.ytimg.com/vi/YOopctZnChU/maxresdefault.jpg",
-      "view_count": 37439,
-      "like_count": 677,
+      "view_count": 37600,
+      "like_count": 679,
       "comment_count": 63,
       "duration": "7:24",
       "duration_secs": 444,
@@ -180,7 +210,7 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=YOopctZnChU",
-      "engagement_rate": 1.98,
+      "engagement_rate": 1.97,
       "comment_rate": 0.168,
       "video_length_type": "Medium",
       "content_tags": [
@@ -191,7 +221,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 3.95,
+      "view_to_sub_ratio": 3.96,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -200,9 +230,9 @@
       "title": "iOS 27 Beta - 200+ Changes/Features!",
       "description": "In this comprehensive hands-on walkthrough, we cover OVER 200 new features in the iOS 27 beta! From the completely revamped Siri AI with world knowledge to Liquid Glass design refinements, faster performance, advanced photo editing tools, and so much more. Do you know them all?\n\n⬇️ Best Apple Deals ⬇️\n🎧 AirPods Max 2 - https://geni.us/oZP4LQp (Was $549, Now $399!!)\n⌚ Apple Watch Series 11 - https://geni.us/dn49 (Was $399, Now $299)\n🧭 Apple Watch Ultra 3 - https://geni.us/TMiRQn (Was $799, Now $6",
       "thumbnail_url": "https://i.ytimg.com/vi/3KfFrp2MFoM/maxresdefault.jpg",
-      "view_count": 22126,
-      "like_count": 668,
-      "comment_count": 53,
+      "view_count": 24005,
+      "like_count": 689,
+      "comment_count": 55,
       "duration": "1:25:58",
       "duration_secs": 5158,
       "published_at": "2026-06-23T13:01:12Z",
@@ -212,8 +242,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=3KfFrp2MFoM",
-      "engagement_rate": 3.26,
-      "comment_rate": 0.24,
+      "engagement_rate": 3.1,
+      "comment_rate": 0.229,
       "video_length_type": "Long",
       "content_tags": [
         "创作",
@@ -224,7 +254,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.33,
+      "view_to_sub_ratio": 2.53,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -233,8 +263,8 @@
       "title": "iOS 27 Beta 2 Just Fixed My Biggest Complaints",
       "description": "⬇️ Best Apple Deals ⬇️\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $399!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $299)\n🧭 Apple Watch Ultra 3 - https://amzn.to/3SztGbb (Was $799, Now $699)\n M5 MacBook Air - https://amzn.to/4oDhYZ6 (Was $1,099, Now $949)\n🚀 M5 MacBook Pro - https://amzn.to/4whGJgf (Was $1,699, Now $1,549)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $599, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\niOS 27 Beta 2 is he",
       "thumbnail_url": "https://i.ytimg.com/vi/pyuYLjC25SE/maxresdefault.jpg",
-      "view_count": 81328,
-      "like_count": 2433,
+      "view_count": 81754,
+      "like_count": 2442,
       "comment_count": 240,
       "duration": "12:08",
       "duration_secs": 728,
@@ -245,8 +275,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=pyuYLjC25SE",
-      "engagement_rate": 3.29,
-      "comment_rate": 0.295,
+      "engagement_rate": 3.28,
+      "comment_rate": 0.294,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -256,7 +286,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 8.57,
+      "view_to_sub_ratio": 8.61,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     },
@@ -265,9 +295,9 @@
       "title": "This Is the Coolest iPhone Case of 2026 | Extrem Inno",
       "description": "🔗 Check out the XTREM E-Ink Case: https://amzn.to/3QFUtlF\nWebsite Link: https://helloxtrem.com/products/xtrem-iphone-17-instant-custom-case?sca_ref=11577409.erVhmwkBuay \n\n⬇️ Best Apple Deals ⬇️\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $299)\n🧭 Apple Watch Ultra 3 - https://amzn.to/3SztGbb (Was $799, Now $699)\n M5 MacBook Air - https://amzn.to/4oDhYZ6 (Was $1,099, Now $949)\n🚀 M5 MacBook Pro - https://amzn.to/4whGJgf (Was $1,699, Now $1,549)\n📱 M4 iPad Air - https://amzn.to/4",
       "thumbnail_url": "https://i.ytimg.com/vi/a8hqaErOBCw/maxresdefault.jpg",
-      "view_count": 9920,
-      "like_count": 336,
-      "comment_count": 21,
+      "view_count": 10907,
+      "like_count": 366,
+      "comment_count": 23,
       "duration": "9:11",
       "duration_secs": 551,
       "published_at": "2026-06-22T15:30:34Z",
@@ -277,8 +307,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=a8hqaErOBCw",
-      "engagement_rate": 3.6,
-      "comment_rate": 0.212,
+      "engagement_rate": 3.57,
+      "comment_rate": 0.211,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -286,40 +316,8 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 1.05,
+      "view_to_sub_ratio": 1.15,
       "view_to_sub_tier": "频道一般",
-      "relevance_score": 60
-    },
-    {
-      "video_id": "Xx9I9a1lmbw",
-      "title": "iPhone 18 Pro Is Getting 6 HUGE Upgrades",
-      "description": "⬇️ Best Apple Deals ⬇️\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $299)\n🧭 Apple Watch Ultra 3 - https://amzn.to/3SztGbb (Was $799, Now $699)\n M5 MacBook Air - https://amzn.to/4oDhYZ6 (Was $1,099, Now $949)\n🚀 M5 MacBook Pro - https://amzn.to/4whGJgf (Was $1,699, Now $1,549)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $599, Now $559)\n🎧 AirPods Max 2 - https://amzn.to/4vRPUDz (Was $549, Now $499)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\nThe iPhone 18 Pro lea",
-      "thumbnail_url": "https://i.ytimg.com/vi/Xx9I9a1lmbw/maxresdefault.jpg",
-      "view_count": 57748,
-      "like_count": 1322,
-      "comment_count": 194,
-      "duration": "8:25",
-      "duration_secs": 505,
-      "published_at": "2026-06-21T14:02:05Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=Xx9I9a1lmbw",
-      "engagement_rate": 2.63,
-      "comment_rate": 0.336,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 6.09,
-      "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     }
   ]
