@@ -8,13 +8,77 @@
   },
   "videos": [
     {
+      "video_id": "a6Eq_QnS5zA",
+      "title": "Apple Quietly Made the iPad SO Much Better | Everything New With iPadOS 27 Public Beta",
+      "description": "✍️ Try Paperlike today - https://paperlike.com/9to5/2607\n\n⬇️ Best Apple Deals ⬇️\n➡️ KUXIU D5 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🔗 iPhone 17 Pro: https://amzn.to/4eFBbWN\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - http",
+      "thumbnail_url": "https://i.ytimg.com/vi/a6Eq_QnS5zA/maxresdefault.jpg",
+      "view_count": 7296,
+      "like_count": 332,
+      "comment_count": 31,
+      "duration": "22:22",
+      "duration_secs": 1342,
+      "published_at": "2026-07-13T20:48:02Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=a6Eq_QnS5zA",
+      "engagement_rate": 4.98,
+      "comment_rate": 0.425,
+      "video_length_type": "Long",
+      "content_tags": [
+        "其他"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [
+        "AirPods"
+      ],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.77,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 60
+    },
+    {
+      "video_id": "LFURaQaRoR8",
+      "title": "Apple Just Declared War on OpenAI | Apple vs OpenAI Explained in 8 Minutes",
+      "description": "⬇️ Best Apple Deals ⬇️\n➡️ KUXIU D5 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🎧AirPods Pro 3 - https://amzn.to/4f8arNy\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🎧AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\nApple has official",
+      "thumbnail_url": "https://i.ytimg.com/vi/LFURaQaRoR8/maxresdefault.jpg",
+      "view_count": 8245,
+      "like_count": 407,
+      "comment_count": 42,
+      "duration": "8:02",
+      "duration_secs": 482,
+      "published_at": "2026-07-13T18:17:36Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=LFURaQaRoR8",
+      "engagement_rate": 5.45,
+      "comment_rate": 0.509,
+      "video_length_type": "Medium",
+      "content_tags": [
+        "其他"
+      ],
+      "video_type": "对比",
+      "brand_mentions": [
+        "AirPods"
+      ],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.87,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 60
+    },
+    {
       "video_id": "DY2W0NEmMg8",
       "title": "Overtime Episode 072: Apple Watch and the new Siri",
       "description": "Sponsored by Bitwarden: https://bit.ly/4xBMnLh - Check out Bitwarden, featuring secure password management, passkey support, end-to-end encryption, and seamless autofill across all devices.\n\nJeff and Fernando discuss the new Siri experience on Apple Watch, new Siri features on iOS 27, Apple Watch feature wish list, enhancements to Messages on iPhone, and the state of social media in 2026.\n\nGot questions, comments, or tips? Reach out! overtime@9to5mac.com\n\nThumbnail by: Michael Bower\nMusic by: Je",
       "thumbnail_url": "https://i.ytimg.com/vi/DY2W0NEmMg8/maxresdefault.jpg",
-      "view_count": 2389,
-      "like_count": 99,
-      "comment_count": 17,
+      "view_count": 3650,
+      "like_count": 126,
+      "comment_count": 18,
       "duration": "37:26",
       "duration_secs": 2246,
       "published_at": "2026-07-12T13:03:47Z",
@@ -24,8 +88,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=DY2W0NEmMg8",
-      "engagement_rate": 4.86,
-      "comment_rate": 0.712,
+      "engagement_rate": 3.95,
+      "comment_rate": 0.493,
       "video_length_type": "Long",
       "content_tags": [
         "其他Apple"
@@ -33,7 +97,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.25,
+      "view_to_sub_ratio": 0.38,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 30
     },
@@ -42,9 +106,9 @@
       "title": "Apple Card Is Changing Forever — Here's What You Need to Know",
       "description": "📱 App Mentioned\n⭐ CardPointers: https://cardpointers.com/fern93\n\n⬇️ Best Apple Deals ⬇️\n➡️ KUXIU D5 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\n💳 Apple Card is officially moving from Goldman Sachs",
       "thumbnail_url": "https://i.ytimg.com/vi/rzExvi9Gl8c/maxresdefault.jpg",
-      "view_count": 89927,
-      "like_count": 3406,
-      "comment_count": 226,
+      "view_count": 98129,
+      "like_count": 3666,
+      "comment_count": 241,
       "duration": "8:28",
       "duration_secs": 508,
       "published_at": "2026-07-10T18:44:55Z",
@@ -54,8 +118,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=rzExvi9Gl8c",
-      "engagement_rate": 4.04,
-      "comment_rate": 0.251,
+      "engagement_rate": 3.98,
+      "comment_rate": 0.246,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -65,18 +129,18 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 9.48,
-      "view_to_sub_tier": "频道高分",
+      "view_to_sub_ratio": 10.34,
+      "view_to_sub_tier": "频道爆款",
       "relevance_score": 60
     },
     {
       "video_id": "JMfnM9M0gR4",
-      "title": "iMessage on iOS 27 Just Got WAY Better | Here's How!",
+      "title": "iMessage on iOS 27 Public Beta Just Got WAY Better | Here's How!",
       "description": "⬇️ Best Apple Deals ⬇️\n➡️ KUXIU D5 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🔗 iPhone 17 Pro: https://amzn.to/4eFBbWN\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\nApple Intelligenc",
       "thumbnail_url": "https://i.ytimg.com/vi/JMfnM9M0gR4/maxresdefault.jpg",
-      "view_count": 83150,
-      "like_count": 2054,
-      "comment_count": 185,
+      "view_count": 87986,
+      "like_count": 2135,
+      "comment_count": 199,
       "duration": "13:19",
       "duration_secs": 799,
       "published_at": "2026-07-09T15:00:43Z",
@@ -86,8 +150,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=JMfnM9M0gR4",
-      "engagement_rate": 2.69,
-      "comment_rate": 0.222,
+      "engagement_rate": 2.65,
+      "comment_rate": 0.226,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -97,18 +161,18 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 8.76,
+      "view_to_sub_ratio": 9.27,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     },
     {
       "video_id": "wP0YXCO61aM",
-      "title": "Apple Maps Is Finally Better Than Google Maps with iOS 27",
+      "title": "Apple Maps Is Finally Better Than Google Maps in iOS 27 Public Beta",
       "description": "⬇️ Best Apple Deals ⬇️\n➡️ KUXIU D5 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🔗 iPhone 17 Pro: https://amzn.to/4eFBbWN\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\n🗺️ Apple Maps jus",
       "thumbnail_url": "https://i.ytimg.com/vi/wP0YXCO61aM/maxresdefault.jpg",
-      "view_count": 68636,
-      "like_count": 2121,
-      "comment_count": 252,
+      "view_count": 71112,
+      "like_count": 2165,
+      "comment_count": 259,
       "duration": "10:53",
       "duration_secs": 653,
       "published_at": "2026-07-07T18:00:11Z",
@@ -118,8 +182,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=wP0YXCO61aM",
-      "engagement_rate": 3.46,
-      "comment_rate": 0.367,
+      "engagement_rate": 3.41,
+      "comment_rate": 0.364,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -129,7 +193,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 7.23,
+      "view_to_sub_ratio": 7.49,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     },
@@ -138,8 +202,8 @@
       "title": "iVANKY FusionDock Ultra: The Thunderbolt 5 dock built for Mac workflows [Sponsored]",
       "description": "Get it here: https://bit.ly/3S6pb7R\n\nThe iVANKY FusionDock Ultra is one of the most powerful Thunderbolt 5 docks I’ve tested for Apple Silicon Macs. With native quad-display support, 10Gb Ethernet, 140W charging, and 26 total ports, this dock is built specifically for creators, editors, and power users running demanding workflows every single day.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UChjRM_qQAaOAiLNbOGbYcRA/join\n\n## Subscribe to our Podcast\nhttps://www.yout",
       "thumbnail_url": "https://i.ytimg.com/vi/wqXV5CFN8oA/maxresdefault.jpg",
-      "view_count": 4192,
-      "like_count": 142,
+      "view_count": 4310,
+      "like_count": 144,
       "comment_count": 21,
       "duration": "5:32",
       "duration_secs": 332,
@@ -150,8 +214,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=wqXV5CFN8oA",
-      "engagement_rate": 3.89,
-      "comment_rate": 0.501,
+      "engagement_rate": 3.83,
+      "comment_rate": 0.487,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -159,7 +223,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.44,
+      "view_to_sub_ratio": 0.45,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 20
     },
@@ -168,8 +232,8 @@
       "title": "Apple Just Released iOS 27 Beta 3! Here's Everything New!",
       "description": "⬇️ Best Apple Deals ⬇️\n➡️ KUXIU D5 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🔗 iPhone 17 Pro: https://amzn.to/4eFBbWN\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\niOS 27 Beta 3 is ",
       "thumbnail_url": "https://i.ytimg.com/vi/N-_XAlMCZ6E/maxresdefault.jpg",
-      "view_count": 58389,
-      "like_count": 1773,
+      "view_count": 58518,
+      "like_count": 1777,
       "comment_count": 159,
       "duration": "9:28",
       "duration_secs": 568,
@@ -191,7 +255,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 6.15,
+      "view_to_sub_ratio": 6.17,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     },
@@ -200,7 +264,7 @@
       "title": "Overtime Episode 071: A weird time for Apple",
       "description": "Fernando and Jeff discuss CarPlay on iOS 27, experience with the Rivian R1S on a roadtrip, why you might consider buying an iPhone 17 Pro right now instead of waiting for the iPhone 18 Pro, Apple Wallet and Amex Membership Rewards points, Apple's dramatic price increases, and the idea of getting more out of older technology.\n\nGot questions, comments, or tips? Reach out! overtime@9to5mac.com\n\nThumbnail by: Michael Bower\nMusic by: Jeff Benjamin - https://music.apple.com/us/album/a-different-type-o",
       "thumbnail_url": "https://i.ytimg.com/vi/V_nGrEsPmX4/maxresdefault.jpg",
-      "view_count": 2154,
+      "view_count": 2230,
       "like_count": 87,
       "comment_count": 11,
       "duration": "37:39",
@@ -212,8 +276,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=V_nGrEsPmX4",
-      "engagement_rate": 4.55,
-      "comment_rate": 0.511,
+      "engagement_rate": 4.39,
+      "comment_rate": 0.493,
       "video_length_type": "Long",
       "content_tags": [
         "其他Apple"
@@ -230,9 +294,9 @@
       "title": "The Best Apple Charging Accessories of 2026 (So Far)",
       "description": "🛒 Check out all of the chargers here:\n➡️ Sharge 170W Hyper Tower - https://amzn.to/4eIeLUP\n➡️ SolidSafe Air 5k - https://tidd.ly/4u77rrm\n➡️ Aulumu M10 - https://amzn.to/4vJUzYC\n➡️ Kuxiu D5 - https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n\nLooking for the best Apple charging accessories of 2026? In this video, I'm breaking down the four charging products I've been using the most throughout the first half of the year. Whether you need an ultra-thin MagSafe batte",
       "thumbnail_url": "https://i.ytimg.com/vi/eS52ezbAZPY/maxresdefault.jpg",
-      "view_count": 11633,
-      "like_count": 391,
-      "comment_count": 25,
+      "view_count": 11768,
+      "like_count": 395,
+      "comment_count": 26,
       "duration": "9:11",
       "duration_secs": 551,
       "published_at": "2026-07-05T13:00:05Z",
@@ -243,7 +307,7 @@
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=eS52ezbAZPY",
       "engagement_rate": 3.58,
-      "comment_rate": 0.215,
+      "comment_rate": 0.221,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -251,73 +315,9 @@
       "video_type": "推荐/Best",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 1.23,
+      "view_to_sub_ratio": 1.24,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 20
-    },
-    {
-      "video_id": "F9dHcaOQa50",
-      "title": "Apple's iPhone Ultra Just Got Its Biggest Confirmation Yet",
-      "description": "⬇️ Best Apple Deals ⬇️\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🔗 iPhone 17 Pro: https://amzn.to/4eFBbWN\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\nApple's foldable iPhone is looking more real than ever. 🚀\n\nA brand new report claims Apple has increased iPhone Ultra pro",
-      "thumbnail_url": "https://i.ytimg.com/vi/F9dHcaOQa50/maxresdefault.jpg",
-      "view_count": 30421,
-      "like_count": 789,
-      "comment_count": 155,
-      "duration": "7:22",
-      "duration_secs": 442,
-      "published_at": "2026-07-04T13:00:07Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=F9dHcaOQa50",
-      "engagement_rate": 3.1,
-      "comment_rate": 0.51,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 3.21,
-      "view_to_sub_tier": "频道一般",
-      "relevance_score": 60
-    },
-    {
-      "video_id": "5pJRlDrDoGg",
-      "title": "Apple FINALLY Fixed Mail in iOS 27! Here Is Everything New!",
-      "description": "⬇️ Best Apple Deals ⬇️\n⭐ CardPointers: https://cardpointers.com/fern93 (50% off!)\n🔗 iPhone 17 Pro: https://amzn.to/4eFBbWN\n🎧 AirPods Max 2 - https://amzn.to/4fWDAxn (Was $549, Now $499!!)\n⌚ Apple Watch Series 11 - https://amzn.to/4a68789 (Was $399, Now $329)\n📱 M4 iPad Air - https://amzn.to/4vqnVeI (Was $749, Now $559)\n🎵 AirPods 4 - https://amzn.to/4xD8n8y (Was $129, Now $99)\n\nApple Mail just got its biggest upgrade in years with iOS 27. While the app may look mostly the same, Apple has completel",
-      "thumbnail_url": "https://i.ytimg.com/vi/5pJRlDrDoGg/maxresdefault.jpg",
-      "view_count": 110523,
-      "like_count": 2718,
-      "comment_count": 260,
-      "duration": "10:59",
-      "duration_secs": 659,
-      "published_at": "2026-07-03T13:00:04Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=5pJRlDrDoGg",
-      "engagement_rate": 2.69,
-      "comment_rate": 0.235,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 11.65,
-      "view_to_sub_tier": "频道爆款",
-      "relevance_score": 60
     }
   ]
 }
