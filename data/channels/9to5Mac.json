@@ -8,13 +8,75 @@
   },
   "videos": [
     {
+      "video_id": "mcz5ZnH_YPY",
+      "title": "Overtime Episode 077: Smart glasses are the future",
+      "description": "Even Realities CEO, Will Wang, joins Overtime to talk about his history with Apple, why Silicon Valley is no longer the place for hardware innovations, insights into the Apple supply chain and China, the Even Realities G2 smart glasses, privacy and the challenges that smart glasses face, and why smart glasses are the future of tech.\n\n## Links\nhttps://www.evenrealities.com/smart-glasses\n\n## Subscribe to 9to5Mac Overtime Podcast\nhttps://www.youtube.com/playlist?list=PLP3DOW_eX2AwO_whrINOi-TuAdgsSR",
+      "thumbnail_url": "https://i.ytimg.com/vi/mcz5ZnH_YPY/maxresdefault.jpg",
+      "view_count": 463,
+      "like_count": 31,
+      "comment_count": 8,
+      "duration": "51:45",
+      "duration_secs": 3105,
+      "published_at": "2026-08-13T20:54:13Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=mcz5ZnH_YPY",
+      "engagement_rate": 8.42,
+      "comment_rate": 1.728,
+      "video_length_type": "Long",
+      "content_tags": [
+        "其他"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.05,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 20
+    },
+    {
+      "video_id": "EU9ltl839Ak",
+      "title": "Apple Wallet’s Next Big Upgrade Has Been Leaked, Here's What You NEED To Know!",
+      "description": "👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n🖥️ LG UltraFine 6k: https://amzn.to/4bHc3gv (New Low $1099!)\n⌚ Apple Watch Series 11: https://amzn.to/4hUGNOM (Starts at $299!)\n🏔️ Apple Watch Ultra 3: https://amzn.to/4fYT6ac (Starts at $699!)\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\n💳 CardPointers: htt",
+      "thumbnail_url": "https://i.ytimg.com/vi/EU9ltl839Ak/maxresdefault.jpg",
+      "view_count": 16445,
+      "like_count": 710,
+      "comment_count": 53,
+      "duration": "9:27",
+      "duration_secs": 567,
+      "published_at": "2026-08-13T15:39:32Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=EU9ltl839Ak",
+      "engagement_rate": 4.64,
+      "comment_rate": 0.322,
+      "video_length_type": "Medium",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [
+        "AirPods"
+      ],
+      "hot_level": "",
+      "view_to_sub_ratio": 1.73,
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 30
+    },
+    {
       "video_id": "9bJHySDz__4",
       "title": "These Ultra-Slim Tech Accessories Feel Impossible",
       "description": "🛒 PRODUCTS FEATURED:\n📱 Ohsnap Snap Grip Stand: https://www.ohsnap.com/9to5 ($39.99)\n🛡️ PITAKA Edge Case: https://www.ipitaka.com/products/happiness-rides-in-phone-cases?ref=821CRwDs ($69.99)\n🔋 BMX SolidSafe Air 5K: https://tidd.ly/4u77rrm ($59.99)\n💳 KeySmart SmartCard Gen 3: https://amzn.to/4bO5cBP ($31.99)\n⚡ KUXIU X40 Turbo 3-in-1 Charging Stand: https://kuxiu.co/products/kuxiu-x40-turbo-stand-cosmic-orange?ref=bjyfkxdn ($78.99)\n💾 Lexar ES5 Magnetic Portable SSD — 1TB: https://amzn.to/3S6lEqj (",
       "thumbnail_url": "https://i.ytimg.com/vi/9bJHySDz__4/maxresdefault.jpg",
-      "view_count": 3234,
-      "like_count": 192,
-      "comment_count": 12,
+      "view_count": 11259,
+      "like_count": 439,
+      "comment_count": 22,
       "duration": "12:09",
       "duration_secs": 729,
       "published_at": "2026-08-12T18:33:21Z",
@@ -24,8 +86,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=9bJHySDz__4",
-      "engagement_rate": 6.31,
-      "comment_rate": 0.371,
+      "engagement_rate": 4.09,
+      "comment_rate": 0.195,
       "video_length_type": "Medium",
       "content_tags": [
         "其他"
@@ -33,8 +95,8 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.34,
-      "view_to_sub_tier": "频道冷启",
+      "view_to_sub_ratio": 1.19,
+      "view_to_sub_tier": "频道一般",
       "relevance_score": 20
     },
     {
@@ -42,9 +104,9 @@
       "title": "iPhone 18 Pro Will Have 3 Upgrades That Have Been Rumored For Years",
       "description": "👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n🖥️ LG UltraFine 6k: https://amzn.to/4bHc3gv (New Low $1099!)\n⌚ Apple Watch Series 11: https://amzn.to/4hUGNOM (Starts at $299!)\n🏔️ Apple Watch Ultra 3: https://amzn.to/4fYT6ac (Starts at $699!)\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\n💳 CardPointers: htt",
       "thumbnail_url": "https://i.ytimg.com/vi/x8CCEiXUwVQ/maxresdefault.jpg",
-      "view_count": 72184,
-      "like_count": 1844,
-      "comment_count": 271,
+      "view_count": 100577,
+      "like_count": 2271,
+      "comment_count": 334,
       "duration": "9:16",
       "duration_secs": 556,
       "published_at": "2026-08-11T17:30:14Z",
@@ -54,8 +116,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=x8CCEiXUwVQ",
-      "engagement_rate": 2.93,
-      "comment_rate": 0.375,
+      "engagement_rate": 2.59,
+      "comment_rate": 0.332,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -65,8 +127,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 7.61,
-      "view_to_sub_tier": "频道高分",
+      "view_to_sub_ratio": 10.6,
+      "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
     {
@@ -74,9 +136,9 @@
       "title": "A 32-Inch 6K Mac Monitor for $1,099… What’s the Catch?",
       "description": "🖥️ LG UltraFine 6k: https://amzn.to/4bHc3gv (New Low $1099!)\n👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n⌚ Apple Watch Series 11: https://amzn.to/4hUGNOM (Starts at $299!)\n🏔️ Apple Watch Ultra 3: https://amzn.to/4fYT6ac (Starts at $699!)\n📱 iPhone 17 Pro: https://amzn.to/4wikhmG\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: ht",
       "thumbnail_url": "https://i.ytimg.com/vi/c-oaPLxRUTA/maxresdefault.jpg",
-      "view_count": 13548,
-      "like_count": 395,
-      "comment_count": 50,
+      "view_count": 18340,
+      "like_count": 477,
+      "comment_count": 58,
       "duration": "8:27",
       "duration_secs": 507,
       "published_at": "2026-08-11T13:17:45Z",
@@ -86,8 +148,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=c-oaPLxRUTA",
-      "engagement_rate": 3.28,
-      "comment_rate": 0.369,
+      "engagement_rate": 2.92,
+      "comment_rate": 0.316,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -97,7 +159,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 1.43,
+      "view_to_sub_ratio": 1.93,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -106,9 +168,9 @@
       "title": "iOS 27 Beta 5 Has More Changes Than Expected! Here are 15+ New Changes",
       "description": "👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n⌚ Apple Watch Series 11: https://amzn.to/4hUGNOM (Starts at $299!)\n🏔️ Apple Watch Ultra 3: https://amzn.to/4fYT6ac (Starts at $699!)\n📱 iPhone 17 Pro: https://amzn.to/4wikhmG\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\nBest Travel USB-C Hub: https://amzn.to/",
       "thumbnail_url": "https://i.ytimg.com/vi/e-kh1NI44Kc/maxresdefault.jpg",
-      "view_count": 43648,
-      "like_count": 1525,
-      "comment_count": 125,
+      "view_count": 45050,
+      "like_count": 1547,
+      "comment_count": 126,
       "duration": "10:40",
       "duration_secs": 640,
       "published_at": "2026-08-10T19:28:44Z",
@@ -118,8 +180,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=e-kh1NI44Kc",
-      "engagement_rate": 3.78,
-      "comment_rate": 0.286,
+      "engagement_rate": 3.71,
+      "comment_rate": 0.28,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -129,7 +191,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 4.6,
+      "view_to_sub_ratio": 4.75,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -138,9 +200,9 @@
       "title": "Did Apple Just Make Its Own Credit Card Obsolete? | Apple Upgrade vs Apple Card",
       "description": "💳 CardPointers: https://cardpointers.com/fern93\n👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n⌚ Apple Watch Series 11: https://amzn.to/4hUGNOM (Starts at $299!)\n🏔️ Apple Watch Ultra 3: https://amzn.to/4fYT6ac (Starts at $699!)\n📱 iPhone 17 Pro: https://amzn.to/4wikhmG\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to",
       "thumbnail_url": "https://i.ytimg.com/vi/Tj6sK5lftRY/maxresdefault.jpg",
-      "view_count": 31462,
-      "like_count": 865,
-      "comment_count": 126,
+      "view_count": 33577,
+      "like_count": 913,
+      "comment_count": 130,
       "duration": "9:54",
       "duration_secs": 594,
       "published_at": "2026-08-10T15:30:33Z",
@@ -150,8 +212,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Tj6sK5lftRY",
-      "engagement_rate": 3.15,
-      "comment_rate": 0.4,
+      "engagement_rate": 3.11,
+      "comment_rate": 0.387,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -161,7 +223,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 3.32,
+      "view_to_sub_ratio": 3.54,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -170,9 +232,9 @@
       "title": "This Might Be the BEST iPhone Gaming Controller Ever — MCON Review",
       "description": "🎮 Ohsnap MCON: https://www.ohsnap.com/9to5 (only $85 with this link)\n👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $199)\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\nBest Travel USB-C Hub: https://amzn.to/4bh12Ck \n💳 CardPointers: https://cardpointers.com/fern93\n\nThe Ohsnap MCON might be one of the best mobile",
       "thumbnail_url": "https://i.ytimg.com/vi/Lnbk4nLa6ik/maxresdefault.jpg",
-      "view_count": 7700,
-      "like_count": 250,
-      "comment_count": 42,
+      "view_count": 8569,
+      "like_count": 257,
+      "comment_count": 49,
       "duration": "11:26",
       "duration_secs": 686,
       "published_at": "2026-08-09T13:16:44Z",
@@ -182,8 +244,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Lnbk4nLa6ik",
-      "engagement_rate": 3.79,
-      "comment_rate": 0.545,
+      "engagement_rate": 3.57,
+      "comment_rate": 0.572,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -193,7 +255,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 0.81,
+      "view_to_sub_ratio": 0.9,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 30
     },
@@ -202,9 +264,9 @@
       "title": "Apple’s Next Price Hike Is Going to Hurt",
       "description": "👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n⌚ Apple Watch Series 11: https://amzn.to/4hUGNOM (Starts at $299!)\n🏔️ Apple Watch Ultra 3: https://amzn.to/4fYT6ac (Starts at $699!)\n📱 iPhone 17 Pro: https://amzn.to/4wikhmG\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\nBest Travel USB-C Hub: https://amzn.to/",
       "thumbnail_url": "https://i.ytimg.com/vi/F-T5KCSoDMg/maxresdefault.jpg",
-      "view_count": 42796,
-      "like_count": 1342,
-      "comment_count": 272,
+      "view_count": 43463,
+      "like_count": 1360,
+      "comment_count": 277,
       "duration": "10:30",
       "duration_secs": 630,
       "published_at": "2026-08-08T13:00:24Z",
@@ -215,7 +277,7 @@
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=F-T5KCSoDMg",
       "engagement_rate": 3.77,
-      "comment_rate": 0.636,
+      "comment_rate": 0.637,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -225,7 +287,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 4.51,
+      "view_to_sub_ratio": 4.58,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -234,8 +296,8 @@
       "title": "Overtime Episode 076: Native retro games on iPhone",
       "description": "Fernando discusses his Pokémon 3D Mod on Mac, and Jeff shares his experience running a native port of Mario Kart 64 on iPhone. The guys also discuss why tech can feel less exciting than it used to, and their thoughts on using the same device for many years. \n\n## Links\nhttps://youtu.be/_01Sm2lWwgM\nSpaghettiKart: https://github.com/HarbourMasters/SpaghettiKart\n\n## Subscribe to 9to5Mac Overtime Podcast\nhttps://www.youtube.com/playlist?list=PLP3DOW_eX2AwO_whrINOi-TuAdgsSR83i\nhttps://podcasts.apple.c",
       "thumbnail_url": "https://i.ytimg.com/vi/dhGuGvmnMms/maxresdefault.jpg",
-      "view_count": 3300,
-      "like_count": 77,
+      "view_count": 3430,
+      "like_count": 79,
       "comment_count": 15,
       "duration": "33:33",
       "duration_secs": 2013,
@@ -246,8 +308,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=dhGuGvmnMms",
-      "engagement_rate": 2.79,
-      "comment_rate": 0.455,
+      "engagement_rate": 2.74,
+      "comment_rate": 0.437,
       "video_length_type": "Long",
       "content_tags": [
         "其他Apple"
@@ -255,72 +317,8 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 0.35,
+      "view_to_sub_ratio": 0.36,
       "view_to_sub_tier": "频道冷启",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "KG9kgdyPrXA",
-      "title": "Your iPhone Lock Screen Just Got WAY Better in iOS 27",
-      "description": "👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $189)\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\nBest Travel USB-C Hub: https://amzn.to/4bh12Ck \n💳 CardPointers: https://cardpointers.com/fern93\n\niOS 27 brings even more customization to your iPhone’s Lock Screen! In this video, I’m breaking down five new featur",
-      "thumbnail_url": "https://i.ytimg.com/vi/KG9kgdyPrXA/maxresdefault.jpg",
-      "view_count": 70229,
-      "like_count": 1829,
-      "comment_count": 95,
-      "duration": "8:45",
-      "duration_secs": 525,
-      "published_at": "2026-08-06T15:01:03Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=KG9kgdyPrXA",
-      "engagement_rate": 2.74,
-      "comment_rate": 0.135,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 7.4,
-      "view_to_sub_tier": "频道高分",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "EEj43ssXVAY",
-      "title": "Apple Is Saving the Best iOS 27 Features for Later",
-      "description": "👉 Airpods Pro 3: https://amzn.to/4hzbUQ3 (New Low $199)\n➡️ Kuxiu D5 3 in 1 Charger: https://kuxiu.co/collections/qi2-2/products/kuxiu-d5-charging-station?ref=bjyfkxdn\n🔋 Best Ultra Slim MagSafe Charger: https://tidd.ly/4u77rrm \n🔋Best Travel Power Bank Under $80!: https://amzn.to/4yufUHA\nBest Travel USB-C Hub: https://amzn.to/4bh12Ck \n💳 CardPointers: https://cardpointers.com/fern93\n\niOS 27 is already packed with new features, but Apple may still have a few major upgrades waiting in the wings. Acco",
-      "thumbnail_url": "https://i.ytimg.com/vi/EEj43ssXVAY/maxresdefault.jpg",
-      "view_count": 41316,
-      "like_count": 1326,
-      "comment_count": 105,
-      "duration": "12:05",
-      "duration_secs": 725,
-      "published_at": "2026-08-05T14:12:39Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=EEj43ssXVAY",
-      "engagement_rate": 3.46,
-      "comment_rate": 0.254,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "推荐/Best",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 4.35,
-      "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     }
   ]
