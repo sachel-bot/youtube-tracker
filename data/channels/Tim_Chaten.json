@@ -8,11 +8,41 @@
   },
   "videos": [
     {
+      "video_id": "Rq63O44NbDE",
+      "title": "Traveling with the Vision Pro with Riley Hill (Vision Pros - 0075)",
+      "description": "Riley Hill is on the podcast to discuss his recent trip with the Apple Vision Pro. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
+      "thumbnail_url": "https://i.ytimg.com/vi/Rq63O44NbDE/maxresdefault_live.jpg",
+      "view_count": 0,
+      "like_count": 0,
+      "comment_count": 0,
+      "duration": "",
+      "duration_secs": 0,
+      "published_at": "2026-09-17T01:15:16Z",
+      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
+      "channel_name": "Tim Chaten",
+      "channel_youtube_title": "Tim Chaten",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 1710,
+      "video_url": "https://www.youtube.com/watch?v=Rq63O44NbDE",
+      "engagement_rate": 0.0,
+      "comment_rate": 0.0,
+      "video_length_type": "Shorts",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.0,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 30
+    },
+    {
       "video_id": "rpm2hlb-3_g",
       "title": "M6 Chip and the M1 in 2026 (iPad Pros - 0257)",
       "description": "Riley Hill and Tim Chaten discuss the new M6 chip and how the M1 iPad Pro holds up in 2026. \n\nEarly episodes are available by supporting the podcast at www.patreon.com/ipadpros. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.iPadPros.net. Feedback is welcomed at iPadProsPodcast@gmail.com.\n\nLinks:\n- https://slatepad.org/2026/08/23/is-m1-ipad-pro-still-good-2026/",
       "thumbnail_url": "https://i.ytimg.com/vi/rpm2hlb-3_g/maxresdefault.jpg",
-      "view_count": 81,
+      "view_count": 88,
       "like_count": 0,
       "comment_count": 0,
       "duration": "53:12",
@@ -33,8 +63,8 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 4.74,
-      "view_to_sub_tier": "频道一般",
+      "view_to_sub_ratio": 5.15,
+      "view_to_sub_tier": "频道高分",
       "relevance_score": 60
     },
     {
@@ -42,7 +72,7 @@
       "title": "Surprise and Shine with Matt Birchler (iPad Pros - 0258)",
       "description": "Matt and Tim talk about the Apple September 2026 event. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
       "thumbnail_url": "https://i.ytimg.com/vi/KTCfz3lts28/maxresdefault.jpg",
-      "view_count": 177,
+      "view_count": 182,
       "like_count": 1,
       "comment_count": 0,
       "duration": "1:34:35",
@@ -54,7 +84,7 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 1710,
       "video_url": "https://www.youtube.com/watch?v=KTCfz3lts28",
-      "engagement_rate": 0.56,
+      "engagement_rate": 0.55,
       "comment_rate": 0.0,
       "video_length_type": "Long",
       "content_tags": [
@@ -63,7 +93,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 10.35,
+      "view_to_sub_ratio": 10.64,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 60
     },
@@ -222,7 +252,7 @@
       "title": "Roxana Monica Nagy from Women in Spatial (Vision Pros - 0071)",
       "description": "Roxana Monica Nagy hosts the Women in Spatial podcast and recently attended her first WWDC.\n\nEarly episodes with chapter markers are available by supporting the podcast at www.visionpros.fm/patreon. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.VisionPros.fm. Feedback is welcomed at tim@visionpros.fm.\n\nLinks:\n- https://womeninspatial.com\n- https://www.linkedin.com/in/roxana-monica-nagy/\n- https://roxana-nagy.com/xploratoriu-how-we-turned-tedxbaiamare",
       "thumbnail_url": "https://i.ytimg.com/vi/zCssvHG8C4o/maxresdefault.jpg",
-      "view_count": 121,
+      "view_count": 123,
       "like_count": 1,
       "comment_count": 0,
       "duration": "1:10:08",
@@ -234,7 +264,7 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 1710,
       "video_url": "https://www.youtube.com/watch?v=zCssvHG8C4o",
-      "engagement_rate": 0.83,
+      "engagement_rate": 0.81,
       "comment_rate": 0.0,
       "video_length_type": "Long",
       "content_tags": [
@@ -243,7 +273,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 7.08,
+      "view_to_sub_ratio": 7.19,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 20
     },
@@ -276,36 +306,6 @@
       "view_to_sub_ratio": 0.7,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 60
-    },
-    {
-      "video_id": "KR_hm1H-04s",
-      "title": "Catching Up with Tyronne Leon-Fernandez (Vision Pros - 0070)",
-      "description": "Tyronne Leon-Fernandez from the YouTube channel, A Vision Experiment, is back on the podcast. He was last on the show on December 11th, 2025. We dive into the betas, and a bunch of other odd and end topics. \n\nEarly episodes are available by supporting the podcast at www.visionpros.fm/patreon. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.VisionPros.fm. Feedback is welcomed at tim@visionpros.fm.\n\nLinks:\n- https://www.youtube.com/@AVisionexperiment\n- h",
-      "thumbnail_url": "https://i.ytimg.com/vi/KR_hm1H-04s/maxresdefault.jpg",
-      "view_count": 33,
-      "like_count": 1,
-      "comment_count": 0,
-      "duration": "1:09:35",
-      "duration_secs": 4175,
-      "published_at": "2026-07-09T09:00:06Z",
-      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
-      "channel_name": "Tim Chaten",
-      "channel_youtube_title": "Tim Chaten",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 1710,
-      "video_url": "https://www.youtube.com/watch?v=KR_hm1H-04s",
-      "engagement_rate": 3.03,
-      "comment_rate": 0.0,
-      "video_length_type": "Long",
-      "content_tags": [
-        "其他"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [],
-      "hot_level": "",
-      "view_to_sub_ratio": 1.93,
-      "view_to_sub_tier": "频道一般",
-      "relevance_score": 20
     }
   ]
 }
