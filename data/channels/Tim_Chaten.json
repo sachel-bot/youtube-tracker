@@ -8,6 +8,36 @@
   },
   "videos": [
     {
+      "video_id": "wQSggK0cceY",
+      "title": "New Hardware from Meta and Stream with Riley Hill (Vision Pros - 0076)",
+      "description": "Riley Hill and Tim Chaten discuss the latest rumors around what is next for the Apple Vision Pro and chat about the new hardware announced from Meta and Steam. \n\nEarly episodes with chapter markers are available by supporting the podcast at www.visionpros.fm/patreon. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.VisionPros.fm. Feedback is welcomed at tim@visionpros.fm.\n\nLinks:\n- https://store.steampowered.com/hardware/steamframe\n- https://www.meta.co",
+      "thumbnail_url": "https://i.ytimg.com/vi/wQSggK0cceY/maxresdefault.jpg",
+      "view_count": 18,
+      "like_count": 0,
+      "comment_count": 0,
+      "duration": "57:30",
+      "duration_secs": 3450,
+      "published_at": "2026-10-01T15:31:31Z",
+      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
+      "channel_name": "Tim Chaten",
+      "channel_youtube_title": "Tim Chaten",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 1710,
+      "video_url": "https://www.youtube.com/watch?v=wQSggK0cceY",
+      "engagement_rate": 0.0,
+      "comment_rate": 0.0,
+      "video_length_type": "Long",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 1.05,
+      "view_to_sub_tier": "频道一般",
+      "relevance_score": 30
+    },
+    {
       "video_id": "11FrEoiuOFo",
       "title": "What is an iPad with Riley Hill (iPad Pros - 0259)",
       "description": "Riley and Tim discuss the iPhone Duo and how it will affect the iPad landscape. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
@@ -276,36 +306,6 @@
       "view_to_sub_ratio": 0.35,
       "view_to_sub_tier": "频道冷启",
       "relevance_score": 60
-    },
-    {
-      "video_id": "zCssvHG8C4o",
-      "title": "Roxana Monica Nagy from Women in Spatial (Vision Pros - 0071)",
-      "description": "Roxana Monica Nagy hosts the Women in Spatial podcast and recently attended her first WWDC.\n\nEarly episodes with chapter markers are available by supporting the podcast at www.visionpros.fm/patreon. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.VisionPros.fm. Feedback is welcomed at tim@visionpros.fm.\n\nLinks:\n- https://womeninspatial.com\n- https://www.linkedin.com/in/roxana-monica-nagy/\n- https://roxana-nagy.com/xploratoriu-how-we-turned-tedxbaiamare",
-      "thumbnail_url": "https://i.ytimg.com/vi/zCssvHG8C4o/maxresdefault.jpg",
-      "view_count": 127,
-      "like_count": 1,
-      "comment_count": 0,
-      "duration": "1:10:08",
-      "duration_secs": 4208,
-      "published_at": "2026-07-23T09:00:06Z",
-      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
-      "channel_name": "Tim Chaten",
-      "channel_youtube_title": "Tim Chaten",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 1710,
-      "video_url": "https://www.youtube.com/watch?v=zCssvHG8C4o",
-      "engagement_rate": 0.79,
-      "comment_rate": 0.0,
-      "video_length_type": "Long",
-      "content_tags": [
-        "其他"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [],
-      "hot_level": "",
-      "view_to_sub_ratio": 7.43,
-      "view_to_sub_tier": "频道高分",
-      "relevance_score": 20
     }
   ]
 }
