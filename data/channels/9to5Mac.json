@@ -8,13 +8,75 @@
   },
   "videos": [
     {
+      "video_id": "hRj5x4Vbbzk",
+      "title": "Overtime Episode 086: Apple's smart home reboot",
+      "description": "Sponsored by Rokform: https://glnk.io/6jzpz/9to5mac Get your iPhone 18 Pro and iPhone Duo cases today! Use code MAC2026 for 20% off!\n\nJeff and Fernando discuss Apple's smart home reboot, including the new $299 Apple HomeView, HomePod mini 2, Apple TV 4K, and Apple Home Collection products. \n\n## Subscribe to 9to5Mac Overtime Podcast\nhttps://www.youtube.com/playlist?list=PLP3DOW_eX2AwO_whrINOi-TuAdgsSR83i\nhttps://podcasts.apple.com/us/podcast/9to5mac-overtime/id1727206360\n\nGot questions, comments,",
+      "thumbnail_url": "https://i.ytimg.com/vi/hRj5x4Vbbzk/maxresdefault.jpg",
+      "view_count": 3186,
+      "like_count": 60,
+      "comment_count": 9,
+      "duration": "41:34",
+      "duration_secs": 2494,
+      "published_at": "2026-10-16T20:08:02Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=hRj5x4Vbbzk",
+      "engagement_rate": 2.17,
+      "comment_rate": 0.282,
+      "video_length_type": "Long",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.34,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 30
+    },
+    {
+      "video_id": "Ve4lotD__qc",
+      "title": "iPhone Duo vs iPhone 18 Pro Max: Don't Make the Wrong Choice!",
+      "description": "🎧 AirPods Pro 3: $199 - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: https://amzn.to/4hAbQz2\n🔋 Favorite Charging Cable: https://amzn.to/4hNznLw\n\niPhone Duo vs iPhone 18 Pro vs iPhone 18 Pro Max! Which one should you actually buy? Apple now has three very different flagship iPhones, and just because the iPhone Duo costs nearly $2,000 d",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ve4lotD__qc/maxresdefault.jpg",
+      "view_count": 54609,
+      "like_count": 448,
+      "comment_count": 143,
+      "duration": "10:03",
+      "duration_secs": 603,
+      "published_at": "2026-10-16T12:13:30Z",
+      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
+      "channel_name": "9to5Mac",
+      "channel_youtube_title": "9to5Mac",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 949000,
+      "video_url": "https://www.youtube.com/watch?v=Ve4lotD__qc",
+      "engagement_rate": 1.08,
+      "comment_rate": 0.262,
+      "video_length_type": "Medium",
+      "content_tags": [
+        "其他Apple"
+      ],
+      "video_type": "对比",
+      "brand_mentions": [
+        "AirPods"
+      ],
+      "hot_level": "",
+      "view_to_sub_ratio": 5.75,
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 30
+    },
+    {
       "video_id": "Vg_8nQ6dU5w",
       "title": "The New Apple TV 4K Looks Overpriced… Here’s Why It Isn’t",
       "description": "🏠 Apple HomeView: $299 - https://amzn.to/47i1cXK\n🏠 Apple HomeView (Wall-mounted): $299 - https://amzn.to/4s5FYWH\n📺 Apple TV 4K (4th Gen): $299 | Available November 13\n📺 Apple TV Remote - https://amzn.to/4yQQIuu\n🔊 HomePod mini 2: $149 | Available October 30\n🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: ",
       "thumbnail_url": "https://i.ytimg.com/vi/Vg_8nQ6dU5w/maxresdefault.jpg",
-      "view_count": 37923,
-      "like_count": 1007,
-      "comment_count": 315,
+      "view_count": 67232,
+      "like_count": 1557,
+      "comment_count": 437,
       "duration": "8:53",
       "duration_secs": 533,
       "published_at": "2026-10-15T16:23:24Z",
@@ -24,8 +86,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Vg_8nQ6dU5w",
-      "engagement_rate": 3.49,
-      "comment_rate": 0.831,
+      "engagement_rate": 2.97,
+      "comment_rate": 0.65,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -35,8 +97,8 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 4.0,
-      "view_to_sub_tier": "频道一般",
+      "view_to_sub_ratio": 7.08,
+      "view_to_sub_tier": "频道高分",
       "relevance_score": 30
     },
     {
@@ -44,9 +106,9 @@
       "title": "FIRST LOOK: Pokémon x Beats Pill is Absolutely WILD!",
       "description": "⚡ Pokémon x Beats Pill: https://howl.link/drcvocfs3wwl5\n🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: https://amzn.to/4hAbQz2\n🔋 Favorite Charging Cable: https://amzn.to/4hNznLw\n\nPokémon and Beats just teamed up to create one of the coolest special-edition Bluetooth speakers we've seen! The new Pokémon ",
       "thumbnail_url": "https://i.ytimg.com/vi/Epe00qf5pYs/maxresdefault.jpg",
-      "view_count": 21477,
-      "like_count": 363,
-      "comment_count": 44,
+      "view_count": 31566,
+      "like_count": 457,
+      "comment_count": 49,
       "duration": "5:49",
       "duration_secs": 349,
       "published_at": "2026-10-14T20:18:07Z",
@@ -56,8 +118,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Epe00qf5pYs",
-      "engagement_rate": 1.9,
-      "comment_rate": 0.205,
+      "engagement_rate": 1.6,
+      "comment_rate": 0.155,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -67,7 +129,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 2.26,
+      "view_to_sub_ratio": 3.33,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -76,9 +138,9 @@
       "title": "Apple Just REMOVED One of the Best New Features... | iOS 27.2 Beta 4",
       "description": "🏠 Apple HomeView: $299 - https://amzn.to/47i1cXK\n🏠 Apple HomeView (Wall-mounted): $299 - https://amzn.to/4s5FYWH\n📺 Apple TV 4K (4th Gen): $299 | Available November 13\n📺 Apple TV Remote - https://amzn.to/4yQQIuu\n🔊 HomePod mini 2: $149 | Available October 30\n🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: ",
       "thumbnail_url": "https://i.ytimg.com/vi/0Din9Vmwmz0/maxresdefault.jpg",
-      "view_count": 62348,
-      "like_count": 1080,
-      "comment_count": 88,
+      "view_count": 69309,
+      "like_count": 1159,
+      "comment_count": 101,
       "duration": "8:20",
       "duration_secs": 500,
       "published_at": "2026-10-14T18:20:41Z",
@@ -88,8 +150,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=0Din9Vmwmz0",
-      "engagement_rate": 1.87,
-      "comment_rate": 0.141,
+      "engagement_rate": 1.82,
+      "comment_rate": 0.146,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -99,7 +161,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 6.57,
+      "view_to_sub_ratio": 7.3,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 30
     },
@@ -108,9 +170,9 @@
       "title": "Apple Left Out Some BIG Details About HomeView...",
       "description": "🏠 Apple HomeView: $299 - https://amzn.to/47i1cXK\n🏠 Apple HomeView (Wall-mounted): $299 - https://amzn.to/4s5FYWH\n📺 Apple TV 4K (4th Gen): $299 | Available November 13\n📺 Apple TV Remote - https://amzn.to/4yQQIuu\n🔊 HomePod mini 2: $149 | Available October 30\n🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: ",
       "thumbnail_url": "https://i.ytimg.com/vi/lI6cAiT0_CY/maxresdefault.jpg",
-      "view_count": 250166,
-      "like_count": 3635,
-      "comment_count": 638,
+      "view_count": 266104,
+      "like_count": 3769,
+      "comment_count": 661,
       "duration": "12:58",
       "duration_secs": 778,
       "published_at": "2026-10-13T17:42:18Z",
@@ -120,8 +182,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=lI6cAiT0_CY",
-      "engagement_rate": 1.71,
-      "comment_rate": 0.255,
+      "engagement_rate": 1.66,
+      "comment_rate": 0.248,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -131,7 +193,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 26.36,
+      "view_to_sub_ratio": 28.04,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
@@ -140,9 +202,9 @@
       "title": "Apple's NEW Smart Home Lineup is Here — Everything You Need to Know!",
       "description": "🏠 Apple HomeView: $299 - https://amzn.to/47i1cXK\n🏠 Apple HomeView (Wall-mounted): $299 - https://amzn.to/4s5FYWH\n📺 Apple TV 4K (4th Gen): $299 | Available November 13\n📺 Apple TV Remote - https://amzn.to/4yQQIuu\n🔊 HomePod mini 2: $149 | Available October 30\n🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: ",
       "thumbnail_url": "https://i.ytimg.com/vi/XFf1pRtyJV8/maxresdefault.jpg",
-      "view_count": 373805,
-      "like_count": 3876,
-      "comment_count": 687,
+      "view_count": 379751,
+      "like_count": 3914,
+      "comment_count": 688,
       "duration": "11:25",
       "duration_secs": 685,
       "published_at": "2026-10-13T15:04:05Z",
@@ -152,8 +214,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=XFf1pRtyJV8",
-      "engagement_rate": 1.22,
-      "comment_rate": 0.184,
+      "engagement_rate": 1.21,
+      "comment_rate": 0.181,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -163,7 +225,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 39.39,
+      "view_to_sub_ratio": 40.02,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
@@ -172,9 +234,9 @@
       "title": "WATCH THIS Before You Pre-Order the iPhone Duo!",
       "description": "🎧 AirPods Pro 3: $199 - https://amzn.to/4za3q7i\n⚡ Best iPhone Duo 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best iPhone Duo 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️Favorite iPhone Duo Case: https://amzn.to/4B19ocv \n🔐 Best iPhone Duo Battery Pack: https://amzn.to/3Wn0CFF\n🔋 Favorite Charging Cable: https://amzn.to/4hNznLw\n\nThe iPhone Duo is almost here, and if you're planning to preorder Apple's first foldable iPhone, there are a few things you NEED to do first! In this video",
       "thumbnail_url": "https://i.ytimg.com/vi/Q8eOLjMh7DM/maxresdefault.jpg",
-      "view_count": 199331,
-      "like_count": 1914,
-      "comment_count": 302,
+      "view_count": 205114,
+      "like_count": 1925,
+      "comment_count": 306,
       "duration": "7:29",
       "duration_secs": 449,
       "published_at": "2026-10-12T16:22:59Z",
@@ -184,8 +246,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=Q8eOLjMh7DM",
-      "engagement_rate": 1.11,
-      "comment_rate": 0.152,
+      "engagement_rate": 1.09,
+      "comment_rate": 0.149,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -195,7 +257,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 21.0,
+      "view_to_sub_ratio": 21.61,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
@@ -204,8 +266,8 @@
       "title": "Apple Just Dropped a BOMBSHELL About October!",
       "description": "🎧 AirPods Pro 3: $199 - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: https://amzn.to/4hAbQz2\n🔋 Favorite Charging Cable: https://amzn.to/4hNznLw\n\nApple JUST announced its October 13 \"Welcome home\" event, but it looks like Apple has ANOTHER major event planned for October 27! According to Bloomberg's Mark Gurman, Apple is preparing to u",
       "thumbnail_url": "https://i.ytimg.com/vi/leQYMaV8Xb8/maxresdefault.jpg",
-      "view_count": 224655,
-      "like_count": 2580,
+      "view_count": 226971,
+      "like_count": 2597,
       "comment_count": 264,
       "duration": "9:29",
       "duration_secs": 569,
@@ -216,8 +278,8 @@
       "channel_group": "B_ipad_vertical",
       "channel_subscriber_count": 949000,
       "video_url": "https://www.youtube.com/watch?v=leQYMaV8Xb8",
-      "engagement_rate": 1.27,
-      "comment_rate": 0.118,
+      "engagement_rate": 1.26,
+      "comment_rate": 0.116,
       "video_length_type": "Medium",
       "content_tags": [
         "其他Apple"
@@ -227,7 +289,7 @@
         "AirPods"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 23.67,
+      "view_to_sub_ratio": 23.92,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 30
     },
@@ -236,7 +298,7 @@
       "title": "Overtime Episode 085: Here comes the HomePad",
       "description": "Join Jeff and Fernando as they dive into Apple's upcoming 'Welcome Home' event and the highly anticipated launch of the HomePad, Apple's new smart hub featuring a built-in speaker and display. They also discuss the latest iOS 27.2 code leaks, revealing fresh details about upcoming second-party smart home products from LG and more.\n\n## Subscribe to 9to5Mac Overtime Podcast\nhttps://www.youtube.com/playlist?list=PLP3DOW_eX2AwO_whrINOi-TuAdgsSR83i\nhttps://podcasts.apple.com/us/podcast/9to5mac-overti",
       "thumbnail_url": "https://i.ytimg.com/vi/ZeW1M5un3Rk/maxresdefault.jpg",
-      "view_count": 11048,
+      "view_count": 11109,
       "like_count": 103,
       "comment_count": 9,
       "duration": "30:51",
@@ -257,73 +319,9 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 1.16,
+      "view_to_sub_ratio": 1.17,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 20
-    },
-    {
-      "video_id": "5Kgz7hLPN6E",
-      "title": "iPhone 18 Pro Is Amazing… So Why Am I Disappointed?",
-      "description": "🔥 PITAKA iPhone 18 Series Case: https://link.ipitaka.com/4yo8CEP\n💰 Get 10% off with code IP1810 (official PITAKA site only)\n⚡ PITAKA Amazon Store — https://amzn.to/4jIqupd\n\n🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: https://amzn.to/4hAbQz2\n🔋 Favorite Charging Cable: https://amzn.to/4hNznLw\n\nI’ve bee",
-      "thumbnail_url": "https://i.ytimg.com/vi/5Kgz7hLPN6E/maxresdefault.jpg",
-      "view_count": 82527,
-      "like_count": 1124,
-      "comment_count": 155,
-      "duration": "12:17",
-      "duration_secs": 737,
-      "published_at": "2026-10-09T13:00:25Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=5Kgz7hLPN6E",
-      "engagement_rate": 1.55,
-      "comment_rate": 0.188,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 8.7,
-      "view_to_sub_tier": "频道高分",
-      "relevance_score": 30
-    },
-    {
-      "video_id": "SeNTd48nGO4",
-      "title": "Apple Just Announced a SURPRISE Event! (3 New Products)",
-      "description": "🎧 AirPods Pro 3: $179 (28% off) - https://amzn.to/4za3q7i\n⚡ Best 140W Charging Station: https://amzn.to/4yEoMtL\n🔌 Best 100W Wall Charger under $50: https://amzn.to/4e0zJ0h\n🌡️ Ecobee Smart Thermostat: https://amzn.to/4hBWx8U\n🔐 Avia Smart Lock: https://amzn.to/4hAbQz2\n🔋 Favorite Charging Cable: https://amzn.to/4hNznLw\n\nIn this video, we're breaking down everything to expect from Apple's upcoming October event, including the rumored Apple HomePad smart home display, HomePod mini 2, next-generation ",
-      "thumbnail_url": "https://i.ytimg.com/vi/SeNTd48nGO4/maxresdefault.jpg",
-      "view_count": 141112,
-      "like_count": 1891,
-      "comment_count": 157,
-      "duration": "9:22",
-      "duration_secs": 562,
-      "published_at": "2026-10-08T19:01:24Z",
-      "channel_id": "UChjRM_qQAaOAiLNbOGbYcRA",
-      "channel_name": "9to5Mac",
-      "channel_youtube_title": "9to5Mac",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 949000,
-      "video_url": "https://www.youtube.com/watch?v=SeNTd48nGO4",
-      "engagement_rate": 1.45,
-      "comment_rate": 0.111,
-      "video_length_type": "Medium",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "产品发布",
-      "brand_mentions": [
-        "AirPods"
-      ],
-      "hot_level": "",
-      "view_to_sub_ratio": 14.87,
-      "view_to_sub_tier": "频道爆款",
-      "relevance_score": 30
     }
   ]
 }
