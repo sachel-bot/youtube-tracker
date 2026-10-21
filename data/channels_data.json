@@ -1,6 +1,6 @@
 {
   "version": "v2",
-  "generated_at": "2026-10-20T11:15:59",
+  "generated_at": "2026-10-21T09:48:16",
   "channel_count": 56,
   "video_count": 0,
   "channels": [
@@ -569,227 +569,227 @@
   "failures": [
     {
       "channel": "Logitech",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU_d7EY0NrcEM715w2n6yVZg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061527c0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU_d7EY0NrcEM715w2n6yVZg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc67c0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "ESR Gear",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU0l7gkcUzyq14lZmbVltXyQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152f70>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU0l7gkcUzyq14lZmbVltXyQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6f70>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "ZAGG",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUQggDjOkSKeNOyiSECjrZJQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUQggDjOkSKeNOyiSECjrZJQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Fintie",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU0nUDSJKyKzi_aUQlnXFbMg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061525e0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU0nUDSJKyKzi_aUQlnXFbMg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc65e0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Inateck",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUlQxapZMcmbZ0s4VctlqDIA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163790>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUlQxapZMcmbZ0s4VctlqDIA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6790>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Arteck",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUxgK8sVkBcAD7iVjiZDa7Zg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163f40>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUxgK8sVkBcAD7iVjiZDa7Zg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6f40>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Doqo",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUZ0RmGp2lbarGXXp0FeIhuw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172700>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUZ0RmGp2lbarGXXp0FeIhuw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6700>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Apple",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUE_M8A5yxnLfW0KghEeajjw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152790>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUE_M8A5yxnLfW0KghEeajjw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6790>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Typecase",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUi95AmTqHN5nYlsjcvKlKtA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152d30>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUi95AmTqHN5nYlsjcvKlKtA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6d30>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "9to5Toys",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUJ7ITQSZ2K1H2w3ncJF-pRA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163a00>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUJ7ITQSZ2K1H2w3ncJF-pRA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6a00>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "AppleSauce",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUPbgeGvqyjZ8rXlyx6qEVxA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061630a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUPbgeGvqyjZ8rXlyx6qEVxA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd60a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Tom's Guide",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUik8xvfR6s8GQ74QNEGNzwg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172520>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUik8xvfR6s8GQ74QNEGNzwg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6520>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Gizmodo",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUxFmw3IUMDUC1Hh7qDjtjZQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172f10>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUxFmw3IUMDUC1Hh7qDjtjZQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6f10>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Engadget",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU-6OW5aJYBFM33zXQlBKPNA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163040>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU-6OW5aJYBFM33zXQlBKPNA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6040>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "The Verge",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUddiUEpeqJcYeBxX1IVBKvQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163c10>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUddiUEpeqJcYeBxX1IVBKvQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6c10>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "9to5Mac",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUhjRM_qQAaOAiLNbOGbYcRA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152a30>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUhjRM_qQAaOAiLNbOGbYcRA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6a30>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Christopher Lawley",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU8raOG7HXJoCUygx219fU4A&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x105568eb0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU8raOG7HXJoCUygx219fU4A&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109108eb0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Tim Chaten",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUPq0Xj9HbOXSpEpKiX0brnA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172670>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUPq0Xj9HbOXSpEpKiX0brnA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6670>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "MKBHD",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUBJycsmduvYEL83R_U4JriQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061729a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUBJycsmduvYEL83R_U4JriQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce69a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "iJustine",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUey_c7U86mJGz1VJWH5CYPA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172820>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUey_c7U86mJGz1VJWH5CYPA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6820>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Linus Tech Tips",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUXuqSBlHAE6Xw-yeJA0Tunw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10611a640>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUXuqSBlHAE6Xw-yeJA0Tunw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109c8e640>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Dave Lee",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUVYamHliCI9rw1tHR1xbkfw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152ac0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUVYamHliCI9rw1tHR1xbkfw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6ac0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Snazzy Labs",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUO2x-p9gg9TLKneXlibGR7w&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163b80>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUO2x-p9gg9TLKneXlibGR7w&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6b80>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Studyquill",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU-ZQaezPlUTe94-7buWtIfA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163760>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU-ZQaezPlUTe94-7buWtIfA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6760>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "UnJaded Jade",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU4-uObu-mfafJyxxZFEwbvQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106185490>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU4-uObu-mfafJyxxZFEwbvQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cf8490>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Ruby Granger",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU6a8lp6vaCMhUVXPyynhjUA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163730>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU6a8lp6vaCMhUVXPyynhjUA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6730>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Ali Abdaal",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUoOae5nYA7VqaXzerajD0lg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUoOae5nYA7VqaXzerajD0lg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Thomas Frank",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUG-KntY7aVnIGXYEBQvmBAQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152b20>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUG-KntY7aVnIGXYEBQvmBAQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6b20>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Studytee",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUc1QflC90Nkf_SDBZwJScDQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163e50>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUc1QflC90Nkf_SDBZwJScDQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6e50>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "The Cottage Fairy",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUKx5lHJ6Fr5mbT4TYVLh6ng&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061722e0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUKx5lHJ6Fr5mbT4TYVLh6ng&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce62e0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Tom Solid",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU8qxhdxV0U2NQ9vinFffDJQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172f70>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU8qxhdxV0U2NQ9vinFffDJQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6f70>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Brad Colbow",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUlozNP-QPyVatzpGKC25s0A&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061722e0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUlozNP-QPyVatzpGKC25s0A&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce62e0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Procreate",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUU88WY0qX2bzDjjOLOj-Gng&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172cd0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUU88WY0qX2bzDjjOLOj-Gng&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6cd0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Sara Dietschy",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU3fg6pL63upkXCc0T203wVg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152880>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU3fg6pL63upkXCc0T203wVg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6880>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Peter McKinnon",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU3DkFux8Iv-aYnTRWzwaiBA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163dc0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU3DkFux8Iv-aYnTRWzwaiBA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6dc0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Christine Le",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUvaslozYkHmrCU-vUaXZ9SQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163820>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUvaslozYkHmrCU-vUaXZ9SQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6820>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Joan Kim",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUmPgDOHAAM4lmNlU4CcuMYw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061850a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUmPgDOHAAM4lmNlU4CcuMYw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cf80a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Casey Neistat",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUtinbF-Q-fVthA0qrFQTgXQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163850>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUtinbF-Q-fVthA0qrFQTgXQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6850>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Mariana Vieira",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUEHp_b02I0GvTYCBPX_0w1g&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUEHp_b02I0GvTYCBPX_0w1g&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Lisa Bardot (Bardot Brush)",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUSNvnDVDjyfr8zKZMGcjvlg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152c70>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUSNvnDVDjyfr8zKZMGcjvlg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6c70>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Federico Viticci (MacStories)",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUYwEmRci4vGt2w1UMcyUHhw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172850>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUYwEmRci4vGt2w1UMcyUHhw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6850>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Matt D'Avella",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUJ24N4O0bP7LGLBDvye7oCA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172100>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUJ24N4O0bP7LGLBDvye7oCA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6100>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Pat Flynn",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUGk1LitxAZVnqQn0_nt5qxw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061856d0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUGk1LitxAZVnqQn0_nt5qxw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cf86d0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Karl Conrad",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU0MYNOsIrz6jmXfIMERyRHQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172250>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU0MYNOsIrz6jmXfIMERyRHQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6250>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Erik Conover",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUu8ucb1LRJd1gwwXutYDgTg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172ca0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUu8ucb1LRJd1gwwXutYDgTg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6ca0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Pick Up Limes",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUq2E1mIwUKMWzCA4liA_XGQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061526a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUq2E1mIwUKMWzCA4liA_XGQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc66a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Lavendaire",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU-ga3onzHSJFAGsIebtVeBg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU-ga3onzHSJFAGsIebtVeBg&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6ee0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Caroline Winkler",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU8JOgFXp-I3YV6dsKqqQdUw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163070>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU8JOgFXp-I3YV6dsKqqQdUw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6070>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "WorkSpaceLab",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUn8PsVwhNvP9qK4R2JDWvWA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061859a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUn8PsVwhNvP9qK4R2JDWvWA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cf89a0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Marie Forleo",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUuoxrRDDgk3UUnxR4tlkJYQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163190>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUuoxrRDDgk3UUnxR4tlkJYQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6190>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Madeleine Olivia",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU4CpQoAPJNGGUPG92Fbwxqw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106163dc0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UU4CpQoAPJNGGUPG92Fbwxqw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cd6dc0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Anker",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUqdDnTIFcP402BcTo2A30Ow&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106152d00>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUqdDnTIFcP402BcTo2A30Ow&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cc6d00>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Belkin",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUe1Q-ffTnLhZrFkfvKgxKCQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106172bb0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUe1Q-ffTnLhZrFkfvKgxKCQ&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce6bb0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Satechi",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUajGeviMMa-piNbYJehhFmA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061721f0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUajGeviMMa-piNbYJehhFmA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce61f0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Twelve South",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUiCI-gRlGPXLyjL1sPAPsBw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x106185c10>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUiCI-gRlGPXLyjL1sPAPsBw&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109cf8c10>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     },
     {
       "channel": "Native Union",
-      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUvE0FI2RDXQIy4Mc4chxnMA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1061724f0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
+      "reason": "playlistItems failed after 3 retries: HTTPSConnectionPool(host='www.googleapis.com', port=443): Max retries exceeded with url: /youtube/v3/playlistItems?playlistId=UUvE0FI2RDXQIy4Mc4chxnMA&part=contentDetails&maxResults=10&key=AIzaSyA_wENd0KaAo2QH1PQ6fNMC5wXxwJxtpCs (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x109ce64f0>: Failed to establish a new connection: [Errno 61] Connection refused')))"
     }
   ]
 }
