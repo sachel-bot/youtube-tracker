@@ -8,6 +8,36 @@
   },
   "videos": [
     {
+      "video_id": "D8LItaozFQI",
+      "title": "A Weekend with iPhone Duo and the waterproof iPad mini is announced (iPad Pros - 0262)",
+      "description": "Riley and Tim discuss their first week with the iPhone Duo and all of the announcements from Apple this week including the waterproof iPad mini, the M6 Macs, and the touchscreen OLED MacBook Pro. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
+      "thumbnail_url": "https://i.ytimg.com/vi/D8LItaozFQI/maxresdefault.jpg?v=16",
+      "view_count": 164,
+      "like_count": 0,
+      "comment_count": 0,
+      "duration": "1:54:12",
+      "duration_secs": 6852,
+      "published_at": "2026-10-28T21:56:26Z",
+      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
+      "channel_name": "Tim Chaten",
+      "channel_youtube_title": "Tim Chaten",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 1710,
+      "video_url": "https://www.youtube.com/watch?v=D8LItaozFQI",
+      "engagement_rate": 0.0,
+      "comment_rate": 0.0,
+      "video_length_type": "Long",
+      "content_tags": [
+        "其他"
+      ],
+      "video_type": "产品发布",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 9.59,
+      "view_to_sub_tier": "频道高分",
+      "relevance_score": 60
+    },
+    {
       "video_id": "cnlCvf-4VPc",
       "title": "iPhone Duo Eve with Riley Hill (iPad Pros - 0261)",
       "description": "Riley and Tim discuss their preorder experiences and a bunch of odds and ends about the iPhone Duo on the eve of its release. Plus a few other odds and ends. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
@@ -276,36 +306,6 @@
       "view_to_sub_ratio": 1.05,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 20
-    },
-    {
-      "video_id": "MeK121UrtGw",
-      "title": "Jeremy Duncan from Getting Things Dun Returns (Vision Pros - 0073)",
-      "description": "Jeremy Duncan (JDun) from the VR/XR focused YouTube channel Getting Things Dun discusses his experiences getting his Apple Vision Pro repaired, Siri AI, the visionOS beta, and some other odds and ends. \n\nEarly episodes with chapter markers are available by supporting the podcast at www.visionpros.fm/patreon. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.VisionPros.fm. Feedback is welcomed at tim@visionpros.fm.\n\nLinks:\n- https://www.youtube.com/gettin",
-      "thumbnail_url": "https://i.ytimg.com/vi/MeK121UrtGw/maxresdefault.jpg",
-      "view_count": 66,
-      "like_count": 1,
-      "comment_count": 0,
-      "duration": "55:46",
-      "duration_secs": 3346,
-      "published_at": "2026-08-20T09:00:06Z",
-      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
-      "channel_name": "Tim Chaten",
-      "channel_youtube_title": "Tim Chaten",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 1710,
-      "video_url": "https://www.youtube.com/watch?v=MeK121UrtGw",
-      "engagement_rate": 1.52,
-      "comment_rate": 0.0,
-      "video_length_type": "Long",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [],
-      "hot_level": "",
-      "view_to_sub_ratio": 3.86,
-      "view_to_sub_tier": "频道一般",
-      "relevance_score": 30
     }
   ]
 }
