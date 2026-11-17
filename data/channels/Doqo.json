@@ -8,11 +8,41 @@
   },
   "videos": [
     {
+      "video_id": "XOhoM9c5LUE",
+      "title": "Turn Your iPad Into a Productivity Powerhouse!",
+      "description": "Here's the link -  https://www.doqo.shop/products/doqo-3-2022",
+      "thumbnail_url": "https://i.ytimg.com/vi/XOhoM9c5LUE/maxresdefault.jpg",
+      "view_count": 1172,
+      "like_count": 13,
+      "comment_count": 0,
+      "duration": "0:21",
+      "duration_secs": 21,
+      "published_at": "2026-11-16T06:24:31Z",
+      "channel_id": "UCZ0RmGp2lbarGXXp0FeIhuw",
+      "channel_name": "Doqo",
+      "channel_youtube_title": "doqo-technology",
+      "channel_group": "A_brand",
+      "channel_subscriber_count": 263,
+      "video_url": "https://www.youtube.com/watch?v=XOhoM9c5LUE",
+      "engagement_rate": 1.11,
+      "comment_rate": 0.0,
+      "video_length_type": "Shorts",
+      "content_tags": [
+        "商务"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 445.63,
+      "view_to_sub_tier": "频道爆款",
+      "relevance_score": 80
+    },
+    {
       "video_id": "gOKGyIbdqUU",
       "title": "Would you be willing to work with such a keyboard?",
       "description": "doqo-Aluhub is back!#ipad #ipadkeyboard #fyp #editing",
       "thumbnail_url": "https://i.ytimg.com/vi/gOKGyIbdqUU/maxresdefault.jpg",
-      "view_count": 1406,
+      "view_count": 1416,
       "like_count": 4,
       "comment_count": 0,
       "duration": "0:16",
@@ -33,7 +63,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 534.6,
+      "view_to_sub_ratio": 538.4,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 80
     },
@@ -102,7 +132,7 @@
       "title": "Doqo blade  2nd generation magic keyboard for iPad Pro & iPad Air #ipad  #ipadkeyboardcase",
       "description": "Here's the link -  https://www.doqo.shop/collections/doqo-blade-keyboard-for-ipad",
       "thumbnail_url": "https://i.ytimg.com/vi/UZP4e46ZB3s/maxresdefault.jpg",
-      "view_count": 7970,
+      "view_count": 7973,
       "like_count": 63,
       "comment_count": 8,
       "duration": "0:18",
@@ -125,7 +155,7 @@
         "Apple Magic Keyboard"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 3030.42,
+      "view_to_sub_ratio": 3031.56,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 100
     },
@@ -134,7 +164,7 @@
       "title": "Doqo Second generation magic keyboard for iPad #ipadkeyboardcase #magickeyboard #tech",
       "description": "Here's the link - https://www.doqo.shop/collections/doqo-blade-keyboard-for-ipad\nUse code - DoqoBlackFriday to save 20% for your orders\n\rHave a great day!!",
       "thumbnail_url": "https://i.ytimg.com/vi/skVwlRAwLpw/maxresdefault.jpg",
-      "view_count": 56731,
+      "view_count": 56741,
       "like_count": 87,
       "comment_count": 10,
       "duration": "0:18",
@@ -157,7 +187,7 @@
         "Apple Magic Keyboard"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 21570.72,
+      "view_to_sub_ratio": 21574.52,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 100
     },
@@ -258,7 +288,7 @@
       "title": "Doqo Touch Magic Keyboard #ipad #tech #magickeyboard",
       "description": "",
       "thumbnail_url": "https://i.ytimg.com/vi/06tQX95_KMo/maxresdefault.jpg",
-      "view_count": 9113,
+      "view_count": 9117,
       "like_count": 33,
       "comment_count": 1,
       "duration": "0:22",
@@ -281,39 +311,9 @@
         "Apple Magic Keyboard"
       ],
       "hot_level": "",
-      "view_to_sub_ratio": 3465.02,
+      "view_to_sub_ratio": 3466.54,
       "view_to_sub_tier": "频道爆款",
       "relevance_score": 100
-    },
-    {
-      "video_id": "44IHa22-X5k",
-      "title": "Doqo Stand with hub for iPad",
-      "description": "",
-      "thumbnail_url": "https://i.ytimg.com/vi/44IHa22-X5k/maxresdefault.jpg",
-      "view_count": 209,
-      "like_count": 4,
-      "comment_count": 1,
-      "duration": "0:17",
-      "duration_secs": 17,
-      "published_at": "2024-07-22T10:03:32Z",
-      "channel_id": "UCZ0RmGp2lbarGXXp0FeIhuw",
-      "channel_name": "Doqo",
-      "channel_youtube_title": "doqo-technology",
-      "channel_group": "A_brand",
-      "channel_subscriber_count": 263,
-      "video_url": "https://www.youtube.com/watch?v=44IHa22-X5k",
-      "engagement_rate": 2.39,
-      "comment_rate": 0.478,
-      "video_length_type": "Shorts",
-      "content_tags": [
-        "其他"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [],
-      "hot_level": "",
-      "view_to_sub_ratio": 79.47,
-      "view_to_sub_tier": "频道爆款",
-      "relevance_score": 60
     }
   ]
 }
