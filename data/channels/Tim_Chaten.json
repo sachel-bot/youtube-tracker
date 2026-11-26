@@ -8,6 +8,36 @@
   },
   "videos": [
     {
+      "video_id": "lH4YtboQ4NI",
+      "title": "Adapting the OmniGroup Apps for iPhone Duo with Ken Case (iPad Pros - 0264)",
+      "description": "Ken Case from the OmniGroup is back on the podcast to discuss adapting his apps for the iPhone Duo. \n\nEarly episodes with chapter markers are available by supporting the podcast at www.patreon.com/ipadpros. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.iPadPros.net. Feedback is welcomed at iPadProsPodcast@gmail.com.\n\nLinks:\n- https://www.omnigroup.com\n- https://people.omnigroup.com/kc/\n\nChapter Markers:\n00:00:00: Opening\n00:00:35: Ken Case\n00:03:49: ",
+      "thumbnail_url": "https://i.ytimg.com/vi/lH4YtboQ4NI/maxresdefault.jpg",
+      "view_count": 17,
+      "like_count": 0,
+      "comment_count": 0,
+      "duration": "46:22",
+      "duration_secs": 2782,
+      "published_at": "2026-11-25T16:32:48Z",
+      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
+      "channel_name": "Tim Chaten",
+      "channel_youtube_title": "Tim Chaten",
+      "channel_group": "B_ipad_vertical",
+      "channel_subscriber_count": 1710,
+      "video_url": "https://www.youtube.com/watch?v=lH4YtboQ4NI",
+      "engagement_rate": 0.0,
+      "comment_rate": 0.0,
+      "video_length_type": "Long",
+      "content_tags": [
+        "其他"
+      ],
+      "video_type": "其他",
+      "brand_mentions": [],
+      "hot_level": "",
+      "view_to_sub_ratio": 0.99,
+      "view_to_sub_tier": "频道冷启",
+      "relevance_score": 60
+    },
+    {
       "video_id": "DMaN81e-bOs",
       "title": "Jeremy Duncan (JDun) Has Tried Meta VR Glasses (Vision Pros - 0079)",
       "description": "JDun is on the show to share his experiences with the new Meta VR Glasses. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
@@ -72,7 +102,7 @@
       "title": "Michael Edlund from MakeSBS3D (Vision Pros - 0078)",
       "description": "Michael Edlund has created a Mac app that lets you create Apple Vision Pro ready 3D video files from a 3D BluRay.\n\nEarly episodes with chapter markers are available by supporting the podcast at www.visionpros.fm/patreon. \n\nEarly episodes are also now available in Apple Podcasts!\n\nShow notes are available at www.VisionPros.fm. Feedback is welcomed at tim@visionpros.fm.\n\nLinks:\n- https://mastodon.social/@arcticleo\n- https://makesbs3d.com/",
       "thumbnail_url": "https://i.ytimg.com/vi/aSDk13nQV-c/maxresdefault.jpg",
-      "view_count": 25,
+      "view_count": 27,
       "like_count": 0,
       "comment_count": 0,
       "duration": "47:01",
@@ -93,7 +123,7 @@
       "video_type": "其他",
       "brand_mentions": [],
       "hot_level": "",
-      "view_to_sub_ratio": 1.46,
+      "view_to_sub_ratio": 1.58,
       "view_to_sub_tier": "频道一般",
       "relevance_score": 30
     },
@@ -276,36 +306,6 @@
       "view_to_sub_ratio": 6.67,
       "view_to_sub_tier": "频道高分",
       "relevance_score": 60
-    },
-    {
-      "video_id": "Rq63O44NbDE",
-      "title": "Traveling with the Vision Pro with Riley Hill (Vision Pros - 0075)",
-      "description": "Riley Hill is on the podcast to discuss his recent trip with the Apple Vision Pro. \n\n🎙️ New to streaming or looking to level up? Check out StreamYard and get $10 discount! 😍 https://streamyard.com/pal/d/5030943053709312",
-      "thumbnail_url": "https://i.ytimg.com/vi/Rq63O44NbDE/maxresdefault.jpg",
-      "view_count": 42,
-      "like_count": 0,
-      "comment_count": 0,
-      "duration": "44:25",
-      "duration_secs": 2665,
-      "published_at": "2026-09-17T14:31:43Z",
-      "channel_id": "UCPq0Xj9HbOXSpEpKiX0brnA",
-      "channel_name": "Tim Chaten",
-      "channel_youtube_title": "Tim Chaten",
-      "channel_group": "B_ipad_vertical",
-      "channel_subscriber_count": 1710,
-      "video_url": "https://www.youtube.com/watch?v=Rq63O44NbDE",
-      "engagement_rate": 0.0,
-      "comment_rate": 0.0,
-      "video_length_type": "Long",
-      "content_tags": [
-        "其他Apple"
-      ],
-      "video_type": "其他",
-      "brand_mentions": [],
-      "hot_level": "",
-      "view_to_sub_ratio": 2.46,
-      "view_to_sub_tier": "频道一般",
-      "relevance_score": 30
     }
   ]
 }
